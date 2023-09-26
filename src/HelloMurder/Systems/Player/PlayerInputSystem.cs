@@ -80,10 +80,10 @@ namespace HelloMurder.Systems
 
             _lockMovement = Game.Input.Down(InputButtons.LockMovement);
 
-            _cachedInputSkill =
-                Game.Input.Down(InputButtons.Skill1) ? InputButtons.Skill1 :
-                Game.Input.Down(InputButtons.Skill2) ? InputButtons.Skill2 :
-                _cachedInputSkill;
+            //_cachedInputSkill =
+            //    Game.Input.Down(InputButtons.Skill1) ? InputButtons.Skill1 :
+            //    Game.Input.Down(InputButtons.Skill2) ? InputButtons.Skill2 :
+            //    _cachedInputSkill;
 
             _cachedAttack = Game.Input.Down(InputButtons.Attack);
             

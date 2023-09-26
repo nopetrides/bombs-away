@@ -1,0 +1,89 @@
+{
+  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "ShowOnPrefabSelector": true,
+  "_entity": {
+    "$type": "Murder.Prefabs.EntityInstance, Murder",
+    "_guid": "dc634e03-f480-4d5c-984a-bef8f5a1b5cb",
+    "_name": "",
+    "_components": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+      "Murder.Components.AgentComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.AgentComponent, Murder",
+        "Speed": 100.0,
+        "Acceleration": 30.0,
+        "Friction": 1.0
+      },
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent, Murder",
+        "_x": 0.0,
+        "_y": 0.0
+      },
+      "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.AgentSpriteComponent, Murder",
+        "AnimationGuid": "7816819e-e74c-a57d-79c5-3c4b041771a4",
+        "TargetSpriteBatch": 0,
+        "YSortOffset": 50,
+        "IdlePrefix": "idle_",
+        "WalkPrefix": "walk_",
+        "Suffix": "e,se,s,se,e,ne,n,ne",
+        "AngleSuffixOffset": 0.0,
+        "FlipWest": true
+      },
+      "Murder.Components.FacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.FacingComponent, Murder",
+        "Direction": 1
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent, Murder",
+        "Layer": 8,
+        "Shapes": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
+          "$values": [
+            {
+              "$type": "Murder.Core.Geometry.BoxShape, Murder",
+              "Width": 16,
+              "Height": 16,
+              "Origin": {
+                "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                "X": 0.0,
+                "Y": 0.0
+              },
+              "Offset": {
+                "$type": "Murder.Core.Geometry.Point, Murder",
+                "X": 8,
+                "Y": 8
+              }
+            }
+          ]
+        },
+        "DebugColor": {
+          "$type": "Murder.Core.Graphics.Color, Murder",
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0
+        }
+      },
+      "HelloMurder.Components.PlayerComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.PlayerComponent, HelloMurder"
+      }
+    },
+    "IsDeactivated": false,
+    "ActivateWithParent": false
+  },
+  "Dimensions": {
+    "$type": "Murder.Core.TileDimensions, Murder",
+    "Origin": {
+      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "Size": {
+      "$type": "Murder.Core.Geometry.Point, Murder",
+      "X": 0,
+      "Y": 0
+    }
+  },
+  "Name": "Sheeptzu",
+  "Guid": "76a19752-4ec5-4ef9-aeff-91eac85678bb"
+}
