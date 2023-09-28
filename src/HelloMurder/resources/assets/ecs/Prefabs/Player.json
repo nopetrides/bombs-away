@@ -23,7 +23,7 @@
         },
         "RotateWithFacing": false,
         "FlipWithFacing": false,
-        "CanBeHighlighted": true,
+        "HighlightStyle": 0,
         "UseUnscaledTime": false,
         "NextAnimations": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
@@ -64,7 +64,8 @@
         }
       }
     },
-    "IsDeactivated": false
+    "IsDeactivated": false,
+    "ActivateWithParent": false
   },
   "Dimensions": {
     "$type": "Murder.Core.TileDimensions, Murder",

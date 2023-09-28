@@ -22,17 +22,17 @@
       "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
       "$values": [
         "5d34f9a7-91d0-4142-82eb-9e1393c88297",
-        "30d543c9-7d34-4a6d-9f37-aaa86297d727"
+        "220b08d1-2193-4cfa-800f-8582eba2c0df"
       ]
     }
   },
   "_entities": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
-    "30d543c9-7d34-4a6d-9f37-aaa86297d727": {
+    "220b08d1-2193-4cfa-800f-8582eba2c0df": {
       "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
       "PrefabRef": {
         "$type": "Murder.Prefabs.PrefabReference, Murder",
-        "Guid": "76a19752-4ec5-4ef9-aeff-91eac85678bb"
+        "Guid": "e4676d89-51f1-455e-b6b3-e85d18b7b72f"
       },
       "_removeComponent": {
         "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
@@ -46,60 +46,14 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 138.0,
-          "_y": 74.0
-        },
-        "Murder.Editor.Components.PlacedInWorldComponent, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Murder.Editor.Components.PlacedInWorldComponent, Murder.Editor",
-          "PlacedTime": 19.844456
-        },
-        "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Murder.Components.ColliderComponent, Murder",
-          "Layer": 8,
-          "Shapes": {
-            "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
-            "$values": [
-              {
-                "$type": "Murder.Core.Geometry.BoxShape, Murder",
-                "Width": 16,
-                "Height": 16,
-                "Origin": {
-                  "$type": "System.Numerics.Vector2, System.Private.CoreLib",
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "Offset": {
-                  "$type": "Murder.Core.Geometry.Point, Murder",
-                  "X": 8,
-                  "Y": 8
-                }
-              }
-            ]
-          },
-          "DebugColor": {
-            "$type": "Murder.Core.Graphics.Color, Murder",
-            "R": 1.0,
-            "G": 0.0,
-            "B": 0.0,
-            "A": 1.0
-          }
-        },
-        "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Murder.Components.AgentSpriteComponent, Murder",
-          "AnimationGuid": "7816819e-e74c-a57d-79c5-3c4b041771a4",
-          "TargetSpriteBatch": 0,
-          "YSortOffset": 30,
-          "IdlePrefix": "idle_",
-          "WalkPrefix": "walk_",
-          "Suffix": "e,se,s,se,e,ne,n,ne",
-          "AngleSuffixOffset": 0.0,
-          "FlipWest": true
+          "_x": 157.0,
+          "_y": 84.0
         }
       },
       "IsDeactivated": false,
       "ActivateWithParent": false,
-      "_guid": "30d543c9-7d34-4a6d-9f37-aaa86297d727",
-      "_name": "Sheeptzu"
+      "_guid": "220b08d1-2193-4cfa-800f-8582eba2c0df",
+      "_name": "Player"
     },
     "5d34f9a7-91d0-4142-82eb-9e1393c88297": {
       "$type": "Murder.Prefabs.EntityInstance, Murder",
@@ -698,8 +652,8 @@
   "_entitiesToFolder": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
     "5d34f9a7-91d0-4142-82eb-9e1393c88297": "Room",
-    "30d543c9-7d34-4a6d-9f37-aaa86297d727": "Room"
+    "220b08d1-2193-4cfa-800f-8582eba2c0df": "Room"
   },
-  "Name": "Hello World",
-  "Guid": "3bd26720-c3b1-44c1-b7c3-192d5656cc37"
+  "Name": "Hello World (1)",
+  "Guid": "536c35e9-6df0-4f15-8de9-0fdf847db713"
 }

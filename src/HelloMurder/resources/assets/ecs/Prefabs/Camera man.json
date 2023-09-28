@@ -18,7 +18,8 @@
         "_y": 0.0
       }
     },
-    "IsDeactivated": false
+    "IsDeactivated": false,
+    "ActivateWithParent": false
   },
   "Dimensions": {
     "$type": "Murder.Core.TileDimensions, Murder",

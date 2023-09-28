@@ -35,7 +35,9 @@
             "_cachedPersistedState": "Main"
           }
         }
-      }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
     }
   },
   "_entitiesToFolder": {
