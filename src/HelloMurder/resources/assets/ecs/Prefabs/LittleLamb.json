@@ -20,7 +20,7 @@
       },
       "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.AgentSpriteComponent, Murder",
-        "AnimationGuid": "7816819e-e74c-a57d-79c5-3c4b041771a4",
+        "AnimationGuid": "b626576d-aefd-d299-6713-ad1287cf028d",
         "TargetSpriteBatch": 0,
         "YSortOffset": 50,
         "IdlePrefix": "idle_",
@@ -51,7 +51,7 @@
               "Offset": {
                 "$type": "Murder.Core.Geometry.Point, Murder",
                 "X": 3,
-                "Y": 14
+                "Y": 13
               }
             }
           ]
@@ -64,17 +64,14 @@
           "A": 1.0
         }
       },
-      "HelloMurder.Components.PlayerComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "HelloMurder.Components.PlayerComponent, HelloMurder"
-      },
-      "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
-        "MaxHealth": 3,
-        "_health": 3
-      },
       "HelloMurder.Components.DealsDamageComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.DealsDamageComponent, HelloMurder",
         "Damage": 1
+      },
+      "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
+        "MaxHealth": 1,
+        "_health": 1
       },
       "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
@@ -111,6 +108,6 @@
       "Y": 0
     }
   },
-  "Name": "Sheeptzu",
-  "Guid": "76a19752-4ec5-4ef9-aeff-91eac85678bb"
+  "Name": "LittleLamb",
+  "Guid": "cf05c81e-134f-4397-a9cc-a08bc9b3d576"
 }

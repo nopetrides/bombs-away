@@ -45,12 +45,22 @@
       },
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "HelloMurder.Systems.Physics.CollidingDamageSystem, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
         "Item1": "Murder.Systems.Physics.TriggerPhysicsSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       },
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
         "Item1": "Murder.Systems.Physics.SATPhysicsSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "HelloMurder.Systems.Interactions.OnDamagingCollisionSystem, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       }
     ]

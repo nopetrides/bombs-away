@@ -22,85 +22,13 @@
       "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
       "$values": [
         "5d34f9a7-91d0-4142-82eb-9e1393c88297",
-        "30d543c9-7d34-4a6d-9f37-aaa86297d727"
+        "a4987dd4-3489-42fe-8b42-c0bde89e6994",
+        "52d7b603-ccc4-457b-8ecc-9d831c44cb6d"
       ]
     }
   },
   "_entities": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
-    "30d543c9-7d34-4a6d-9f37-aaa86297d727": {
-      "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
-      "PrefabRef": {
-        "$type": "Murder.Prefabs.PrefabReference, Murder",
-        "Guid": "76a19752-4ec5-4ef9-aeff-91eac85678bb"
-      },
-      "_removeComponent": {
-        "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
-        "$values": []
-      },
-      "_childrenModifiers": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
-      },
-      "_ignorePrefabChildren": false,
-      "_components": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
-        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 138.0,
-          "_y": 74.0
-        },
-        "Murder.Editor.Components.PlacedInWorldComponent, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Murder.Editor.Components.PlacedInWorldComponent, Murder.Editor",
-          "PlacedTime": 19.844456
-        },
-        "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Murder.Components.ColliderComponent, Murder",
-          "Layer": 8,
-          "Shapes": {
-            "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
-            "$values": [
-              {
-                "$type": "Murder.Core.Geometry.BoxShape, Murder",
-                "Width": 16,
-                "Height": 16,
-                "Origin": {
-                  "$type": "System.Numerics.Vector2, System.Private.CoreLib",
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "Offset": {
-                  "$type": "Murder.Core.Geometry.Point, Murder",
-                  "X": 8,
-                  "Y": 8
-                }
-              }
-            ]
-          },
-          "DebugColor": {
-            "$type": "Murder.Core.Graphics.Color, Murder",
-            "R": 1.0,
-            "G": 0.0,
-            "B": 0.0,
-            "A": 1.0
-          }
-        },
-        "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Murder.Components.AgentSpriteComponent, Murder",
-          "AnimationGuid": "7816819e-e74c-a57d-79c5-3c4b041771a4",
-          "TargetSpriteBatch": 0,
-          "YSortOffset": 30,
-          "IdlePrefix": "idle_",
-          "WalkPrefix": "walk_",
-          "Suffix": "e,se,s,se,e,ne,n,ne",
-          "AngleSuffixOffset": 0.0,
-          "FlipWest": true
-        }
-      },
-      "IsDeactivated": false,
-      "ActivateWithParent": false,
-      "_guid": "30d543c9-7d34-4a6d-9f37-aaa86297d727",
-      "_name": "Sheeptzu"
-    },
     "5d34f9a7-91d0-4142-82eb-9e1393c88297": {
       "$type": "Murder.Prefabs.EntityInstance, Murder",
       "_guid": "5d34f9a7-91d0-4142-82eb-9e1393c88297",
@@ -693,12 +621,75 @@
       "ActivateWithParent": false,
       "_guid": "ad4db301-6039-4d5d-ad89-28c5cd5f03ba",
       "_name": "Camera man"
+    },
+    "52d7b603-ccc4-457b-8ecc-9d831c44cb6d": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
+      "PrefabRef": {
+        "$type": "Murder.Prefabs.PrefabReference, Murder",
+        "Guid": "76a19752-4ec5-4ef9-aeff-91eac85678bb"
+      },
+      "_removeComponent": {
+        "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "_childrenModifiers": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
+      },
+      "_ignorePrefabChildren": false,
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 138.0,
+          "_y": 69.0
+        },
+        "Murder.Editor.Components.PlacedInWorldComponent, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Editor.Components.PlacedInWorldComponent, Murder.Editor",
+          "PlacedTime": 63.982525
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "_guid": "52d7b603-ccc4-457b-8ecc-9d831c44cb6d",
+      "_name": "Sheeptzu"
+    },
+    "a4987dd4-3489-42fe-8b42-c0bde89e6994": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
+      "PrefabRef": {
+        "$type": "Murder.Prefabs.PrefabReference, Murder",
+        "Guid": "cf05c81e-134f-4397-a9cc-a08bc9b3d576"
+      },
+      "_removeComponent": {
+        "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "_childrenModifiers": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
+      },
+      "_ignorePrefabChildren": false,
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 100.0,
+          "_y": 69.0
+        },
+        "Murder.Editor.Components.PlacedInWorldComponent, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Editor.Components.PlacedInWorldComponent, Murder.Editor",
+          "PlacedTime": 58.3648
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "_guid": "a4987dd4-3489-42fe-8b42-c0bde89e6994",
+      "_name": "LittleLamb"
     }
   },
   "_entitiesToFolder": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
     "5d34f9a7-91d0-4142-82eb-9e1393c88297": "Room",
-    "30d543c9-7d34-4a6d-9f37-aaa86297d727": "Room"
+    "52d7b603-ccc4-457b-8ecc-9d831c44cb6d": "Room",
+    "a4987dd4-3489-42fe-8b42-c0bde89e6994": "Room"
   },
   "Name": "Hello World",
   "Guid": "3bd26720-c3b1-44c1-b7c3-192d5656cc37"
