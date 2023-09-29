@@ -1,0 +1,55 @@
+{
+  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "ShowOnPrefabSelector": false,
+  "_entity": {
+    "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
+    "PrefabRef": {
+      "$type": "Murder.Prefabs.PrefabReference, Murder",
+      "Guid": "a1ffd4af-50fe-459a-aaab-5e91c76deee9"
+    },
+    "_removeComponent": {
+      "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
+      "$values": []
+    },
+    "_childrenModifiers": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
+    },
+    "_ignorePrefabChildren": false,
+    "_components": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+      "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.AgentSpriteComponent, Murder",
+        "AnimationGuid": "7816819e-e74c-a57d-79c5-3c4b041771a4",
+        "TargetSpriteBatch": 0,
+        "YSortOffset": 50,
+        "IdlePrefix": "idle_",
+        "WalkPrefix": "walk_",
+        "Suffix": "e,se,s,se,e,ne,n,ne",
+        "AngleSuffixOffset": 0.0,
+        "FlipWest": true
+      },
+      "HelloMurder.Components.PlayerComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.PlayerComponent, HelloMurder"
+      }
+    },
+    "IsDeactivated": false,
+    "ActivateWithParent": false,
+    "_guid": "8a8022de-5373-4f99-8023-74da1f66ac54",
+    "_name": "CharacterBase Instance"
+  },
+  "Dimensions": {
+    "$type": "Murder.Core.TileDimensions, Murder",
+    "Origin": {
+      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "Size": {
+      "$type": "Murder.Core.Geometry.Point, Murder",
+      "X": 0,
+      "Y": 0
+    }
+  },
+  "Name": "CB_Player",
+  "Guid": "f8fcfe48-a626-4e81-93a8-a9f60d914ccb"
+}
