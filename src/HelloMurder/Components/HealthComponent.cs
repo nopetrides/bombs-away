@@ -1,10 +1,5 @@
 ﻿using Bang.Components;
 using Murder.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HelloMurder.Components
 {
@@ -17,7 +12,7 @@ namespace HelloMurder.Components
         public readonly int MaxHealth;
         public readonly int _health;
         public readonly int CurrentHealth => _health;
-        public HealthComponent() 
+        public HealthComponent()
         {
         }
 
@@ -33,8 +28,8 @@ namespace HelloMurder.Components
             _health = health;
         }
 
-        internal HealthComponent Damage(int damagetaken) 
-        { 
+        internal HealthComponent Damage(int damagetaken)
+        {
             return new HealthComponent(MaxHealth, Math.Max(_health - damagetaken, 0));
         }
 

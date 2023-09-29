@@ -3,9 +3,9 @@ using Bang.Components;
 using Bang.Entities;
 using Bang.Systems;
 using HelloMurder.Components;
-using Murder.Messages;
 using HelloMurder.Messages;
 using Murder.Diagnostics;
+using Murder.Messages;
 
 namespace HelloMurder.Systems.Physics
 {

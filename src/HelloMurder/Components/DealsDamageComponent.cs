@@ -1,9 +1,4 @@
 ﻿using Bang.Components;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HelloMurder.Components
 {
@@ -18,9 +13,9 @@ namespace HelloMurder.Components
         {
         }
 
-        public DealsDamageComponent(int damage) 
-        {  
-            Damage = damage; 
+        public DealsDamageComponent(int damage)
+        {
+            Damage = damage;
         }
     }
 }

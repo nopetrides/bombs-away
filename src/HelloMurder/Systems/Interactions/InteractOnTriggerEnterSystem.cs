@@ -31,8 +31,8 @@ namespace HelloMurder.Systems.Interactions
             var interactOnCollision = interactiveEntity.GetInteractOnCollision();
 
             if (interactOnCollision.PlayerOnly && !interactorEntity.HasPlayer())
-            { 
-                return; 
+            {
+                return;
             }
             else if (msg.Movement == CollisionDirection.Exit)
             {
