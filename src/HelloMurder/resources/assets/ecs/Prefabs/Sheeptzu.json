@@ -15,8 +15,8 @@
       },
       "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.PositionComponent, Murder",
-        "_x": 0.0,
-        "_y": 0.0
+        "_x": -16.0,
+        "_y": -25.0
       },
       "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.AgentSpriteComponent, Murder",
