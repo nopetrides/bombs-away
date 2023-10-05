@@ -1,12 +1,10 @@
-﻿
-using Bang;
+﻿using Bang;
 using Bang.Components;
 using Bang.Entities;
 using Bang.Systems;
 using Murder.Components;
 using Murder.Messages;
 using Murder.Messages.Physics;
-using Murder.Utilities;
 
 namespace HelloMurder.Systems.Interactions
 {
@@ -21,20 +19,17 @@ namespace HelloMurder.Systems.Interactions
             if (world.TryGetEntity(msg.EntityId) is not Entity interactorEntity)
                 return;
 
-            if (interactorEntity.IsDestroyed || !interactorEntity.HasInteractor())
-                return;
+            if (interactorEntity.IsDestroyed || !interactorEntity.HasInteractor()) return;
 
-            Entity interactiveEntity = entity; // why?
+            Entity interactiveEntity = entity;
             if (interactiveEntity.IsDestroyed)
                 return;
 
             var interactOnCollision = interactiveEntity.GetInteractOnCollision();
 
             if (interactOnCollision.PlayerOnly && !interactorEntity.HasPlayer())
-            {
                 return;
-            }
-            else if (msg.Movement == CollisionDirection.Exit)
+            else if (msg.Movement == Murder.Utilities.CollisionDirection.Exit)
             {
                 foreach (var interaction in interactOnCollision.CustomExitMessages)
                 {
@@ -45,8 +40,7 @@ namespace HelloMurder.Systems.Interactions
                     return;
             }
 
-            // After all these checks, I thinks it's ok to send that message!            
-            // Trigger right away!
+            // All check complete, safe to trigger
 
             interactiveEntity.SendMessage(new CollidedWithMessage(interactorEntity.EntityId));
 

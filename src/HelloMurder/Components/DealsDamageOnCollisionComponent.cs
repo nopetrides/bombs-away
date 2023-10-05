@@ -5,15 +5,15 @@ namespace HelloMurder.Components
     /// <summary>
     /// Component that tracks how much damage is dealt by this entity
     /// </summary>
-    public readonly struct DealsDamageComponent : IComponent
+    public readonly struct DealsDamageOnCollisionComponent : IComponent
     {
         public readonly int Damage = 1;
 
-        public DealsDamageComponent()
+        public DealsDamageOnCollisionComponent()
         {
         }
 
-        public DealsDamageComponent(int damage)
+        public DealsDamageOnCollisionComponent(int damage)
         {
             Damage = damage;
         }

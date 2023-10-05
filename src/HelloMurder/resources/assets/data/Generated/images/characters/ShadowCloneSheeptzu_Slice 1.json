@@ -7,7 +7,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0000",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0000",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -15,17 +15,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 175,
-          "Y": 117,
+          "X": 0,
+          "Y": 410,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.68359375,
-          "Y": 0.45703125,
-          "Width": 0.0703125,
-          "Height": 0.11328125
+          "X": 0.0,
+          "Y": 0.80078125,
+          "Width": 0.03515625,
+          "Height": 0.056640625
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -39,7 +39,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0001",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0001",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -47,17 +47,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 166,
-          "Y": 170,
+          "X": 356,
+          "Y": 0,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.6484375,
-          "Y": 0.6640625,
-          "Width": 0.0703125,
-          "Height": 0.11328125
+          "X": 0.6953125,
+          "Y": 0.0,
+          "Width": 0.03515625,
+          "Height": 0.056640625
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -71,7 +71,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0002",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0002",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -79,17 +79,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 73,
-          "Y": 109,
+          "X": 146,
+          "Y": 32,
           "Width": 28,
           "Height": 31
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
           "X": 0.28515625,
-          "Y": 0.42578125,
-          "Width": 0.109375,
-          "Height": 0.12109375
+          "Y": 0.0625,
+          "Width": 0.0546875,
+          "Height": 0.060546875
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -103,7 +103,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0003",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0003",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -112,16 +112,16 @@
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
           "X": 102,
-          "Y": 109,
+          "Y": 141,
           "Width": 28,
           "Height": 28
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.3984375,
-          "Y": 0.42578125,
-          "Width": 0.109375,
-          "Height": 0.109375
+          "X": 0.19921875,
+          "Y": 0.27539062,
+          "Width": 0.0546875,
+          "Height": 0.0546875
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -135,7 +135,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0004",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0004",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -143,17 +143,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 55,
-          "Y": 202,
+          "X": 26,
+          "Y": 293,
           "Width": 29,
           "Height": 25
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.21484375,
-          "Y": 0.7890625,
-          "Width": 0.11328125,
-          "Height": 0.09765625
+          "X": 0.05078125,
+          "Y": 0.5722656,
+          "Width": 0.056640625,
+          "Height": 0.048828125
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -167,7 +167,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0005",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0005",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -175,17 +175,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 30,
-          "Y": 233,
+          "X": 89,
+          "Y": 265,
           "Width": 29,
           "Height": 21
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.1171875,
-          "Y": 0.91015625,
-          "Width": 0.11328125,
-          "Height": 0.08203125
+          "X": 0.17382812,
+          "Y": 0.5175781,
+          "Width": 0.056640625,
+          "Height": 0.041015625
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -199,7 +199,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0006",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0006",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -207,17 +207,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 175,
-          "Y": 31,
+          "X": 58,
+          "Y": 234,
           "Width": 25,
           "Height": 30
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.68359375,
-          "Y": 0.12109375,
-          "Width": 0.09765625,
-          "Height": 0.1171875
+          "X": 0.11328125,
+          "Y": 0.45703125,
+          "Width": 0.048828125,
+          "Height": 0.05859375
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -231,7 +231,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0007",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0007",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -239,17 +239,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 58,
-          "Y": 170,
+          "X": 0,
+          "Y": 265,
           "Width": 28,
           "Height": 27
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.2265625,
-          "Y": 0.6640625,
-          "Width": 0.109375,
-          "Height": 0.10546875
+          "X": 0.0,
+          "Y": 0.5175781,
+          "Width": 0.0546875,
+          "Height": 0.052734375
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -263,7 +263,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0008",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0008",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -271,17 +271,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 129,
-          "Y": 202,
+          "X": 337,
+          "Y": 30,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.50390625,
-          "Y": 0.7890625,
-          "Width": 0.0703125,
-          "Height": 0.11328125
+          "X": 0.6582031,
+          "Y": 0.05859375,
+          "Width": 0.03515625,
+          "Height": 0.056640625
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -295,7 +295,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0009",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0009",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -303,17 +303,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 230,
-          "Y": 91,
+          "X": 318,
+          "Y": 60,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.8984375,
-          "Y": 0.35546875,
-          "Width": 0.0703125,
-          "Height": 0.11328125
+          "X": 0.62109375,
+          "Y": 0.1171875,
+          "Width": 0.03515625,
+          "Height": 0.056640625
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -327,7 +327,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0010",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0010",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -335,17 +335,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 204,
-          "Y": 122,
+          "X": 289,
+          "Y": 85,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.796875,
-          "Y": 0.4765625,
-          "Width": 0.0703125,
-          "Height": 0.11328125
+          "X": 0.5644531,
+          "Y": 0.16601562,
+          "Width": 0.03515625,
+          "Height": 0.056640625
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -359,7 +359,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0011",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0011",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -367,17 +367,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 185,
-          "Y": 170,
+          "X": 259,
+          "Y": 111,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.72265625,
-          "Y": 0.6640625,
-          "Width": 0.0703125,
-          "Height": 0.11328125
+          "X": 0.5058594,
+          "Y": 0.21679688,
+          "Width": 0.03515625,
+          "Height": 0.056640625
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -391,7 +391,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0012",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0012",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -399,17 +399,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 29,
-          "Y": 170,
+          "X": 102,
+          "Y": 109,
           "Width": 28,
           "Height": 31
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.11328125,
-          "Y": 0.6640625,
-          "Width": 0.109375,
-          "Height": 0.12109375
+          "X": 0.19921875,
+          "Y": 0.21289062,
+          "Width": 0.0546875,
+          "Height": 0.060546875
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -423,7 +423,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0013",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0013",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -431,17 +431,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 175,
+          "X": 204,
           "Y": 0,
           "Width": 28,
           "Height": 30
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.68359375,
+          "X": 0.3984375,
           "Y": 0.0,
-          "Width": 0.109375,
-          "Height": 0.1171875
+          "Width": 0.0546875,
+          "Height": 0.05859375
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -455,7 +455,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0014",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0014",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -463,17 +463,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 117,
-          "Y": 170,
+          "X": 0,
+          "Y": 324,
           "Width": 29,
           "Height": 25
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.45703125,
-          "Y": 0.6640625,
-          "Width": 0.11328125,
-          "Height": 0.09765625
+          "X": 0.0,
+          "Y": 0.6328125,
+          "Width": 0.056640625,
+          "Height": 0.048828125
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -487,7 +487,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0015",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0015",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -495,17 +495,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 146,
-          "Y": 92,
+          "X": 175,
+          "Y": 123,
           "Width": 28,
           "Height": 24
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.5703125,
-          "Y": 0.359375,
-          "Width": 0.109375,
-          "Height": 0.09375
+          "X": 0.34179688,
+          "Y": 0.24023438,
+          "Width": 0.0546875,
+          "Height": 0.046875
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -519,7 +519,39 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0016",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0016",
+        "Size": {
+          "$type": "Murder.Core.Geometry.Point, Murder",
+          "X": 32,
+          "Y": 32
+        },
+        "SourceRectangle": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 0,
+          "Y": 293,
+          "Width": 25,
+          "Height": 30
+        },
+        "UV": {
+          "$type": "Murder.Core.Geometry.Rectangle, Murder",
+          "X": 0.0,
+          "Y": 0.5722656,
+          "Width": 0.048828125,
+          "Height": 0.05859375
+        },
+        "TrimArea": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 5,
+          "Y": 1,
+          "Width": 25,
+          "Height": 30
+        },
+        "AtlasId": 1
+      },
+      {
+        "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+        "AtlasIndex": 0,
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0017",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -528,48 +560,16 @@
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
           "X": 146,
-          "Y": 61,
-          "Width": 25,
-          "Height": 30
-        },
-        "UV": {
-          "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.5703125,
-          "Y": 0.23828125,
-          "Width": 0.09765625,
-          "Height": 0.1171875
-        },
-        "TrimArea": {
-          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 5,
-          "Y": 1,
-          "Width": 25,
-          "Height": 30
-        },
-        "AtlasId": 1
-      },
-      {
-        "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
-        "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0017",
-        "Size": {
-          "$type": "Murder.Core.Geometry.Point, Murder",
-          "X": 32,
-          "Y": 32
-        },
-        "SourceRectangle": {
-          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 204,
-          "Y": 31,
+          "Y": 124,
           "Width": 24,
           "Height": 30
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.796875,
-          "Y": 0.12109375,
-          "Width": 0.09375,
-          "Height": 0.1171875
+          "X": 0.28515625,
+          "Y": 0.2421875,
+          "Width": 0.046875,
+          "Height": 0.05859375
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -583,7 +583,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0018",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0018",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -591,17 +591,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 148,
-          "Y": 202,
+          "X": 240,
+          "Y": 170,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.578125,
-          "Y": 0.7890625,
-          "Width": 0.0703125,
-          "Height": 0.11328125
+          "X": 0.46875,
+          "Y": 0.33203125,
+          "Width": 0.03515625,
+          "Height": 0.056640625
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -615,7 +615,7 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "characters\\ShadowCloneSheeptzu_0019",
+        "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0019",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
           "X": 32,
@@ -623,17 +623,17 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 230,
-          "Y": 121,
+          "X": 211,
+          "Y": 202,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.8984375,
-          "Y": 0.47265625,
-          "Width": 0.0703125,
-          "Height": 0.11328125
+          "X": 0.41210938,
+          "Y": 0.39453125,
+          "Width": 0.03515625,
+          "Height": 0.056640625
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
@@ -648,6 +648,27 @@
   },
   "Animations": {
     "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.String, System.Private.CoreLib],[Murder.Core.Graphics.Animation, Murder]], System.Collections.Immutable",
+    "walk_n": {
+      "$type": "Murder.Core.Graphics.Animation, Murder",
+      "Frames": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          0,
+          1
+        ]
+      },
+      "FramesDuration": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          100.0,
+          100.0
+        ]
+      },
+      "Events": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
+      },
+      "AnimationDuration": 0.2
+    },
     "idle_s": {
       "$type": "Murder.Core.Graphics.Animation, Murder",
       "Frames": {
@@ -655,6 +676,69 @@
         "$values": [
           18,
           19
+        ]
+      },
+      "FramesDuration": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          100.0,
+          100.0
+        ]
+      },
+      "Events": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
+      },
+      "AnimationDuration": 0.2
+    },
+    "walk_se": {
+      "$type": "Murder.Core.Graphics.Animation, Murder",
+      "Frames": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          6,
+          7
+        ]
+      },
+      "FramesDuration": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          100.0,
+          100.0
+        ]
+      },
+      "Events": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
+      },
+      "AnimationDuration": 0.2
+    },
+    "idle_e": {
+      "$type": "Murder.Core.Graphics.Animation, Murder",
+      "Frames": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          14,
+          15
+        ]
+      },
+      "FramesDuration": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          100.0,
+          100.0
+        ]
+      },
+      "Events": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
+      },
+      "AnimationDuration": 0.2
+    },
+    "walk_e": {
+      "$type": "Murder.Core.Graphics.Animation, Murder",
+      "Frames": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          4,
+          5
         ]
       },
       "FramesDuration": {
@@ -726,27 +810,6 @@
       },
       "AnimationDuration": 2.0
     },
-    "walk_n": {
-      "$type": "Murder.Core.Graphics.Animation, Murder",
-      "Frames": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          0,
-          1
-        ]
-      },
-      "FramesDuration": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          100.0,
-          100.0
-        ]
-      },
-      "Events": {
-        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
-      },
-      "AnimationDuration": 0.2
-    },
     "walk_ne": {
       "$type": "Murder.Core.Graphics.Animation, Murder",
       "Frames": {
@@ -754,111 +817,6 @@
         "$values": [
           2,
           3
-        ]
-      },
-      "FramesDuration": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          100.0,
-          100.0
-        ]
-      },
-      "Events": {
-        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
-      },
-      "AnimationDuration": 0.2
-    },
-    "idle_ne": {
-      "$type": "Murder.Core.Graphics.Animation, Murder",
-      "Frames": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          12,
-          13
-        ]
-      },
-      "FramesDuration": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          100.0,
-          100.0
-        ]
-      },
-      "Events": {
-        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
-      },
-      "AnimationDuration": 0.2
-    },
-    "idle_e": {
-      "$type": "Murder.Core.Graphics.Animation, Murder",
-      "Frames": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          14,
-          15
-        ]
-      },
-      "FramesDuration": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          100.0,
-          100.0
-        ]
-      },
-      "Events": {
-        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
-      },
-      "AnimationDuration": 0.2
-    },
-    "idle_se": {
-      "$type": "Murder.Core.Graphics.Animation, Murder",
-      "Frames": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          16,
-          17
-        ]
-      },
-      "FramesDuration": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          100.0,
-          100.0
-        ]
-      },
-      "Events": {
-        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
-      },
-      "AnimationDuration": 0.2
-    },
-    "walk_s": {
-      "$type": "Murder.Core.Graphics.Animation, Murder",
-      "Frames": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          8,
-          9
-        ]
-      },
-      "FramesDuration": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          100.0,
-          100.0
-        ]
-      },
-      "Events": {
-        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
-      },
-      "AnimationDuration": 0.2
-    },
-    "walk_se": {
-      "$type": "Murder.Core.Graphics.Animation, Murder",
-      "Frames": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          6,
-          7
         ]
       },
       "FramesDuration": {
@@ -894,13 +852,55 @@
       },
       "AnimationDuration": 0.2
     },
-    "walk_e": {
+    "idle_ne": {
       "$type": "Murder.Core.Graphics.Animation, Murder",
       "Frames": {
         "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
         "$values": [
-          4,
-          5
+          12,
+          13
+        ]
+      },
+      "FramesDuration": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          100.0,
+          100.0
+        ]
+      },
+      "Events": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
+      },
+      "AnimationDuration": 0.2
+    },
+    "walk_s": {
+      "$type": "Murder.Core.Graphics.Animation, Murder",
+      "Frames": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          8,
+          9
+        ]
+      },
+      "FramesDuration": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          100.0,
+          100.0
+        ]
+      },
+      "Events": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
+      },
+      "AnimationDuration": 0.2
+    },
+    "idle_se": {
+      "$type": "Murder.Core.Graphics.Animation, Murder",
+      "Frames": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          16,
+          17
         ]
       },
       "FramesDuration": {
@@ -934,6 +934,6 @@
     "Height": 0.0
   },
   "_editorPath": "#Generated\\images",
-  "Name": "characters\\ShadowCloneSheeptzu",
-  "Guid": "7816819e-e74c-a57d-79c5-3c4b041771a4"
+  "Name": "characters\\ShadowCloneSheeptzu_Slice 1",
+  "Guid": "6a81c733-0ed6-6f6f-c3de-573d44cd2a4d"
 }

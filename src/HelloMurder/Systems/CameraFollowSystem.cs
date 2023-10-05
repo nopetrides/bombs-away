@@ -6,6 +6,8 @@ using HelloMurder.Components;
 using Murder.Utilities;
 using Murder.Core.Graphics;
 using Murder.Core;
+using System.Numerics;
+using Murder;
 
 namespace HelloMurder.Systems;
 
@@ -24,6 +26,13 @@ internal class CameraFollowSystem : IFixedUpdateSystem
 
         // Get the context.Entity (we expect our player, since we filtered it!)
         // Get it's GlobalTransform and set our camera position
-        camera.Position = context.Entity.GetGlobalTransform().Vector2;
+        var player = context.Entity;
+        var position = player.GetGlobalTransform().Vector2;
+
+        if (player.HasVelocity()) position += player.GetVelocity().Velocity * Game.FixedDeltaTime;
+
+        position -= new Vector2(camera.Width / 2.0f, camera.Height / 2.0f);
+
+        camera.Position = Vector2.Lerp(camera.Position, position, 0.2f);
     }
 }

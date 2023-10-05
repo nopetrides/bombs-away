@@ -1,40 +1,40 @@
 {
   "$type": "Murder.Assets.Graphics.SpriteAsset, Murder",
-  "Atlas": 1,
+  "Atlas": 2,
   "Frames": {
     "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Graphics.AtlasCoordinates, Murder]], System.Collections.Immutable",
     "$values": [
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "tiles\\simple",
+        "Name": "dialogue_bg-selected",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
-          "X": 72,
-          "Y": 120
+          "X": 16,
+          "Y": 16
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 73,
-          "Y": 0,
-          "Width": 72,
-          "Height": 108
+          "X": 34,
+          "Y": 34,
+          "Width": 16,
+          "Height": 16
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.14257812,
-          "Y": 0.0,
-          "Width": 0.140625,
-          "Height": 0.2109375
+          "X": 0.265625,
+          "Y": 0.265625,
+          "Width": 0.125,
+          "Height": 0.125
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
           "X": 0,
-          "Y": 12,
-          "Width": 72,
-          "Height": 108
+          "Y": 0,
+          "Width": 16,
+          "Height": 16
         },
-        "AtlasId": 1
+        "AtlasId": 2
       }
     ]
   },
@@ -67,17 +67,17 @@
   },
   "Size": {
     "$type": "Murder.Core.Geometry.Point, Murder",
-    "X": 72,
-    "Y": 120
+    "X": 16,
+    "Y": 16
   },
   "NineSlice": {
     "$type": "Murder.Core.Geometry.Rectangle, Murder",
-    "X": 0.0,
-    "Y": 0.0,
-    "Width": 0.0,
-    "Height": 0.0
+    "X": 6.0,
+    "Y": 6.0,
+    "Width": 4.0,
+    "Height": 4.0
   },
-  "_editorPath": "#Generated\\images",
-  "Name": "tiles\\simple",
-  "Guid": "98d1de98-3aba-300a-e7cc-64e4a6a93f45"
+  "_editorPath": "#Generated\\editor",
+  "Name": "dialogue_bg-selected",
+  "Guid": "166732e0-d5db-5f97-d853-41b4acec58de"
 }

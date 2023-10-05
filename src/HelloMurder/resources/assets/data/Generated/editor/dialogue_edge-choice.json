@@ -1,40 +1,40 @@
 {
   "$type": "Murder.Assets.Graphics.SpriteAsset, Murder",
-  "Atlas": 1,
+  "Atlas": 2,
   "Frames": {
     "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Graphics.AtlasCoordinates, Murder]], System.Collections.Immutable",
     "$values": [
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "tiles\\simple",
+        "Name": "dialogue_edge-choice",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
-          "X": 72,
-          "Y": 120
+          "X": 16,
+          "Y": 16
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 73,
-          "Y": 0,
-          "Width": 72,
-          "Height": 108
+          "X": 113,
+          "Y": 51,
+          "Width": 13,
+          "Height": 10
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.14257812,
-          "Y": 0.0,
-          "Width": 0.140625,
-          "Height": 0.2109375
+          "X": 0.8828125,
+          "Y": 0.3984375,
+          "Width": 0.1015625,
+          "Height": 0.078125
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 0,
-          "Y": 12,
-          "Width": 72,
-          "Height": 108
+          "X": 1,
+          "Y": 3,
+          "Width": 13,
+          "Height": 10
         },
-        "AtlasId": 1
+        "AtlasId": 2
       }
     ]
   },
@@ -62,13 +62,13 @@
   },
   "Origin": {
     "$type": "Murder.Core.Geometry.Point, Murder",
-    "X": 0,
-    "Y": 0
+    "X": 8,
+    "Y": 8
   },
   "Size": {
     "$type": "Murder.Core.Geometry.Point, Murder",
-    "X": 72,
-    "Y": 120
+    "X": 16,
+    "Y": 16
   },
   "NineSlice": {
     "$type": "Murder.Core.Geometry.Rectangle, Murder",
@@ -77,7 +77,7 @@
     "Width": 0.0,
     "Height": 0.0
   },
-  "_editorPath": "#Generated\\images",
-  "Name": "tiles\\simple",
-  "Guid": "98d1de98-3aba-300a-e7cc-64e4a6a93f45"
+  "_editorPath": "#Generated\\editor",
+  "Name": "dialogue_edge-choice",
+  "Guid": "0f5036f0-4db3-4c4d-4b8f-16cc2ea995e7"
 }

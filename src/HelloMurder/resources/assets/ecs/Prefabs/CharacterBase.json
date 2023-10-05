@@ -22,7 +22,7 @@
         "$type": "Murder.Components.AgentSpriteComponent, Murder",
         "AnimationGuid": "b626576d-aefd-d299-6713-ad1287cf028d",
         "TargetSpriteBatch": 0,
-        "YSortOffset": 50,
+        "YSortOffset": 20,
         "IdlePrefix": "idle_",
         "WalkPrefix": "walk_",
         "Suffix": "e,se,s,se,e,ne,n,ne",
@@ -50,8 +50,8 @@
               },
               "Offset": {
                 "$type": "Murder.Core.Geometry.Point, Murder",
-                "X": 3,
-                "Y": 13
+                "X": -12,
+                "Y": -3
               }
             }
           ]
@@ -64,14 +64,10 @@
           "A": 1.0
         }
       },
-      "HelloMurder.Components.DealsDamageComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "HelloMurder.Components.DealsDamageComponent, HelloMurder",
-        "Damage": 1
-      },
       "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
-        "MaxHealth": 1,
-        "_health": 1
+        "MaxHealth": 0,
+        "Health": 0
       },
       "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
@@ -90,6 +86,10 @@
       },
       "Murder.Interactions.InteractorComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Interactions.InteractorComponent, Murder"
+      },
+      "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder",
+        "Damage": 1
       }
     },
     "IsDeactivated": false,

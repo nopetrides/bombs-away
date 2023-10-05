@@ -10,8 +10,7 @@ namespace HelloMurder.Components
     public readonly struct HealthComponent : IComponent
     {
         public readonly int MaxHealth;
-        public readonly int _health;
-        public readonly int CurrentHealth => _health;
+        public readonly int Health;
         public HealthComponent()
         {
         }
@@ -19,23 +18,23 @@ namespace HelloMurder.Components
         public HealthComponent(int maxHealth)
         {
             MaxHealth = maxHealth;
-            _health = maxHealth;
+            Health = maxHealth;
         }
 
         private HealthComponent(int maxHealth, int health)
         {
             MaxHealth = maxHealth;
-            _health = health;
+            Health = health;
         }
 
         internal HealthComponent Damage(int damagetaken)
         {
-            return new HealthComponent(MaxHealth, Math.Max(_health - damagetaken, 0));
+            return new HealthComponent(MaxHealth, Math.Max(Health - damagetaken, 0));
         }
 
         internal HealthComponent Heal(int healAmount)
         {
-            return new HealthComponent(MaxHealth, Math.Min(_health + healAmount, MaxHealth));
+            return new HealthComponent(MaxHealth, Math.Min(Health + healAmount, MaxHealth));
         }
     }
 }

@@ -24,8 +24,8 @@
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
           "X": 0.0,
           "Y": 0.0,
-          "Width": 0.28125,
-          "Height": 0.66015625
+          "Width": 0.140625,
+          "Height": 0.33007812
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",

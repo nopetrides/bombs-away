@@ -31,7 +31,7 @@
           "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.MainMenuStateMachine, HelloMurder]], Bang",
           "_routine": {
             "$type": "HelloMurder.StateMachines.MainMenuStateMachine, HelloMurder",
-            "_newGameWorld": "3bd26720-c3b1-44c1-b7c3-192d5656cc37",
+            "_newGameWorld": "091bb6bb-0251-4af8-9fba-009ffba92330",
             "_cachedPersistedState": "Main"
           }
         }
