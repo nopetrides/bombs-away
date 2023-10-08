@@ -32,6 +32,21 @@
         "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
         "MaxHealth": 1,
         "Health": 1
+      },
+      "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
+        "OnlyOnce": true,
+        "SendMessageOnExit": false,
+        "SendMessageOnStay": false,
+        "CustomEnterMessages": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
+          "$values": []
+        },
+        "CustomExitMessages": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
+          "$values": []
+        },
+        "PlayerOnly": true
       }
     },
     "IsDeactivated": false,

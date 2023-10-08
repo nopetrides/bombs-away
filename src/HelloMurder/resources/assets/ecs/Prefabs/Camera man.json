@@ -1,6 +1,6 @@
 {
   "$type": "Murder.Assets.PrefabAsset, Murder",
-  "ShowOnPrefabSelector": true,
+  "ShowOnPrefabSelector": false,
   "_entity": {
     "$type": "Murder.Prefabs.EntityInstance, Murder",
     "_guid": "468bd21e-2bed-404f-bb75-8d995436e35d",

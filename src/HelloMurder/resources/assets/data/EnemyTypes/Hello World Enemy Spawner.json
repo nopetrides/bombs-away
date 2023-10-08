@@ -1,0 +1,18 @@
+{
+  "$type": "HelloMurder.Assets.EnemySpawnerDataAsset, HelloMurder",
+  "StartingSpawnDelay": 1.0,
+  "EnemySpawns": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[HelloMurder.Core.EnemySpawn.EnemySpawnEvent, HelloMurder]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "HelloMurder.Core.EnemySpawn.EnemySpawnEvent, HelloMurder",
+        "EnemyImpulse": 50.0,
+        "ChasePlayer": true,
+        "PrefabToSpawn": "99c113bc-8e3e-40b9-903c-59f6379bfbb7",
+        "SpawnTimeStart": 0.0
+      }
+    ]
+  },
+  "Name": "Hello World Enemy Spawner",
+  "Guid": "9fbd934b-27b8-4bc9-bf92-bce9e8e1d6b1"
+}

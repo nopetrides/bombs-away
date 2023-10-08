@@ -1,4 +1,5 @@
-﻿using HelloMurder.Core;
+﻿using HelloMurder.Assets;
+using HelloMurder.Core;
 using Microsoft.Xna.Framework.Input;
 using Murder;
 using Murder.Core.Input;
@@ -8,6 +9,7 @@ namespace HelloMurder
 {
     public class HelloMurderGame : IMurderGame
     {
+        public static HelloMurderProfile Profile => (HelloMurderProfile)Game.Profile;
         public string Name => "HelloMurder";
 
         public void Initialize()

@@ -6,8 +6,8 @@ using Bang.Systems;
 using HelloMurder.Components;
 using HelloMurder.Messages;
 using Murder.Diagnostics;
-using Murder.Messages;
 using Murder.Services;
+using System.Numerics;
 
 namespace HelloMurder.Systems.Interactions
 {
@@ -36,10 +36,12 @@ namespace HelloMurder.Systems.Interactions
 
         private IEnumerator<Wait> KillAndCleanUp(Entity entity)
         {
-            entity.RemoveCollider();
-            entity.SetAgentSpeedOverride(0, 0);
-            if (entity.HasPlayer())
-                entity.RemovePlayer();
+            entity.SetCollider(entity.GetCollider().SetLayer(0));
+            entity.SetAgentImpulse(Vector2.Zero);
+            
+            // In case the entity has these
+            entity.RemovePlayer();
+            entity.RemoveMoveToPlayer();
 
             while (entity.TryGetVelocity() != null)
             {

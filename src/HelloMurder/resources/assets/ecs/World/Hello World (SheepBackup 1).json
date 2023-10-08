@@ -23,7 +23,9 @@
       "$values": [
         "5d34f9a7-91d0-4142-82eb-9e1393c88297",
         "c7214a4f-cddc-4a15-a7a8-52811044d876",
-        "20ef3911-f141-4a7d-a2af-a40e252abfcb"
+        "345cbcce-81a4-4df4-8f7c-dcb24da6e7b1",
+        "817e300c-255d-4e6c-a4ab-3f3bacf5dd09",
+        "09f59e3e-1d12-47be-8247-61afedb3e7d6"
       ]
     }
   },
@@ -47,8 +49,8 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 237.0,
-          "_y": 234.0
+          "_x": 176.0,
+          "_y": 58.0
         }
       },
       "IsDeactivated": false,
@@ -73,6 +75,8 @@
             "_gridMap": {
               "$type": "System.Int32[], System.Private.CoreLib",
               "$values": [
+                2,
+                2,
                 0,
                 0,
                 0,
@@ -103,11 +107,17 @@
                 0,
                 0,
                 0,
+                2,
+                2,
                 0,
                 0,
                 0,
                 0,
                 0,
+                1,
+                1,
+                1,
+                1,
                 0,
                 0,
                 0,
@@ -129,14 +139,17 @@
                 0,
                 0,
                 0,
+                2,
                 0,
                 0,
                 0,
                 0,
                 0,
                 0,
+                1,
                 0,
                 0,
+                1,
                 0,
                 0,
                 0,
@@ -158,12 +171,113 @@
                 0,
                 0,
                 0,
+                2,
                 0,
                 0,
                 0,
                 0,
                 0,
                 0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
                 0,
                 0,
                 0,
@@ -475,19 +589,19 @@
                 0
               ]
             },
-            "_width": 20,
-            "_height": 20,
+            "_width": 32,
+            "_height": 16,
             "_origin": {
               "$type": "Murder.Core.Geometry.Point, Murder",
-              "X": 0,
+              "X": 2,
               "Y": 0
             }
           },
-          "Width": 20,
-          "Height": 20,
+          "Width": 32,
+          "Height": 16,
           "Origin": {
             "$type": "Murder.Core.Geometry.Point, Murder",
-            "X": 0,
+            "X": 2,
             "Y": 0
           }
         }
@@ -515,25 +629,7 @@
       "IsDeactivated": false,
       "ActivateWithParent": false
     },
-    "20ef3911-f141-4a7d-a2af-a40e252abfcb": {
-      "$type": "Murder.Prefabs.EntityInstance, Murder",
-      "_guid": "20ef3911-f141-4a7d-a2af-a40e252abfcb",
-      "_name": "EnemyLevelManagerStateMachine",
-      "_components": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
-        "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.EnemyLevelManager, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.EnemyLevelManager, HelloMurder]], Bang",
-          "_routine": {
-            "$type": "HelloMurder.StateMachines.Gameplay.EnemyLevelManager, HelloMurder",
-            "_enemySpawnDataId": "9fbd934b-27b8-4bc9-bf92-bce9e8e1d6b1",
-            "_cachedPersistedState": "Level"
-          }
-        }
-      },
-      "IsDeactivated": false,
-      "ActivateWithParent": false
-    },
-    "88a40b96-0a97-446a-8177-0b9698c0134b": {
+    "ad4db301-6039-4d5d-ad89-28c5cd5f03ba": {
       "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
       "PrefabRef": {
         "$type": "Murder.Prefabs.PrefabReference, Murder",
@@ -551,22 +647,105 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 255.0,
-          "_y": 237.0
+          "_x": 146.0,
+          "_y": 11.0
         }
       },
       "IsDeactivated": false,
       "ActivateWithParent": false,
-      "_guid": "88a40b96-0a97-446a-8177-0b9698c0134b",
+      "_guid": "ad4db301-6039-4d5d-ad89-28c5cd5f03ba",
       "_name": "Camera man"
+    },
+    "345cbcce-81a4-4df4-8f7c-dcb24da6e7b1": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
+      "PrefabRef": {
+        "$type": "Murder.Prefabs.PrefabReference, Murder",
+        "Guid": "99c113bc-8e3e-40b9-903c-59f6379bfbb7"
+      },
+      "_removeComponent": {
+        "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "_childrenModifiers": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
+      },
+      "_ignorePrefabChildren": false,
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 120.0,
+          "_y": 63.0
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "_guid": "345cbcce-81a4-4df4-8f7c-dcb24da6e7b1",
+      "_name": "CB_Enemy"
+    },
+    "817e300c-255d-4e6c-a4ab-3f3bacf5dd09": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
+      "PrefabRef": {
+        "$type": "Murder.Prefabs.PrefabReference, Murder",
+        "Guid": "99c113bc-8e3e-40b9-903c-59f6379bfbb7"
+      },
+      "_removeComponent": {
+        "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "_childrenModifiers": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
+      },
+      "_ignorePrefabChildren": false,
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 120.0,
+          "_y": 96.0
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "_guid": "817e300c-255d-4e6c-a4ab-3f3bacf5dd09",
+      "_name": "CB_Enemy"
+    },
+    "09f59e3e-1d12-47be-8247-61afedb3e7d6": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
+      "PrefabRef": {
+        "$type": "Murder.Prefabs.PrefabReference, Murder",
+        "Guid": "99c113bc-8e3e-40b9-903c-59f6379bfbb7"
+      },
+      "_removeComponent": {
+        "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "_childrenModifiers": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
+      },
+      "_ignorePrefabChildren": false,
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 120.0,
+          "_y": 130.0
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "_guid": "09f59e3e-1d12-47be-8247-61afedb3e7d6",
+      "_name": "CB_Enemy"
     }
   },
   "_entitiesToFolder": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
     "5d34f9a7-91d0-4142-82eb-9e1393c88297": "Room",
     "c7214a4f-cddc-4a15-a7a8-52811044d876": "Room",
-    "20ef3911-f141-4a7d-a2af-a40e252abfcb": "Room"
+    "345cbcce-81a4-4df4-8f7c-dcb24da6e7b1": "Room",
+    "817e300c-255d-4e6c-a4ab-3f3bacf5dd09": "Room",
+    "09f59e3e-1d12-47be-8247-61afedb3e7d6": "Room"
   },
-  "Name": "Hello World",
-  "Guid": "091bb6bb-0251-4af8-9fba-009ffba92330"
+  "Name": "Hello World (SheepBackup 1)",
+  "Guid": "c50e0103-380c-43d8-a724-290b58776238"
 }
