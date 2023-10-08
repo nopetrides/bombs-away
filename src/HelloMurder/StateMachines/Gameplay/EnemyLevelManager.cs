@@ -100,32 +100,10 @@ namespace HelloMurder.StateMachines.Gameplay
             var world = (MonoWorld)World;
 
             Vector2 position = Vector2.Zero;
-            Random rand = new Random();
-            var corner = rand.Next(0,4);
             var bounds = world.Camera.Bounds;
 
-            switch (corner)
-            {
-                case 0:
-                    position = bounds.TopLeft;
-                    position.X += rand.NextFloat(0, bounds.Width);
-                    break; 
-                case 1:
-                    position = bounds.TopLeft;
-                    position.Y += rand.NextFloat(0, bounds.Height);
-                    break; 
-                case 2: 
-                    position = bounds.BottomLeft;
-                    position.X += rand.NextFloat(0, bounds.Width);
-                    break; 
-                case 3: 
-                    position = bounds.BottomRight;
-                    position.Y += rand.NextFloat(0, bounds.Height);
-                    break;
-                default:
-                    GameLogger.Error("Could not determine where to spawn!");
-                    break;
-            }
+            position = bounds.TopLeft;
+            position.X += Game.Random.NextFloat(0, bounds.Width);
 
             entity.SetGlobalPosition(position);
 

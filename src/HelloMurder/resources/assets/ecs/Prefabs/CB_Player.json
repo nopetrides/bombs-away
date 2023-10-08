@@ -9,7 +9,11 @@
     },
     "_removeComponent": {
       "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
-      "$values": []
+      "$values": [
+        "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Murder.Components.FacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+      ]
     },
     "_childrenModifiers": {
       "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
@@ -17,17 +21,6 @@
     "_ignorePrefabChildren": false,
     "_components": {
       "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
-      "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.AgentSpriteComponent, Murder",
-        "AnimationGuid": "6a81c733-0ed6-6f6f-c3de-573d44cd2a4d",
-        "TargetSpriteBatch": 0,
-        "YSortOffset": 20,
-        "IdlePrefix": "idle_",
-        "WalkPrefix": "walk_",
-        "Suffix": "e,se,s,se,e,ne,n,ne",
-        "AngleSuffixOffset": 0.0,
-        "FlipWest": true
-      },
       "HelloMurder.Components.PlayerComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.PlayerComponent, HelloMurder"
       },
@@ -35,10 +28,117 @@
         "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
         "MaxHealth": 10,
         "Health": 10
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent, Murder",
+        "Layer": 15,
+        "Shapes": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
+          "$values": [
+            {
+              "$type": "Murder.Core.Geometry.PolygonShape, Murder",
+              "Polygon": {
+                "$type": "Murder.Core.Geometry.Polygon, Murder",
+                "Vertices": {
+                  "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Numerics.Vector2, System.Private.CoreLib]], System.Collections.Immutable",
+                  "$values": [
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -14.0,
+                      "Y": -9.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -5.0,
+                      "Y": -12.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 4.0,
+                      "Y": -12.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 14.0,
+                      "Y": -9.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 14.0,
+                      "Y": -2.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 5.0,
+                      "Y": 10.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -5.0,
+                      "Y": 10.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -14.0,
+                      "Y": -2.0
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "DebugColor": {
+          "$type": "Murder.Core.Graphics.Color, Murder",
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0
+        }
       }
     },
     "IsDeactivated": false,
     "ActivateWithParent": false,
+    "_children": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
+      "77f467a2-9f80-44a0-945f-e47cb0a507fb": {
+        "$type": "Murder.Prefabs.EntityInstance, Murder",
+        "_guid": "77f467a2-9f80-44a0-945f-e47cb0a507fb",
+        "_name": "Child 0",
+        "_components": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+          "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.SpriteComponent, Murder",
+            "TargetSpriteBatch": 0,
+            "AnimationGuid": "6a81c733-0ed6-6f6f-c3de-573d44cd2a4d",
+            "Offset": {
+              "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "RotateWithFacing": false,
+            "FlipWithFacing": false,
+            "HighlightStyle": 2,
+            "UseUnscaledTime": false,
+            "NextAnimations": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
+              "$values": [
+                "idle_n"
+              ]
+            },
+            "AnimationStartedTime": -1.0,
+            "YSortOffset": 0
+          },
+          "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.PositionComponent, Murder",
+            "_x": 0.0,
+            "_y": 0.0
+          }
+        },
+        "IsDeactivated": false,
+        "ActivateWithParent": false
+      }
+    },
     "_guid": "8a8022de-5373-4f99-8023-74da1f66ac54",
     "_name": "CharacterBase Instance"
   },
