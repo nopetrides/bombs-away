@@ -9,7 +9,9 @@
     },
     "_removeComponent": {
       "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
-      "$values": []
+      "$values": [
+        "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+      ]
     },
     "_childrenModifiers": {
       "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
@@ -30,8 +32,8 @@
       },
       "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
-        "MaxHealth": 1,
-        "Health": 1
+        "MaxHealth": 2,
+        "Health": 2
       },
       "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
@@ -67,6 +69,6 @@
       "Y": 0
     }
   },
-  "Name": "CB_Enemy (2)",
+  "Name": "Ship_M",
   "Guid": "6d197cf4-32c5-4fd4-ad7d-c70a025ef632"
 }

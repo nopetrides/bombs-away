@@ -9,7 +9,9 @@
     },
     "_removeComponent": {
       "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
-      "$values": []
+      "$values": [
+        "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+      ]
     },
     "_childrenModifiers": {
       "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
@@ -19,7 +21,7 @@
       "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
       "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.AgentSpriteComponent, Murder",
-        "AnimationGuid": "c6044df9-c1b1-92f9-048d-554a6557dd55",
+        "AnimationGuid": "cb025d3a-d3b7-57bd-8e9f-4abd579ec8e8",
         "TargetSpriteBatch": 0,
         "YSortOffset": 20,
         "IdlePrefix": "idle_",
@@ -30,8 +32,8 @@
       },
       "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
-        "MaxHealth": 1,
-        "Health": 1
+        "MaxHealth": 3,
+        "Health": 3
       },
       "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
@@ -67,6 +69,6 @@
       "Y": 0
     }
   },
-  "Name": "CB_Enemy",
-  "Guid": "99c113bc-8e3e-40b9-903c-59f6379bfbb7"
+  "Name": "Ship_L",
+  "Guid": "c6a94e00-22a5-4666-a23f-92a02edd56f0"
 }
