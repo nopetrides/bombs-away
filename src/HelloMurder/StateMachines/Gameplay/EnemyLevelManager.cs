@@ -22,7 +22,7 @@ namespace HelloMurder.StateMachines.Gameplay
         private int _currentPossibleEnemy = 0;
 
         private ImmutableArray<EnemySpawnEvent> _possibleEnemiesShuffled = ImmutableArray<EnemySpawnEvent>.Empty;
-        private readonly ImmutableArray<EnemySpawnEvent> _possibleEnemies = ImmutableArray<EnemySpawnEvent>.Empty;
+        private ImmutableArray<EnemySpawnEvent> _possibleEnemies = ImmutableArray<EnemySpawnEvent>.Empty;
 
         /// <summary>
         /// For constructing this from something like a level manager that knows that enemies will spawn in the level
@@ -64,7 +64,7 @@ namespace HelloMurder.StateMachines.Gameplay
                     {
                         if (time > spawnerData.EnemySpawns[i].SpawnTimeStart)
                         {
-                            _possibleEnemies.Add(spawnerData.EnemySpawns[i]);
+                            _possibleEnemies = _possibleEnemies.Add(spawnerData.EnemySpawns[i]);
                             _possibleEnemiesShuffled = Shuffle(_possibleEnemies);
                             _currentPossibleEnemy = 0;
                         }
@@ -86,7 +86,7 @@ namespace HelloMurder.StateMachines.Gameplay
                 if (_possibleEnemiesShuffled.Length > 1) 
                     _currentPossibleEnemy++;
                 // Count time passed
-                time += Game.DeltaTime;
+                time += currentSpawnDelay;
                 // Wait to spawn the enext enemy
                 yield return Wait.ForSeconds(currentSpawnDelay);
             }

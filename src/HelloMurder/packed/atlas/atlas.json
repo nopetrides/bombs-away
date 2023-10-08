@@ -66,10 +66,10 @@
       },
       "AtlasId": 1
     },
-    "characters\\MarysLittleLamb_Slice 1_0002": {
+    "characters\\MarysBloodyLamb_Slice 1_0002": {
       "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
       "AtlasIndex": 0,
-      "Name": "characters\\MarysLittleLamb_Slice 1_0002",
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0002",
       "Size": {
         "$type": "Murder.Core.Geometry.Point, Murder",
         "X": 32,
@@ -98,10 +98,10 @@
       },
       "AtlasId": 1
     },
-    "characters\\MarysLittleLamb_Slice 1_0012": {
+    "characters\\MarysBloodyLamb_Slice 1_0012": {
       "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
       "AtlasIndex": 0,
-      "Name": "characters\\MarysLittleLamb_Slice 1_0012",
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0012",
       "Size": {
         "$type": "Murder.Core.Geometry.Point, Murder",
         "X": 32,
@@ -130,10 +130,10 @@
       },
       "AtlasId": 1
     },
-    "characters\\ShadowCloneSheeptzu_Slice 1_0002": {
+    "characters\\MarysLittleLamb_Slice 1_0002": {
       "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
       "AtlasIndex": 0,
-      "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0002",
+      "Name": "characters\\MarysLittleLamb_Slice 1_0002",
       "Size": {
         "$type": "Murder.Core.Geometry.Point, Murder",
         "X": 32,
@@ -162,10 +162,10 @@
       },
       "AtlasId": 1
     },
-    "characters\\ShadowCloneSheeptzu_Slice 1_0012": {
+    "characters\\MarysLittleLamb_Slice 1_0012": {
       "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
       "AtlasIndex": 0,
-      "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0012",
+      "Name": "characters\\MarysLittleLamb_Slice 1_0012",
       "Size": {
         "$type": "Murder.Core.Geometry.Point, Murder",
         "X": 32,
@@ -194,106 +194,10 @@
       },
       "AtlasId": 1
     },
-    "characters\\MarysLittleLamb_Slice 1_0003": {
+    "characters\\MarysBloodyLamb_Slice 1_0003": {
       "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
       "AtlasIndex": 0,
-      "Name": "characters\\MarysLittleLamb_Slice 1_0003",
-      "Size": {
-        "$type": "Murder.Core.Geometry.Point, Murder",
-        "X": 32,
-        "Y": 32
-      },
-      "SourceRectangle": {
-        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 175,
-        "Y": 32,
-        "Width": 28,
-        "Height": 28
-      },
-      "UV": {
-        "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.34179688,
-        "Y": 0.0625,
-        "Width": 0.0546875,
-        "Height": 0.0546875
-      },
-      "TrimArea": {
-        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 0,
-        "Y": 0,
-        "Width": 28,
-        "Height": 28
-      },
-      "AtlasId": 1
-    },
-    "characters\\MarysLittleLamb_Slice 1_0013": {
-      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
-      "AtlasIndex": 0,
-      "Name": "characters\\MarysLittleLamb_Slice 1_0013",
-      "Size": {
-        "$type": "Murder.Core.Geometry.Point, Murder",
-        "X": 32,
-        "Y": 32
-      },
-      "SourceRectangle": {
-        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 29,
-        "Y": 202,
-        "Width": 28,
-        "Height": 30
-      },
-      "UV": {
-        "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.056640625,
-        "Y": 0.39453125,
-        "Width": 0.0546875,
-        "Height": 0.05859375
-      },
-      "TrimArea": {
-        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 0,
-        "Y": 2,
-        "Width": 28,
-        "Height": 30
-      },
-      "AtlasId": 1
-    },
-    "characters\\ShadowCloneSheeptzu_Slice 1_0013": {
-      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
-      "AtlasIndex": 0,
-      "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0013",
-      "Size": {
-        "$type": "Murder.Core.Geometry.Point, Murder",
-        "X": 32,
-        "Y": 32
-      },
-      "SourceRectangle": {
-        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 204,
-        "Y": 0,
-        "Width": 28,
-        "Height": 30
-      },
-      "UV": {
-        "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.3984375,
-        "Y": 0.0,
-        "Width": 0.0546875,
-        "Height": 0.05859375
-      },
-      "TrimArea": {
-        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 0,
-        "Y": 2,
-        "Width": 28,
-        "Height": 30
-      },
-      "AtlasId": 1
-    },
-    "characters\\ShadowCloneSheeptzu_Slice 1_0003": {
-      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
-      "AtlasIndex": 0,
-      "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0003",
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0003",
       "Size": {
         "$type": "Murder.Core.Geometry.Point, Murder",
         "X": 32,
@@ -322,6 +226,390 @@
       },
       "AtlasId": 1
     },
+    "characters\\MarysSadLamb_Slice 1_0002": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0002",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 234,
+        "Width": 28,
+        "Height": 31
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.0,
+        "Y": 0.45703125,
+        "Width": 0.0546875,
+        "Height": 0.060546875
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 1,
+        "Width": 28,
+        "Height": 31
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0012": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0012",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 204,
+        "Y": 0,
+        "Width": 28,
+        "Height": 31
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.3984375,
+        "Y": 0.0,
+        "Width": 0.0546875,
+        "Height": 0.060546875
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 1,
+        "Width": 28,
+        "Height": 31
+      },
+      "AtlasId": 1
+    },
+    "characters\\ShadowCloneSheeptzu_Slice 1_0002": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0002",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 87,
+        "Y": 170,
+        "Width": 28,
+        "Height": 31
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.16992188,
+        "Y": 0.33203125,
+        "Width": 0.0546875,
+        "Height": 0.060546875
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 1,
+        "Width": 28,
+        "Height": 31
+      },
+      "AtlasId": 1
+    },
+    "characters\\ShadowCloneSheeptzu_Slice 1_0012": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0012",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 58,
+        "Y": 202,
+        "Width": 28,
+        "Height": 31
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.11328125,
+        "Y": 0.39453125,
+        "Width": 0.0546875,
+        "Height": 0.060546875
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 1,
+        "Width": 28,
+        "Height": 31
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0013": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0013",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 266,
+        "Width": 28,
+        "Height": 30
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.0,
+        "Y": 0.51953125,
+        "Width": 0.0546875,
+        "Height": 0.05859375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 2,
+        "Width": 28,
+        "Height": 30
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysLittleLamb_Slice 1_0013": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysLittleLamb_Slice 1_0013",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 204,
+        "Y": 32,
+        "Width": 28,
+        "Height": 30
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.3984375,
+        "Y": 0.0625,
+        "Width": 0.0546875,
+        "Height": 0.05859375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 2,
+        "Width": 28,
+        "Height": 30
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0013": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0013",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 146,
+        "Y": 96,
+        "Width": 28,
+        "Height": 30
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.28515625,
+        "Y": 0.1875,
+        "Width": 0.0546875,
+        "Height": 0.05859375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 2,
+        "Width": 28,
+        "Height": 30
+      },
+      "AtlasId": 1
+    },
+    "characters\\ShadowCloneSheeptzu_Slice 1_0013": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0013",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 87,
+        "Y": 202,
+        "Width": 28,
+        "Height": 30
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.16992188,
+        "Y": 0.39453125,
+        "Width": 0.0546875,
+        "Height": 0.05859375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 2,
+        "Width": 28,
+        "Height": 30
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysLittleLamb_Slice 1_0003": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysLittleLamb_Slice 1_0003",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 29,
+        "Y": 266,
+        "Width": 28,
+        "Height": 28
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.056640625,
+        "Y": 0.51953125,
+        "Width": 0.0546875,
+        "Height": 0.0546875
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 0,
+        "Width": 28,
+        "Height": 28
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0003": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0003",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 262,
+        "Y": 0,
+        "Width": 28,
+        "Height": 28
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.51171875,
+        "Y": 0.0,
+        "Width": 0.0546875,
+        "Height": 0.0546875
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 0,
+        "Width": 28,
+        "Height": 28
+      },
+      "AtlasId": 1
+    },
+    "characters\\ShadowCloneSheeptzu_Slice 1_0003": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0003",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 204,
+        "Y": 63,
+        "Width": 28,
+        "Height": 28
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.3984375,
+        "Y": 0.123046875,
+        "Width": 0.0546875,
+        "Height": 0.0546875
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 0,
+        "Width": 28,
+        "Height": 28
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0007": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0007",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 146,
+        "Y": 127,
+        "Width": 28,
+        "Height": 27
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.28515625,
+        "Y": 0.24804688,
+        "Width": 0.0546875,
+        "Height": 0.052734375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 3,
+        "Y": 3,
+        "Width": 28,
+        "Height": 27
+      },
+      "AtlasId": 1
+    },
     "characters\\MarysLittleLamb_Slice 1_0007": {
       "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
       "AtlasIndex": 0,
@@ -333,15 +621,47 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 58,
+        "X": 116,
         "Y": 202,
         "Width": 28,
         "Height": 27
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.11328125,
+        "X": 0.2265625,
         "Y": 0.39453125,
+        "Width": 0.0546875,
+        "Height": 0.052734375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 3,
+        "Y": 3,
+        "Width": 28,
+        "Height": 27
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0007": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0007",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 58,
+        "Y": 266,
+        "Width": 28,
+        "Height": 27
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.11328125,
+        "Y": 0.51953125,
         "Width": 0.0546875,
         "Height": 0.052734375
       },
@@ -366,14 +686,14 @@
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
         "X": 0,
-        "Y": 265,
+        "Y": 326,
         "Width": 28,
         "Height": 27
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
         "X": 0.0,
-        "Y": 0.5175781,
+        "Y": 0.63671875,
         "Width": 0.0546875,
         "Height": 0.052734375
       },
@@ -383,6 +703,70 @@
         "Y": 3,
         "Width": 28,
         "Height": 27
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0006": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0006",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 233,
+        "Y": 60,
+        "Width": 25,
+        "Height": 30
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.45507812,
+        "Y": 0.1171875,
+        "Width": 0.048828125,
+        "Height": 0.05859375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 5,
+        "Y": 1,
+        "Width": 25,
+        "Height": 30
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0016": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0016",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 204,
+        "Y": 92,
+        "Width": 25,
+        "Height": 30
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.3984375,
+        "Y": 0.1796875,
+        "Width": 0.048828125,
+        "Height": 0.05859375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 5,
+        "Y": 1,
+        "Width": 25,
+        "Height": 30
       },
       "AtlasId": 1
     },
@@ -397,15 +781,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 175,
-        "Y": 61,
+        "X": 145,
+        "Y": 202,
         "Width": 25,
         "Height": 30
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.34179688,
-        "Y": 0.119140625,
+        "X": 0.28320312,
+        "Y": 0.39453125,
         "Width": 0.048828125,
         "Height": 0.05859375
       },
@@ -429,15 +813,143 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 146,
-        "Y": 93,
+        "X": 116,
+        "Y": 234,
         "Width": 25,
         "Height": 30
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.28515625,
-        "Y": 0.18164062,
+        "X": 0.2265625,
+        "Y": 0.45703125,
+        "Width": 0.048828125,
+        "Height": 0.05859375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 5,
+        "Y": 1,
+        "Width": 25,
+        "Height": 30
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0006": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0006",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 317,
+        "Y": 0,
+        "Width": 25,
+        "Height": 30
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.6191406,
+        "Y": 0.0,
+        "Width": 0.048828125,
+        "Height": 0.05859375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 5,
+        "Y": 1,
+        "Width": 25,
+        "Height": 30
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0004": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0004",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 171,
+        "Y": 202,
+        "Width": 29,
+        "Height": 25
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.33398438,
+        "Y": 0.39453125,
+        "Width": 0.056640625,
+        "Height": 0.048828125
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 1,
+        "Y": 7,
+        "Width": 29,
+        "Height": 25
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0014": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0014",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 142,
+        "Y": 234,
+        "Width": 29,
+        "Height": 25
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.27734375,
+        "Y": 0.45703125,
+        "Width": 0.056640625,
+        "Height": 0.048828125
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 1,
+        "Y": 7,
+        "Width": 29,
+        "Height": 25
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0016": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0016",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 291,
+        "Y": 31,
+        "Width": 25,
+        "Height": 30
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.5683594,
+        "Y": 0.060546875,
         "Width": 0.048828125,
         "Height": 0.05859375
       },
@@ -461,15 +973,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 58,
-        "Y": 234,
+        "X": 204,
+        "Y": 123,
         "Width": 25,
         "Height": 30
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.11328125,
-        "Y": 0.45703125,
+        "X": 0.3984375,
+        "Y": 0.24023438,
         "Width": 0.048828125,
         "Height": 0.05859375
       },
@@ -493,15 +1005,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 0,
-        "Y": 293,
+        "X": 200,
+        "Y": 170,
         "Width": 25,
         "Height": 30
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.0,
-        "Y": 0.5722656,
+        "X": 0.390625,
+        "Y": 0.33203125,
         "Width": 0.048828125,
         "Height": 0.05859375
       },
@@ -525,15 +1037,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 142,
-        "Y": 170,
+        "X": 59,
+        "Y": 326,
         "Width": 29,
         "Height": 25
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.27734375,
-        "Y": 0.33203125,
+        "X": 0.115234375,
+        "Y": 0.63671875,
         "Width": 0.056640625,
         "Height": 0.048828125
       },
@@ -557,14 +1069,78 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 113,
+        "X": 26,
+        "Y": 354,
+        "Width": 29,
+        "Height": 25
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.05078125,
+        "Y": 0.69140625,
+        "Width": 0.056640625,
+        "Height": 0.048828125
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 1,
+        "Y": 7,
+        "Width": 29,
+        "Height": 25
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0004": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0004",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 226,
+        "Y": 170,
+        "Width": 29,
+        "Height": 25
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.44140625,
+        "Y": 0.33203125,
+        "Width": 0.056640625,
+        "Height": 0.048828125
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 1,
+        "Y": 7,
+        "Width": 29,
+        "Height": 25
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0014": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0014",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 201,
         "Y": 202,
         "Width": 29,
         "Height": 25
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.22070312,
+        "X": 0.39257812,
         "Y": 0.39453125,
         "Width": 0.056640625,
         "Height": 0.048828125
@@ -575,6 +1151,38 @@
         "Y": 7,
         "Width": 29,
         "Height": 25
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0017": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0017",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 291,
+        "Y": 62,
+        "Width": 24,
+        "Height": 30
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.5683594,
+        "Y": 0.12109375,
+        "Width": 0.046875,
+        "Height": 0.05859375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 5,
+        "Y": 1,
+        "Width": 24,
+        "Height": 30
       },
       "AtlasId": 1
     },
@@ -589,47 +1197,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 204,
-        "Y": 62,
+        "X": 233,
+        "Y": 122,
         "Width": 24,
         "Height": 30
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.3984375,
-        "Y": 0.12109375,
-        "Width": 0.046875,
-        "Height": 0.05859375
-      },
-      "TrimArea": {
-        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 5,
-        "Y": 1,
-        "Width": 24,
-        "Height": 30
-      },
-      "AtlasId": 1
-    },
-    "characters\\ShadowCloneSheeptzu_Slice 1_0017": {
-      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
-      "AtlasIndex": 0,
-      "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0017",
-      "Size": {
-        "$type": "Murder.Core.Geometry.Point, Murder",
-        "X": 32,
-        "Y": 32
-      },
-      "SourceRectangle": {
-        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 146,
-        "Y": 124,
-        "Width": 24,
-        "Height": 30
-      },
-      "UV": {
-        "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.28515625,
-        "Y": 0.2421875,
+        "X": 0.45507812,
+        "Y": 0.23828125,
         "Width": 0.046875,
         "Height": 0.05859375
       },
@@ -653,15 +1229,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 26,
-        "Y": 293,
+        "X": 118,
+        "Y": 297,
         "Width": 29,
         "Height": 25
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.05078125,
-        "Y": 0.5722656,
+        "X": 0.23046875,
+        "Y": 0.5800781,
         "Width": 0.056640625,
         "Height": 0.048828125
       },
@@ -685,15 +1261,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 0,
-        "Y": 324,
+        "X": 89,
+        "Y": 326,
         "Width": 29,
         "Height": 25
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.0,
-        "Y": 0.6328125,
+        "X": 0.17382812,
+        "Y": 0.63671875,
         "Width": 0.056640625,
         "Height": 0.048828125
       },
@@ -706,10 +1282,10 @@
       },
       "AtlasId": 1
     },
-    "characters\\MarysLittleLamb_Slice 1_0015": {
+    "characters\\MarysSadLamb_Slice 1_0017": {
       "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
       "AtlasIndex": 0,
-      "Name": "characters\\MarysLittleLamb_Slice 1_0015",
+      "Name": "characters\\MarysSadLamb_Slice 1_0017",
       "Size": {
         "$type": "Murder.Core.Geometry.Point, Murder",
         "X": 32,
@@ -717,15 +1293,47 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 259,
-        "Y": 26,
+        "X": 0,
+        "Y": 411,
+        "Width": 24,
+        "Height": 30
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.0,
+        "Y": 0.8027344,
+        "Width": 0.046875,
+        "Height": 0.05859375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 5,
+        "Y": 1,
+        "Width": 24,
+        "Height": 30
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0015": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0015",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 262,
+        "Y": 122,
         "Width": 28,
         "Height": 24
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.5058594,
-        "Y": 0.05078125,
+        "X": 0.51171875,
+        "Y": 0.23828125,
         "Width": 0.0546875,
         "Height": 0.046875
       },
@@ -735,6 +1343,38 @@
         "Y": 8,
         "Width": 28,
         "Height": 24
+      },
+      "AtlasId": 1
+    },
+    "characters\\ShadowCloneSheeptzu_Slice 1_0017": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\ShadowCloneSheeptzu_Slice 1_0017",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 343,
+        "Y": 26,
+        "Width": 24,
+        "Height": 30
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.6699219,
+        "Y": 0.05078125,
+        "Width": 0.046875,
+        "Height": 0.05859375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 5,
+        "Y": 1,
+        "Width": 24,
+        "Height": 30
       },
       "AtlasId": 1
     },
@@ -749,14 +1389,14 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 233,
+        "X": 317,
         "Y": 62,
         "Width": 24,
         "Height": 24
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.45507812,
+        "X": 0.6191406,
         "Y": 0.12109375,
         "Width": 0.046875,
         "Height": 0.046875
@@ -766,6 +1406,102 @@
         "X": 0,
         "Y": 0,
         "Width": 24,
+        "Height": 24
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0000": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0000",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 464,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.0,
+        "Y": 0.90625,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 3,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysLittleLamb_Slice 1_0015": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysLittleLamb_Slice 1_0015",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 231,
+        "Y": 202,
+        "Width": 28,
+        "Height": 24
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.45117188,
+        "Y": 0.39453125,
+        "Width": 0.0546875,
+        "Height": 0.046875
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 2,
+        "Y": 8,
+        "Width": 28,
+        "Height": 24
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0015": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0015",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 173,
+        "Y": 266,
+        "Width": 28,
+        "Height": 24
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.33789062,
+        "Y": 0.51953125,
+        "Width": 0.0546875,
+        "Height": 0.046875
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 2,
+        "Y": 8,
+        "Width": 28,
         "Height": 24
       },
       "AtlasId": 1
@@ -781,15 +1517,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 175,
-        "Y": 123,
+        "X": 119,
+        "Y": 326,
         "Width": 28,
         "Height": 24
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.34179688,
-        "Y": 0.24023438,
+        "X": 0.23242188,
+        "Y": 0.63671875,
         "Width": 0.0546875,
         "Height": 0.046875
       },
@@ -799,6 +1535,38 @@
         "Y": 8,
         "Width": 28,
         "Height": 24
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0005": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0005",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 59,
+        "Y": 385,
+        "Width": 29,
+        "Height": 21
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.115234375,
+        "Y": 0.7519531,
+        "Width": 0.056640625,
+        "Height": 0.041015625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 1,
+        "Y": 4,
+        "Width": 29,
+        "Height": 21
       },
       "AtlasId": 1
     },
@@ -813,15 +1581,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 143,
-        "Y": 202,
+        "X": 0,
+        "Y": 442,
         "Width": 29,
         "Height": 21
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.27929688,
-        "Y": 0.39453125,
+        "X": 0.0,
+        "Y": 0.86328125,
         "Width": 0.056640625,
         "Height": 0.041015625
       },
@@ -831,6 +1599,134 @@
         "Y": 4,
         "Width": 29,
         "Height": 21
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0005": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0005",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 343,
+        "Y": 57,
+        "Width": 29,
+        "Height": 21
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.6699219,
+        "Y": 0.111328125,
+        "Width": 0.056640625,
+        "Height": 0.041015625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 1,
+        "Y": 4,
+        "Width": 29,
+        "Height": 21
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0001": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0001",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 428,
+        "Y": 0,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.8359375,
+        "Y": 0.0,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 0,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0008": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0008",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 398,
+        "Y": 22,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.77734375,
+        "Y": 0.04296875,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 0,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0009": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0009",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 373,
+        "Y": 61,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.7285156,
+        "Y": 0.119140625,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 3,
+        "Width": 18,
+        "Height": 29
       },
       "AtlasId": 1
     },
@@ -845,15 +1741,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 89,
-        "Y": 265,
+        "X": 260,
+        "Y": 202,
         "Width": 29,
         "Height": 21
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.17382812,
-        "Y": 0.5175781,
+        "X": 0.5078125,
+        "Y": 0.39453125,
         "Width": 0.056640625,
         "Height": 0.041015625
       },
@@ -863,6 +1759,134 @@
         "Y": 4,
         "Width": 29,
         "Height": 21
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0010": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0010",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 343,
+        "Y": 79,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.6699219,
+        "Y": 0.15429688,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 1,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0011": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0011",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 317,
+        "Y": 117,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.6191406,
+        "Y": 0.22851562,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 1,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0018": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0018",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 315,
+        "Y": 170,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.6152344,
+        "Y": 0.33203125,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 2,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysBloodyLamb_Slice 1_0019": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysBloodyLamb_Slice 1_0019",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 290,
+        "Y": 202,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.56640625,
+        "Y": 0.39453125,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 2,
+        "Width": 18,
+        "Height": 29
       },
       "AtlasId": 1
     },
@@ -877,15 +1901,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 173,
-        "Y": 202,
+        "X": 373,
+        "Y": 91,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.33789062,
-        "Y": 0.39453125,
+        "X": 0.7285156,
+        "Y": 0.17773438,
         "Width": 0.03515625,
         "Height": 0.056640625
       },
@@ -909,15 +1933,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 144,
-        "Y": 234,
+        "X": 343,
+        "Y": 109,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.28125,
-        "Y": 0.45703125,
+        "X": 0.6699219,
+        "Y": 0.21289062,
         "Width": 0.03515625,
         "Height": 0.056640625
       },
@@ -941,15 +1965,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 75,
-        "Y": 293,
+        "X": 334,
+        "Y": 170,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.14648438,
-        "Y": 0.5722656,
+        "X": 0.65234375,
+        "Y": 0.33203125,
         "Width": 0.03515625,
         "Height": 0.056640625
       },
@@ -973,15 +1997,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 19,
-        "Y": 350,
+        "X": 309,
+        "Y": 202,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.037109375,
-        "Y": 0.68359375,
+        "X": 0.6035156,
+        "Y": 0.39453125,
         "Width": 0.03515625,
         "Height": 0.056640625
       },
@@ -1005,15 +2029,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 0,
-        "Y": 380,
+        "X": 269,
+        "Y": 234,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.0,
-        "Y": 0.7421875,
+        "X": 0.5253906,
+        "Y": 0.45703125,
         "Width": 0.03515625,
         "Height": 0.056640625
       },
@@ -1037,15 +2061,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 337,
-        "Y": 0,
+        "X": 240,
+        "Y": 266,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.6582031,
-        "Y": 0.0,
+        "X": 0.46875,
+        "Y": 0.51953125,
         "Width": 0.03515625,
         "Height": 0.056640625
       },
@@ -1069,15 +2093,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 318,
-        "Y": 30,
+        "X": 149,
+        "Y": 354,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.62109375,
-        "Y": 0.05859375,
+        "X": 0.29101562,
+        "Y": 0.69140625,
         "Width": 0.03515625,
         "Height": 0.056640625
       },
@@ -1101,15 +2125,271 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 289,
-        "Y": 55,
+        "X": 93,
+        "Y": 411,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.5644531,
-        "Y": 0.107421875,
+        "X": 0.18164062,
+        "Y": 0.8027344,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 2,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0000": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0000",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 328,
+        "Y": 202,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.640625,
+        "Y": 0.39453125,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 3,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0001": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0001",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 288,
+        "Y": 234,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.5625,
+        "Y": 0.45703125,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 0,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0008": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0008",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 259,
+        "Y": 266,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.5058594,
+        "Y": 0.51953125,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 0,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0009": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0009",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 168,
+        "Y": 354,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.328125,
+        "Y": 0.69140625,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 3,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0010": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0010",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 112,
+        "Y": 411,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.21875,
+        "Y": 0.8027344,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 1,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0011": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0011",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 57,
+        "Y": 464,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.111328125,
+        "Y": 0.90625,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 1,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0018": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0018",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 485,
+        "Y": 0,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.9472656,
+        "Y": 0.0,
+        "Width": 0.03515625,
+        "Height": 0.056640625
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 7,
+        "Y": 2,
+        "Width": 18,
+        "Height": 29
+      },
+      "AtlasId": 1
+    },
+    "characters\\MarysSadLamb_Slice 1_0019": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\MarysSadLamb_Slice 1_0019",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 32,
+        "Y": 32
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 466,
+        "Y": 30,
+        "Width": 18,
+        "Height": 29
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.91015625,
+        "Y": 0.05859375,
         "Width": 0.03515625,
         "Height": 0.056640625
       },
@@ -1133,15 +2413,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 0,
-        "Y": 410,
+        "X": 131,
+        "Y": 411,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.0,
-        "Y": 0.80078125,
+        "X": 0.25585938,
+        "Y": 0.8027344,
         "Width": 0.03515625,
         "Height": 0.056640625
       },
@@ -1165,15 +2445,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 356,
-        "Y": 0,
+        "X": 76,
+        "Y": 464,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.6953125,
-        "Y": 0.0,
+        "X": 0.1484375,
+        "Y": 0.90625,
         "Width": 0.03515625,
         "Height": 0.056640625
       },
@@ -1197,14 +2477,14 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 337,
+        "X": 485,
         "Y": 30,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.6582031,
+        "X": 0.9472656,
         "Y": 0.05859375,
         "Width": 0.03515625,
         "Height": 0.056640625
@@ -1229,14 +2509,14 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 318,
+        "X": 466,
         "Y": 60,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.62109375,
+        "X": 0.91015625,
         "Y": 0.1171875,
         "Width": 0.03515625,
         "Height": 0.056640625
@@ -1261,15 +2541,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 289,
-        "Y": 85,
+        "X": 447,
+        "Y": 90,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.5644531,
-        "Y": 0.16601562,
+        "X": 0.8730469,
+        "Y": 0.17578125,
         "Width": 0.03515625,
         "Height": 0.056640625
       },
@@ -1293,15 +2573,15 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 259,
-        "Y": 111,
+        "X": 428,
+        "Y": 120,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.5058594,
-        "Y": 0.21679688,
+        "X": 0.8359375,
+        "Y": 0.234375,
         "Width": 0.03515625,
         "Height": 0.056640625
       },
@@ -1325,14 +2605,14 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 240,
+        "X": 391,
         "Y": 170,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.46875,
+        "X": 0.7636719,
         "Y": 0.33203125,
         "Width": 0.03515625,
         "Height": 0.056640625
@@ -1357,14 +2637,14 @@
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 211,
+        "X": 366,
         "Y": 202,
         "Width": 18,
         "Height": 29
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
-        "X": 0.41210938,
+        "X": 0.71484375,
         "Y": 0.39453125,
         "Width": 0.03515625,
         "Height": 0.056640625
