@@ -55,7 +55,9 @@
         "UseUnscaledTime": false,
         "NextAnimations": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
-          "$values": []
+          "$values": [
+            ""
+          ]
         },
         "AnimationStartedTime": -1.0,
         "YSortOffset": 0
