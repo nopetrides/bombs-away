@@ -107,7 +107,7 @@ namespace HelloMurder.StateMachines.Gameplay
 
             entity.SetGlobalPosition(position);
 
-            entity.SetAgent(enemyImpulse, enemyImpulse, 1f);
+            entity.SetAgent(enemyImpulse, enemyImpulse, 0f);
             if (chasePlayer) 
                 entity.SetMoveToPlayer();
         }

@@ -11,7 +11,7 @@
   "AssetResourcesPath": "assets/",
   "ContentECSPath": "ecs/",
   "GenericAssetsPath": "data/",
-  "GameWidth": 512,
+  "GameWidth": 320,
   "GameHeight": 720,
   "GameScale": 2,
   "Fullscreen": false,

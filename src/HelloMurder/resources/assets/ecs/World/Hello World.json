@@ -49,8 +49,8 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 189.0,
-          "_y": 166.0
+          "_x": 83.0,
+          "_y": 89.0
         }
       },
       "IsDeactivated": false,
@@ -573,8 +573,8 @@
           "Height": 22,
           "Origin": {
             "$type": "Murder.Core.Geometry.Point, Murder",
-            "X": 0,
-            "Y": 0
+            "X": -4,
+            "Y": -6
           }
         }
       },
@@ -637,8 +637,13 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 0.0,
-          "_y": 0.0
+          "_x": 200.0,
+          "_y": 200.0
+        },
+        "Murder.Components.CameraFollowComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.CameraFollowComponent, Murder",
+          "Enabled": true,
+          "Style": 1
         }
       },
       "IsDeactivated": false,

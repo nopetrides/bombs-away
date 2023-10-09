@@ -146,6 +146,20 @@
           "B": 0.0,
           "A": 1.0
         }
+      },
+      "Murder.Components.AgentComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.AgentComponent, Murder",
+        "Speed": 100.0,
+        "Acceleration": 100.0,
+        "Friction": 0.0
+      },
+      "Murder.Components.VelocityComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.VelocityComponent, Murder",
+        "Velocity": {
+          "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+          "X": 0.0,
+          "Y": 20.0
+        }
       }
     },
     "IsDeactivated": false,
