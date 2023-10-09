@@ -1,5 +1,6 @@
 {
-  "$type": "Murder.Assets.GameProfile, Murder",
+  "$type": "HelloMurder.Assets.HelloMurderProfile, HelloMurder",
+  "Library": "06cfea1c-576b-4bd2-85f6-7b19cd851839",
   "AtlasFolderName": "atlas/",
   "ContentAsepritePath": "aseprite/",
   "FontPath": "shaders/",
@@ -11,13 +12,13 @@
   "AssetResourcesPath": "assets/",
   "ContentECSPath": "ecs/",
   "GenericAssetsPath": "data/",
-  "GameWidth": 720,
-  "GameHeight": 512,
+  "GameWidth": 320,
+  "GameHeight": 180,
   "GameScale": 2,
   "Fullscreen": false,
   "TargetFps": 60,
   "FixedUpdateFactor": 2.0,
-  "IsVSyncEnabled": true,
+  "IsVSyncEnabled": false,
   "ShowUiDebug": true,
   "PushAwayInterval": 0.05,
   "StartingScene": "e09343c5-19b5-419d-88f4-f06ed35a4752",
@@ -197,13 +198,13 @@
   },
   "BackColor": {
     "$type": "Murder.Core.Graphics.Color, Murder",
-    "R": 0.12156863,
-    "G": 0.15294118,
-    "B": 0.23921569,
+    "R": 0.0,
+    "G": 0.0,
+    "B": 0.0,
     "A": 1.0
   },
   "DefaultPalette": "images/murder_palette",
   "MissingImage": "485a9a13-e62b-7215-dbc3-9e1df4bcba73",
   "Name": "Game Profile",
-  "Guid": "70ca35f4-bbb2-4de1-b2a3-27eab3f49c1f"
+  "Guid": "6c83eaf8-a311-42c5-ab17-c5460f616a38"
 }

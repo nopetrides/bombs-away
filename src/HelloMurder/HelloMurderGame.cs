@@ -2,6 +2,7 @@
 using HelloMurder.Core;
 using Microsoft.Xna.Framework.Input;
 using Murder;
+using Murder.Assets;
 using Murder.Core.Input;
 using System.Collections.Immutable;
 
@@ -11,6 +12,7 @@ namespace HelloMurder
     {
         public static HelloMurderProfile Profile => (HelloMurderProfile)Game.Profile;
         public string Name => "HelloMurder";
+        public GameProfile CreateGameProfile() => new HelloMurderProfile();
 
         public void Initialize()
         {
