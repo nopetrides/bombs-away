@@ -20,7 +20,7 @@
       },
       "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.AgentSpriteComponent, Murder",
-        "AnimationGuid": "f90eeb33-6211-35e5-daf7-7a61c5669c7f",
+        "AnimationGuid": "b67b1194-8186-9e1f-c195-2cd6bd9e1648",
         "TargetSpriteBatch": 0,
         "YSortOffset": 0,
         "IdlePrefix": "Fly_",

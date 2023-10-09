@@ -10,7 +10,8 @@
     "_removeComponent": {
       "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
       "$values": [
-        "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
       ]
     },
     "_childrenModifiers": {
@@ -19,17 +20,6 @@
     "_ignorePrefabChildren": false,
     "_components": {
       "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
-      "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.AgentSpriteComponent, Murder",
-        "AnimationGuid": "c6d9a598-ca03-69e8-4eee-2a74ef5f36cb",
-        "TargetSpriteBatch": 0,
-        "YSortOffset": 20,
-        "IdlePrefix": "idle_",
-        "WalkPrefix": "walk_",
-        "Suffix": "e,se,s,se,e,ne,n,ne",
-        "AngleSuffixOffset": 0.0,
-        "FlipWest": true
-      },
       "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
         "MaxHealth": 2,
