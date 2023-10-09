@@ -5,7 +5,9 @@ using Bang.StateMachines;
 using Bang.Systems;
 using HelloMurder.Components;
 using HelloMurder.Messages;
+using HelloMurder.Services;
 using Murder.Diagnostics;
+using Murder.Messages;
 using Murder.Services;
 using System.Numerics;
 
@@ -23,14 +25,23 @@ namespace HelloMurder.Systems.Interactions
             entity.SetHealth(hpAfterDamage);
 
             // Play any collision vfx, sfx
+            if (entity.HasEnemy())
+                LibraryServices.Explode(0, world, msg.Center);
 
             // Cleanup dead entities
             if (hpAfterDamage.Health <= 0)
             {
                 // optional way to build
-                //entity.SendMessage(new FatalDamageMessage());
 
                 CoroutineServices.RunCoroutine(world, KillAndCleanUp(entity));
+                // Send fatal damage message
+
+                entity.SendMessage(new FatalDamageMessage());
+            }
+            else
+            {
+                // Send damaged message
+                //entity.SendMessage(new HealthDamagedMessage());
             }
         }
 

@@ -6,6 +6,8 @@ using HelloMurder.Components;
 using HelloMurder.Messages;
 using Murder.Diagnostics;
 using Murder.Messages;
+using Murder.Utilities;
+using System.Numerics;
 
 namespace HelloMurder.Systems.Physics
 {
@@ -25,8 +27,14 @@ namespace HelloMurder.Systems.Physics
 
         public static void HandleCollision(Entity entity1, Entity entity2)
         {
-            entity1.SendMessage(new DamagingCollisionMessage(entity2.TryGetDealsDamageOnCollision()?.Damage ?? 0, entity2.EntityId));
-            entity2.SendMessage(new DamagingCollisionMessage(entity1.TryGetDealsDamageOnCollision()?.Damage ?? 0, entity1.EntityId));
+            Vector2 center = Vector2.Lerp(entity1.GetGlobalTransform().Vector2, entity2.GetGlobalTransform().Vector2, 0.5f);
+
+            entity1.SendMessage(new DamagingCollisionMessage(entity2.TryGetDealsDamageOnCollision()?.Damage ?? 0,
+                entity2.EntityId, 
+                center));
+            entity2.SendMessage(new DamagingCollisionMessage(entity1.TryGetDealsDamageOnCollision()?.Damage ?? 0,
+                entity1.EntityId, 
+                center));
         }
     }
 }

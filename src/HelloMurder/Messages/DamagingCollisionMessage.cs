@@ -1,4 +1,5 @@
 ﻿using Bang.Components;
+using System.Numerics;
 
 namespace HelloMurder.Messages
 {
@@ -9,11 +10,13 @@ namespace HelloMurder.Messages
     {
         public readonly int DamageDealt = 1;
         public readonly int OtherEntityId = -1;
+        public readonly Vector2 Center = Vector2.Zero;
 
-        public DamagingCollisionMessage(int damageDealt, int otherEntityId) : this()
+        public DamagingCollisionMessage(int damageDealt, int otherEntityId, Vector2 center) : this()
         {
             OtherEntityId = otherEntityId;
             DamageDealt = damageDealt;
+            Center = center;
         }
     }
 }

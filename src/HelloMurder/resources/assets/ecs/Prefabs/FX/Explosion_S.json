@@ -31,10 +31,12 @@
         "UseUnscaledTime": false,
         "NextAnimations": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
-          "$values": []
+          "$values": [
+            ""
+          ]
         },
-        "AnimationStartedTime": -1.0,
-        "YSortOffset": 40
+        "AnimationStartedTime": 0.0,
+        "YSortOffset": 64
       }
     },
     "IsDeactivated": false,

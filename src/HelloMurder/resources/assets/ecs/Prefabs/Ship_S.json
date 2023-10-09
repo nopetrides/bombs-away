@@ -168,6 +168,9 @@
       "Murder.Components.FacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.FacingComponent, Murder",
         "Direction": 2
+      },
+      "HelloMurder.Components.EnemyComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.EnemyComponent, HelloMurder"
       }
     },
     "IsDeactivated": false,
