@@ -20,7 +20,7 @@ namespace HelloMurder.StateMachines
         private MenuInfo _menuInfo = new();
 
         private MenuInfo GetMainMenuOptions() =>
-            new MenuInfo(new MenuOption[] { new("Continue", selectable: MurderSaveServices.CanLoadSave()), new("New Game"), new("Options"), new("Exit") });
+            new MenuInfo(new MenuOption[] {new("Play"), new("Options"), new("Exit") });
 
         private MenuInfo GetOptionOptions() =>
             new MenuInfo(new MenuOption[] {
@@ -51,22 +51,16 @@ namespace HelloMurder.StateMachines
                 {
                     switch (_menuInfo.Selection)
                     {
-                        case 0: //  Continue Game
-                            Guid? targetWorld = MurderSaveServices.LoadSaveAndFetchTargetWorld();
-                            Game.Instance.QueueWorldTransition(targetWorld ?? _newGameWorld);
-
-                            break;
-
-                        case 1: //  New Game
+                        case 0: //  Play
                             Game.Data.DeleteAllSaves();
                             Game.Instance.QueueWorldTransition(_newGameWorld);
                             break;
 
-                        case 2: // Options
+                        case 1: // Options
                             yield return GoTo(Options);
                             break;
 
-                        case 3: //  Exit
+                        case 2: //  Exit
                             Game.Instance.QueueExitGame();
                             break;
 
