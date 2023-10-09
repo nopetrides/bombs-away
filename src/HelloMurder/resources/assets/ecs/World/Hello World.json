@@ -89,7 +89,7 @@
         },
         "Murder.Components.CameraFollowComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.CameraFollowComponent, Murder",
-          "Enabled": true,
+          "Enabled": false,
           "Style": 1
         }
       },
