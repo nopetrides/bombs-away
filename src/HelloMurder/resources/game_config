@@ -17,7 +17,7 @@
   "Fullscreen": false,
   "TargetFps": 60,
   "FixedUpdateFactor": 2.0,
-  "IsVSyncEnabled": false,
+  "IsVSyncEnabled": true,
   "ShowUiDebug": true,
   "PushAwayInterval": 0.05,
   "StartingScene": "e09343c5-19b5-419d-88f4-f06ed35a4752",
