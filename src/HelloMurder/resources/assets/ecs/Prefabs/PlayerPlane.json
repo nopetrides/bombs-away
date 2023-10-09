@@ -1,0 +1,55 @@
+{
+  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "ShowOnPrefabSelector": false,
+  "_entity": {
+    "$type": "Murder.Prefabs.EntityInstance, Murder",
+    "_guid": "183a58a8-cf83-4c4e-b5d6-2a4468919c52",
+    "_name": "",
+    "_components": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent, Murder",
+        "_x": 0.0,
+        "_y": 0.0
+      },
+      "Murder.Components.AgentComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.AgentComponent, Murder",
+        "Speed": 0.0,
+        "Acceleration": 0.0,
+        "Friction": 0.0
+      },
+      "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.AgentSpriteComponent, Murder",
+        "AnimationGuid": "f90eeb33-6211-35e5-daf7-7a61c5669c7f",
+        "TargetSpriteBatch": 0,
+        "YSortOffset": 0,
+        "IdlePrefix": "Fly_",
+        "WalkPrefix": "Fly_",
+        "Suffix": "Right,Right,Forward,Left,Left,Left,Forward,Right",
+        "AngleSuffixOffset": 0.0,
+        "FlipWest": false
+      },
+      "Murder.Components.FacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.FacingComponent, Murder",
+        "Direction": 2
+      }
+    },
+    "IsDeactivated": false,
+    "ActivateWithParent": false
+  },
+  "Dimensions": {
+    "$type": "Murder.Core.TileDimensions, Murder",
+    "Origin": {
+      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "Size": {
+      "$type": "Murder.Core.Geometry.Point, Murder",
+      "X": 0,
+      "Y": 0
+    }
+  },
+  "Name": "PlayerPlane",
+  "Guid": "def1a7be-1c47-4cd7-b4a9-b485e6cd3159"
+}
