@@ -71,6 +71,9 @@ namespace HelloMurder.Systems
                     entity.SendMessage(new AgentReleaseInputMessage(InputButtons.Attack));
                 }
                 _interacted = false;
+
+
+                entity.SetPlayerSpeed(entity.GetPlayerSpeed().Approach(3f, 1f * Game.FixedDeltaTime));
             }
         }
 
