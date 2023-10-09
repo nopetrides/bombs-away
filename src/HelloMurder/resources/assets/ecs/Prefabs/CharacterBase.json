@@ -18,43 +18,12 @@
         "_x": 0.0,
         "_y": 0.0
       },
-      "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.AgentSpriteComponent, Murder",
-        "AnimationGuid": "b626576d-aefd-d299-6713-ad1287cf028d",
-        "TargetSpriteBatch": 0,
-        "YSortOffset": 20,
-        "IdlePrefix": "idle_",
-        "WalkPrefix": "walk_",
-        "Suffix": "e,se,s,se,e,ne,n,ne",
-        "AngleSuffixOffset": 0.0,
-        "FlipWest": true
-      },
-      "Murder.Components.FacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.FacingComponent, Murder",
-        "Direction": 0
-      },
       "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.ColliderComponent, Murder",
         "Layer": 15,
         "Shapes": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
-          "$values": [
-            {
-              "$type": "Murder.Core.Geometry.BoxShape, Murder",
-              "Width": 25,
-              "Height": 18,
-              "Origin": {
-                "$type": "System.Numerics.Vector2, System.Private.CoreLib",
-                "X": 0.0,
-                "Y": 0.0
-              },
-              "Offset": {
-                "$type": "Murder.Core.Geometry.Point, Murder",
-                "X": -12,
-                "Y": -3
-              }
-            }
-          ]
+          "$values": []
         },
         "DebugColor": {
           "$type": "Murder.Core.Graphics.Color, Murder",
@@ -63,33 +32,6 @@
           "B": 0.0,
           "A": 1.0
         }
-      },
-      "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
-        "MaxHealth": 0,
-        "Health": 0
-      },
-      "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
-        "OnlyOnce": false,
-        "SendMessageOnExit": false,
-        "SendMessageOnStay": false,
-        "CustomEnterMessages": {
-          "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
-          "$values": []
-        },
-        "CustomExitMessages": {
-          "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
-          "$values": []
-        },
-        "PlayerOnly": false
-      },
-      "Murder.Interactions.InteractorComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Interactions.InteractorComponent, Murder"
-      },
-      "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder",
-        "Damage": 1
       }
     },
     "IsDeactivated": false,

@@ -10,6 +10,7 @@ using System.Numerics;
 using HelloMurder.Core.EnemySpawn;
 using Murder.Attributes;
 using Newtonsoft.Json;
+using Murder.Services;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
@@ -103,6 +104,7 @@ namespace HelloMurder.StateMachines.Gameplay
             var bounds = world.Camera.Bounds;
 
             position = bounds.TopLeft;
+            position.Y += entity.GetColliderBoundingBox().Height;
             position.X += Game.Random.NextFloat(0, bounds.Width);
 
             entity.SetGlobalPosition(position);

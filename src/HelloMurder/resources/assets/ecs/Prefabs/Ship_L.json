@@ -1,6 +1,6 @@
 {
   "$type": "Murder.Assets.PrefabAsset, Murder",
-  "ShowOnPrefabSelector": false,
+  "ShowOnPrefabSelector": true,
   "_entity": {
     "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
     "PrefabRef": {
@@ -11,7 +11,8 @@
       "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
       "$values": [
         "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
       ]
     },
     "_childrenModifiers": {
@@ -145,7 +146,7 @@
           "$values": []
         },
         "AnimationStartedTime": -1.0,
-        "YSortOffset": -50
+        "YSortOffset": 0
       },
       "Murder.Components.VelocityComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.VelocityComponent, Murder",
