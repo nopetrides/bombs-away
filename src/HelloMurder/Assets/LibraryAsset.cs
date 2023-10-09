@@ -1,6 +1,7 @@
 ﻿using Murder.Assets;
 using Murder.Attributes;
 using Murder.Utilities;
+using System.Collections.Immutable;
 using System.Numerics;
 
 namespace HelloMurder.Assets
@@ -15,5 +16,11 @@ namespace HelloMurder.Assets
 
         [GameAssetId<WorldAsset>]
         public Guid MainMenu = Guid.Empty;
+
+        [GameAssetId<PrefabAsset>]
+        public Guid BombPrefab = Guid.Empty;
+
+        [GameAssetId<PrefabAsset>]
+        public readonly ImmutableArray<Guid> Explosions = ImmutableArray<Guid>.Empty;
     }
 }

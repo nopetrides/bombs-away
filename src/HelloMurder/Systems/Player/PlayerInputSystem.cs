@@ -1,11 +1,8 @@
 ﻿using Bang.Contexts;
 using Bang.Entities;
 using Bang.Systems;
-using Murder.Core.Geometry;
 using Murder.Components;
 using Murder;
-using Bang.StateMachines;
-using Bang.Components;
 using Murder.Helpers;
 using HelloMurder.Components;
 using HelloMurder.Messages;
