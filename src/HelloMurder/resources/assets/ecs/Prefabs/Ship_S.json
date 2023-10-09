@@ -56,10 +56,10 @@
         "NextAnimations": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
           "$values": [
-            ""
+            "Float_idle"
           ]
         },
-        "AnimationStartedTime": -1.0,
+        "AnimationStartedTime": 0.0,
         "YSortOffset": 0
       },
       "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {

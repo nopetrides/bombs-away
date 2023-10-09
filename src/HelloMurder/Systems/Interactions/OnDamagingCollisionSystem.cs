@@ -28,20 +28,16 @@ namespace HelloMurder.Systems.Interactions
             if (entity.HasEnemy())
                 LibraryServices.Explode(0, world, msg.Center);
 
-            // Cleanup dead entities
+            // Message damaged entities
             if (hpAfterDamage.Health <= 0)
             {
-                // optional way to build
-
-                CoroutineServices.RunCoroutine(world, KillAndCleanUp(entity));
                 // Send fatal damage message
-
                 entity.SendMessage(new FatalDamageMessage());
             }
             else
             {
                 // Send damaged message
-                //entity.SendMessage(new HealthDamagedMessage());
+                entity.SendMessage(new HealthDamagedMessage(msg.DamageDealt));
             }
         }
 
