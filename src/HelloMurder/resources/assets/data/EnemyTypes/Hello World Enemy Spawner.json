@@ -8,7 +8,7 @@
         "$type": "HelloMurder.Core.EnemySpawn.EnemySpawnEvent, HelloMurder",
         "EnemyImpulse": 20.0,
         "ChasePlayer": false,
-        "PrefabToSpawn": "c6a94e00-22a5-4666-a23f-92a02edd56f0",
+        "PrefabToSpawn": "99c113bc-8e3e-40b9-903c-59f6379bfbb7",
         "SpawnTimeStart": 0.0
       },
       {

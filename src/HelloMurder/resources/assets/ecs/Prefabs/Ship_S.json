@@ -43,11 +43,11 @@
       "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.SpriteComponent, Murder",
         "TargetSpriteBatch": 0,
-        "AnimationGuid": "99ad726d-9004-3c2d-2bc7-dd06cbba623e",
+        "AnimationGuid": "edda8c99-fa64-7749-3992-722735cfa17a",
         "Offset": {
           "$type": "System.Numerics.Vector2, System.Private.CoreLib",
-          "X": 0.0,
-          "Y": 0.0
+          "X": 0.5,
+          "Y": 0.48
         },
         "RotateWithFacing": false,
         "FlipWithFacing": false,
