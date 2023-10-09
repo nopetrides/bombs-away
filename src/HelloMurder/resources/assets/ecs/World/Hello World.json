@@ -22,19 +22,19 @@
       "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
       "$values": [
         "5d34f9a7-91d0-4142-82eb-9e1393c88297",
-        "c7214a4f-cddc-4a15-a7a8-52811044d876",
         "20ef3911-f141-4a7d-a2af-a40e252abfcb",
-        "431ed978-31cb-4f44-9072-4b2e4949ee36"
+        "431ed978-31cb-4f44-9072-4b2e4949ee36",
+        "e65aa4e3-7a26-442b-a5be-ff27f224ecec"
       ]
     }
   },
   "_entities": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
-    "c7214a4f-cddc-4a15-a7a8-52811044d876": {
+    "e65aa4e3-7a26-442b-a5be-ff27f224ecec": {
       "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
       "PrefabRef": {
         "$type": "Murder.Prefabs.PrefabReference, Murder",
-        "Guid": "f8fcfe48-a626-4e81-93a8-a9f60d914ccb"
+        "Guid": "def1a7be-1c47-4cd7-b4a9-b485e6cd3159"
       },
       "_removeComponent": {
         "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
@@ -48,14 +48,14 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 186.0,
-          "_y": 233.0
+          "_x": 192.0,
+          "_y": 159.0
         }
       },
       "IsDeactivated": false,
       "ActivateWithParent": false,
-      "_guid": "c7214a4f-cddc-4a15-a7a8-52811044d876",
-      "_name": "CB_Player"
+      "_guid": "e65aa4e3-7a26-442b-a5be-ff27f224ecec",
+      "_name": "PlayerPlane"
     },
     "5d34f9a7-91d0-4142-82eb-9e1393c88297": {
       "$type": "Murder.Prefabs.EntityInstance, Murder",
@@ -453,7 +453,7 @@
   "_entitiesToFolder": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
     "5d34f9a7-91d0-4142-82eb-9e1393c88297": "Room",
-    "c7214a4f-cddc-4a15-a7a8-52811044d876": "Room",
+    "e65aa4e3-7a26-442b-a5be-ff27f224ecec": "Room",
     "20ef3911-f141-4a7d-a2af-a40e252abfcb": "Room",
     "431ed978-31cb-4f44-9072-4b2e4949ee36": "Room"
   },

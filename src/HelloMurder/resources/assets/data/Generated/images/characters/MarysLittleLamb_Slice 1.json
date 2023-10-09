@@ -15,15 +15,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 373,
-          "Y": 91,
+          "X": 353,
+          "Y": 200,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.7285156,
-          "Y": 0.17773438,
+          "X": 0.6894531,
+          "Y": 0.390625,
           "Width": 0.03515625,
           "Height": 0.056640625
         },
@@ -47,15 +47,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 343,
-          "Y": 109,
+          "X": 307,
+          "Y": 234,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.6699219,
-          "Y": 0.21289062,
+          "X": 0.5996094,
+          "Y": 0.45703125,
           "Width": 0.03515625,
           "Height": 0.056640625
         },
@@ -79,15 +79,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 146,
-          "Y": 32,
+          "X": 0,
+          "Y": 298,
           "Width": 28,
           "Height": 31
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.28515625,
-          "Y": 0.0625,
+          "X": 0.0,
+          "Y": 0.58203125,
           "Width": 0.0546875,
           "Height": 0.060546875
         },
@@ -111,14 +111,14 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 29,
+          "X": 85,
           "Y": 266,
           "Width": 28,
           "Height": 28
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.056640625,
+          "X": 0.16601562,
           "Y": 0.51953125,
           "Width": 0.0546875,
           "Height": 0.0546875
@@ -143,15 +143,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 59,
-          "Y": 326,
+          "X": 110,
+          "Y": 330,
           "Width": 29,
           "Height": 25
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.115234375,
-          "Y": 0.63671875,
+          "X": 0.21484375,
+          "Y": 0.64453125,
           "Width": 0.056640625,
           "Height": 0.048828125
         },
@@ -175,15 +175,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 0,
-          "Y": 442,
+          "X": 353,
+          "Y": 52,
           "Width": 29,
           "Height": 21
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.0,
-          "Y": 0.86328125,
+          "X": 0.6894531,
+          "Y": 0.1015625,
           "Width": 0.056640625,
           "Height": 0.041015625
         },
@@ -207,15 +207,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 145,
-          "Y": 202,
+          "X": 240,
+          "Y": 91,
           "Width": 25,
           "Height": 30
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.28320312,
-          "Y": 0.39453125,
+          "X": 0.46875,
+          "Y": 0.17773438,
           "Width": 0.048828125,
           "Height": 0.05859375
         },
@@ -239,15 +239,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 116,
-          "Y": 202,
+          "X": 175,
+          "Y": 128,
           "Width": 28,
           "Height": 27
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.2265625,
-          "Y": 0.39453125,
+          "X": 0.34179688,
+          "Y": 0.25,
           "Width": 0.0546875,
           "Height": 0.052734375
         },
@@ -271,15 +271,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 334,
-          "Y": 170,
+          "X": 288,
+          "Y": 264,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.65234375,
-          "Y": 0.33203125,
+          "X": 0.5625,
+          "Y": 0.515625,
           "Width": 0.03515625,
           "Height": 0.056640625
         },
@@ -303,15 +303,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 309,
-          "Y": 202,
+          "X": 236,
+          "Y": 298,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.6035156,
-          "Y": 0.39453125,
+          "X": 0.4609375,
+          "Y": 0.58203125,
           "Width": 0.03515625,
           "Height": 0.056640625
         },
@@ -335,15 +335,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 269,
-          "Y": 234,
+          "X": 207,
+          "Y": 330,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.5253906,
-          "Y": 0.45703125,
+          "X": 0.40429688,
+          "Y": 0.64453125,
           "Width": 0.03515625,
           "Height": 0.056640625
         },
@@ -367,15 +367,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 240,
-          "Y": 266,
+          "X": 149,
+          "Y": 390,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.46875,
-          "Y": 0.51953125,
+          "X": 0.29101562,
+          "Y": 0.76171875,
           "Width": 0.03515625,
           "Height": 0.056640625
         },
@@ -399,15 +399,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 102,
-          "Y": 109,
+          "X": 240,
+          "Y": 0,
           "Width": 28,
           "Height": 31
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.19921875,
-          "Y": 0.21289062,
+          "X": 0.46875,
+          "Y": 0.0,
           "Width": 0.0546875,
           "Height": 0.060546875
         },
@@ -431,15 +431,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 204,
-          "Y": 32,
+          "X": 211,
+          "Y": 64,
           "Width": 28,
           "Height": 30
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.3984375,
-          "Y": 0.0625,
+          "X": 0.41210938,
+          "Y": 0.125,
           "Width": 0.0546875,
           "Height": 0.05859375
         },
@@ -463,15 +463,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 26,
-          "Y": 354,
+          "X": 89,
+          "Y": 361,
           "Width": 29,
           "Height": 25
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.05078125,
-          "Y": 0.69140625,
+          "X": 0.17382812,
+          "Y": 0.7050781,
           "Width": 0.056640625,
           "Height": 0.048828125
         },
@@ -495,15 +495,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 231,
-          "Y": 202,
+          "X": 140,
+          "Y": 330,
           "Width": 28,
           "Height": 24
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.45117188,
-          "Y": 0.39453125,
+          "X": 0.2734375,
+          "Y": 0.64453125,
           "Width": 0.0546875,
           "Height": 0.046875
         },
@@ -527,15 +527,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 116,
-          "Y": 234,
+          "X": 211,
+          "Y": 123,
           "Width": 25,
           "Height": 30
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.2265625,
-          "Y": 0.45703125,
+          "X": 0.41210938,
+          "Y": 0.24023438,
           "Width": 0.048828125,
           "Height": 0.05859375
         },
@@ -559,14 +559,14 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 233,
+          "X": 240,
           "Y": 122,
           "Width": 24,
           "Height": 30
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.45507812,
+          "X": 0.46875,
           "Y": 0.23828125,
           "Width": 0.046875,
           "Height": 0.05859375
@@ -591,15 +591,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 149,
-          "Y": 354,
+          "X": 123,
+          "Y": 421,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.29101562,
-          "Y": 0.69140625,
+          "X": 0.24023438,
+          "Y": 0.8222656,
           "Width": 0.03515625,
           "Height": 0.056640625
         },
@@ -623,15 +623,15 @@
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 93,
-          "Y": 411,
+          "X": 481,
+          "Y": 0,
           "Width": 18,
           "Height": 29
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.18164062,
-          "Y": 0.8027344,
+          "X": 0.9394531,
+          "Y": 0.0,
           "Width": 0.03515625,
           "Height": 0.056640625
         },
@@ -648,76 +648,13 @@
   },
   "Animations": {
     "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.String, System.Private.CoreLib],[Murder.Core.Graphics.Animation, Murder]], System.Collections.Immutable",
-    "walk_se": {
+    "walk_n": {
       "$type": "Murder.Core.Graphics.Animation, Murder",
       "Frames": {
         "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
         "$values": [
-          6,
-          7
-        ]
-      },
-      "FramesDuration": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          100.0,
-          100.0
-        ]
-      },
-      "Events": {
-        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
-      },
-      "AnimationDuration": 0.2
-    },
-    "idle_n": {
-      "$type": "Murder.Core.Graphics.Animation, Murder",
-      "Frames": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          10,
-          11
-        ]
-      },
-      "FramesDuration": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          100.0,
-          100.0
-        ]
-      },
-      "Events": {
-        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
-      },
-      "AnimationDuration": 0.2
-    },
-    "walk_s": {
-      "$type": "Murder.Core.Graphics.Animation, Murder",
-      "Frames": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          8,
-          9
-        ]
-      },
-      "FramesDuration": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          100.0,
-          100.0
-        ]
-      },
-      "Events": {
-        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
-      },
-      "AnimationDuration": 0.2
-    },
-    "idle_se": {
-      "$type": "Murder.Core.Graphics.Animation, Murder",
-      "Frames": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          16,
-          17
+          0,
+          1
         ]
       },
       "FramesDuration": {
@@ -789,27 +726,6 @@
       },
       "AnimationDuration": 2.0
     },
-    "idle_e": {
-      "$type": "Murder.Core.Graphics.Animation, Murder",
-      "Frames": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          14,
-          15
-        ]
-      },
-      "FramesDuration": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
-        "$values": [
-          100.0,
-          100.0
-        ]
-      },
-      "Events": {
-        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
-      },
-      "AnimationDuration": 0.2
-    },
     "walk_e": {
       "$type": "Murder.Core.Graphics.Animation, Murder",
       "Frames": {
@@ -831,13 +747,34 @@
       },
       "AnimationDuration": 0.2
     },
-    "idle_s": {
+    "idle_n": {
       "$type": "Murder.Core.Graphics.Animation, Murder",
       "Frames": {
         "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
         "$values": [
-          18,
-          19
+          10,
+          11
+        ]
+      },
+      "FramesDuration": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          100.0,
+          100.0
+        ]
+      },
+      "Events": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
+      },
+      "AnimationDuration": 0.2
+    },
+    "idle_e": {
+      "$type": "Murder.Core.Graphics.Animation, Murder",
+      "Frames": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          14,
+          15
         ]
       },
       "FramesDuration": {
@@ -873,6 +810,48 @@
       },
       "AnimationDuration": 0.2
     },
+    "walk_s": {
+      "$type": "Murder.Core.Graphics.Animation, Murder",
+      "Frames": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          8,
+          9
+        ]
+      },
+      "FramesDuration": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          100.0,
+          100.0
+        ]
+      },
+      "Events": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
+      },
+      "AnimationDuration": 0.2
+    },
+    "idle_s": {
+      "$type": "Murder.Core.Graphics.Animation, Murder",
+      "Frames": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          18,
+          19
+        ]
+      },
+      "FramesDuration": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          100.0,
+          100.0
+        ]
+      },
+      "Events": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
+      },
+      "AnimationDuration": 0.2
+    },
     "walk_ne": {
       "$type": "Murder.Core.Graphics.Animation, Murder",
       "Frames": {
@@ -894,13 +873,34 @@
       },
       "AnimationDuration": 0.2
     },
-    "walk_n": {
+    "walk_se": {
       "$type": "Murder.Core.Graphics.Animation, Murder",
       "Frames": {
         "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
         "$values": [
-          0,
-          1
+          6,
+          7
+        ]
+      },
+      "FramesDuration": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          100.0,
+          100.0
+        ]
+      },
+      "Events": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
+      },
+      "AnimationDuration": 0.2
+    },
+    "idle_se": {
+      "$type": "Murder.Core.Graphics.Animation, Murder",
+      "Frames": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          16,
+          17
         ]
       },
       "FramesDuration": {

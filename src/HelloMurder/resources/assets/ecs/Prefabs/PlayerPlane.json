@@ -1,6 +1,6 @@
 {
   "$type": "Murder.Assets.PrefabAsset, Murder",
-  "ShowOnPrefabSelector": false,
+  "ShowOnPrefabSelector": true,
   "_entity": {
     "$type": "Murder.Prefabs.EntityInstance, Murder",
     "_guid": "183a58a8-cf83-4c4e-b5d6-2a4468919c52",
@@ -14,9 +14,9 @@
       },
       "Murder.Components.AgentComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.AgentComponent, Murder",
-        "Speed": 0.0,
-        "Acceleration": 0.0,
-        "Friction": 0.0
+        "Speed": 100.0,
+        "Acceleration": 100.0,
+        "Friction": 1.0
       },
       "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.AgentSpriteComponent, Murder",
@@ -32,6 +32,80 @@
       "Murder.Components.FacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.FacingComponent, Murder",
         "Direction": 2
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent, Murder",
+        "Layer": 8,
+        "Shapes": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
+          "$values": [
+            {
+              "$type": "Murder.Core.Geometry.PolygonShape, Murder",
+              "Polygon": {
+                "$type": "Murder.Core.Geometry.Polygon, Murder",
+                "Vertices": {
+                  "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Numerics.Vector2, System.Private.CoreLib]], System.Collections.Immutable",
+                  "$values": [
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -14.0,
+                      "Y": 2.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -15.0,
+                      "Y": -7.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -3.0,
+                      "Y": -12.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 3.0,
+                      "Y": -12.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 15.0,
+                      "Y": -7.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 14.0,
+                      "Y": 2.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 5.0,
+                      "Y": 15.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -5.0,
+                      "Y": 15.0
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "DebugColor": {
+          "$type": "Murder.Core.Graphics.Color, Murder",
+          "R": 0.99609375,
+          "G": 0.47265625,
+          "B": 0.7734375,
+          "A": 1.0
+        }
+      },
+      "HelloMurder.Components.PlayerComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.PlayerComponent, HelloMurder"
+      },
+      "HelloMurder.Systems.PlayerSpeedComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Systems.PlayerSpeedComponent, HelloMurder",
+        "Speed": 0.0
       }
     },
     "IsDeactivated": false,
