@@ -12,7 +12,7 @@
   "ContentECSPath": "ecs/",
   "GenericAssetsPath": "data/",
   "GameWidth": 320,
-  "GameHeight": 180,
+  "GameHeight": 720,
   "GameScale": 2,
   "Fullscreen": false,
   "TargetFps": 60,

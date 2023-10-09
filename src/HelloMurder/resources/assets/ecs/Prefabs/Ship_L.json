@@ -39,6 +39,127 @@
           "$values": []
         },
         "PlayerOnly": true
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent, Murder",
+        "Layer": 14,
+        "Shapes": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
+          "$values": [
+            {
+              "$type": "Murder.Core.Geometry.PolygonShape, Murder",
+              "Polygon": {
+                "$type": "Murder.Core.Geometry.Polygon, Murder",
+                "Vertices": {
+                  "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Numerics.Vector2, System.Private.CoreLib]], System.Collections.Immutable",
+                  "$values": [
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -3.0,
+                      "Y": 32.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -9.0,
+                      "Y": 28.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -13.0,
+                      "Y": 22.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -13.0,
+                      "Y": -22.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -9.0,
+                      "Y": -28.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": -3.0,
+                      "Y": -32.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 3.0,
+                      "Y": -32.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 9.0,
+                      "Y": -28.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 13.0,
+                      "Y": -22.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 13.0,
+                      "Y": 22.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 9.0,
+                      "Y": 28.0
+                    },
+                    {
+                      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+                      "X": 3.0,
+                      "Y": 32.0
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "DebugColor": {
+          "$type": "Murder.Core.Graphics.Color, Murder",
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0
+        }
+      },
+      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteComponent, Murder",
+        "TargetSpriteBatch": 0,
+        "AnimationGuid": "74aaaf46-0a15-b3e6-9940-4635612218fb",
+        "Offset": {
+          "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "RotateWithFacing": false,
+        "FlipWithFacing": false,
+        "HighlightStyle": 2,
+        "UseUnscaledTime": false,
+        "NextAnimations": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
+          "$values": []
+        },
+        "AnimationStartedTime": -1.0,
+        "YSortOffset": 0
+      },
+      "Murder.Components.VelocityComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.VelocityComponent, Murder",
+        "Velocity": {
+          "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+          "X": 0.0,
+          "Y": 20.0
+        }
+      },
+      "Murder.Components.AgentComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.AgentComponent, Murder",
+        "Speed": 100.0,
+        "Acceleration": 100.0,
+        "Friction": 0.0
       }
     },
     "IsDeactivated": false,

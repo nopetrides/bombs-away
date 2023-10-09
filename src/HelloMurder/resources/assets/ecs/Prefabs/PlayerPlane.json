@@ -22,7 +22,7 @@
         "$type": "Murder.Components.AgentSpriteComponent, Murder",
         "AnimationGuid": "b67b1194-8186-9e1f-c195-2cd6bd9e1648",
         "TargetSpriteBatch": 0,
-        "YSortOffset": 0,
+        "YSortOffset": 10,
         "IdlePrefix": "Fly_",
         "WalkPrefix": "Fly_",
         "Suffix": "Right,Right,Forward,Left,Left,Left,Forward,Right",
