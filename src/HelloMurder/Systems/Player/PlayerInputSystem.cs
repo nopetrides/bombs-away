@@ -50,6 +50,10 @@ namespace HelloMurder.Systems
                     entity.SetAgentImpulse(
                         _lockMovement ? Vector2.Zero : _cachedInputAxis, direction);
                 }
+                else
+                {
+                    entity.SetFacing(Direction.Up);
+                }
 
                 if (_cachedInputSkill > 0)
                 {

@@ -1,6 +1,6 @@
 {
   "$type": "HelloMurder.Assets.EnemySpawnerDataAsset, HelloMurder",
-  "StartingSpawnDelay": 3.0,
+  "StartingSpawnDelay": 5.0,
   "EnemySpawns": {
     "$type": "System.Collections.Immutable.ImmutableArray`1[[HelloMurder.Core.EnemySpawn.EnemySpawnEvent, HelloMurder]], System.Collections.Immutable",
     "$values": [

@@ -30,7 +30,7 @@ namespace HelloMurder.Systems.Interactions
                 // optional way to build
                 //entity.SendMessage(new FatalDamageMessage());
 
-                CoroutineServices.RunCoroutine(entity, KillAndCleanUp(entity));
+                CoroutineServices.RunCoroutine(world, KillAndCleanUp(entity));
             }
         }
 
@@ -38,6 +38,7 @@ namespace HelloMurder.Systems.Interactions
         {
             entity.SetCollider(entity.GetCollider().SetLayer(0));
             entity.SetAgentImpulse(Vector2.Zero);
+            entity.SetVelocity(Vector2.Zero);
             entity.SetFriction(1.0f);
             
             // In case the entity has these

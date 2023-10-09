@@ -53,6 +53,8 @@ namespace HelloMurder.StateMachines.Gameplay
                 GameLogger.Warning("There are no enemies here! Was this intentional?");
                 yield break;
             }
+            // Wait one frame for the random generator to get seeded
+            yield return Wait.NextFrame;
 
             float time = 0;
             float currentSpawnDelay = spawnerData.StartingSpawnDelay;

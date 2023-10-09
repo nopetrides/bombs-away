@@ -52,6 +52,7 @@ namespace HelloMurder
 
             Game.Input.Register(InputButtons.Attack, Keys.Z);
             Game.Input.Register(InputButtons.Attack, Buttons.X);
+            Game.Input.Register(InputButtons.Attack, Keys.Space);
 
             Game.Input.Register(InputButtons.Submit, Keys.Enter, Keys.Space);
             Game.Input.Register(InputButtons.SubmitWithEnter, Keys.Enter);
