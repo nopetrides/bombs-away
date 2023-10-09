@@ -1,6 +1,6 @@
 {
   "$type": "Murder.Assets.PrefabAsset, Murder",
-  "ShowOnPrefabSelector": true,
+  "ShowOnPrefabSelector": false,
   "_entity": {
     "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
     "PrefabRef": {
@@ -28,7 +28,7 @@
       },
       "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
-        "OnlyOnce": true,
+        "OnlyOnce": false,
         "SendMessageOnExit": false,
         "SendMessageOnStay": false,
         "CustomEnterMessages": {
@@ -39,7 +39,7 @@
           "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
           "$values": []
         },
-        "PlayerOnly": true
+        "PlayerOnly": false
       },
       "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.ColliderComponent, Murder",
@@ -161,6 +161,14 @@
         "Speed": 100.0,
         "Acceleration": 100.0,
         "Friction": 0.0
+      },
+      "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder",
+        "Damage": 1
+      },
+      "Murder.Components.FacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.FacingComponent, Murder",
+        "Direction": 2
       }
     },
     "IsDeactivated": false,

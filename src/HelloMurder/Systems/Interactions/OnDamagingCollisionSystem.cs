@@ -38,6 +38,7 @@ namespace HelloMurder.Systems.Interactions
         {
             entity.SetCollider(entity.GetCollider().SetLayer(0));
             entity.SetAgentImpulse(Vector2.Zero);
+            entity.SetFriction(1.0f);
             
             // In case the entity has these
             entity.RemovePlayer();
