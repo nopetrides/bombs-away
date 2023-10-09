@@ -2,34 +2,98 @@
   "$type": "Murder.Core.Graphics.TextureAtlas, Murder",
   "_entries": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[Murder.Core.Graphics.AtlasCoordinates, Murder]], System.Private.CoreLib",
-    "tiles\\water_test": {
+    "characters\\ShipLarge": {
       "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
       "AtlasIndex": 0,
-      "Name": "tiles\\water_test",
+      "Name": "characters\\ShipLarge",
       "Size": {
         "$type": "Murder.Core.Geometry.Point, Murder",
-        "X": 32,
-        "Y": 32
+        "X": 64,
+        "Y": 64
       },
       "SourceRectangle": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
         "X": 0,
         "Y": 0,
-        "Width": 32,
-        "Height": 32
+        "Width": 28,
+        "Height": 64
       },
       "UV": {
         "$type": "Murder.Core.Geometry.Rectangle, Murder",
         "X": 0.0,
         "Y": 0.0,
-        "Width": 1.0,
-        "Height": 1.0
+        "Width": 0.21875,
+        "Height": 0.5
       },
       "TrimArea": {
         "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-        "X": 0,
+        "X": 18,
         "Y": 0,
-        "Width": 32,
+        "Width": 28,
+        "Height": 64
+      },
+      "AtlasId": 4
+    },
+    "characters\\ShipMedium": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\ShipMedium",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 64,
+        "Y": 64
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 29,
+        "Y": 0,
+        "Width": 28,
+        "Height": 48
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.2265625,
+        "Y": 0.0,
+        "Width": 0.21875,
+        "Height": 0.375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 18,
+        "Y": 8,
+        "Width": 28,
+        "Height": 48
+      },
+      "AtlasId": 4
+    },
+    "characters\\ShipSmall": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "characters\\ShipSmall",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 64,
+        "Y": 64
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 65,
+        "Width": 28,
+        "Height": 32
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.0,
+        "Y": 0.5078125,
+        "Width": 0.21875,
+        "Height": 0.25
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 18,
+        "Y": 16,
+        "Width": 28,
         "Height": 32
       },
       "AtlasId": 4

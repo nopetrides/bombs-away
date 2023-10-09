@@ -194,6 +194,38 @@
       },
       "AtlasId": 1
     },
+    "tiles\\clouds_test": {
+      "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+      "AtlasIndex": 0,
+      "Name": "tiles\\clouds_test",
+      "Size": {
+        "$type": "Murder.Core.Geometry.Point, Murder",
+        "X": 128,
+        "Y": 128
+      },
+      "SourceRectangle": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 0,
+        "Y": 234,
+        "Width": 12,
+        "Height": 7
+      },
+      "UV": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.0,
+        "Y": 0.9140625,
+        "Width": 0.046875,
+        "Height": 0.02734375
+      },
+      "TrimArea": {
+        "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+        "X": 58,
+        "Y": 61,
+        "Width": 12,
+        "Height": 7
+      },
+      "AtlasId": 1
+    },
     "tiles\\checkered_floor": {
       "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
       "AtlasIndex": 0,
