@@ -11,8 +11,7 @@
       "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
       "$values": [
         "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Murder.Components.FacingComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
       ]
     },
     "_childrenModifiers": {
@@ -28,7 +27,7 @@
       },
       "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
-        "OnlyOnce": false,
+        "OnlyOnce": true,
         "SendMessageOnExit": false,
         "SendMessageOnStay": false,
         "CustomEnterMessages": {
@@ -39,7 +38,7 @@
           "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
           "$values": []
         },
-        "PlayerOnly": false
+        "PlayerOnly": true
       },
       "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.ColliderComponent, Murder",
@@ -131,11 +130,11 @@
       "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.SpriteComponent, Murder",
         "TargetSpriteBatch": 0,
-        "AnimationGuid": "74aaaf46-0a15-b3e6-9940-4635612218fb",
+        "AnimationGuid": "c179c6b8-f157-2294-7df5-fd3b9b8efeb7",
         "Offset": {
           "$type": "System.Numerics.Vector2, System.Private.CoreLib",
-          "X": 0.0,
-          "Y": 0.0
+          "X": 0.5,
+          "Y": 0.5
         },
         "RotateWithFacing": false,
         "FlipWithFacing": false,
@@ -146,7 +145,7 @@
           "$values": []
         },
         "AnimationStartedTime": -1.0,
-        "YSortOffset": 0
+        "YSortOffset": -50
       },
       "Murder.Components.VelocityComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.VelocityComponent, Murder",
