@@ -15,7 +15,7 @@ namespace HelloMurder.Systems.Player
     [Messager(typeof(AgentInputMessage))]
     public class SpawnBombSystem : IMessagerSystem
     {
-        private float _timeSinceLastBomb = -5f;
+        private float _timeSinceLastBomb = -1f;
         public void OnMessage(World world, Entity entity, IMessage message)
         {
             if (message == null) return;
@@ -24,7 +24,7 @@ namespace HelloMurder.Systems.Player
             if (input.Button != InputButtons.Attack) return;
 
             // Reload time
-            if (Game.Now < _timeSinceLastBomb + 5f) return;
+            if (Game.Now < _timeSinceLastBomb + 1f) return;
 
             // Spawn a bomb
             Guid prefab = LibraryServices.GetLibrary().BombPrefab;
