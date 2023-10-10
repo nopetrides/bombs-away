@@ -9,6 +9,13 @@
       "d64f1021-b5c0-4a4f-8b29-f5b473856b4f"
     ]
   },
+  "Bounds": {
+    "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+    "X": 0,
+    "Y": 0,
+    "Width": 0,
+    "Height": 0
+  },
   "Name": "DefaultLibrary",
   "Guid": "06cfea1c-576b-4bd2-85f6-7b19cd851839"
 }

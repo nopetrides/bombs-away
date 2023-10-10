@@ -19,7 +19,8 @@ namespace HelloMurder.Components
 
         public GameplayUIManagerComponent AddScore(int scoreToAdd)
         {
-            return new GameplayUIManagerComponent(_score + scoreToAdd);
+            int newScore = CurrentScore + scoreToAdd;
+            return new GameplayUIManagerComponent(newScore);
         }
 
     }

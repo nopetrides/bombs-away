@@ -20,7 +20,6 @@ namespace HelloMurder.StateMachines.Gameplay
         [JsonProperty]
         private readonly float _uiRectHeight = 15f;
 
-        private GameplayUIManagerComponent _managerComponent;
 
         public GameplayUIManager()
         {
@@ -30,7 +29,6 @@ namespace HelloMurder.StateMachines.Gameplay
         private IEnumerator<Wait> Level()
         {
             Entity.SetGameplayUIManager();
-            _managerComponent = Entity.GetGameplayUIManager();
             Entity.SetCustomDraw(DrawScoreUI);
             yield return Wait.NextFrame;
         }
@@ -49,7 +47,8 @@ namespace HelloMurder.StateMachines.Gameplay
                 bgRect,
                 new DrawInfo() { Sort = 0.5f });
 
-            var scoreText = "Score: " + _managerComponent.CurrentScore;
+            var score = Entity.GetGameplayUIManager().CurrentScore;
+            var scoreText = "Score: " + score;
             var textDraw = new DrawInfo() { Sort = 0.4f, Color = Color.Black };
             var position = bgRect.CenterLeft;
             position.X += 6;
