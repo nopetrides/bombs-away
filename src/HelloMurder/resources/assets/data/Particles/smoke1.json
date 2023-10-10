@@ -1,0 +1,286 @@
+{
+  "$type": "Murder.Assets.Graphics.ParticleSystemAsset, Murder",
+  "Emitter": {
+    "$type": "Murder.Core.Particles.Emitter, Murder",
+    "MaxParticlesPool": 100,
+    "Shape": {
+      "$type": "Murder.Core.Particles.EmitterShape, Murder",
+      "Kind": 3,
+      "Rectangle": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.0,
+        "Y": 0.0,
+        "Width": 0.0,
+        "Height": 0.0
+      },
+      "Line": {
+        "$type": "Murder.Core.Geometry.Line2, Murder",
+        "X1": 0.0,
+        "Y1": 0.0,
+        "X2": 0.0,
+        "Y2": 0.0
+      },
+      "Circle": {
+        "$type": "Murder.Core.Geometry.Circle, Murder",
+        "X": 0.0,
+        "Y": 0.0,
+        "Radius": 2.0
+      }
+    },
+    "Angle": {
+      "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
+      "Kind": 0,
+      "_constant": 0.0,
+      "_rangeStart": 0.0,
+      "_rangeEnd": 0.0,
+      "_rangeStartMin": 0.0,
+      "_rangeStartMax": 0.0,
+      "_rangeEndMin": 0.0,
+      "_rangeEndMax": 0.0,
+      "_curvePoints": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": []
+      }
+    },
+    "ParticlesPerSecond": {
+      "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
+      "Kind": 0,
+      "_constant": 4.0,
+      "_rangeStart": 0.0,
+      "_rangeEnd": 0.0,
+      "_rangeStartMin": 0.0,
+      "_rangeStartMax": 0.0,
+      "_rangeEndMin": 0.0,
+      "_rangeEndMax": 0.0,
+      "_curvePoints": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": []
+      }
+    },
+    "Burst": {
+      "$type": "Murder.Core.Particles.ParticleIntValueProperty, Murder",
+      "Kind": 0,
+      "_constant": 1,
+      "_rangeStart": 0,
+      "_rangeEnd": 0,
+      "_rangeStartMin": 0,
+      "_rangeStartMax": 0,
+      "_rangeEndMin": 0,
+      "_rangeEndMax": 0
+    },
+    "Speed": {
+      "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
+      "Kind": 0,
+      "_constant": 1.0,
+      "_rangeStart": 0.0,
+      "_rangeEnd": 0.0,
+      "_rangeStartMin": 0.0,
+      "_rangeStartMax": 0.0,
+      "_rangeEndMin": 0.0,
+      "_rangeEndMax": 0.0,
+      "_curvePoints": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": []
+      }
+    }
+  },
+  "Particle": {
+    "$type": "Murder.Core.Particles.Particle, Murder",
+    "SpriteBatch": 0,
+    "Texture": {
+      "$type": "Murder.Core.Particles.ParticleTexture, Murder",
+      "Kind": 3,
+      "Asset": "00000000-0000-0000-0000-000000000000",
+      "Texture": "",
+      "Rectangle": {
+        "$type": "Murder.Core.Geometry.Rectangle, Murder",
+        "X": 0.0,
+        "Y": 0.0,
+        "Width": 1.0,
+        "Height": 1.0
+      },
+      "Circle": {
+        "$type": "Murder.Core.Geometry.Circle, Murder",
+        "X": 0.0,
+        "Y": 0.0,
+        "Radius": 5.0
+      }
+    },
+    "LifeTime": {
+      "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
+      "Kind": 0,
+      "_constant": 4.0,
+      "_rangeStart": 0.0,
+      "_rangeEnd": 0.0,
+      "_rangeStartMin": 0.0,
+      "_rangeStartMax": 0.0,
+      "_rangeEndMin": 0.0,
+      "_rangeEndMax": 0.0,
+      "_curvePoints": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": []
+      }
+    },
+    "Gravity": {
+      "$type": "Murder.Core.Particles.ParticleVectorValueProperty, Murder",
+      "Kind": 0,
+      "_constant": {
+        "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "_rangeStart": {
+        "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "_rangeEnd": {
+        "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "_rangeStartMin": {
+        "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "_rangeStartMax": {
+        "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "_rangeEndMin": {
+        "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "_rangeEndMax": {
+        "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+        "X": 0.0,
+        "Y": 0.0
+      }
+    },
+    "FollowEntityPosition": false,
+    "Colors": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Graphics.Color, Murder]], System.Collections.Immutable",
+      "$values": [
+        {
+          "$type": "Murder.Core.Graphics.Color, Murder",
+          "R": 0.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0
+        }
+      ]
+    },
+    "Scale": {
+      "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Numerics.Vector2, System.Private.CoreLib]], System.Collections.Immutable",
+      "$values": [
+        {
+          "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        {
+          "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+          "X": 1.0,
+          "Y": 1.0
+        }
+      ]
+    },
+    "Alpha": {
+      "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
+      "Kind": 1,
+      "_constant": 1.0,
+      "_rangeStart": 1.0,
+      "_rangeEnd": 0.0,
+      "_rangeStartMin": 0.0,
+      "_rangeStartMax": 0.0,
+      "_rangeEndMin": 0.0,
+      "_rangeEndMax": 0.0,
+      "_curvePoints": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": []
+      }
+    },
+    "Acceleration": {
+      "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
+      "Kind": 0,
+      "_constant": 1.0,
+      "_rangeStart": 0.0,
+      "_rangeEnd": 0.0,
+      "_rangeStartMin": 0.0,
+      "_rangeStartMax": 0.0,
+      "_rangeEndMin": 0.0,
+      "_rangeEndMax": 0.0,
+      "_curvePoints": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": []
+      }
+    },
+    "Friction": {
+      "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
+      "Kind": 0,
+      "_constant": 0.0,
+      "_rangeStart": 0.0,
+      "_rangeEnd": 0.0,
+      "_rangeStartMin": 0.0,
+      "_rangeStartMax": 0.0,
+      "_rangeEndMin": 0.0,
+      "_rangeEndMax": 0.0,
+      "_curvePoints": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": []
+      }
+    },
+    "StartVelocity": {
+      "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
+      "Kind": 0,
+      "_constant": 0.0,
+      "_rangeStart": 0.0,
+      "_rangeEnd": 0.0,
+      "_rangeStartMin": 0.0,
+      "_rangeStartMax": 0.0,
+      "_rangeEndMin": 0.0,
+      "_rangeEndMax": 0.0,
+      "_curvePoints": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": []
+      }
+    },
+    "RotationSpeed": {
+      "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
+      "Kind": 0,
+      "_constant": 0.0,
+      "_rangeStart": 0.0,
+      "_rangeEnd": 0.0,
+      "_rangeStartMin": 0.0,
+      "_rangeStartMax": 0.0,
+      "_rangeEndMin": 0.0,
+      "_rangeEndMax": 0.0,
+      "_curvePoints": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": []
+      }
+    },
+    "Rotation": {
+      "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
+      "Kind": 0,
+      "_constant": 1.0,
+      "_rangeStart": 0.0,
+      "_rangeEnd": 0.0,
+      "_rangeStartMin": 0.0,
+      "_rangeStartMax": 0.0,
+      "_rangeEndMin": 0.0,
+      "_rangeEndMax": 0.0,
+      "_curvePoints": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": []
+      }
+    },
+    "RotateWithVelocity": false,
+    "SortOffset": 0.0
+  },
+  "Name": "smoke1",
+  "Guid": "cefae7a4-7365-45b4-92bc-06525c9353bf"
+}

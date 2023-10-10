@@ -39,8 +39,8 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 259.0,
-          "_y": 21.0
+          "_x": 193.0,
+          "_y": 95.0
         }
       },
       "IsDeactivated": false,
@@ -111,7 +111,7 @@
         },
         "HelloMurder.Components.ScrollingSprite, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "HelloMurder.Components.ScrollingSprite, HelloMurder",
-          "TargetSpriteBatch": 0,
+          "TargetSpriteBatch": 1,
           "Size": {
             "$type": "Murder.Core.Geometry.Point, Murder",
             "X": 22,
@@ -155,7 +155,7 @@
             "Y": 0.5
           },
           "Flip": false,
-          "Sort": 0.927,
+          "Sort": 0.0,
           "Sprite": "a43f0087-c9df-dc24-bdcc-d08091bf452a"
         }
       },
@@ -187,7 +187,7 @@
             "Y": 0.5
           },
           "Flip": false,
-          "Sort": 0.917,
+          "Sort": 0.0,
           "Sprite": "8b7f56dc-7a64-c67b-e55c-fb0ccec4594e"
         }
       },
@@ -197,7 +197,7 @@
     "21afbc63-1666-4fa5-879b-f028a6324999": {
       "$type": "Murder.Prefabs.EntityInstance, Murder",
       "_guid": "21afbc63-1666-4fa5-879b-f028a6324999",
-      "_name": "GaameplayUIManager",
+      "_name": "GameplayUIManager",
       "_components": {
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
@@ -218,11 +218,51 @@
       },
       "IsDeactivated": false,
       "ActivateWithParent": false
+    },
+    "86638d6e-afc2-4110-9c29-fc8eed24d23d": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "86638d6e-afc2-4110-9c29-fc8eed24d23d",
+      "_name": "Room",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.RoomComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.RoomComponent, Murder",
+          "Floor": "00000000-0000-0000-0000-000000000000"
+        },
+        "Murder.Components.TileGridComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.TileGridComponent, Murder",
+          "Grid": {
+            "$type": "Murder.Core.TileGrid, Murder",
+            "_gridMap": {
+              "$type": "System.Int32[], System.Private.CoreLib",
+              "$values": [
+                0
+              ]
+            },
+            "_width": 12,
+            "_height": 22,
+            "_origin": {
+              "$type": "Murder.Core.Geometry.Point, Murder",
+              "X": 1,
+              "Y": 0
+            }
+          },
+          "Width": 12,
+          "Height": 22,
+          "Origin": {
+            "$type": "Murder.Core.Geometry.Point, Murder",
+            "X": 1,
+            "Y": 0
+          }
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
     }
   },
   "_entitiesToFolder": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
   },
   "Name": "Hello World",
-  "Guid": "091bb6bb-0251-4af8-9fba-009ffba92330"
+  "Guid": "9775cecb-7773-4f30-822a-0e9a7d5ddd8d"
 }

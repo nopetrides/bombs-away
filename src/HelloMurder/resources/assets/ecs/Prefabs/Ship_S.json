@@ -11,7 +11,8 @@
       "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
       "$values": [
         "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Murder.Components.AgentComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
       ]
     },
     "_childrenModifiers": {
@@ -42,7 +43,7 @@
       },
       "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.SpriteComponent, Murder",
-        "TargetSpriteBatch": 0,
+        "TargetSpriteBatch": 1,
         "AnimationGuid": "99ad726d-9004-3c2d-2bc7-dd06cbba623e",
         "Offset": {
           "$type": "System.Numerics.Vector2, System.Private.CoreLib",
@@ -64,7 +65,7 @@
       },
       "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.ColliderComponent, Murder",
-        "Layer": 14,
+        "Layer": 2,
         "Shapes": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
           "$values": [
@@ -149,12 +150,6 @@
           "A": 1.0
         }
       },
-      "Murder.Components.AgentComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.AgentComponent, Murder",
-        "Speed": 100.0,
-        "Acceleration": 100.0,
-        "Friction": 0.0
-      },
       "Murder.Components.VelocityComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.VelocityComponent, Murder",
         "Velocity": {
@@ -177,6 +172,9 @@
       "HelloMurder.Components.ScoreValueComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.ScoreValueComponent, HelloMurder",
         "Value": 50
+      },
+      "Murder.Components.FreeMovementComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.FreeMovementComponent, Murder"
       }
     },
     "IsDeactivated": false,

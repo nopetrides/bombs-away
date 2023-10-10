@@ -3,12 +3,14 @@ using Murder.Assets.Graphics;
 using Murder.Attributes;
 using Murder.Core.Geometry;
 using Murder.Core.Graphics;
+using Murder.Utilities.Attributes;
 using System.Numerics;
 
 namespace HelloMurder.Components
 {
     public readonly struct ScrollingSprite : IComponent
     {
+        [SpriteBatchReference]
         public readonly int TargetSpriteBatch = Batches2D.GameplayBatchId;
 
         public readonly Point Size = new Point(0, 3);

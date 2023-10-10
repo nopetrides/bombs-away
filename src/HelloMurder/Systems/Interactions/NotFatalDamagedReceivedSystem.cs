@@ -23,6 +23,8 @@ namespace HelloMurder.Systems.Interactions
             var health = entity.GetHealth().Health;
             string animation = "float_damaged" + health;
             entity.SetSprite(spriteComponent.Play(false, animation));
+            var child = entity.TryFetchChild("damaged" + health);
+            child?.Activate();
         }
     }
 }

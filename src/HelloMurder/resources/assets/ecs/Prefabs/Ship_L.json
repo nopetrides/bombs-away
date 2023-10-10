@@ -1,6 +1,6 @@
 {
   "$type": "Murder.Assets.PrefabAsset, Murder",
-  "ShowOnPrefabSelector": false,
+  "ShowOnPrefabSelector": true,
   "_entity": {
     "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
     "PrefabRef": {
@@ -12,7 +12,8 @@
       "$values": [
         "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Murder.Components.AgentSpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Murder.Components.AgentComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
       ]
     },
     "_childrenModifiers": {
@@ -43,7 +44,7 @@
       },
       "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.ColliderComponent, Murder",
-        "Layer": 14,
+        "Layer": 2,
         "Shapes": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
           "$values": [
@@ -130,7 +131,7 @@
       },
       "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.SpriteComponent, Murder",
-        "TargetSpriteBatch": 0,
+        "TargetSpriteBatch": 1,
         "AnimationGuid": "c179c6b8-f157-2294-7df5-fd3b9b8efeb7",
         "Offset": {
           "$type": "System.Numerics.Vector2, System.Private.CoreLib",
@@ -158,12 +159,6 @@
           "Y": 20.0
         }
       },
-      "Murder.Components.AgentComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.AgentComponent, Murder",
-        "Speed": 100.0,
-        "Acceleration": 100.0,
-        "Friction": 0.0
-      },
       "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder",
         "Damage": 1
@@ -178,10 +173,56 @@
       "HelloMurder.Components.ScoreValueComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.ScoreValueComponent, HelloMurder",
         "Value": 150
+      },
+      "Murder.Components.FreeMovementComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.FreeMovementComponent, Murder"
       }
     },
     "IsDeactivated": false,
     "ActivateWithParent": false,
+    "_children": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
+      "3813ddb9-40b2-4355-8826-c700859e72cc": {
+        "$type": "Murder.Prefabs.EntityInstance, Murder",
+        "_guid": "3813ddb9-40b2-4355-8826-c700859e72cc",
+        "_name": "damaged1",
+        "_components": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+          "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.PositionComponent, Murder",
+            "_x": 0.0,
+            "_y": -22.0
+          },
+          "Murder.Components.ParticleSystemComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.ParticleSystemComponent, Murder",
+            "Asset": "cefae7a4-7365-45b4-92bc-06525c9353bf",
+            "DestroyWhenEmpty": false
+          }
+        },
+        "IsDeactivated": true,
+        "ActivateWithParent": false
+      },
+      "7c0c020d-07e7-440a-898b-2ab3db59b389": {
+        "$type": "Murder.Prefabs.EntityInstance, Murder",
+        "_guid": "7c0c020d-07e7-440a-898b-2ab3db59b389",
+        "_name": "damaged2",
+        "_components": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+          "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.PositionComponent, Murder",
+            "_x": -2.0,
+            "_y": 2.0
+          },
+          "Murder.Components.ParticleSystemComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.ParticleSystemComponent, Murder",
+            "Asset": "cefae7a4-7365-45b4-92bc-06525c9353bf",
+            "DestroyWhenEmpty": false
+          }
+        },
+        "IsDeactivated": true,
+        "ActivateWithParent": false
+      }
+    },
     "_guid": "3c2caf48-907a-4d58-b7e0-5e076a2661ac",
     "_name": "CharacterBase Instance"
   },

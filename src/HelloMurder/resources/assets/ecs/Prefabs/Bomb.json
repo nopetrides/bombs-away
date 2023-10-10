@@ -14,7 +14,7 @@
       },
       "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.SpriteComponent, Murder",
-        "TargetSpriteBatch": 0,
+        "TargetSpriteBatch": 1,
         "AnimationGuid": "72b7b2b4-a4bc-02fe-9cac-e3d5f3356c70",
         "Offset": {
           "$type": "System.Numerics.Vector2, System.Private.CoreLib",
@@ -32,7 +32,7 @@
           ]
         },
         "AnimationStartedTime": -1.0,
-        "YSortOffset": 0
+        "YSortOffset": 128
       },
       "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
