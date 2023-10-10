@@ -36,7 +36,7 @@ namespace HelloMurder.Systems.Player
             // todo fix
 
             SpriteComponent sprite = e.GetSprite();
-            sprite = sprite.Play(false, "falling", "damage");
+            sprite = sprite.Play(false, "falling", "damage", "miss");
             
             e.SetSprite(sprite);
 

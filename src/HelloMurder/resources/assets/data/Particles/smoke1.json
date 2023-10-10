@@ -86,7 +86,7 @@
   },
   "Particle": {
     "$type": "Murder.Core.Particles.Particle, Murder",
-    "SpriteBatch": 0,
+    "SpriteBatch": 1,
     "Texture": {
       "$type": "Murder.Core.Particles.ParticleTexture, Murder",
       "Kind": 3,
@@ -279,7 +279,7 @@
       }
     },
     "RotateWithVelocity": false,
-    "SortOffset": 0.0
+    "SortOffset": 128.0
   },
   "Name": "smoke1",
   "Guid": "cefae7a4-7365-45b4-92bc-06525c9353bf"

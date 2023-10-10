@@ -32,7 +32,7 @@
           ]
         },
         "AnimationStartedTime": -1.0,
-        "YSortOffset": 128
+        "YSortOffset": 256
       },
       "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.InteractOnCollisionComponent, Murder",

@@ -13,7 +13,7 @@
     "$type": "Murder.Core.Geometry.IntRectangle, Murder",
     "X": 0,
     "Y": 0,
-    "Width": 0,
+    "Width": 380,
     "Height": 0
   },
   "Name": "DefaultLibrary",

@@ -176,6 +176,11 @@
       },
       "Murder.Components.FreeMovementComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.FreeMovementComponent, Murder"
+      },
+      "Murder.Components.DestroyAtTimeComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.DestroyAtTimeComponent, Murder",
+        "Style": 0,
+        "TimeToDestroy": 60.0
       }
     },
     "IsDeactivated": false,
