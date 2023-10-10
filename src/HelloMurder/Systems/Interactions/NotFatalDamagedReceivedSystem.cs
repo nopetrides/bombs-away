@@ -15,7 +15,8 @@ namespace HelloMurder.Systems.Interactions
     {
         public void OnMessage(World world, Entity entity, IMessage message)
         {
-            LibraryServices.Explode(0, world, entity.GetGlobalTransform().Vector2);
+            // bomb already plays an fx
+            //LibraryServices.Explode(0, world, entity.GetGlobalTransform().Vector2);
 
             Murder.Components.SpriteComponent spriteComponent = entity.GetSprite();
 
