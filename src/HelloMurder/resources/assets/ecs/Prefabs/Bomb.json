@@ -31,37 +31,12 @@
             ""
           ]
         },
-        "AnimationStartedTime": 0.0,
+        "AnimationStartedTime": -1.0,
         "YSortOffset": 0
-      },
-      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.ColliderComponent, Murder",
-        "Layer": 14,
-        "Shapes": {
-          "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
-          "$values": [
-            {
-              "$type": "Murder.Core.Geometry.CircleShape, Murder",
-              "Radius": 12.0,
-              "Offset": {
-                "$type": "Murder.Core.Geometry.Point, Murder",
-                "X": 0,
-                "Y": 0
-              }
-            }
-          ]
-        },
-        "DebugColor": {
-          "$type": "Murder.Core.Graphics.Color, Murder",
-          "R": 0.99609375,
-          "G": 0.47265625,
-          "B": 0.7734375,
-          "A": 1.0
-        }
       },
       "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
-        "OnlyOnce": true,
+        "OnlyOnce": false,
         "SendMessageOnExit": false,
         "SendMessageOnStay": false,
         "CustomEnterMessages": {
@@ -74,9 +49,6 @@
         },
         "PlayerOnly": false
       },
-      "Murder.Interactions.InteractorComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Interactions.InteractorComponent, Murder"
-      },
       "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
         "MaxHealth": 1,
@@ -86,9 +58,12 @@
         "$type": "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder",
         "Damage": 1
       },
-      "Murder.Components.DestroyOnAnimationCompleteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.DestroyOnAnimationCompleteComponent, Murder",
-        "DeactivateOnComplete": false
+      "HelloMurder.Components.BombComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.BombComponent, HelloMurder",
+        "TimeToTarget": 3.0
+      },
+      "Murder.Interactions.InteractorComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Interactions.InteractorComponent, Murder"
       }
     },
     "IsDeactivated": false,

@@ -17,8 +17,8 @@ namespace HelloMurder.Systems.Interactions
     {
         public void OnMessage(World world, Entity entity, IMessage message)
         {
-            // play fx
-            LibraryServices.Explode(0, world, entity.GetGlobalTransform().Vector2);
+            // fx seems too much with bomb fx already playing
+            //LibraryServices.Explode(0, world, entity.GetGlobalTransform().Vector2);
 
             // play sinking animation
             Murder.Components.SpriteComponent spriteComponent = entity.GetSprite();

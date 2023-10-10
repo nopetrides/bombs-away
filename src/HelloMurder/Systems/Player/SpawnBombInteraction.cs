@@ -7,6 +7,7 @@ using HelloMurder.Core;
 using HelloMurder.Messages;
 using HelloMurder.Services;
 using Murder;
+using Murder.Components;
 using Murder.Utilities;
 
 namespace HelloMurder.Systems.Player
@@ -29,9 +30,15 @@ namespace HelloMurder.Systems.Player
             // Spawn a bomb
             Guid prefab = LibraryServices.GetLibrary().BombPrefab;
 
-            Entity? e = AssetServices.TryCreate(world, prefab);
-            e?.SetTransform(entity.GetGlobalTransform());
-            e?.SetMoveToPerfect();
+            Entity e = AssetServices.Create(world, prefab);
+            e.SetTransform(entity.GetGlobalTransform());
+            e.SetMoveToPerfect();
+            // todo fix
+
+            SpriteComponent sprite = e.GetSprite();
+            sprite = sprite.Play(false, "falling", "damage");
+            
+            e.SetSprite(sprite);
 
             _timeSinceLastBomb = Game.Now;
         }
