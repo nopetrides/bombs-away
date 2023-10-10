@@ -193,6 +193,29 @@
       },
       "IsDeactivated": false,
       "ActivateWithParent": false
+    },
+    "21afbc63-1666-4fa5-879b-f028a6324999": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "21afbc63-1666-4fa5-879b-f028a6324999",
+      "_name": "GaameplayUIManager",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 0.0,
+          "_y": 0.0
+        },
+        "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.GameplayUIManager, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.GameplayUIManager, HelloMurder]], Bang",
+          "_routine": {
+            "$type": "HelloMurder.StateMachines.Gameplay.GameplayUIManager, HelloMurder",
+            "_scoreBG": "166732e0-d5db-5f97-d853-41b4acec58de",
+            "_cachedPersistedState": "Level"
+          }
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
     }
   },
   "_entitiesToFolder": {

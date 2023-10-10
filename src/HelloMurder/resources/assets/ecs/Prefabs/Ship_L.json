@@ -143,9 +143,11 @@
         "UseUnscaledTime": false,
         "NextAnimations": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
-          "$values": []
+          "$values": [
+            "float_idle"
+          ]
         },
-        "AnimationStartedTime": -1.0,
+        "AnimationStartedTime": 0.0,
         "YSortOffset": 0
       },
       "Murder.Components.VelocityComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
@@ -172,6 +174,10 @@
       },
       "HelloMurder.Components.EnemyComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.EnemyComponent, HelloMurder"
+      },
+      "HelloMurder.Components.ScoreValueComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.ScoreValueComponent, HelloMurder",
+        "Value": 150
       }
     },
     "IsDeactivated": false,

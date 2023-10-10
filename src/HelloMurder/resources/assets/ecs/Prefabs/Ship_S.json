@@ -173,6 +173,10 @@
       },
       "HelloMurder.Components.EnemyComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.EnemyComponent, HelloMurder"
+      },
+      "HelloMurder.Components.ScoreValueComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.ScoreValueComponent, HelloMurder",
+        "Value": 50
       }
     },
     "IsDeactivated": false,

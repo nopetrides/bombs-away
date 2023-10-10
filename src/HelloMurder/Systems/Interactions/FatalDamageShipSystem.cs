@@ -17,13 +17,24 @@ namespace HelloMurder.Systems.Interactions
     {
         public void OnMessage(World world, Entity entity, IMessage message)
         {
+            // play fx
             LibraryServices.Explode(0, world, entity.GetGlobalTransform().Vector2);
 
+            // play sinking animation
             Murder.Components.SpriteComponent spriteComponent = entity.GetSprite();
             
             entity.SetSprite(spriteComponent.PlayOnce("hit_sunk", false));
 
             entity.SetDestroyOnAnimationComplete(false);
+
+            // Increase score
+            var pointsValue = entity.GetScoreValue().Value;
+
+            var scoreEntity = world.GetUniqueEntity<GameplayUIManagerComponent>();
+
+            var scoreComponent = scoreEntity.GetGameplayUIManager();
+
+            scoreEntity.SetGameplayUIManager(scoreComponent.AddScore(pointsValue));
         }
     }
 }
