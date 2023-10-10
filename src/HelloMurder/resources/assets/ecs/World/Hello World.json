@@ -209,9 +209,9 @@
           "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.GameplayUIManager, HelloMurder]], Bang",
           "_routine": {
             "$type": "HelloMurder.StateMachines.Gameplay.GameplayUIManager, HelloMurder",
-            "_scoreBG": "166732e0-d5db-5f97-d853-41b4acec58de",
+            "_scoreBG": "f197a699-8c54-f6c1-d3d2-8ed9e3c5e674",
             "_uiRectWidth": 100.0,
-            "_uiRectHeight": 15.0,
+            "_uiRectHeight": 16.0,
             "_cachedPersistedState": "Level"
           }
         }

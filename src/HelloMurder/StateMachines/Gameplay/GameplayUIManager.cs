@@ -18,7 +18,7 @@ namespace HelloMurder.StateMachines.Gameplay
         [JsonProperty]
         private readonly float _uiRectWidth = 100f;
         [JsonProperty]
-        private readonly float _uiRectHeight = 15f;
+        private readonly float _uiRectHeight = 16f;
 
 
         public GameplayUIManager()
