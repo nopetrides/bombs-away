@@ -12,13 +12,14 @@
   "AssetResourcesPath": "assets/",
   "ContentECSPath": "ecs/",
   "GenericAssetsPath": "data/",
-  "GameWidth": 380,
-  "GameHeight": 620,
+  "GameWidth": 312,
+  "GameHeight": 512,
   "GameScale": 2,
+  "_enforceResolution": true,
   "Fullscreen": false,
   "TargetFps": 60,
   "FixedUpdateFactor": 2.0,
-  "IsVSyncEnabled": false,
+  "IsVSyncEnabled": true,
   "ShowUiDebug": true,
   "PushAwayInterval": 0.05,
   "StartingScene": "e09343c5-19b5-419d-88f4-f06ed35a4752",
@@ -57,6 +58,13 @@
       "X": 0.73828125,
       "Y": 0.57421875,
       "Z": 0.97265625,
+      "W": 1.0
+    },
+    "RedFaded": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 0.265625,
+      "Y": 0.29296875,
+      "Z": 0.99609375,
       "W": 1.0
     },
     "Faded": {
