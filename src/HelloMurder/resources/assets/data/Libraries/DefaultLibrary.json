@@ -11,10 +11,10 @@
   },
   "Bounds": {
     "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-    "X": 0,
+    "X": 32,
     "Y": 0,
-    "Width": 380,
-    "Height": 0
+    "Width": 260,
+    "Height": 512
   },
   "Name": "DefaultLibrary",
   "Guid": "06cfea1c-576b-4bd2-85f6-7b19cd851839"

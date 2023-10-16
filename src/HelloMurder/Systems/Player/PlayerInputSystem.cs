@@ -11,6 +11,10 @@ using HelloMurder.Core.Input;
 using Bang.Interactions;
 using System.Numerics;
 using Murder.Utilities;
+using HelloMurder.Services;
+using Murder.Core.Graphics;
+using Murder.Core;
+using Murder.Core.Geometry;
 
 namespace HelloMurder.Systems
 {
@@ -18,48 +22,35 @@ namespace HelloMurder.Systems
     public class PlayerInputSystem : IUpdateSystem, IFixedUpdateSystem
     {
         private Vector2 _cachedInputAxis = Vector2.Zero;
-        private int _cachedInputSkill = -1;
         
         private bool _previousCachedAttack = false;
         private bool _cachedAttack = false;
-
-        private bool _interacted = false;
-        
-        /// <summary>
-        /// Whether the player locked the movement and only wants to change the facing.
-        /// </summary>
-        private bool _lockMovement = false;
 
         public void FixedUpdate(Context context)
         {
             foreach (Entity entity in context.Entities)
             {
                 PlayerComponent player = entity.GetComponent<PlayerComponent>();
+                var library = LibraryServices.GetLibrary();
 
                 bool moved = _cachedInputAxis.HasValue();
-                
-                if (_interacted)
-                {
-                    entity.SendMessage<InteractorMessage>();
-                }
-                
+
                 if (moved)
                 {
                     Direction direction = DirectionHelper.FromVector(_cachedInputAxis);
-                        
-                    entity.SetAgentImpulse(
-                        _lockMovement ? Vector2.Zero : _cachedInputAxis, direction);
+
+                    var finalPosition = entity.GetGlobalTransform().Vector2;
+                    finalPosition += _cachedInputAxis;
+                    finalPosition = ClampBounds(library.Bounds, finalPosition);
+                    entity.SetGlobalPosition(finalPosition);
+
+                    entity.SetAgentImpulse(_cachedInputAxis, direction);
+
                 }
                 else
                 {
                     entity.SetFacing(Direction.Up);
                 }
-
-                if (_cachedInputSkill > 0)
-                {
-                    entity.SendMessage(new AgentInputMessage(_cachedInputSkill));
-                }
-                _cachedInputSkill = -1;
                 
                 if (!_previousCachedAttack && _cachedAttack)
                 {
@@ -71,8 +62,6 @@ namespace HelloMurder.Systems
                     _previousCachedAttack = false;
                     entity.SendMessage(new AgentReleaseInputMessage(InputButtons.Attack));
                 }
-                _interacted = false;
-
 
                 entity.SetPlayerSpeed(entity.GetPlayerSpeed().Approach(3f, 1f * Game.FixedDeltaTime));
             }
@@ -83,6 +72,20 @@ namespace HelloMurder.Systems
             _cachedInputAxis = Game.Input.GetAxis(InputAxis.Movement).Value;
 
             _cachedAttack = Game.Input.Down(InputButtons.Attack);
+        }
+
+        private Vector2 ClampBounds(IntRectangle bounds, Vector2 position)
+        {
+            if (position.X < bounds.X) position.X = bounds.X;
+            if (position.Y < bounds.Y) position.Y = bounds.Y;
+
+            var maxWidth = bounds.Width+bounds.X;
+            var maxHeight = bounds.Height+bounds.Y;
+
+            if (position.X > maxWidth) position.X = maxWidth;
+            if (position.Y > maxHeight) position.Y = maxHeight;
+
+            return position;
         }
     }
 }
