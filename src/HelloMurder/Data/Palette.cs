@@ -15,7 +15,7 @@ namespace HelloMurder.Core
             Color.FromHex("737480"),
             Color.FromHex("737480"),
             Color.FromHex("FFB3AB"),
-            Color.FromHex("FB43C5")
+            Color.FromHex("51AD26")
         };
 
         static Palette()
