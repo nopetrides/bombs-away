@@ -39,32 +39,14 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 160.0,
-          "_y": 400.0
+          "_x": 162.0,
+          "_y": 600.0
         }
       },
       "IsDeactivated": false,
       "ActivateWithParent": false,
       "_guid": "30d5ac2b-73b7-47e0-9066-e558a13e0da9",
       "_name": "PlayerPlane"
-    },
-    "20ef3911-f141-4a7d-a2af-a40e252abfcb": {
-      "$type": "Murder.Prefabs.EntityInstance, Murder",
-      "_guid": "20ef3911-f141-4a7d-a2af-a40e252abfcb",
-      "_name": "EnemyLevelManagerStateMachine",
-      "_components": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
-        "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.EnemyLevelManager, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.EnemyLevelManager, HelloMurder]], Bang",
-          "_routine": {
-            "$type": "HelloMurder.StateMachines.Gameplay.EnemyLevelManager, HelloMurder",
-            "_enemySpawnDataId": "9fbd934b-27b8-4bc9-bf92-bce9e8e1d6b1",
-            "_cachedPersistedState": "Level"
-          }
-        }
-      },
-      "IsDeactivated": false,
-      "ActivateWithParent": false
     },
     "88a40b96-0a97-446a-8177-0b9698c0134b": {
       "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
@@ -265,6 +247,24 @@
       "_name": "Map",
       "_components": {
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
+    },
+    "23d832e4-4e43-4ad3-ac5a-636a4ff88f8f": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "23d832e4-4e43-4ad3-ac5a-636a4ff88f8f",
+      "_name": "GameplayStateMachine",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.GameplayStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.GameplayStateMachine, HelloMurder]], Bang",
+          "_routine": {
+            "$type": "HelloMurder.StateMachines.Gameplay.GameplayStateMachine, HelloMurder",
+            "_enemySpawnDataId": "9fbd934b-27b8-4bc9-bf92-bce9e8e1d6b1",
+            "_cachedPersistedState": "GameStart"
+          }
+        }
       },
       "IsDeactivated": false,
       "ActivateWithParent": false

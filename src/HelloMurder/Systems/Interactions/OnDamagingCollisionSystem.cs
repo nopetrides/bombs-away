@@ -1,11 +1,13 @@
 ﻿using Bang;
 using Bang.Components;
+using Bang.Contexts;
 using Bang.Entities;
 using Bang.StateMachines;
 using Bang.Systems;
 using HelloMurder.Components;
 using HelloMurder.Messages;
 using HelloMurder.Services;
+using Murder.Core;
 using Murder.Diagnostics;
 using Murder.Messages;
 using Murder.Services;
@@ -26,10 +28,15 @@ namespace HelloMurder.Systems.Interactions
 
             // Play any collision vfx, sfx
             if (entity.HasEnemy())
+            {
                 LibraryServices.Explode(0, world, msg.Center);
 
-            // Message damaged entities
-            if (hpAfterDamage.Health <= 0)
+                var mw = (MonoWorld)world;
+                mw.Camera.Shake(2f, .2f);
+            }
+
+                // Message damaged entities
+                if (hpAfterDamage.Health <= 0)
             {
                 // Send fatal damage message
                 entity.SendMessage(new FatalDamageMessage());
