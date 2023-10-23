@@ -6,6 +6,7 @@ using Murder.Components;
 using Murder.Core.Physics;
 using Murder.Core.Geometry;
 using Murder.Core.Graphics;
+using Murder.Core;
 
 namespace HelloMurder.Systems.Player
 {
@@ -29,6 +30,8 @@ namespace HelloMurder.Systems.Player
                 {
                     e.RemoveCollider();
                     e.SetDestroyOnAnimationComplete(false);
+                    var world = (MonoWorld)context.World;
+                    world.Camera.Shake(1f, .2f);
                 }
             }
         }
