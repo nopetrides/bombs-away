@@ -21,9 +21,13 @@ namespace HelloMurder.Systems.Interactions
     {
         public void OnMessage(World world, Entity entity, IMessage message)
         {
+            // Don't damage dead entities
+
             GameLogger.Log("Processing Collision on specific entity");
             var msg = (DamagingCollisionMessage)message;
-            var hpAfterDamage = entity.GetHealth().Damage(msg.DamageDealt);
+            var hpComponent = entity.GetHealth();
+            var hpBeforeDamage = hpComponent.Health;
+            var hpAfterDamage = hpComponent.Damage(msg.DamageDealt);
             entity.SetHealth(hpAfterDamage);
 
             // Play any collision vfx, sfx
@@ -35,8 +39,12 @@ namespace HelloMurder.Systems.Interactions
                 mw.Camera.Shake(2f, .2f);
             }
 
-                // Message damaged entities
-                if (hpAfterDamage.Health <= 0)
+            // Message damaged entities, don't message already dead ones    
+            if (hpBeforeDamage <= 0)
+            {
+                return;
+            }
+            else if (hpAfterDamage.Health <= 0)
             {
                 // Send fatal damage message
                 entity.SendMessage(new FatalDamageMessage());

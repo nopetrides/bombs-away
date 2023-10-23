@@ -11,6 +11,7 @@ using HelloMurder.Systems;
 using Murder.Attributes;
 using Newtonsoft.Json;
 using Murder.Core.Geometry;
+using Murder.Assets;
 
 namespace HelloMurder.StateMachines.Gameplay
 {

@@ -4,6 +4,7 @@ using Bang;
 using Bang.Components;
 using Bang.Entities;
 using Bang.Systems;
+using HelloMurder.Assets;
 using HelloMurder.Components;
 using HelloMurder.Services;
 using Murder.Messages;
@@ -33,8 +34,18 @@ namespace HelloMurder.Systems.Interactions
             var scoreEntity = world.GetUniqueEntity<GameplayUIManagerComponent>();
 
             var scoreComponent = scoreEntity.GetGameplayUIManager();
+            var newScore = scoreComponent.AddScore(pointsValue);
 
-            scoreEntity.SetGameplayUIManager(scoreComponent.AddScore(pointsValue));
+            scoreEntity.SetGameplayUIManager(newScore);
+
+            HelloMurderSaveData save = SaveServices.GetOrCreateSave();
+
+            if (newScore.CurrentScore > save.HighScore) 
+            {
+                save.HighScore = newScore.CurrentScore;
+
+                SaveServices.QuickSave();
+            }
         }
     }
 }
