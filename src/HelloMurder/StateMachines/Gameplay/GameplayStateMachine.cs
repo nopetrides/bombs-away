@@ -10,6 +10,7 @@ using System.Numerics;
 using HelloMurder.Systems;
 using Murder.Attributes;
 using Newtonsoft.Json;
+using Murder.Core.Geometry;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
@@ -17,6 +18,9 @@ namespace HelloMurder.StateMachines.Gameplay
     {
         [JsonProperty, GameAssetId(typeof(EnemySpawnerDataAsset))]
         private readonly Guid _enemySpawnDataId = Guid.Empty;
+
+        [JsonProperty]
+        private readonly float _bombWindRadius = 64f;
 
         private readonly LibraryAsset _libraryAsset;
 
@@ -54,7 +58,20 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private IEnumerator<Wait> ShowWindIndicator()
         {
+            var player = World.GetUniqueEntity<PlayerComponent>();
+
+            float angle = 2.0f * MathF.PI * Game.Random.NextFloat();
+
+            Vector2 windDir = 
+                new Vector2(
+                    _bombWindRadius * MathF.Cos(angle), 
+                    _bombWindRadius * MathF.Sin(angle));
+            WindComponent wind = new WindComponent(windDir);
+            player.SetWind(wind);
+
             //yield return Wait.ForMessage<GameStepCompleteMessage>();
+
+
             yield return Wait.ForRoutine(HideWindIndicator());
         }
 

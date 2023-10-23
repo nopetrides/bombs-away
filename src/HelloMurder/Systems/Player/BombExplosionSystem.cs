@@ -7,6 +7,9 @@ using Murder.Core.Physics;
 using Murder.Core.Geometry;
 using Murder.Core.Graphics;
 using Murder.Core;
+using Murder.Utilities;
+using System.Numerics;
+using Murder;
 
 namespace HelloMurder.Systems.Player
 {
@@ -18,6 +21,11 @@ namespace HelloMurder.Systems.Player
         {
             foreach(var e in context.Entities)
             {
+                var mover = e.GetMoveTo();
+                var pos = e.GetGlobalTransform().Vector2;
+                pos = Vector2.Lerp(pos, mover.Target, Game.DeltaTime);
+                e.SetGlobalPosition(pos);
+
                 var sprite = e.GetSprite();
                 if (sprite.CurrentAnimation == "damage" && !e.HasCollider())
                 {
