@@ -4,10 +4,10 @@ Make sorting actually good
 Fixed resolution (Pedro)
 Spawn safe zones
 Clamp Player Movement
-
-To Do:
 Wind effect on bombs
 High Score, save data
+
+To Do:
 
 Game start,
 Wind info,
