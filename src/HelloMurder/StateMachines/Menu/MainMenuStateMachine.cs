@@ -1,6 +1,7 @@
 ﻿using Bang.Entities;
 using Bang.StateMachines;
 using HelloMurder.Core;
+using HelloMurder.Services;
 using Murder;
 using Murder.Assets;
 using Murder.Attributes;
@@ -9,6 +10,7 @@ using Murder.Core.Graphics;
 using Murder.Core.Input;
 using Murder.Services;
 using Newtonsoft.Json;
+using System.Numerics;
 
 namespace HelloMurder.StateMachines
 {
@@ -123,6 +125,14 @@ namespace HelloMurder.StateMachines
                     SelectedColor = Palette.Colors[9]
                 },
                 _menuInfo);
+
+            var skin = LibraryServices.GetLibrary().SplashScreen;
+
+            RenderServices.DrawSprite(render.UiBatch, skin,
+                new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f), new DrawInfo(0.8f)
+            {
+                Origin = new Vector2(.5f, .5f)
+            });
         }
     }
 }

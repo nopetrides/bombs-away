@@ -1,4 +1,5 @@
 ﻿using Murder.Assets;
+using Murder.Assets.Graphics;
 using Murder.Attributes;
 using Murder.Core.Geometry;
 using Murder.Utilities;
@@ -23,6 +24,9 @@ namespace HelloMurder.Assets
 
         [GameAssetId<PrefabAsset>]
         public readonly ImmutableArray<Guid> Explosions = ImmutableArray<Guid>.Empty;
+
+        [GameAssetId<SpriteAsset>]
+        public Guid SplashScreen = Guid.Empty;
 
         [Tooltip("This is the bounds that the road which the player will be driving will be displayed.")]
         public IntRectangle Bounds = Rectangle.Empty;

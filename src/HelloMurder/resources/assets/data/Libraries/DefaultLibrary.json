@@ -9,6 +9,7 @@
       "d64f1021-b5c0-4a4f-8b29-f5b473856b4f"
     ]
   },
+  "SplashScreen": "c5253e83-a3a2-e33c-9de4-675e7955048e",
   "Bounds": {
     "$type": "Murder.Core.Geometry.IntRectangle, Murder",
     "X": 0,
