@@ -11,6 +11,7 @@ using HelloMurder.Core.EnemySpawn;
 using Murder.Attributes;
 using Newtonsoft.Json;
 using Murder.Services;
+using HelloMurder.Services;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
@@ -47,6 +48,7 @@ namespace HelloMurder.StateMachines.Gameplay
         {
             Entity.SetEnemyLevelManager();
             EnemySpawnerDataAsset spawnerData = Game.Data.GetAsset<EnemySpawnerDataAsset>(_enemySpawnDataId);
+            LibraryAsset library = LibraryServices.GetLibrary();
 
             if (spawnerData.EnemySpawns.Length == 0)
             {
@@ -83,7 +85,7 @@ namespace HelloMurder.StateMachines.Gameplay
                 // Get the spawn data about this enemy type
                 EnemySpawnEvent currentSpawn = spawnerData.EnemySpawns[_currentPossibleEnemy];
                 // Do the spawn!
-                SpawnEntity(currentSpawn.PrefabToSpawn, currentSpawn.EnemyImpulse, currentSpawn.ChasePlayer);
+                SpawnEntity(currentSpawn.PrefabToSpawn, currentSpawn.EnemyImpulse, currentSpawn.ChasePlayer, library);
 
                 // increment the enemy to spawn next
                 if (_possibleEnemiesShuffled.Length > 1) 
@@ -95,7 +97,7 @@ namespace HelloMurder.StateMachines.Gameplay
             }
         }
 
-        private void SpawnEntity(Guid prefabToSpawn, float enemyImpulse, bool chasePlayer)
+        private void SpawnEntity(Guid prefabToSpawn, float enemyImpulse, bool chasePlayer, LibraryAsset library)
         {
             var prefab = Game.Data.GetPrefab(prefabToSpawn);
             var entity = prefab.CreateAndFetch(World);
@@ -103,7 +105,7 @@ namespace HelloMurder.StateMachines.Gameplay
             var world = (MonoWorld)World;
 
             Vector2 position = Vector2.Zero;
-            var bounds = world.Camera.Bounds;
+            var bounds = library.Bounds;
 
             position = bounds.TopLeft;
             position.Y += entity.GetColliderBoundingBox().Height/2f;

@@ -39,8 +39,8 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 193.0,
-          "_y": 95.0
+          "_x": 160.0,
+          "_y": 400.0
         }
       },
       "IsDeactivated": false,
@@ -170,7 +170,7 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 255.0,
+          "_x": 256.0,
           "_y": 0.0
         },
         "HelloMurder.Components.ScrollingSprite, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
@@ -219,16 +219,12 @@
       "IsDeactivated": false,
       "ActivateWithParent": false
     },
-    "86638d6e-afc2-4110-9c29-fc8eed24d23d": {
+    "6dccd9c6-b702-46f1-ac51-cbfc5b7313b1": {
       "$type": "Murder.Prefabs.EntityInstance, Murder",
-      "_guid": "86638d6e-afc2-4110-9c29-fc8eed24d23d",
-      "_name": "Room",
+      "_guid": "6dccd9c6-b702-46f1-ac51-cbfc5b7313b1",
+      "_name": "TileRoom",
       "_components": {
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
-        "Murder.Components.RoomComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Murder.Components.RoomComponent, Murder",
-          "Floor": "00000000-0000-0000-0000-000000000000"
-        },
         "Murder.Components.TileGridComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.TileGridComponent, Murder",
           "Grid": {
@@ -240,21 +236,35 @@
               ]
             },
             "_width": 12,
-            "_height": 22,
+            "_height": 32,
             "_origin": {
               "$type": "Murder.Core.Geometry.Point, Murder",
-              "X": 1,
+              "X": 4,
               "Y": 0
             }
           },
-          "Width": 12,
-          "Height": 22,
+          "Width": 1,
+          "Height": 1,
           "Origin": {
             "$type": "Murder.Core.Geometry.Point, Murder",
-            "X": 1,
+            "X": 4,
             "Y": 0
           }
+        },
+        "Murder.Components.RoomComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.RoomComponent, Murder",
+          "Floor": "00000000-0000-0000-0000-000000000000"
         }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
+    },
+    "2326a9be-2083-4e19-ba53-09521f89bd71": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "2326a9be-2083-4e19-ba53-09521f89bd71",
+      "_name": "Map",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib"
       },
       "IsDeactivated": false,
       "ActivateWithParent": false

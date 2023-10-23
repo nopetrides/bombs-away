@@ -1,17 +1,21 @@
 Done:
 Bombs only damage on explosion animationDespawn unkilled boats
 Make sorting actually good
+Fixed resolution (Pedro)
+Spawn safe zones
+Clamp Player Movement
 
 To Do:
-Game end (timer? Fixed enemy spawn count? Enemy attacks?)
-Score screen
-High Score, save data
-Spawn safe zones
-
 Wind effect on bombs
-Wind info
+High Score, save data
 
-Fixed resolution (Pedro)
+Game start,
+Wind info,
+Game end (timer? Fixed enemy spawn count? Enemy attacks?),
+Score screen
+
+
+
 
 
 
