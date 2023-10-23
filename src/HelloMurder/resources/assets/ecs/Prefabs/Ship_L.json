@@ -195,8 +195,8 @@
           "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
           "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
             "$type": "Murder.Components.PositionComponent, Murder",
-            "_x": 0.0,
-            "_y": -22.0
+            "_x": 3.0,
+            "_y": -28.0
           },
           "Murder.Components.ParticleSystemComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
             "$type": "Murder.Components.ParticleSystemComponent, Murder",
@@ -215,8 +215,8 @@
           "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
           "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
             "$type": "Murder.Components.PositionComponent, Murder",
-            "_x": -2.0,
-            "_y": 2.0
+            "_x": -8.0,
+            "_y": -4.0
           },
           "Murder.Components.ParticleSystemComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
             "$type": "Murder.Components.ParticleSystemComponent, Murder",
