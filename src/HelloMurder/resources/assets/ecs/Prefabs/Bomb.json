@@ -59,8 +59,7 @@
         "Damage": 1
       },
       "HelloMurder.Components.BombComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "HelloMurder.Components.BombComponent, HelloMurder",
-        "TimeToTarget": 3.0
+        "$type": "HelloMurder.Components.BombComponent, HelloMurder"
       },
       "Murder.Interactions.InteractorComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Interactions.InteractorComponent, Murder"
