@@ -113,7 +113,7 @@ namespace HelloMurder.StateMachines
 
         private void DrawMainMenu(RenderContext render)
         {
-            Point cameraHalfSize = render.Camera.Size / 2f - new Point(0, _menuInfo.Length * 7);
+            Point cameraHalfSize = render.Camera.Size / 2f - new Point(-20, _menuInfo.Length * 7);
 
             _ = RenderServices.DrawVerticalMenu(
                 render.UiBatch, 
