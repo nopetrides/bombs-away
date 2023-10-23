@@ -122,8 +122,10 @@ namespace HelloMurder.StateMachines
                 { 
                     Color = Palette.Colors[7], 
                     Shadow = Palette.Colors[1],
-                    SelectedColor = Palette.Colors[9]
-                },
+                    SelectedColor = Palette.Colors[9],
+                    Origin = new(0.25f, -7.3f),
+                    ExtraVerticalSpace = 20,
+        },
                 _menuInfo);
 
             var skin = LibraryServices.GetLibrary().SplashScreen;
