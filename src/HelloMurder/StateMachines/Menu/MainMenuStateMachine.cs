@@ -27,7 +27,7 @@ namespace HelloMurder.StateMachines
         private MenuInfo GetOptionOptions() =>
             new MenuInfo(new MenuOption[] {
                 new(Game.Preferences.SoundVolume == 1 ? "Sounds on" : "Sounds off"),
-                new(Game.Preferences.MusicVolume == 1 ? "Music on" : "Music off"),
+                new("Clear High Score Data"),
                 new("Back to menu") });
 
         public MainMenuStateMachine()
@@ -54,7 +54,6 @@ namespace HelloMurder.StateMachines
                     switch (_menuInfo.Selection)
                     {
                         case 0: //  Play
-                            Game.Data.DeleteAllSaves();
                             Game.Instance.QueueWorldTransition(_newGameWorld);
                             break;
 
@@ -92,10 +91,8 @@ namespace HelloMurder.StateMachines
                             _menuInfo.Options[0] = volume == 1 ? new("Sounds on") : new("Sounds off");
                             break;
 
-                        case 1: // Tweak music
-                            float sound = Game.Preferences.ToggleMusicVolumeAndSave();
-
-                            _menuInfo.Options[1] = sound == 1 ? new("Music on") : new("Music off");
+                        case 1: // Delete save data
+                            Game.Data.DeleteAllSaves();
                             break;
 
                         case 2: // Go back

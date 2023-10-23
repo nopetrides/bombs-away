@@ -13,6 +13,7 @@ namespace HelloMurder
         public static HelloMurderProfile Profile => (HelloMurderProfile)Game.Profile;
         public string Name => "HelloMurder";
         public GameProfile CreateGameProfile() => new HelloMurderProfile();
+        public SaveData CreateSaveData(string name) => new HelloMurderSaveData(name);
 
         public void Initialize()
         {

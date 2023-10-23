@@ -152,7 +152,7 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 256.0,
+          "_x": 260.0,
           "_y": 0.0
         },
         "HelloMurder.Components.ScrollingSprite, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
@@ -262,6 +262,7 @@
           "_routine": {
             "$type": "HelloMurder.StateMachines.Gameplay.GameplayStateMachine, HelloMurder",
             "_enemySpawnDataId": "9fbd934b-27b8-4bc9-bf92-bce9e8e1d6b1",
+            "_bombWindRadius": 64.0,
             "_cachedPersistedState": "GameStart"
           }
         }
