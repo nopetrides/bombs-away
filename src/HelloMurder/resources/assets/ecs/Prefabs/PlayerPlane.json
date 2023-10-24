@@ -146,7 +146,7 @@
           "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
             "$type": "Murder.Components.SpriteComponent, Murder",
             "TargetSpriteBatch": 3,
-            "AnimationGuid": "f95bb323-1e0b-bfa6-e1d2-77abfc493f8e",
+            "AnimationGuid": "28ba79e2-b108-e9ba-fe8e-4c80038f324b",
             "Offset": {
               "$type": "System.Numerics.Vector2, System.Private.CoreLib",
               "X": 0.0,
@@ -158,9 +158,11 @@
             "UseUnscaledTime": false,
             "NextAnimations": {
               "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
-              "$values": []
+              "$values": [
+                "Indicator"
+              ]
             },
-            "AnimationStartedTime": -1.0,
+            "AnimationStartedTime": 0.0,
             "YSortOffset": 0
           }
         },

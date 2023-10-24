@@ -13,6 +13,7 @@ using Newtonsoft.Json;
 using Murder.Core.Geometry;
 using Murder.Assets;
 using Murder.Components;
+using Murder.Core.Particles;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
@@ -26,6 +27,8 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private readonly LibraryAsset _libraryAsset;
 
+        private Entity? _player;
+
         public GameplayStateMachine() {
 
             _libraryAsset = LibraryServices.GetLibrary();
@@ -37,6 +40,10 @@ namespace HelloMurder.StateMachines.Gameplay
             World.DeactivateSystem<PlayerInputSystem>();
             Entity.SetGameplayStateMachine();
 
+            _player = World.GetUniqueEntity<PlayerComponent>();
+            var landIcon = _player.TryFetchChild("wind_indicator_icon");
+            landIcon?.Deactivate();
+
             yield return Wait.ForRoutine(FlyPlayerOnScreen());
             yield return Wait.ForRoutine(ShowWindIndicator());
             yield return Wait.ForRoutine(AnimateWindIndicator());
@@ -47,12 +54,11 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private IEnumerator<Wait> FlyPlayerOnScreen()
         {
-            var player = World.GetUniqueEntity<PlayerComponent>();
-            while (Vector2.Distance(player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center) > 5f)
+            while (_player != null && Vector2.Distance(_player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center) > 5f)
             {
-                var pos = Vector2.Lerp(player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center, Game.DeltaTime);
-                player.SetGlobalPosition(pos);
-                player.SetPlayerSpeed(player.GetPlayerSpeed().Approach(3f, 1f * Game.DeltaTime));
+                var pos = Vector2.Lerp(_player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center, Game.DeltaTime);
+                _player.SetGlobalPosition(pos);
+                _player.SetPlayerSpeed(_player.GetPlayerSpeed().Approach(3f, 1f * Game.DeltaTime));
                 yield return Wait.ForFrames(1);
             }
 
@@ -61,8 +67,6 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private void SetWind()
         {
-            var player = World.GetUniqueEntity<PlayerComponent>();
-
             float angle = 2.0f * MathF.PI * Game.Random.NextFloat();
 
             Vector2 windDir =
@@ -70,39 +74,54 @@ namespace HelloMurder.StateMachines.Gameplay
                     _bombWindRadius * MathF.Cos(angle),
                     _bombWindRadius * MathF.Sin(angle));
             WindComponent wind = new WindComponent(windDir);
-            player.SetWind(wind);
+            _player?.SetWind(wind);
         }
 
         private IEnumerator<Wait> ShowWindIndicator()
         {
             // Tell the Wind UI To play
-            var player = World.GetUniqueEntity<PlayerComponent>();
-            var wind = player.GetWind();
-            var windParticle = player.TryFetchChild("wind_indicator");
+            if (_player == null)
+                yield break;
+
+            var wind = _player.GetWind();
+            var windParticle = _player.TryFetchChild("wind_indicator");
             windParticle?.Activate();
 
-            var bombEndpoint = player.GetGlobalTransform().Vector2 + (wind.WindVector * 0.75f);
+            var bombEndpoint = _player.GetGlobalTransform().Vector2 + (wind.WindVector * 0.75f);
 
-            while (windParticle != null && Vector2.Distance(windParticle.GetGlobalTransform().Vector2, bombEndpoint) > 1f)
+            while (windParticle != null && Vector2.Distance(windParticle.GetGlobalTransform().Vector2, bombEndpoint) > 2f)
             {
                 var pos = windParticle.GetGlobalTransform().Vector2 + wind.WindVector.Normalized() * 20f * Game.DeltaTime;
                 windParticle.SetGlobalPosition(pos);
                 yield return Wait.ForFrames(1);
             }
+
+
+            if (windParticle != null)
+            {
+                WorldParticleSystemTracker worldTracker = World.GetUnique<ParticleSystemWorldTrackerComponent>().Tracker;
+
+                worldTracker.Deactivate(windParticle.EntityId);
+            }
+
+            yield return Wait.ForSeconds(1f);
+            windParticle?.Deactivate();
+            var landIcon = _player.TryFetchChild("wind_indicator_icon");
+            landIcon?.SetGlobalPosition(bombEndpoint);
+            landIcon?.Activate();
+            landIcon?.GetSprite().Play(false);
         }
 
         private IEnumerator<Wait> AnimateWindIndicator()
         {
-            yield return Wait.ForSeconds(0.2f);
-            yield return Wait.ForSeconds(0.2f);
-            yield return Wait.ForSeconds(0.2f);
-            yield return Wait.ForSeconds(0.2f);
+            var landIcon = _player?.TryFetchChild("wind_indicator_icon");
+            yield return Wait.ForSeconds(4f);
+            landIcon?.Deactivate();
         }
 
         private IEnumerator<Wait> HideWindIndicator()
         {
-            var player = World.GetUniqueEntity<PlayerComponent>();
-            var windParticle = player.TryFetchChild("wind_indicator");
+            var windParticle = _player?.TryFetchChild("wind_indicator");
             windParticle?.Deactivate();
             yield return Wait.NextFrame;
             BeginEnemySpawn();
