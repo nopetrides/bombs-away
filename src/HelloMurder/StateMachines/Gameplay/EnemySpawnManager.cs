@@ -15,7 +15,7 @@ using HelloMurder.Services;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
-    public class EnemyLevelManager : StateMachine
+    public class EnemySpawnManager : StateMachine
     {
         // Displayed in the instance editor
         [JsonProperty, GameAssetId(typeof(EnemySpawnerDataAsset))]
@@ -30,7 +30,7 @@ namespace HelloMurder.StateMachines.Gameplay
         /// For constructing this from something like a level manager that knows that enemies will spawn in the level
         /// </summary>
         /// <param name="enemySpawnData"></param>
-        public EnemyLevelManager(Guid enemySpawnData)
+        public EnemySpawnManager(Guid enemySpawnData)
         {
             _enemySpawnDataId = enemySpawnData;
             State(Level);
@@ -39,7 +39,7 @@ namespace HelloMurder.StateMachines.Gameplay
         /// <summary>
         /// Used when running the state machine directly in the world. Uses the JsonProperty of _enemySpawnDataId
         /// </summary>
-        public EnemyLevelManager()
+        public EnemySpawnManager()
         {
             State(Level);
         }
@@ -102,8 +102,6 @@ namespace HelloMurder.StateMachines.Gameplay
             var prefab = Game.Data.GetPrefab(prefabToSpawn);
             var entity = prefab.CreateAndFetch(World);
 
-            var world = (MonoWorld)World;
-
             Vector2 position = Vector2.Zero;
             var bounds = library.Bounds;
 
@@ -116,6 +114,8 @@ namespace HelloMurder.StateMachines.Gameplay
             entity.SetAgent(enemyImpulse, enemyImpulse, 0f);
             if (chasePlayer) 
                 entity.SetMoveToPlayer();
+
+            entity.SetDestroyAtTime(Game.Now + 35f);
         }
 
         public ImmutableArray<EnemySpawnEvent> Shuffle(ImmutableArray<EnemySpawnEvent> array)

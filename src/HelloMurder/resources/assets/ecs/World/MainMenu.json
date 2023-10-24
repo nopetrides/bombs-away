@@ -109,10 +109,10 @@
       "_name": "EnemySpawner",
       "_components": {
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
-        "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.EnemyLevelManager, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.EnemyLevelManager, HelloMurder]], Bang",
+        "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.EnemySpawnManager, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Gameplay.EnemySpawnManager, HelloMurder]], Bang",
           "_routine": {
-            "$type": "HelloMurder.StateMachines.Gameplay.EnemyLevelManager, HelloMurder",
+            "$type": "HelloMurder.StateMachines.Gameplay.EnemySpawnManager, HelloMurder",
             "_enemySpawnDataId": "b56e0cb1-dce0-498e-ac61-3b02a7e83e19",
             "_cachedPersistedState": "Level"
           }

@@ -130,7 +130,7 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private void BeginEnemySpawn()
         {
-            var enemySpawnManager = new StateMachineComponent<EnemyLevelManager>(new EnemyLevelManager(_enemySpawnDataId));
+            var enemySpawnManager = new StateMachineComponent<EnemySpawnManager>(new EnemySpawnManager(_enemySpawnDataId));
             World.AddEntity(enemySpawnManager);
         }
 
