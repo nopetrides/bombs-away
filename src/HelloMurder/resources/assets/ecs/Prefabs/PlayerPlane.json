@@ -131,6 +131,41 @@
         },
         "IsDeactivated": true,
         "ActivateWithParent": false
+      },
+      "4c9fb5d2-0adf-41f7-8fb3-c484798413e1": {
+        "$type": "Murder.Prefabs.EntityInstance, Murder",
+        "_guid": "4c9fb5d2-0adf-41f7-8fb3-c484798413e1",
+        "_name": "wind_indicator_icon",
+        "_components": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+          "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.PositionComponent, Murder",
+            "_x": 0.0,
+            "_y": 0.0
+          },
+          "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.SpriteComponent, Murder",
+            "TargetSpriteBatch": 3,
+            "AnimationGuid": "f95bb323-1e0b-bfa6-e1d2-77abfc493f8e",
+            "Offset": {
+              "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "RotateWithFacing": false,
+            "FlipWithFacing": false,
+            "HighlightStyle": 2,
+            "UseUnscaledTime": false,
+            "NextAnimations": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
+              "$values": []
+            },
+            "AnimationStartedTime": -1.0,
+            "YSortOffset": 0
+          }
+        },
+        "IsDeactivated": false,
+        "ActivateWithParent": false
       }
     }
   },
