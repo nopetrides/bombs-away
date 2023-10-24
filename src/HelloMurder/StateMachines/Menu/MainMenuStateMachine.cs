@@ -27,8 +27,8 @@ namespace HelloMurder.StateMachines
         private MenuInfo GetOptionOptions() =>
             new MenuInfo(new MenuOption[] {
                 new(Game.Preferences.SoundVolume == 1 ? "Sounds on" : "Sounds off"),
-                new("Clear High Score Data"),
-                new("Back to menu") });
+                new("Clear Data"),
+                new("Back") });
 
         public MainMenuStateMachine()
         {
@@ -110,18 +110,18 @@ namespace HelloMurder.StateMachines
 
         private void DrawMainMenu(RenderContext render)
         {
-            Point cameraHalfSize = render.Camera.Size / 2f - new Point(-20, _menuInfo.Length * 7);
+            Point menuOrigin = (render.Camera.Size / 2f) + new Point(25, 73);
 
             _ = RenderServices.DrawVerticalMenu(
                 render.UiBatch, 
-                cameraHalfSize, 
+                menuOrigin, 
                 new DrawMenuStyle() 
                 { 
                     Color = Palette.Colors[7], 
                     Shadow = Palette.Colors[1],
                     SelectedColor = Palette.Colors[9],
-                    Origin = new(0.25f, -7.3f),
-                    ExtraVerticalSpace = 20,
+                    Origin = new(0.5f, 0.5f),
+                    ExtraVerticalSpace = 19,
         },
                 _menuInfo);
 
