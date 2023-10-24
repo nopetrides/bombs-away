@@ -13,6 +13,7 @@ using Newtonsoft.Json;
 using Murder.Core.Geometry;
 using Murder.Assets;
 using Murder.Components;
+using Murder.Core.Particles;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
@@ -95,6 +96,14 @@ namespace HelloMurder.StateMachines.Gameplay
                 yield return Wait.ForFrames(1);
             }
 
+
+            if (windParticle != null)
+            {
+                WorldParticleSystemTracker worldTracker = World.GetUnique<ParticleSystemWorldTrackerComponent>().Tracker;
+
+                worldTracker.Deactivate(windParticle.EntityId);
+            }
+
             yield return Wait.ForSeconds(1f);
             windParticle?.Deactivate();
             var landIcon = _player.TryFetchChild("wind_indicator_icon");
@@ -106,7 +115,7 @@ namespace HelloMurder.StateMachines.Gameplay
         private IEnumerator<Wait> AnimateWindIndicator()
         {
             var landIcon = _player?.TryFetchChild("wind_indicator_icon");
-            yield return Wait.ForSeconds(1f);
+            yield return Wait.ForSeconds(4f);
             landIcon?.Deactivate();
         }
 
