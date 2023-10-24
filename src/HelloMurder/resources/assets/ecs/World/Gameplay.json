@@ -274,6 +274,6 @@
   "_entitiesToFolder": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
   },
-  "Name": "Hello World",
+  "Name": "Gameplay",
   "Guid": "9775cecb-7773-4f30-822a-0e9a7d5ddd8d"
 }

@@ -1,0 +1,32 @@
+{
+  "$type": "HelloMurder.Assets.EnemySpawnerDataAsset, HelloMurder",
+  "StartingSpawnDelay": 5.0,
+  "EnemySpawns": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[HelloMurder.Core.EnemySpawn.EnemySpawnEvent, HelloMurder]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "HelloMurder.Core.EnemySpawn.EnemySpawnEvent, HelloMurder",
+        "EnemyImpulse": 20.0,
+        "ChasePlayer": false,
+        "PrefabToSpawn": "99c113bc-8e3e-40b9-903c-59f6379bfbb7",
+        "SpawnTimeStart": 0.0
+      },
+      {
+        "$type": "HelloMurder.Core.EnemySpawn.EnemySpawnEvent, HelloMurder",
+        "EnemyImpulse": 20.0,
+        "ChasePlayer": false,
+        "PrefabToSpawn": "6d197cf4-32c5-4fd4-ad7d-c70a025ef632",
+        "SpawnTimeStart": 0.0
+      },
+      {
+        "$type": "HelloMurder.Core.EnemySpawn.EnemySpawnEvent, HelloMurder",
+        "EnemyImpulse": 20.0,
+        "ChasePlayer": false,
+        "PrefabToSpawn": "c6a94e00-22a5-4666-a23f-92a02edd56f0",
+        "SpawnTimeStart": 0.0
+      }
+    ]
+  },
+  "Name": "MainMenuEnemySpawns",
+  "Guid": "b56e0cb1-dce0-498e-ac61-3b02a7e83e19"
+}

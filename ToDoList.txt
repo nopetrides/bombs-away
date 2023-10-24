@@ -9,14 +9,8 @@ High Score, save data
 
 To Do:
 
-Game start,
-Wind info,
-Game end (timer? Fixed enemy spawn count? Enemy attacks?),
-Score screen
-
-
-
-
-
-
-
+Game start (Wind info)
+Enemy Flak system
+Game end (getting hit by flak)
+End screen (same as Pause screen with score)
+Wrap up intro screen (Ships, water, button text, button selected states)

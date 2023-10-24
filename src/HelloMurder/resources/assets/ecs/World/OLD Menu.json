@@ -43,6 +43,6 @@
   "_entitiesToFolder": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
   },
-  "Name": "Menu",
+  "Name": "OLD Menu",
   "Guid": "e09343c5-19b5-419d-88f4-f06ed35a4752"
 }

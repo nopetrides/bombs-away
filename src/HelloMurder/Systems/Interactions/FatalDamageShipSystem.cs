@@ -2,11 +2,14 @@
 
 using Bang;
 using Bang.Components;
+using Bang.Contexts;
 using Bang.Entities;
 using Bang.Systems;
 using HelloMurder.Assets;
 using HelloMurder.Components;
 using HelloMurder.Services;
+using Murder.Components;
+using Murder.Core.Particles;
 using Murder.Messages;
 using Murder.Utilities;
 
@@ -22,11 +25,18 @@ namespace HelloMurder.Systems.Interactions
             //LibraryServices.Explode(0, world, entity.GetGlobalTransform().Vector2);
 
             // play sinking animation
-            Murder.Components.SpriteComponent spriteComponent = entity.GetSprite();
+            SpriteComponent spriteComponent = entity.GetSprite();
             
             entity.SetSprite(spriteComponent.PlayOnce("hit_sunk", false));
 
             entity.SetDestroyOnAnimationComplete(false);
+
+            foreach(var c in entity.Children)
+            {
+                WorldParticleSystemTracker worldTracker = world.GetUnique<ParticleSystemWorldTrackerComponent>().Tracker;
+                worldTracker.Deactivate(c);
+                world.GetEntity(c).Unparent();
+            }
 
             // Increase score
             var pointsValue = entity.GetScoreValue().Value;

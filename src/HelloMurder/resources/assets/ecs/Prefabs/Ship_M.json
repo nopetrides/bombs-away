@@ -195,7 +195,7 @@
           "Murder.Components.ParticleSystemComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
             "$type": "Murder.Components.ParticleSystemComponent, Murder",
             "Asset": "cefae7a4-7365-45b4-92bc-06525c9353bf",
-            "DestroyWhenEmpty": false
+            "DestroyWhenEmpty": true
           },
           "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
             "$type": "Murder.Components.PositionComponent, Murder",
