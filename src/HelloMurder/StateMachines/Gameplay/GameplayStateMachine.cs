@@ -12,6 +12,7 @@ using Murder.Attributes;
 using Newtonsoft.Json;
 using Murder.Core.Geometry;
 using Murder.Assets;
+using Murder.Components;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
@@ -35,11 +36,13 @@ namespace HelloMurder.StateMachines.Gameplay
         {
             World.DeactivateSystem<PlayerInputSystem>();
             Entity.SetGameplayStateMachine();
-            yield return Wait.NextFrame;
-            while (true)
-            {
-                yield return Wait.ForRoutine(FlyPlayerOnScreen());
-            }
+
+            yield return Wait.ForRoutine(FlyPlayerOnScreen());
+            yield return Wait.ForRoutine(ShowWindIndicator());
+            yield return Wait.ForRoutine(AnimateWindIndicator());
+            yield return Wait.ForRoutine(HideWindIndicator());
+            yield return Wait.ForRoutine(CoreLoop());
+            yield return Wait.ForRoutine(EndSequenceStart());
         }
 
         private IEnumerator<Wait> FlyPlayerOnScreen()
@@ -53,46 +56,68 @@ namespace HelloMurder.StateMachines.Gameplay
                 yield return Wait.ForFrames(1);
             }
 
-            World.ActivateSystem<PlayerInputSystem>();
-            yield return Wait.ForRoutine(ShowWindIndicator());
+            SetWind();
         }
 
-        private IEnumerator<Wait> ShowWindIndicator()
+        private void SetWind()
         {
             var player = World.GetUniqueEntity<PlayerComponent>();
 
             float angle = 2.0f * MathF.PI * Game.Random.NextFloat();
 
-            Vector2 windDir = 
+            Vector2 windDir =
                 new Vector2(
-                    _bombWindRadius * MathF.Cos(angle), 
+                    _bombWindRadius * MathF.Cos(angle),
                     _bombWindRadius * MathF.Sin(angle));
             WindComponent wind = new WindComponent(windDir);
             player.SetWind(wind);
+        }
 
-            //yield return Wait.ForMessage<GameStepCompleteMessage>();
+        private IEnumerator<Wait> ShowWindIndicator()
+        {
+            // Tell the Wind UI To play
+            var player = World.GetUniqueEntity<PlayerComponent>();
+            var wind = player.GetWind();
+            var windParticle = player.TryFetchChild("wind_indicator");
+            windParticle?.Activate();
 
+            var bombEndpoint = player.GetGlobalTransform().Vector2 + (wind.WindVector * 0.75f);
 
-            yield return Wait.ForRoutine(HideWindIndicator());
+            while (windParticle != null && Vector2.Distance(windParticle.GetGlobalTransform().Vector2, bombEndpoint) > 1f)
+            {
+                var pos = windParticle.GetGlobalTransform().Vector2 + wind.WindVector.Normalized() * 20f * Game.DeltaTime;
+                windParticle.SetGlobalPosition(pos);
+                yield return Wait.ForFrames(1);
+            }
+        }
+
+        private IEnumerator<Wait> AnimateWindIndicator()
+        {
+            yield return Wait.ForSeconds(0.2f);
+            yield return Wait.ForSeconds(0.2f);
+            yield return Wait.ForSeconds(0.2f);
+            yield return Wait.ForSeconds(0.2f);
         }
 
         private IEnumerator<Wait> HideWindIndicator()
         {
+            var player = World.GetUniqueEntity<PlayerComponent>();
+            var windParticle = player.TryFetchChild("wind_indicator");
+            windParticle?.Deactivate();
             yield return Wait.NextFrame;
-            yield return Wait.ForRoutine(BeginEnemySpawn());
+            BeginEnemySpawn();
+            World.ActivateSystem<PlayerInputSystem>();
         }
 
-        private IEnumerator<Wait> BeginEnemySpawn()
+        private void BeginEnemySpawn()
         {
             var enemySpawnManager = new StateMachineComponent<EnemyLevelManager>(new EnemyLevelManager(_enemySpawnDataId));
             World.AddEntity(enemySpawnManager);
-            yield return Wait.ForRoutine(CoreLoop());
         }
 
         private IEnumerator<Wait> CoreLoop()
         {
             yield return Wait.ForMessage<GameStepCompleteMessage>();
-            GoTo(EndSequenceStart);
         }
 
         private IEnumerator<Wait> EndSequenceStart()

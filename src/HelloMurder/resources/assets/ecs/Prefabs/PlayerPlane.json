@@ -109,7 +109,30 @@
       }
     },
     "IsDeactivated": false,
-    "ActivateWithParent": false
+    "ActivateWithParent": false,
+    "_children": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
+      "2cf06493-fd5a-40bc-8beb-515a76cecb2c": {
+        "$type": "Murder.Prefabs.EntityInstance, Murder",
+        "_guid": "2cf06493-fd5a-40bc-8beb-515a76cecb2c",
+        "_name": "wind_indicator",
+        "_components": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+          "Murder.Components.ParticleSystemComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.ParticleSystemComponent, Murder",
+            "Asset": "8d303641-5e22-4a59-aada-82a1c3fb28a4",
+            "DestroyWhenEmpty": false
+          },
+          "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.PositionComponent, Murder",
+            "_x": 0.0,
+            "_y": 0.0
+          }
+        },
+        "IsDeactivated": true,
+        "ActivateWithParent": false
+      }
+    }
   },
   "Dimensions": {
     "$type": "Murder.Core.TileDimensions, Murder",
