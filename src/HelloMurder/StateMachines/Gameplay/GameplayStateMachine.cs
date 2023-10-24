@@ -89,14 +89,32 @@ namespace HelloMurder.StateMachines.Gameplay
                 windParticle.SetGlobalPosition(pos);
                 yield return Wait.ForFrames(1);
             }
+
+
+            var landIcon = player.TryFetchChild("wind_indicator_icon");
+            landIcon?.Activate();
         }
 
         private IEnumerator<Wait> AnimateWindIndicator()
         {
+
+            var player = World.GetUniqueEntity<PlayerComponent>();
+            var windParticle = player.TryFetchChild("wind_indicator");
+            windParticle?.Deactivate();
+            var landIcon = player.TryFetchChild("wind_indicator_icon");
+            landIcon?.Deactivate();
             yield return Wait.ForSeconds(0.2f);
+            windParticle?.Activate();
+            landIcon?.Activate();
             yield return Wait.ForSeconds(0.2f);
+            windParticle?.Deactivate();
+            landIcon?.Deactivate();
             yield return Wait.ForSeconds(0.2f);
+            windParticle?.Activate();
+            landIcon?.Activate();
             yield return Wait.ForSeconds(0.2f);
+            windParticle?.Deactivate();
+            landIcon?.Deactivate();
         }
 
         private IEnumerator<Wait> HideWindIndicator()
