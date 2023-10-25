@@ -10,8 +10,6 @@ using System.Numerics;
 using HelloMurder.Systems;
 using Murder.Attributes;
 using Newtonsoft.Json;
-using Murder.Core.Geometry;
-using Murder.Assets;
 using Murder.Components;
 using Murder.Core.Particles;
 
@@ -132,6 +130,8 @@ namespace HelloMurder.StateMachines.Gameplay
         {
             var enemySpawnManager = new StateMachineComponent<EnemySpawnManager>(new EnemySpawnManager(_enemySpawnDataId));
             World.AddEntity(enemySpawnManager);
+            var flakSpawnManager = new StateMachineComponent<FlakSpawnManager>(new FlakSpawnManager());
+            World.AddEntity(flakSpawnManager);
         }
 
         private IEnumerator<Wait> CoreLoop()

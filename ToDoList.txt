@@ -9,22 +9,23 @@ Wind effect on bombs
 High Score, save data
 Game start (Wind info)
 Wrap up intro screen (Ships, water, button text, button selected states)
+Fix Options screen
 
 To Do:
 
 Enemy Flak system
 Game end (getting hit by flak)
 End screen (same as Pause screen with score)
-Fix Options screen
+
 
 SOUNDS:
 
 - Turboprop constant drone
 - Menu item Selected / switch
 - Blips / bloops / radio scanner sounds for wind indicator
-- Bomb drop
+- Bomb dropping
 - Bomb Miss
-- Bomb hit (explosion
+- Bomb hit (explosion)
 - Flak spawning
 - Flak explosion
 - Player damaged / killed

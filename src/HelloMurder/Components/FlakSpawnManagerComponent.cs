@@ -5,7 +5,7 @@ namespace HelloMurder.Components
 {
     [Unique]
     [RuntimeOnly]
-    public readonly struct EnemyLevelManagerComponent : IComponent
+    public readonly struct FlakSpawnManagerComponent : IComponent
     {
     }
 }

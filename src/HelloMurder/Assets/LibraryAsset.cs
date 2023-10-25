@@ -23,6 +23,9 @@ namespace HelloMurder.Assets
         public Guid BombPrefab = Guid.Empty;
 
         [GameAssetId<PrefabAsset>]
+        public Guid FlakPrefab = Guid.Empty;
+
+        [GameAssetId<PrefabAsset>]
         public readonly ImmutableArray<Guid> Explosions = ImmutableArray<Guid>.Empty;
 
         [GameAssetId<SpriteAsset>]

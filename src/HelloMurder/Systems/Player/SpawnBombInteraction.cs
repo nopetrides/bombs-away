@@ -39,9 +39,6 @@ namespace HelloMurder.Systems.Player
             var mover = new MoveToComponent(bombOffset);
             e.SetMoveTo(mover);
             
-            
-            // todo fix
-
             SpriteComponent sprite = e.GetSprite();
             sprite = sprite.Play(false, "falling", "damage", "miss");
             

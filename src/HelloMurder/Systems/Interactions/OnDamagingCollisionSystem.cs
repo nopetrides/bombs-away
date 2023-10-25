@@ -21,8 +21,6 @@ namespace HelloMurder.Systems.Interactions
     {
         public void OnMessage(World world, Entity entity, IMessage message)
         {
-            // Don't damage dead entities
-
             GameLogger.Log("Processing Collision on specific entity");
             var msg = (DamagingCollisionMessage)message;
             var hpComponent = entity.GetHealth();

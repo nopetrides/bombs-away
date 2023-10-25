@@ -46,7 +46,7 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private IEnumerator<Wait> Level()
         {
-            Entity.SetEnemyLevelManager();
+            Entity.SetEnemySpawnManager();
             EnemySpawnerDataAsset spawnerData = Game.Data.GetAsset<EnemySpawnerDataAsset>(_enemySpawnDataId);
             LibraryAsset library = LibraryServices.GetLibrary();
 
