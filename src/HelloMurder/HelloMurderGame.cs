@@ -17,6 +17,9 @@ namespace HelloMurder
 
         public void Initialize()
         {
+            var a = Game.Instance.Window;
+            var b = Game.GraphicsDevice.DisplayMode.AspectRatio;
+
             Game.Data.CurrentPalette = Palette.Colors.ToImmutableArray();
 
             // Registers Movement Axis Input

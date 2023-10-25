@@ -16,24 +16,6 @@
         "$type": "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder",
         "Damage": 1
       },
-      "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
-        "OnlyOnce": true,
-        "SendMessageOnExit": false,
-        "SendMessageOnStay": false,
-        "CustomEnterMessages": {
-          "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
-          "$values": []
-        },
-        "CustomExitMessages": {
-          "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
-          "$values": []
-        },
-        "PlayerOnly": true
-      },
-      "Murder.Interactions.InteractorComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Interactions.InteractorComponent, Murder"
-      },
       "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.SpriteComponent, Murder",
         "TargetSpriteBatch": 0,
@@ -56,6 +38,11 @@
       },
       "HelloMurder.Components.FlakComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "HelloMurder.Components.FlakComponent, HelloMurder"
+      },
+      "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
+        "MaxHealth": 1,
+        "Health": 1
       }
     },
     "IsDeactivated": false,

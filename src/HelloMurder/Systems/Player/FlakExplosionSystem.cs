@@ -9,6 +9,10 @@ using Murder.Core.Graphics;
 using Murder.Core;
 using Murder.Utilities;
 using System.Numerics;
+using Murder.Services;
+using HelloMurder.Messages;
+using Murder.Prefabs;
+using HelloMurder.Services;
 
 namespace HelloMurder.Systems.Player
 {
@@ -27,19 +31,33 @@ namespace HelloMurder.Systems.Player
             foreach (var e in context.Entities)
             {
                 var sprite = e.GetSprite();
-                if (sprite.CurrentAnimation == "damage" && !e.HasCollider())
+                if (sprite.CurrentAnimation == "damage")
                 {
-                    IShape shape = new CircleShape(8, new Point(0, 0));
-                    var layer = CollisionLayersBase.TRIGGER & CollisionLayersBase.ACTOR & CollisionLayersBase.HITBOX;
-                    ColliderComponent col = new ColliderComponent(shape, layer, Color.Blue);
-                    e.SetCollider(col);
+                    if (!e.HasCollider())
+                    {
+                        IShape shape = new CircleShape(8, new Point(0, 0));
+                        var layer = CollisionLayersBase.NONE;
+                        ColliderComponent col = new ColliderComponent(shape, layer, Color.Blue);
+                        e.SetCollider(col);
 
-                    // shake based on distance to player
-                    var distanceFromPlayer = Vector2.Distance(e.GetGlobalTransform().Vector2, player.GetGlobalTransform().Vector2);
-                    var shake = float.Lerp(0f, 2f, (2f/MathF.Max(distanceFromPlayer, 1f)));
-                    var world = (MonoWorld)context.World;
+                        // shake based on distance to player
+                        var distanceFromPlayer = Vector2.Distance(e.GetGlobalTransform().Vector2, player.GetGlobalTransform().Vector2);
+                        var shake = float.Lerp(0f, 2f, (2f / MathF.Max(distanceFromPlayer, 1f)));
+                        var world = (MonoWorld)context.World;
+                        world.Camera.Shake(shake, .2f);
+                    }
 
-                    world.Camera.Shake(shake, .2f);
+                    if (e.GetHealth().Health > 0 && PhysicsServices.CollidesWith(e, player))
+                    {
+                        var damage = e.GetDealsDamageOnCollision().Damage;
+                        Vector2 center = Vector2.Lerp(e.GetGlobalTransform().Vector2, player.GetGlobalTransform().Vector2, 0.5f);
+                        player.SendMessage(new DamagingCollisionMessage(damage, e.EntityId, center));
+                        e.SendMessage(new DamagingCollisionMessage(damage, player.EntityId, center));
+
+                        // move this to fatal player handler
+                        LibraryServices.Explode(1, context.World, center + new Vector2(0, 16));
+                    }
+
                 }
                 else if (sprite.CurrentAnimation == "smoke_fading" && e.HasCollider())
                 {

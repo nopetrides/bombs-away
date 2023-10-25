@@ -1,0 +1,40 @@
+{
+  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "ShowOnPrefabSelector": false,
+  "_entity": {
+    "$type": "Murder.Prefabs.EntityInstance, Murder",
+    "_guid": "11fed284-ae18-42be-b5e4-a8be96847177",
+    "_name": "",
+    "_components": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+      "Murder.Components.DoNotPauseComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.DoNotPauseComponent, Murder"
+      },
+      "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Menu.PauseMenuStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Menu.PauseMenuStateMachine, HelloMurder]], Bang",
+        "_routine": {
+          "$type": "HelloMurder.StateMachines.Menu.PauseMenuStateMachine, HelloMurder",
+          "_mainMenuWorld": "237d1c07-32a0-4634-83b0-f72b70f2d037",
+          "_cachedPersistedState": "StartPause"
+        }
+      }
+    },
+    "IsDeactivated": false,
+    "ActivateWithParent": false
+  },
+  "Dimensions": {
+    "$type": "Murder.Core.TileDimensions, Murder",
+    "Origin": {
+      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "Size": {
+      "$type": "Murder.Core.Geometry.Point, Murder",
+      "X": 0,
+      "Y": 0
+    }
+  },
+  "Name": "UI/PauseMenu",
+  "Guid": "fa9ed759-71c8-4460-8096-6bfa3a01670f"
+}

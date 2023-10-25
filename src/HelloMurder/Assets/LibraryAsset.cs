@@ -20,6 +20,9 @@ namespace HelloMurder.Assets
         public Guid MainMenu = Guid.Empty;
 
         [GameAssetId<PrefabAsset>]
+        public Guid PauseMenuPrefab = Guid.Empty;
+
+        [GameAssetId<PrefabAsset>]
         public Guid BombPrefab = Guid.Empty;
 
         [GameAssetId<PrefabAsset>]

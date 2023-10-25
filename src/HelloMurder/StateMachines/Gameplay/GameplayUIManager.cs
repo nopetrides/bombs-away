@@ -52,7 +52,7 @@ namespace HelloMurder.StateMachines.Gameplay
                     bounds.Y,
                     _uiRectWidth,
                     _uiRectHeight);
-            RenderServices.Draw9Slice(render.GameUiBatch,
+            RenderServices.Draw9Slice(render.UiBatch,
                 _scoreBG,
                 scoreBgRect,
                 new DrawInfo() { Sort = 0.5f });
@@ -63,7 +63,7 @@ namespace HelloMurder.StateMachines.Gameplay
             var position = scoreBgRect.CenterLeft;
             position.X += 6;
             position.Y -= 2;
-            RenderServices.DrawSimpleText(render.GameUiBatch,
+            RenderServices.DrawSimpleText(render.UiBatch,
                 100,
                 scoreText,
                 position,
@@ -77,7 +77,7 @@ namespace HelloMurder.StateMachines.Gameplay
                bounds.Y,
         _uiRectWidth,
         _uiRectHeight);
-            RenderServices.Draw9Slice(render.GameUiBatch,
+            RenderServices.Draw9Slice(render.UiBatch,
                 _scoreBG,
                 highscoreBgRect,
                 new DrawInfo() { Sort = 0.5f });
@@ -88,7 +88,7 @@ namespace HelloMurder.StateMachines.Gameplay
             var position = highscoreBgRect.CenterLeft;
             position.X += 6;
             position.Y -= 2;
-            RenderServices.DrawSimpleText(render.GameUiBatch,
+            RenderServices.DrawSimpleText(render.UiBatch,
                 100,
                 highScoreText,
                 position,
