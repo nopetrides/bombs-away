@@ -39,6 +39,7 @@ namespace HelloMurder.Systems.Player
                 else if (sprite.CurrentAnimation == "miss" && e.HasCollider())
                 {
                     e.RemoveCollider();
+                    e.SetVelocity(0, 20f);
                     e.SetDestroyOnAnimationComplete(false);
                     var world = (MonoWorld)context.World;
                     world.Camera.Shake(1f, .2f);

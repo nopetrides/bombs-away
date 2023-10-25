@@ -24,7 +24,7 @@ namespace HelloMurder.Systems.Player
         {
             if (!context.HasAnyEntity)
                 return;
-            var player = context.World.GetUniqueEntity<PlayerComponent>();
+            var player = context.World.TryGetUniqueEntity<PlayerComponent>();
             if (player == null)
                 return;
 
@@ -53,9 +53,6 @@ namespace HelloMurder.Systems.Player
                         Vector2 center = Vector2.Lerp(e.GetGlobalTransform().Vector2, player.GetGlobalTransform().Vector2, 0.5f);
                         player.SendMessage(new DamagingCollisionMessage(damage, e.EntityId, center));
                         e.SendMessage(new DamagingCollisionMessage(damage, player.EntityId, center));
-
-                        // move this to fatal player handler
-                        LibraryServices.Explode(1, context.World, center + new Vector2(0, 16));
                     }
 
                 }

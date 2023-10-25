@@ -14,7 +14,7 @@
   "GenericAssetsPath": "data/",
   "GameWidth": 320,
   "GameHeight": 512,
-  "GameScale": 2,
+  "GameScale": 1,
   "_enforceResolution": true,
   "_scalingFilter": false,
   "Fullscreen": false,

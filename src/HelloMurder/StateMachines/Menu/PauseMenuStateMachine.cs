@@ -83,7 +83,7 @@ namespace HelloMurder.StateMachines.Menu
             Debug.Assert(_menuInfo.Options is not null);
 
             // BG fade
-            RenderServices.DrawRectangle(render.GameUiBatch, new(0, 0, render.Camera.Width, render.Camera.Height), Palette.Colors[2] * 0.8f, .11f);
+            RenderServices.DrawRectangle(render.GameUiBatch, new(0, 0, render.Camera.Width+5, render.Camera.Height+5), Palette.Colors[3] * 0.6f, .11f);
 
             Point cameraHalfSize = render.Camera.Size / 2f - new Point(0, _menuInfo.Length * 7);
 
