@@ -7,6 +7,8 @@ using Murder.Core.Geometry;
 using Murder.Core.Physics;
 using Murder.Core.Graphics;
 using Murder.Core;
+using Murder.Utilities;
+using System.Numerics;
 
 namespace HelloMurder.Systems.Player
 {
@@ -18,6 +20,10 @@ namespace HelloMurder.Systems.Player
         {
             if (!context.HasAnyEntity)
                 return;
+            var player = context.World.GetUniqueEntity<PlayerComponent>();
+            if (player == null)
+                return;
+
             foreach (var e in context.Entities)
             {
                 var sprite = e.GetSprite();
@@ -27,8 +33,11 @@ namespace HelloMurder.Systems.Player
                     var layer = CollisionLayersBase.TRIGGER & CollisionLayersBase.ACTOR & CollisionLayersBase.HITBOX;
                     ColliderComponent col = new ColliderComponent(shape, layer, Color.Blue);
                     e.SetCollider(col);
+                    var distanceFromPlayer = Vector2.Distance(e.GetGlobalTransform().Vector2, player.GetGlobalTransform().Vector2);
+                    var shake = float.Lerp(0f, 2f, (2f/MathF.Max(distanceFromPlayer, 1f)));
                     var world = (MonoWorld)context.World;
-                    world.Camera.Shake(1f, .2f);
+
+                    world.Camera.Shake(shake, .2f);
                 }
                 else if (sprite.CurrentAnimation == "smoke_fading" && e.HasCollider())
                 {
