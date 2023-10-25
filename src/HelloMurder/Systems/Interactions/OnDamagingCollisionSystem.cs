@@ -1,6 +1,5 @@
 ﻿using Bang;
 using Bang.Components;
-using Bang.Contexts;
 using Bang.Entities;
 using Bang.StateMachines;
 using Bang.Systems;
@@ -10,7 +9,6 @@ using HelloMurder.Services;
 using Murder.Core;
 using Murder.Diagnostics;
 using Murder.Messages;
-using Murder.Services;
 using System.Numerics;
 
 namespace HelloMurder.Systems.Interactions

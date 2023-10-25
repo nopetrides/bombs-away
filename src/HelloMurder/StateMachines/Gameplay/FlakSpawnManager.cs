@@ -8,6 +8,7 @@ using System.Numerics;
 using Bang.Entities;
 using HelloMurder.Assets;
 using Murder.Components;
+using HelloMurder.Components;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
@@ -40,11 +41,19 @@ namespace HelloMurder.StateMachines.Gameplay
             var prefab = Game.Data.GetPrefab(prefabToSpawn);
             var entity = prefab.CreateAndFetch(World);
 
-            Vector2 position = 
-                new Vector2(
-                Game.Random.Next(0, bounds.Width), 
-                Game.Random.Next(0, bounds.Height));
-
+            Vector2 position;
+            var player = World.GetUniqueEntity<PlayerComponent>();
+            if (player != null && Game.Random.TryWithChanceOf(20))
+            {
+                position = player.GetGlobalTransform().Vector2;
+            }
+            else
+            {
+                position =
+                    new Vector2(
+                    Game.Random.Next(0, bounds.Width),
+                    Game.Random.Next(0, bounds.Height));
+            }
             entity.SetGlobalPosition(position);
 
             SpriteComponent sprite = entity.GetSprite();

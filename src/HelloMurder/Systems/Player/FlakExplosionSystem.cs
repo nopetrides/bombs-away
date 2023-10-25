@@ -33,6 +33,8 @@ namespace HelloMurder.Systems.Player
                     var layer = CollisionLayersBase.TRIGGER & CollisionLayersBase.ACTOR & CollisionLayersBase.HITBOX;
                     ColliderComponent col = new ColliderComponent(shape, layer, Color.Blue);
                     e.SetCollider(col);
+
+                    // shake based on distance to player
                     var distanceFromPlayer = Vector2.Distance(e.GetGlobalTransform().Vector2, player.GetGlobalTransform().Vector2);
                     var shake = float.Lerp(0f, 2f, (2f/MathF.Max(distanceFromPlayer, 1f)));
                     var world = (MonoWorld)context.World;
