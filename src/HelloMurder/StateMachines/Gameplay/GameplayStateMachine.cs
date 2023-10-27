@@ -63,6 +63,7 @@ namespace HelloMurder.StateMachines.Gameplay
             var landIcon = _player.TryFetchChild("wind_indicator_icon");
             landIcon?.Deactivate();
 
+            yield return Wait.ForFrames(1);
             yield return Wait.ForRoutine(FlyPlayerOnScreen());
             yield return Wait.ForRoutine(ShowWindIndicator());
             yield return Wait.ForRoutine(AnimateWindIndicator());

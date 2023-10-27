@@ -22,6 +22,9 @@ namespace HelloMurder.Assets
         [GameAssetId<PrefabAsset>]
         public Guid PauseMenuPrefab = Guid.Empty;
 
+        [GameAssetId(typeof(WorldAsset))]
+        public Guid GameOver = Guid.Empty;
+
         [GameAssetId<PrefabAsset>]
         public Guid BombPrefab = Guid.Empty;
 
@@ -33,6 +36,9 @@ namespace HelloMurder.Assets
 
         [GameAssetId<SpriteAsset>]
         public Guid SplashScreen = Guid.Empty;
+
+        [GameAssetId<SpriteAsset>]
+        public Guid GameOverScreen = Guid.Empty;
 
         [Tooltip("This is the bounds that the road which the player will be driving will be displayed.")]
         public IntRectangle Bounds = Rectangle.Empty;
