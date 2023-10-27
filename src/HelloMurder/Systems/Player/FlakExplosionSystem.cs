@@ -60,6 +60,7 @@ namespace HelloMurder.Systems.Player
                 {
                     e.RemoveCollider();
                     e.SetDestroyOnAnimationComplete(false);
+                    e.SetVelocity(new Vector2(0f, 240f));
                 }
             }
         }

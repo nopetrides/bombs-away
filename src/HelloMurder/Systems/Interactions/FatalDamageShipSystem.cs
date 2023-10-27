@@ -52,12 +52,12 @@ namespace HelloMurder.Systems.Interactions
 
             HelloMurderSaveData save = SaveServices.GetOrCreateSave();
 
+            save.LastAttemptScore = newScore.CurrentScore;
             if (newScore.CurrentScore > save.HighScore) 
             {
                 save.HighScore = newScore.CurrentScore;
-
-                SaveServices.QuickSave();
             }
+            SaveServices.QuickSave();
         }
     }
 }

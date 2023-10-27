@@ -176,6 +176,46 @@
         },
         "IsDeactivated": false,
         "ActivateWithParent": false
+      },
+      "14124d8b-ec57-448b-9895-0909b5b03527": {
+        "$type": "Murder.Prefabs.EntityInstance, Murder",
+        "_guid": "14124d8b-ec57-448b-9895-0909b5b03527",
+        "_name": "left_wing_trail",
+        "_components": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+          "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.PositionComponent, Murder",
+            "_x": -31.0,
+            "_y": 1.0
+          },
+          "Murder.Components.ParticleSystemComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.ParticleSystemComponent, Murder",
+            "Asset": "db74e85e-4811-425a-a3b8-21efbc91e5fb",
+            "DestroyWhenEmpty": false
+          }
+        },
+        "IsDeactivated": false,
+        "ActivateWithParent": false
+      },
+      "334c36d2-826b-4911-88f9-af09877212b3": {
+        "$type": "Murder.Prefabs.EntityInstance, Murder",
+        "_guid": "334c36d2-826b-4911-88f9-af09877212b3",
+        "_name": "right_wing_trail",
+        "_components": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+          "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.PositionComponent, Murder",
+            "_x": 31.0,
+            "_y": 1.0
+          },
+          "Murder.Components.ParticleSystemComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.ParticleSystemComponent, Murder",
+            "Asset": "db74e85e-4811-425a-a3b8-21efbc91e5fb",
+            "DestroyWhenEmpty": false
+          }
+        },
+        "IsDeactivated": false,
+        "ActivateWithParent": false
       }
     }
   },

@@ -106,8 +106,9 @@ namespace HelloMurder.StateMachines.Gameplay
             var bounds = library.Bounds;
 
             position = bounds.TopLeft;
+            position.X += 32;
             position.Y -= entity.GetColliderBoundingBox().Height;
-            position.X += Game.Random.NextFloat(0, bounds.Width);
+            position.X += Game.Random.NextFloat(0, bounds.Width-32f);
 
             entity.SetGlobalPosition(position);
 
