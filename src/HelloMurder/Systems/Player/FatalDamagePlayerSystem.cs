@@ -39,8 +39,7 @@ namespace HelloMurder.Systems.Player
             entity.SetDestroyAtTime(Game.Now + 2f); // TODO replace
             yield return Wait.ForSeconds(2.5f);
 
-            // End the game TODO change to end screen prefab / scene
-            LibraryServices.GetPauseMenuPrefab().Create(world);
+            Game.Instance.QueueWorldTransition(LibraryServices.GetLibrary().GameOver);
         }
     }
 }

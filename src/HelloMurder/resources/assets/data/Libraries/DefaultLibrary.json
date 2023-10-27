@@ -2,6 +2,7 @@
   "$type": "HelloMurder.Assets.LibraryAsset, HelloMurder",
   "MainMenu": "237d1c07-32a0-4634-83b0-f72b70f2d037",
   "PauseMenuPrefab": "fa9ed759-71c8-4460-8096-6bfa3a01670f",
+  "GameOver": "fd89fd2f-3adb-48c8-8164-fc4f5f46b2f4",
   "BombPrefab": "324b6a01-d0f1-44ec-ba47-3cb9c13ad9d6",
   "FlakPrefab": "9e13c8d3-59d1-4011-9229-2b64c5f33c6b",
   "Explosions": {
@@ -12,6 +13,7 @@
     ]
   },
   "SplashScreen": "c5253e83-a3a2-e33c-9de4-675e7955048e",
+  "GameOverScreen": "84b75ca4-e711-6f7b-c09b-3157e5102535",
   "Bounds": {
     "$type": "Murder.Core.Geometry.IntRectangle, Murder",
     "X": 32,

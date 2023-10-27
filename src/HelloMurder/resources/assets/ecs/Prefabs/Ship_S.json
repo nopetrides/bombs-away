@@ -140,7 +140,7 @@
         "Velocity": {
           "$type": "System.Numerics.Vector2, System.Private.CoreLib",
           "X": 0.0,
-          "Y": 20.0
+          "Y": 40.0
         }
       },
       "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {

@@ -110,6 +110,16 @@ namespace HelloMurder.StateMachines
 
         private void DrawMainMenu(RenderContext render)
         {
+            // BG
+            var skin = LibraryServices.GetLibrary().SplashScreen;
+
+            RenderServices.DrawSprite(render.UiBatch, skin,
+                new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f), new DrawInfo(0.8f)
+                {
+                    Origin = new Vector2(.5f, .5f)
+                });
+
+            // Menu options
             Point menuOrigin = (render.Camera.Size / 2f) + new Point(25, 73);
 
             _ = RenderServices.DrawVerticalMenu(
@@ -122,16 +132,8 @@ namespace HelloMurder.StateMachines
                     SelectedColor = Palette.Colors[9],
                     Origin = new(0.5f, 0.5f),
                     ExtraVerticalSpace = 19,
-        },
+                },
                 _menuInfo);
-
-            var skin = LibraryServices.GetLibrary().SplashScreen;
-
-            RenderServices.DrawSprite(render.UiBatch, skin,
-                new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f), new DrawInfo(0.8f)
-            {
-                Origin = new Vector2(.5f, .5f)
-            });
         }
     }
 }

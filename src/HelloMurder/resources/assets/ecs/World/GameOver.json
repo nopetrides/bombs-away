@@ -1,0 +1,49 @@
+{
+  "$type": "Murder.Assets.WorldAsset, Murder",
+  "WorldName": "World",
+  "Order": 1,
+  "_systems": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": []
+  },
+  "_features": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "4dc3c8b1-5b4a-4ca5-818c-f7763169e2e6",
+        "Item2": true
+      }
+    ]
+  },
+  "_folders": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable]], System.Private.CoreLib"
+  },
+  "_entities": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
+    "2c3b6744-7dee-44ff-9bd5-ca3d783234e5": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "2c3b6744-7dee-44ff-9bd5-ca3d783234e5",
+      "_name": "GameOverMenuStateMachine",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Menu.GameOverMenuStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.Menu.GameOverMenuStateMachine, HelloMurder]], Bang",
+          "_routine": {
+            "$type": "HelloMurder.StateMachines.Menu.GameOverMenuStateMachine, HelloMurder",
+            "_mainMenuWorld": "237d1c07-32a0-4634-83b0-f72b70f2d037",
+            "_gameWorld": "9775cecb-7773-4f30-822a-0e9a7d5ddd8d",
+            "_cachedPersistedState": "GameOver"
+          }
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
+    }
+  },
+  "_entitiesToFolder": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "Name": "GameOver",
+  "Guid": "fd89fd2f-3adb-48c8-8164-fc4f5f46b2f4"
+}

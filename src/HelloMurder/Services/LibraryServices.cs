@@ -23,7 +23,6 @@ namespace HelloMurder.Services
             //LDGameSoundPlayer.Instance.PlayEvent(GetLibrary().CarImpact, isLoop: false);
         }
 
-
         internal static PrefabAsset GetPauseMenuPrefab()
         {
             return Game.Data.GetAsset<PrefabAsset>(GetLibrary().PauseMenuPrefab);
