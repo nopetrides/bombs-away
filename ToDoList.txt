@@ -10,13 +10,14 @@ High Score, save data
 Game start (Wind info)
 Wrap up intro screen (Ships, water, button text, button selected states)
 Fix Options screen
-
-To Do:
-
 Enemy Flak system
 Game end (getting hit by flak)
-End screen (same as Pause screen with score)
 
+To Do:
+Player death animation
+End screen (screen with score)
+Add radio and text to wind preview
+Add controls to intro / wind sequence
 
 SOUNDS:
 

@@ -8,7 +8,7 @@ namespace HelloMurder.Core
         {
             Color.FromHex("000000"), //0
             Color.FromHex("000000"),//1
-            Color.FromHex("2D334F"),
+            Color.FromHex("444BFE"),
             Color.FromHex("847E87"),
             Color.FromHex("FB43C5"),
             Color.FromHex("CBDBFC"),

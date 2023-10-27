@@ -26,21 +26,6 @@
         "MaxHealth": 1,
         "Health": 1
       },
-      "Murder.Components.InteractOnCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.InteractOnCollisionComponent, Murder",
-        "OnlyOnce": false,
-        "SendMessageOnExit": false,
-        "SendMessageOnStay": false,
-        "CustomEnterMessages": {
-          "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
-          "$values": []
-        },
-        "CustomExitMessages": {
-          "$type": "System.Collections.Immutable.ImmutableArray`1[[Bang.Interactions.IInteractiveComponent, Bang]], System.Collections.Immutable",
-          "$values": []
-        },
-        "PlayerOnly": false
-      },
       "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.SpriteComponent, Murder",
         "TargetSpriteBatch": 1,
@@ -65,7 +50,7 @@
       },
       "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.ColliderComponent, Murder",
-        "Layer": 2,
+        "Layer": 8,
         "Shapes": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
           "$values": [
@@ -175,6 +160,9 @@
       },
       "Murder.Components.FreeMovementComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.FreeMovementComponent, Murder"
+      },
+      "Murder.Interactions.InteractorComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Interactions.InteractorComponent, Murder"
       }
     },
     "IsDeactivated": false,

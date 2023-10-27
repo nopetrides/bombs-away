@@ -4,6 +4,7 @@ using HelloMurder.Assets;
 using Murder.Utilities;
 using Bang;
 using System.Numerics;
+using Murder.Assets;
 
 namespace HelloMurder.Services
 {
@@ -20,6 +21,12 @@ namespace HelloMurder.Services
             explosion.SetGlobalPosition(position);
 
             //LDGameSoundPlayer.Instance.PlayEvent(GetLibrary().CarImpact, isLoop: false);
+        }
+
+
+        internal static PrefabAsset GetPauseMenuPrefab()
+        {
+            return Game.Data.GetAsset<PrefabAsset>(GetLibrary().PauseMenuPrefab);
         }
     }
 }

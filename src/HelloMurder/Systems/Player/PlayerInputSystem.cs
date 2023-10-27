@@ -70,6 +70,13 @@ namespace HelloMurder.Systems
             _cachedInputAxis = Game.Input.GetAxis(InputAxis.Movement).Value;
 
             _cachedAttack = Game.Input.Down(InputButtons.Attack);
+
+            if (Game.Input.Pressed(InputButtons.Pause) && !context.World.IsPaused) 
+            {
+                LibraryServices.GetPauseMenuPrefab().Create(context.World);
+
+                //LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().UiBack, isLoop: false);
+            }
         }
 
         private Vector2 ClampBounds(IntRectangle bounds, Vector2 position)

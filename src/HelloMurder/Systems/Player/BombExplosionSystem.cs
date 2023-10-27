@@ -32,13 +32,14 @@ namespace HelloMurder.Systems.Player
                 if (sprite.CurrentAnimation == "damage" && !e.HasCollider())
                 {
                     IShape shape = new CircleShape(10, new Point(0, 0));
-                    var layer = CollisionLayersBase.TRIGGER & CollisionLayersBase.ACTOR & CollisionLayersBase.HITBOX;
+                    var layer = CollisionLayersBase.TRIGGER;
                     ColliderComponent col = new ColliderComponent(shape, layer, Color.Blue);
                     e.SetCollider(col);
                 }
                 else if (sprite.CurrentAnimation == "miss" && e.HasCollider())
                 {
                     e.RemoveCollider();
+                    e.SetVelocity(0, 20f);
                     e.SetDestroyOnAnimationComplete(false);
                     var world = (MonoWorld)context.World;
                     world.Camera.Shake(1f, .2f);

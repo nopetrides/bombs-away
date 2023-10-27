@@ -3,7 +3,7 @@
   "ShowOnPrefabSelector": false,
   "_entity": {
     "$type": "Murder.Prefabs.EntityInstance, Murder",
-    "_guid": "7422e337-119e-4b01-9379-cd4b13b54de1",
+    "_guid": "a0edc4f0-a384-42f9-83b7-21e41915bc5f",
     "_name": "",
     "_components": {
       "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
@@ -12,14 +12,10 @@
         "_x": 0.0,
         "_y": 0.0
       },
-      "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "HelloMurder.Components.DealsDamageOnCollisionComponent, HelloMurder",
-        "Damage": 1
-      },
       "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.SpriteComponent, Murder",
-        "TargetSpriteBatch": 0,
-        "AnimationGuid": "9918278d-6761-19e0-b700-40037e2b6fd6",
+        "TargetSpriteBatch": 3,
+        "AnimationGuid": "090d2b84-c84d-d40e-5879-091f2fb78884",
         "Offset": {
           "$type": "System.Numerics.Vector2, System.Private.CoreLib",
           "X": 0.5,
@@ -35,14 +31,6 @@
         },
         "AnimationStartedTime": -1.0,
         "YSortOffset": 0
-      },
-      "HelloMurder.Components.FlakComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "HelloMurder.Components.FlakComponent, HelloMurder"
-      },
-      "HelloMurder.Components.HealthComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
-        "MaxHealth": 1,
-        "Health": 1
       }
     },
     "IsDeactivated": false,
@@ -61,6 +49,6 @@
       "Y": 0
     }
   },
-  "Name": "Flak",
-  "Guid": "9e13c8d3-59d1-4011-9229-2b64c5f33c6b"
+  "Name": "UI\\Radio",
+  "Guid": "8093e52e-b1b4-4ed7-bb54-a340a9886877"
 }

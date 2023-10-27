@@ -35,7 +35,7 @@
       },
       "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.ColliderComponent, Murder",
-        "Layer": 10,
+        "Layer": 0,
         "Shapes": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
           "$values": [
@@ -111,6 +111,9 @@
         "$type": "HelloMurder.Components.HealthComponent, HelloMurder",
         "MaxHealth": 1,
         "Health": 1
+      },
+      "Murder.Components.AdvancedCollisionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.AdvancedCollisionComponent, Murder"
       }
     },
     "IsDeactivated": false,
