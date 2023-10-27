@@ -13,6 +13,9 @@ using Newtonsoft.Json;
 using Murder.Components;
 using Murder.Core.Particles;
 using Murder.Assets;
+using Murder.Core.Graphics;
+using HelloMurder.Core;
+using Murder.Services;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
@@ -27,10 +30,18 @@ namespace HelloMurder.StateMachines.Gameplay
         [JsonProperty]
         private readonly float _bombWindRadius = 64f;
 
+        [JsonProperty]
+        private readonly string _windWarningText = "";
+
         private readonly LibraryAsset _libraryAsset;
 
         private Entity? _player;
         private Entity? _radio;
+
+        private bool _showWindWarning;
+        private bool _showControls;
+        private bool _reachedEnd;
+        private float _lastStartedTime = 0;
 
         public GameplayStateMachine() {
 
@@ -42,6 +53,7 @@ namespace HelloMurder.StateMachines.Gameplay
         {
             World.DeactivateSystem<PlayerInputSystem>();
             Entity.SetGameplayStateMachine();
+            Entity.SetCustomDraw(DrawMessage);
 
             _player = World.GetUniqueEntity<PlayerComponent>();
             var landIcon = _player.TryFetchChild("wind_indicator_icon");
@@ -96,6 +108,8 @@ namespace HelloMurder.StateMachines.Gameplay
             if (_player == null)
                 yield break;
 
+            _lastStartedTime = Game.NowUnscaled;
+            _showWindWarning = true;
             var wind = _player.GetWind();
             var windParticle = _player.TryFetchChild("wind_indicator");
             windParticle?.Activate();
@@ -136,7 +150,19 @@ namespace HelloMurder.StateMachines.Gameplay
         {
             var windParticle = _player?.TryFetchChild("wind_indicator");
             windParticle?.Deactivate();
+            _showWindWarning = false;
             yield return Wait.NextFrame;
+            
+            var bottomCenter = _libraryAsset.Bounds.Center;
+            bottomCenter.Y += (_libraryAsset.Bounds.Height / 2f) + 30f;
+
+            while (_radio != null && Vector2.Distance(_radio.GetGlobalTransform().Vector2, bottomCenter) > 5f)
+            {
+                var radioPos = Vector2.Lerp(_radio.GetGlobalTransform().Vector2, bottomCenter, Game.DeltaTime);
+                _radio.SetGlobalPosition(radioPos);
+                yield return Wait.ForFrames(1);
+            }
+
             BeginEnemySpawn();
             World.ActivateSystem<PlayerInputSystem>();
         }
@@ -157,6 +183,67 @@ namespace HelloMurder.StateMachines.Gameplay
         private IEnumerator<Wait> EndSequenceStart()
         {
             yield return Wait.NextFrame;
+        }
+
+        private void DrawMessage(RenderContext render)
+        {
+            if (_showWindWarning)
+            {
+                float timeSinceAppeared = Game.NowUnscaled - _lastStartedTime;
+                int currentLength = Calculator.CeilToInt(Calculator.ClampTime(timeSinceAppeared, 2f /* dialog duration */) * _windWarningText.Length);
+
+                if (_reachedEnd || currentLength == _windWarningText.Length)
+                {
+                    _reachedEnd = true;
+
+                    currentLength = _windWarningText.Length;
+                }
+                int maxWidth = 230;
+
+                float dialogWidth = Math.Min(
+                    Game.Data.GetFont(100).GetLineWidth(_windWarningText.AsSpan().Slice(0, currentLength)), maxWidth);
+
+                var bottomCenter = _libraryAsset.Bounds.Center;
+                bottomCenter.X -= dialogWidth / 2f;
+                bottomCenter.Y += _libraryAsset.Bounds.Height / 2f - 64f;
+                Vector2 textPosition = bottomCenter;
+
+                Game.Data.GetFont(100).Draw(
+                    render.UiBatch,
+                    _windWarningText,
+                    position: textPosition,
+                    alignment: new Vector2(0, 0),
+                    scale: new Vector2(1, 1),
+                    sort: .5f,
+                    color: Palette.Colors[9],
+                    strokeColor: null,
+                    shadowColor: Palette.Colors[0],
+                    maxWidth: maxWidth,
+                    visibleCharacters: currentLength
+                );
+
+                /*
+                if (_playNextSound < Game.NowUnscaled && currentLength < line.Text.Length)
+                {
+                    if (isRightSpeaker)
+                    {
+                        LDGameSoundPlayer.Instance.PlayEvent(_speaker == SpeakerKind.Granny ?
+                            LibraryServices.GetRoadLibrary().GrandmaTextBeep :
+                            LibraryServices.GetRoadLibrary().CarTextBeep, isLoop: false);
+                    }
+                    else
+                    {
+                        LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().DaggersTextBeep, isLoop: false);
+                    }
+
+                    _playNextSound = Game.NowUnscaled + 0.09f;
+                }
+                */
+            }
+            if (_showControls)
+            {
+
+            }
         }
     }
 }

@@ -42,7 +42,7 @@ namespace HelloMurder.StateMachines.Gameplay
             var entity = prefab.CreateAndFetch(World);
 
             Vector2 position;
-            var player = World.GetUniqueEntity<PlayerComponent>();
+            var player = World.TryGetUniqueEntity<PlayerComponent>();
             if (player != null && Game.Random.TryWithChanceOf(20))
             {
                 position = player.GetGlobalTransform().Vector2;

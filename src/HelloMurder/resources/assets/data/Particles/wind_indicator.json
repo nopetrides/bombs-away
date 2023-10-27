@@ -86,7 +86,7 @@
   },
   "Particle": {
     "$type": "Murder.Core.Particles.Particle, Murder",
-    "SpriteBatch": 0,
+    "SpriteBatch": 3,
     "Texture": {
       "$type": "Murder.Core.Particles.ParticleTexture, Murder",
       "Kind": 0,
