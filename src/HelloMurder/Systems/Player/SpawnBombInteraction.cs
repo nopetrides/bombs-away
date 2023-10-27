@@ -33,7 +33,6 @@ namespace HelloMurder.Systems.Player
             Entity e = AssetServices.Create(world, prefab);
             e.SetTransform(entity.GetGlobalTransform());
 
-
             var playerPos = entity.GetGlobalTransform().Vector2;
             var bombOffset = playerPos + entity.GetWind().WindVector;
             var mover = new MoveToComponent(bombOffset);

@@ -12,6 +12,7 @@ using Murder.Attributes;
 using Newtonsoft.Json;
 using Murder.Components;
 using Murder.Core.Particles;
+using Murder.Assets;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
@@ -20,12 +21,16 @@ namespace HelloMurder.StateMachines.Gameplay
         [JsonProperty, GameAssetId(typeof(EnemySpawnerDataAsset))]
         private readonly Guid _enemySpawnDataId = Guid.Empty;
 
+        [JsonProperty, GameAssetId<PrefabAsset>]
+        private readonly Guid _radioPrefab = Guid.Empty;
+
         [JsonProperty]
         private readonly float _bombWindRadius = 64f;
 
         private readonly LibraryAsset _libraryAsset;
 
         private Entity? _player;
+        private Entity? _radio;
 
         public GameplayStateMachine() {
 
@@ -52,11 +57,21 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private IEnumerator<Wait> FlyPlayerOnScreen()
         {
+            _radio = AssetServices.Create(World, _radioPrefab);
+            var bottomCenter = _libraryAsset.Bounds.Center;
+            bottomCenter.Y += _libraryAsset.Bounds.Height / 2f;
+            _radio.SetGlobalPosition(bottomCenter);
+            var bottomMinusRadioHeight = bottomCenter;
+            bottomMinusRadioHeight.Y -= 20f;
+
             while (_player != null && Vector2.Distance(_player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center) > 5f)
             {
                 var pos = Vector2.Lerp(_player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center, Game.DeltaTime);
                 _player.SetGlobalPosition(pos);
                 _player.SetPlayerSpeed(_player.GetPlayerSpeed().Approach(3f, 1f * Game.DeltaTime));
+
+                var radioPos = Vector2.Lerp(_radio.GetGlobalTransform().Vector2, bottomMinusRadioHeight, Game.DeltaTime);
+                _radio.SetGlobalPosition(radioPos);
                 yield return Wait.ForFrames(1);
             }
 
