@@ -11,7 +11,7 @@ using HelloMurder.Services;
 using Murder.Components;
 using Murder.Core.Particles;
 using Murder.Messages;
-using Murder.Utilities;
+using System.Numerics;
 
 namespace HelloMurder.Systems.Interactions
 {
@@ -30,6 +30,8 @@ namespace HelloMurder.Systems.Interactions
             entity.SetSprite(spriteComponent.PlayOnce("hit_sunk", false));
 
             entity.SetDestroyOnAnimationComplete(false);
+
+            entity.SetVelocity(new Vector2(0f,20f));
 
             foreach(var c in entity.Children)
             {

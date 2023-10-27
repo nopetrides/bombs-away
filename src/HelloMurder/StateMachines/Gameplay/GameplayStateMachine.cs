@@ -27,6 +27,9 @@ namespace HelloMurder.StateMachines.Gameplay
         [JsonProperty, GameAssetId<PrefabAsset>]
         private readonly Guid _radioPrefab = Guid.Empty;
 
+        [JsonProperty, GameAssetId<PrefabAsset>]
+        private readonly Guid _controlsPrefab = Guid.Empty;
+
         [JsonProperty]
         private readonly float _bombWindRadius = 64f;
 
@@ -37,11 +40,12 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private Entity? _player;
         private Entity? _radio;
+        private Entity? _controls;
 
         private bool _showWindWarning;
-        private bool _showControls;
         private bool _reachedEnd;
         private float _lastStartedTime = 0;
+        private bool _anyInput;
 
         public GameplayStateMachine() {
 
@@ -63,6 +67,9 @@ namespace HelloMurder.StateMachines.Gameplay
             yield return Wait.ForRoutine(ShowWindIndicator());
             yield return Wait.ForRoutine(AnimateWindIndicator());
             yield return Wait.ForRoutine(HideWindIndicator());
+            yield return Wait.ForRoutine(ShowControls());
+            yield return Wait.ForRoutine(WaitForInput());
+            yield return Wait.ForRoutine(HideControls());
             yield return Wait.ForRoutine(CoreLoop());
             yield return Wait.ForRoutine(EndSequenceStart());
         }
@@ -163,8 +170,60 @@ namespace HelloMurder.StateMachines.Gameplay
                 yield return Wait.ForFrames(1);
             }
 
-            BeginEnemySpawn();
+            _radio?.Destroy();
+
+        }
+
+        private IEnumerator<Wait> ShowControls()
+        {
             World.ActivateSystem<PlayerInputSystem>();
+
+            _controls = AssetServices.Create(World, _controlsPrefab);
+            var bottomCenter = _libraryAsset.Bounds.Center;
+            bottomCenter.Y += _libraryAsset.Bounds.Height / 2f;
+            _controls.SetGlobalPosition(bottomCenter);
+            var bottomMinusControlsHeight = bottomCenter;
+            bottomMinusControlsHeight.Y -= 30f;
+
+            while (_controls != null && Vector2.Distance(_controls.GetGlobalTransform().Vector2, bottomMinusControlsHeight) > 5f)
+            {
+                var controlsPos = Vector2.Lerp(_controls.GetGlobalTransform().Vector2, bottomMinusControlsHeight, Game.DeltaTime);
+                _controls.SetGlobalPosition(controlsPos);
+                if (_player?.TryGetVelocity() != null)
+                {
+                    _anyInput = true;
+                }
+                yield return Wait.ForFrames(1);
+            }
+
+        }
+
+        private IEnumerator<Wait> WaitForInput()
+        {
+            while (!_anyInput) 
+            {
+                if (_player?.TryGetVelocity() != null)
+                {
+                    _anyInput = true;
+                }
+                yield return Wait.ForFrames(1);
+            }
+        }
+
+        private IEnumerator<Wait> HideControls()
+        {
+            var bottomCenter = _libraryAsset.Bounds.Center;
+            bottomCenter.Y += (_libraryAsset.Bounds.Height / 2f) + 30f;
+
+            while (_controls != null && Vector2.Distance(_controls.GetGlobalTransform().Vector2, bottomCenter) > 5f)
+            {
+                var controlsPos = Vector2.Lerp(_controls.GetGlobalTransform().Vector2, bottomCenter, Game.DeltaTime);
+                _controls.SetGlobalPosition(controlsPos);
+                yield return Wait.ForFrames(1);
+            }
+
+            _controls?.Destroy();
+            BeginEnemySpawn();
         }
 
         private void BeginEnemySpawn()
@@ -239,10 +298,6 @@ namespace HelloMurder.StateMachines.Gameplay
                     _playNextSound = Game.NowUnscaled + 0.09f;
                 }
                 */
-            }
-            if (_showControls)
-            {
-
             }
         }
     }
