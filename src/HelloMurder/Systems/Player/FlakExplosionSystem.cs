@@ -25,14 +25,15 @@ namespace HelloMurder.Systems.Player
             if (!context.HasAnyEntity)
                 return;
             var player = context.World.TryGetUniqueEntity<PlayerComponent>();
-            if (player == null)
-                return;
 
             foreach (var e in context.Entities)
             {
                 var sprite = e.GetSprite();
                 if (sprite.CurrentAnimation == "damage")
                 {
+                    if (player == null) 
+                        continue;
+
                     if (!e.HasCollider())
                     {
                         IShape shape = new CircleShape(8, new Point(0, 0));
@@ -56,11 +57,10 @@ namespace HelloMurder.Systems.Player
                     }
 
                 }
-                else if (sprite.CurrentAnimation == "smoke_fading" && e.HasCollider())
+                else if (sprite.CurrentAnimation == "smoke_fading")
                 {
                     e.RemoveCollider();
                     e.SetDestroyOnAnimationComplete(false);
-                    e.SetVelocity(new Vector2(0f, 240f));
                 }
             }
         }
