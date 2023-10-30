@@ -8,7 +8,9 @@ using HelloMurder.Assets;
 using HelloMurder.Components;
 using HelloMurder.Services;
 using Murder;
+using Murder.Components;
 using Murder.Core;
+using Murder.Core.Particles;
 using Murder.Messages;
 using Murder.Services;
 using Murder.Utilities;
@@ -23,21 +25,40 @@ namespace HelloMurder.Systems.Player
         public void OnMessage(World world, Entity entity, IMessage message)
         {
             world.DeactivateSystem<PlayerInputSystem>();
-            LibraryServices.Explode(1, world, entity.GetGlobalTransform().Vector2 + new Vector2(0, 16));
             var monoWorld = (MonoWorld)world;
-            monoWorld.Camera.Shake(0, 0);
+            monoWorld.Camera.Shake(1f, 2.5f);
 
             CoroutineServices.RunCoroutine(world, KillAndCleanup(world, entity));
         }
 
         private IEnumerator<Wait> KillAndCleanup(World world, Entity entity)
         {
-            //TODO player destroyed animation animation
-            //SpriteComponent spriteComponent = entity.GetSprite();
-            //entity.SetSprite(spriteComponent.PlayOnce("death", false));
+            AgentSpriteComponent spriteComponent = entity.GetAgentSprite();
+            var spriteGuid = spriteComponent.AnimationGuid;
+            var deathPosition = entity.GetGlobalTransform().Vector2;
 
-            entity.SetDestroyAtTime(Game.Now + 2f); // TODO replace
-            yield return Wait.ForSeconds(2.5f);
+            entity.RemoveAgentSprite();
+            entity.AddOrReplaceComponent(new SpriteComponent(spriteGuid, Vector2.Zero,"player_death",0,false,false,Murder.Core.Graphics.OutlineStyle.None, 0, 0));
+
+            entity.SetDestroyOnAnimationComplete();
+            foreach (var c in entity.Children)
+            {
+                var child = world.GetEntity(c);
+                if (!child.HasParticleSystem())
+                    continue;
+                WorldParticleSystemTracker worldTracker = world.GetUnique<ParticleSystemWorldTrackerComponent>().Tracker;
+                worldTracker.Deactivate(c);
+                child.Unparent();
+            }
+
+            yield return Wait.ForMessage<AnimationCompleteMessage>(entity);
+
+            LibraryServices.Explode(1, world, deathPosition + new Vector2(0, 16));
+
+            var monoWorld = (MonoWorld)world; 
+            monoWorld.Camera.Shake(3f, 1f);
+
+            yield return Wait.ForSeconds(2f);
 
             Game.Instance.QueueWorldTransition(LibraryServices.GetLibrary().GameOver);
         }

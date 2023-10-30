@@ -12,6 +12,7 @@ using System.Diagnostics;
 using Murder.Core.Geometry;
 using HelloMurder.Services;
 using System.Numerics;
+using HelloMurder.Assets;
 
 namespace HelloMurder.StateMachines.Menu
 {
@@ -96,6 +97,44 @@ namespace HelloMurder.StateMachines.Menu
                     ExtraVerticalSpace = 19,
                 },
                 _menuInfo);
+
+
+            HelloMurderSaveData save = SaveServices.GetOrCreateSave();
+            // Score
+            DrawScore(render, save);
+            // High score
+            DrawHighScore(render, save);
+        }
+
+
+        private void DrawScore(RenderContext render, HelloMurderSaveData save)
+        {
+            var score = save.LastAttemptScore;
+            var scoreText = "Score: " + score;
+            var textDraw = new DrawInfo() { Sort = 0.4f, Color = Color.Black };
+            var position = new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f);
+            position.X -= 100;
+            position.Y -= 25;
+            RenderServices.DrawSimpleText(render.UiBatch,
+                100,
+                scoreText,
+                position,
+                textDraw);
+
+        }
+        private void DrawHighScore(RenderContext render, HelloMurderSaveData save)
+        {
+            var highScore = save.HighScore;
+            var highScoreText = "High Score: " + highScore;
+            var textDraw = new DrawInfo() { Sort = 0.4f, Color = Color.Black };
+            var position = new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f);
+            position.X += 50;
+            position.Y -= 25;
+            RenderServices.DrawSimpleText(render.UiBatch,
+                100,
+                highScoreText,
+                position,
+                textDraw);
         }
 
         public override void OnDestroyed()

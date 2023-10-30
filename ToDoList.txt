@@ -12,12 +12,16 @@ Wrap up intro screen (Ships, water, button text, button selected states)
 Fix Options screen
 Enemy Flak system
 Game end (getting hit by flak)
-
-To Do:
 Player death animation
 End screen (screen with score)
 Add radio and text to wind preview
 Add controls to intro / wind sequence
+Score and highscore on game over screen
+
+To Do:
+Game over screen animation
+Finish player death animation
+Add Fmod
 
 SOUNDS:
 

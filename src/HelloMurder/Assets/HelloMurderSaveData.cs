@@ -6,6 +6,8 @@ namespace HelloMurder.Assets
     {
         public int HighScore = 0;
 
+        public int LastAttemptScore = 0;
+
         public HelloMurderSaveData(string name) : base(name) { }
     }
 }
