@@ -1,10 +1,8 @@
 ﻿using Bang;
 using Bang.Components;
-using Bang.Contexts;
 using Bang.Entities;
 using Bang.StateMachines;
 using Bang.Systems;
-using HelloMurder.Assets;
 using HelloMurder.Components;
 using HelloMurder.Services;
 using Murder;
