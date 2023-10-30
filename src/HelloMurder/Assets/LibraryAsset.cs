@@ -35,10 +35,14 @@ namespace HelloMurder.Assets
         public readonly ImmutableArray<Guid> Explosions = ImmutableArray<Guid>.Empty;
 
         [GameAssetId<SpriteAsset>]
+        public Guid PlayerDeath = Guid.Empty;
+
+        [GameAssetId<SpriteAsset>]
         public Guid SplashScreen = Guid.Empty;
 
         [GameAssetId<SpriteAsset>]
         public Guid GameOverScreen = Guid.Empty;
+
 
         [Tooltip("This is the bounds that the road which the player will be driving will be displayed.")]
         public IntRectangle Bounds = Rectangle.Empty;

@@ -34,11 +34,11 @@ namespace HelloMurder.Systems.Player
         private IEnumerator<Wait> KillAndCleanup(World world, Entity entity)
         {
             AgentSpriteComponent spriteComponent = entity.GetAgentSprite();
-            var spriteGuid = spriteComponent.AnimationGuid;
+            var spriteGuid = LibraryServices.GetLibrary().PlayerDeath;
             var deathPosition = entity.GetGlobalTransform().Vector2;
 
             entity.RemoveAgentSprite();
-            var animation = new System.Collections.Immutable.ImmutableArray<string>();
+            var animation = System.Collections.Immutable.ImmutableArray<string>.Empty;
             animation = animation.Add("player_death");
             entity.AddOrReplaceComponent(new SpriteComponent(spriteGuid, Vector2.Zero,animation,0,false,false,Murder.Core.Graphics.OutlineStyle.None, 0, 0));
 
