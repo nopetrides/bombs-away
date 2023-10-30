@@ -38,7 +38,9 @@ namespace HelloMurder.Systems.Player
             var deathPosition = entity.GetGlobalTransform().Vector2;
 
             entity.RemoveAgentSprite();
-            entity.AddOrReplaceComponent(new SpriteComponent(spriteGuid, Vector2.Zero,"player_death",0,false,false,Murder.Core.Graphics.OutlineStyle.None, 0, 0));
+            var animation = new System.Collections.Immutable.ImmutableArray<string>();
+            animation = animation.Add("player_death");
+            entity.AddOrReplaceComponent(new SpriteComponent(spriteGuid, Vector2.Zero,animation,0,false,false,Murder.Core.Graphics.OutlineStyle.None, 0, 0));
 
             entity.SetDestroyOnAnimationComplete();
             foreach (var c in entity.Children)
