@@ -1,6 +1,20 @@
 {
   "$type": "HelloMurder.Assets.HelloMurderProfile, HelloMurder",
   "Library": "06cfea1c-576b-4bd2-85f6-7b19cd851839",
+  "MusicBus": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 0,
+    "Data2": 0,
+    "Data3": 0,
+    "Data4": 0
+  },
+  "SoundBus": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 0,
+    "Data2": 0,
+    "Data3": 0,
+    "Data4": 0
+  },
   "AtlasFolderName": "atlas/",
   "ContentAsepritePath": "aseprite/",
   "FontPath": "shaders/",
