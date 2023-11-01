@@ -1,5 +1,7 @@
-﻿using Murder.Core.Sounds;
+﻿using FMOD.Studio;
+using Murder.Core.Sounds;
 using Murder.Diagnostics;
+using Murder.Utilities;
 using System.Collections.Immutable;
 
 namespace HelloMurder.Core.Sounds.Fmod
@@ -12,7 +14,7 @@ namespace HelloMurder.Core.Sounds.Fmod
     public class EventDescription : IDisposable
     {
         private readonly FMOD.Studio.EventDescription _event;
-        
+
         private string? _path;
         private FMOD.GUID? _id;
 
@@ -26,7 +28,7 @@ namespace HelloMurder.Core.Sounds.Fmod
         }
 
         public SoundEventId Id => Guid.ToSoundId().WithPath(Path);
-        
+
         public string Path
         {
             get
@@ -54,7 +56,7 @@ namespace HelloMurder.Core.Sounds.Fmod
                 return _id.Value;
             }
         }
-        
+
         public ImmutableArray<EventInstance> GetInstances()
         {
             if (_instancesCached is null)
@@ -81,7 +83,7 @@ namespace HelloMurder.Core.Sounds.Fmod
         {
             _event.CreateInstance(out FMOD.Studio.EventInstance instance);
             _instancesCached = null;
-            
+
             return new(instance);
         }
 
@@ -97,6 +99,104 @@ namespace HelloMurder.Core.Sounds.Fmod
             GameLogger.Verify(result == FMOD.RESULT.OK, "Unable to load sample data for target event.");
 
             IsLoaded = true;
+        }
+
+        public PARAMETER_DESCRIPTION? FetchParameterDescription(ParameterId parameter)
+        {
+            FMOD.RESULT result = _event.GetParameterDescriptionByID(parameter.ToFmodId(), out PARAMETER_DESCRIPTION description);
+            if (result != FMOD.RESULT.OK)
+            {
+                return null;
+            }
+
+            return description;
+        }
+
+        /// <summary>
+        /// List all the labels for a specific parameter.
+        /// </summary>
+        public ImmutableArray<ParameterLabel> FetchLabelsForParameter(ParameterId parameter)
+        {
+            FMOD.RESULT result = _event.GetParameterDescriptionByID(parameter.ToFmodId(), out PARAMETER_DESCRIPTION description);
+            if (result != FMOD.RESULT.OK)
+            {
+                return ImmutableArray<ParameterLabel>.Empty;
+            }
+
+            if (!description.Flags.HasFlag(PARAMETER_FLAGS.LABELED))
+            {
+                // Not a labeled parameter, dismiss any inspection.
+                return ImmutableArray<ParameterLabel>.Empty;
+            }
+
+            float maximum = description.Maximum;
+            float minimum = description.Minimum;
+            if (minimum >= maximum)
+            {
+                // Invalid?
+                return ImmutableArray<ParameterLabel>.Empty;
+            }
+
+            var builder = ImmutableArray.CreateBuilder<ParameterLabel>();
+
+            float value = Calculator.RoundToInt(minimum);
+            int index = 0;
+            while (value <= maximum)
+            {
+                if (FMOD.RESULT.OK == _event.GetParameterLabelByID(description.Id, index, out string? label) &&
+                    label is not null)
+                {
+                    builder.Add(new(label, value));
+                }
+
+                value++;
+                index++;
+            }
+
+            return builder.ToImmutable();
+        }
+
+        /// <summary>
+        /// List all the parameters available in the bank.
+        /// </summary>
+        public ImmutableArray<ParameterId> FetchParameters(
+        ParameterFlags withFlags = ParameterFlags.None,
+            ParameterFlags withoutFlags = ParameterFlags.None)
+        {
+            FMOD.RESULT result = _event.GetParameterDescriptionCount(out int count);
+            if (result != FMOD.RESULT.OK || count == 0)
+            {
+                GameLogger.Verify(result == FMOD.RESULT.OK, "Unable to list parameters for studio instance.");
+                return ImmutableArray<ParameterId>.Empty;
+            }
+
+            var parameters = ImmutableArray.CreateBuilder<ParameterId>(count);
+            for (int i = 0; i < count; ++i)
+            {
+                result = _event.GetParameterDescriptionByIndex(i, out PARAMETER_DESCRIPTION parameter);
+                if (result != FMOD.RESULT.OK)
+                {
+                    GameLogger.Fail("Unable to fetch parameter description for event.");
+                    return ImmutableArray<ParameterId>.Empty;
+                }
+
+                // Apply filters according to flags.
+                if (withFlags != ParameterFlags.None && !parameter.Flags.HasParameterFlag(withFlags))
+                {
+                    continue;
+                }
+
+                if (withoutFlags != ParameterFlags.None && parameter.Flags.HasAnyParameterFlag(withoutFlags))
+                {
+                    continue;
+                }
+
+                parameters.Add(parameter.ToParameterId(owner: Id));
+            }
+
+
+
+            return parameters.ToImmutable();
         }
 
         public void Dispose()

@@ -8,7 +8,7 @@ namespace HelloMurder.Core.Sounds.Fmod
 
         private string? _path;
         private FMOD.GUID? _id;
-        
+
         public Bus(FMOD.Studio.Bus bus)
         {
             _bus = bus;
@@ -59,7 +59,7 @@ namespace HelloMurder.Core.Sounds.Fmod
                 return finalVolume;
             }
         }
-        
+
         public SoundEventId Id => Guid.ToSoundId().WithPath(Path);
 
         /// <summary>
@@ -92,7 +92,7 @@ namespace HelloMurder.Core.Sounds.Fmod
                 return _id.Value;
             }
         }
-        
+
         public void Dispose()
         {
             // I guess nothing?

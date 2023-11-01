@@ -1,6 +1,7 @@
 ﻿using FMOD.Studio;
 using Murder.Core.Sounds;
 using Murder.Diagnostics;
+using Murder.Utilities;
 using System.Collections.Immutable;
 
 namespace HelloMurder.Core.Sounds.Fmod
@@ -18,14 +19,14 @@ namespace HelloMurder.Core.Sounds.Fmod
         /// Load a fmod bank asynchronously from a file path specified by <paramref name="path"/>.
         /// </summary>
         public async ValueTask<Bank> LoadBankAsync(
-            string path, 
+            string path,
             LOAD_BANK_FLAGS flags = LOAD_BANK_FLAGS.NORMAL)
         {
             byte[] bytes = await File.ReadAllBytesAsync(path);
 
             FMOD.RESULT result = _studio.LoadBankMemory(bytes, flags, out FMOD.Studio.Bank bank);
             FmodHelpers.Check(result, $"Unable to load bank from memory for {path}.");
-            
+
             return new(bank, Path.GetFileNameWithoutExtension(path));
         }
 
@@ -37,16 +38,71 @@ namespace HelloMurder.Core.Sounds.Fmod
         /// <summary>
         /// List all the parameters available in the bank.
         /// </summary>
-        public ImmutableArray<PARAMETER_DESCRIPTION> FetchParameters()
+        public ImmutableArray<ParameterId> FetchParameters()
         {
             FMOD.RESULT result = _studio.GetParameterDescriptionList(out PARAMETER_DESCRIPTION[]? parameters);
             if (result != FMOD.RESULT.OK || parameters is null)
             {
                 GameLogger.Error("Unable to list parameters for studio instance.");
-                return ImmutableArray<PARAMETER_DESCRIPTION>.Empty;
+                return ImmutableArray<ParameterId>.Empty;
             }
 
-            return parameters.ToImmutableArray();
+            return parameters.Select(r => r.ToParameterId()).ToImmutableArray();
+        }
+
+        public PARAMETER_DESCRIPTION? FetchParameterDescription(ParameterId parameter)
+        {
+            FMOD.RESULT result = _studio.GetParameterDescriptionByID(parameter.ToFmodId(), out PARAMETER_DESCRIPTION description);
+            if (result != FMOD.RESULT.OK)
+            {
+                return null;
+            }
+
+            return description;
+        }
+
+        /// <summary>
+        /// List all the labels for a specific parameter.
+        /// </summary>
+        public ImmutableArray<ParameterLabel> FetchLabelsForParameter(ParameterId parameter)
+        {
+            FMOD.RESULT result = _studio.GetParameterDescriptionByID(parameter.ToFmodId(), out PARAMETER_DESCRIPTION description);
+            if (result != FMOD.RESULT.OK)
+            {
+                return ImmutableArray<ParameterLabel>.Empty;
+            }
+
+            if (description.Flags != PARAMETER_FLAGS.LABELED)
+            {
+                // Not a labeled parameter, dismiss any inspection.
+                return ImmutableArray<ParameterLabel>.Empty;
+            }
+
+            float maximum = description.Maximum;
+            float minimum = description.Minimum;
+            if (minimum >= maximum)
+            {
+                // Invalid?
+                return ImmutableArray<ParameterLabel>.Empty;
+            }
+
+            var builder = ImmutableArray.CreateBuilder<ParameterLabel>();
+
+            float value = Calculator.RoundToInt(minimum);
+            int index = 0;
+            while (value <= maximum)
+            {
+                if (FMOD.RESULT.OK == _studio.GetParameterLabelByID(description.Id, index, out string? label) &&
+                    label is not null)
+                {
+                    builder.Add(new(label, value));
+                }
+
+                value++;
+                index++;
+            }
+
+            return builder.ToImmutable();
         }
 
         /// <summary>
@@ -75,7 +131,7 @@ namespace HelloMurder.Core.Sounds.Fmod
             {
                 return null;
             }
-            
+
             return new(description);
         }
 
@@ -145,9 +201,10 @@ namespace HelloMurder.Core.Sounds.Fmod
         /// <param name="name">Name of the global parameter.</param>
         /// <param name="value">Value.</param>
         /// <param name="ignoreSeekSpeed">If enable, set the value instantly, overriding its speed.</param>
-        public void SetParameterValue(string name, float value, bool ignoreSeekSpeed = false)
+        public bool SetParameterValue(string name, float value, bool ignoreSeekSpeed = false)
         {
-            _studio.SetParameterByName(name, value, ignoreSeekSpeed);
+            FMOD.RESULT result = _studio.SetParameterByName(name, value, ignoreSeekSpeed);
+            return result == FMOD.RESULT.OK;
         }
 
         /// <summary>
@@ -156,9 +213,10 @@ namespace HelloMurder.Core.Sounds.Fmod
         /// <param name="id">Id of the global parameter.</param>
         /// <param name="value">Value.</param>
         /// <param name="ignoreSeekSpeed">If enable, set the value instantly, overriding its speed.</param>
-        public void SetParameterValue(ParameterId id, float value, bool ignoreSeekSpeed = false)
+        public bool SetParameterValue(ParameterId id, float value, bool ignoreSeekSpeed = false)
         {
-            _studio.SetParameterByID(id.ToFmodId(), value, ignoreSeekSpeed);
+            FMOD.RESULT result = _studio.SetParameterByID(id.ToFmodId(), value, ignoreSeekSpeed);
+            return result == FMOD.RESULT.OK;
         }
 
         /// <summary>
@@ -173,7 +231,7 @@ namespace HelloMurder.Core.Sounds.Fmod
 
             _studio.SetParametersByIDs(ids, values, values.Length, ignoreSeekSpeed);
         }
-        
+
         public void Dispose()
         {
             _studio.Release();

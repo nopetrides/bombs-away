@@ -1,4 +1,5 @@
-﻿using Murder.Core.Sounds;
+﻿using FMOD.Studio;
+using Murder.Core.Sounds;
 using Murder.Diagnostics;
 
 namespace HelloMurder.Core.Sounds.Fmod
@@ -25,7 +26,17 @@ namespace HelloMurder.Core.Sounds.Fmod
         internal static FMOD.Studio.PARAMETER_ID ToFmodId(this ParameterId id) =>
             new FMOD.Studio.PARAMETER_ID { Data1 = id.Data1, Data2 = id.Data2 };
 
-        public static ParameterId ToParameterId(this FMOD.Studio.PARAMETER_DESCRIPTION description) =>
-            new ParameterId { Data1 = description.Id.Data1, Data2 = description.Id.Data2, Name = description.Name };
+        public static ParameterId ToParameterId(this FMOD.Studio.PARAMETER_DESCRIPTION description, SoundEventId? owner = null) =>
+            new ParameterId { Data1 = description.Id.Data1, Data2 = description.Id.Data2, Name = description.Name, Owner = owner, IsGlobal = description.Flags.HasFlag(PARAMETER_FLAGS.GLOBAL) };
+
+        public static bool HasParameterFlag(this PARAMETER_FLAGS input, ParameterFlags flags)
+        {
+            return ((int)input & (int)flags) == (int)flags;
+        }
+
+        public static bool HasAnyParameterFlag(this PARAMETER_FLAGS input, ParameterFlags flags)
+        {
+            return ((int)input & (int)flags) != 0;
+        }
     }
 }

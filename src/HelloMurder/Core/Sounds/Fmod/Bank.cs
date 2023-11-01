@@ -10,13 +10,13 @@ namespace HelloMurder.Core.Sounds.Fmod
         private readonly FMOD.Studio.Bank _bank;
 
         private FMOD.GUID? _id = default;
-        
+
         public Bank(FMOD.Studio.Bank bank, string name)
         {
             _bank = bank;
             Name = name;
         }
-        
+
         public SoundEventId Id => Guid.ToSoundId().WithPath(Name);
 
         public FMOD.GUID Guid
@@ -28,7 +28,7 @@ namespace HelloMurder.Core.Sounds.Fmod
                     _bank.GetID(out FMOD.GUID id);
                     _id = id;
                 }
-                
+
                 return _id.Value;
             }
         }
@@ -62,7 +62,7 @@ namespace HelloMurder.Core.Sounds.Fmod
 
             return buses.Select(e => new Bus(e)).ToImmutableArray();
         }
-        
+
         /// <summary>
         /// There are three ways to load sample data (any non-streamed sound):
         ///   - From a bank. This will keep all the bank's data in memory, until unloaded.

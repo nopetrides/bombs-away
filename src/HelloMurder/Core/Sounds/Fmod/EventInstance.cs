@@ -15,29 +15,47 @@ namespace HelloMurder.Core.Sounds.Fmod
             _instance = instance;
         }
 
-        public void Start()
+        public bool Start()
         {
-            _instance.Start();
+            FMOD.RESULT result = _instance.Start();
+            if (result != FMOD.RESULT.OK)
+            {
+                return false;
+            }
+
+            return true;
         }
-        
+
         /// <summary>
         /// Stop the event instance.
         /// </summary>
         /// <param name="isFadeOut">If true, this applies a fade out to the sound.</param>
-        public void Stop(bool isFadeOut)
+        public bool Stop(bool isFadeOut)
         {
-            _instance.Stop(isFadeOut ? STOP_MODE.ALLOWFADEOUT : STOP_MODE.IMMEDIATE);
+            FMOD.RESULT result = _instance.Stop(isFadeOut ? STOP_MODE.ALLOWFADEOUT : STOP_MODE.IMMEDIATE);
+            if (result != FMOD.RESULT.OK)
+            {
+                return false;
+            }
+
+            return true;
         }
-        
+
         /// <summary>
         /// Set the instance parameter value according to its name.
         /// </summary>
         /// <param name="name">Name of the global parameter.</param>
         /// <param name="value">Value.</param>
         /// <param name="ignoreSeekSpeed">If enable, set the value instantly, overriding its speed.</param>
-        public void SetParameterValue(string name, float value, bool ignoreSeekSpeed = false)
+        public bool SetParameterValue(string name, float value, bool ignoreSeekSpeed = false)
         {
-            _instance.SetParameterByName(name, value, ignoreSeekSpeed);
+            FMOD.RESULT result = _instance.SetParameterByName(name, value, ignoreSeekSpeed);
+            if (result != FMOD.RESULT.OK)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         /// <summary>
@@ -46,9 +64,15 @@ namespace HelloMurder.Core.Sounds.Fmod
         /// <param name="id">Id of the global parameter.</param>
         /// <param name="value">Value.</param>
         /// <param name="ignoreSeekSpeed">If enable, set the value instantly, overriding its speed.</param>
-        public void SetParameterValue(PARAMETER_ID id, float value, bool ignoreSeekSpeed = false)
+        public bool SetParameterValue(PARAMETER_ID id, float value, bool ignoreSeekSpeed = false)
         {
-            _instance.SetParameterByID(id, value, ignoreSeekSpeed);
+            FMOD.RESULT result = _instance.SetParameterByID(id, value, ignoreSeekSpeed);
+            if (result != FMOD.RESULT.OK)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         /// <summary>
@@ -56,12 +80,18 @@ namespace HelloMurder.Core.Sounds.Fmod
         /// </summary>
         /// <param name="ignoreSeekSpeed">If enable, set the value instantly, overriding its speed.</param>
         /// <param name="parameters">Collection of parameters.</param>
-        public void SetParameterValues(bool ignoreSeekSpeed, params (PARAMETER_ID id, float value)[] parameters)
+        public bool SetParameterValues(bool ignoreSeekSpeed, params (PARAMETER_ID id, float value)[] parameters)
         {
             PARAMETER_ID[] ids = parameters.Select(i => i.id).ToArray();
             float[] values = parameters.Select(i => i.value).ToArray();
 
-            _instance.SetParametersByIDs(ids, values, values.Length, ignoreSeekSpeed);
+            FMOD.RESULT result = _instance.SetParametersByIDs(ids, values, values.Length, ignoreSeekSpeed);
+            if (result != FMOD.RESULT.OK)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         public void Dispose()

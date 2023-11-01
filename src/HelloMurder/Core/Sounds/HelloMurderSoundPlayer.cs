@@ -4,26 +4,27 @@ using HelloMurder.Core.Sounds.Fmod;
 using System.Diagnostics;
 using Murder;
 using System.Runtime.CompilerServices;
+using Murder.Serialization;
 
 namespace HelloMurder.Core.Sounds
 {
     /// <summary>
-    /// This is the sound player for road, which relies on fmod.
+    /// This is the sound player, which relies on fmod.
     /// The latest version tested was "2.02.11"
     /// </summary>
     public partial class HelloMurderSoundPlayer : ISoundPlayer, IDisposable
     {
-        public static HelloMurderSoundPlayer Instance => ((HelloMurderSoundPlayer)Game.Sound);
-        private readonly static string _bankRelativeToResourcesPath = Path.Join("sounds", "fmod");
+        private readonly static string _bankRelativeToResourcesPath = Path.Join("sounds");
 
         private Studio? _studio;
 
-        private readonly Dictionary<SoundEventId, Bank> _banks = new();
+        private Dictionary<SoundEventId, Bank> _banks = new();
         private readonly Dictionary<SoundEventId, Bus> _buses = new();
         private readonly Dictionary<SoundEventId, EventDescription> _events = new();
         private readonly Dictionary<SoundEventId, EventInstance> _instances = new();
 
         private bool _initialized = false;
+        private string _resourcesPath = string.Empty;
         
         public void Initialize(string resourcesPath)
         {
@@ -31,22 +32,28 @@ namespace HelloMurder.Core.Sounds
             {
                 // This was likely called from a refresh call.
                 // We simply need to make sure we are refreshing the cache.
-                _cacheEventDescriptions = null;
-                _cacheBuses = null;
+                _ = ReloadAsync();
 
                 return;
             }
-            
-            if (!LoadFmodAssemblies(resourcesPath))
-            {
-                return;
-            }
 
+            _resourcesPath = FileHelper.GetPath(resourcesPath);
+
+            LoadFmodAssemblies();
             InitializeFmod();
 
-            _ = FetchBanks(resourcesPath);
-            
             _initialized = true;
+        }
+
+        public async Task LoadContentAsync()
+        {
+            await FetchBanksAsync();
+        }
+
+        public async Task ReloadAsync()
+        {
+            UnloadContent();
+            await LoadContentAsync();
         }
 
         /// <summary>
@@ -87,11 +94,6 @@ namespace HelloMurder.Core.Sounds
 
         internal EventInstance? FetchOrCreateInstance(SoundEventId id)
         {
-            if (_studio is null)
-            {
-                return null;
-            }
-
             if (!_events.TryGetValue(id, out EventDescription? description))
             {
                 Debug.Assert(_studio is not null);
@@ -105,57 +107,57 @@ namespace HelloMurder.Core.Sounds
 
             return description?.CreateInstance();
         }
-        
+
         public void Update()
         {
             _studio?.Update();
         }
-        
-        public ValueTask PlayEvent(SoundEventId id, bool isLoop, bool stopLastMusic = true)
+
+        public ValueTask PlayEvent(SoundEventId id, SoundProperties properties)
         {
-            if (isLoop)
+            if (properties.HasFlag(SoundProperties.Persist))
             {
-                return PlayStreaming(id, stopLastMusic);
+                return PlayPersistedEvent(id, properties);
             }
-            
+
             // Otherwise, this will be played and immediately released.
             using EventInstance? scopedInstance = FetchOrCreateInstance(id);
-            scopedInstance?.Start();
+
+            bool success = scopedInstance?.Start() ?? false;
+            GameLogger.Verify(success, $"Failed to play event {id.EditorName}. Did the event id got updated?");
 
             return default;
         }
 
-        private SoundEventId? _lastPlayedStreaming = default;
-
-        public ValueTask PlayStreaming(SoundEventId id, bool stopLastMusic = true)
+        public ValueTask PlayPersistedEvent(SoundEventId id, SoundProperties properties)
         {
-            if (_lastPlayedStreaming != null && _lastPlayedStreaming.Value.Equals(id))
+            if (properties.HasFlag(SoundProperties.SkipIfAlreadyPlaying) && _instances.ContainsKey(id))
             {
-                // TODO: Figure out how to do this switch in fmod.
-                // The music is currently playing already and it is the same as the last one.
-                // Se'll just skip playing it again.
+                // The sound is currently playing already and it is the same as the last one.
+                // So we'll just skip playing it again.
                 return default;
             }
 
-            if (stopLastMusic)
+            if (properties.HasFlag(SoundProperties.StopOtherMusic))
             {
-                // TODO: Figure out how to do this switch in fmod.
-                // In the meantime, we'll manually stop all previous songs.
-                Stop(fadeOut: true);
-                _lastPlayedStreaming = id;
+                Stop(id: null, fadeOut: true);
             }
 
-            if (!_instances.TryGetValue(id, out EventInstance? instance))
+            if (_instances.ContainsKey(id))
             {
-                instance = FetchOrCreateInstance(id);
-                if (instance is not null)
-                {
-                    // This won't be released right away, so we will track its instance.
-                    _instances.Add(id, instance);
-                } 
+                return default;
             }
 
-            instance?.Start();
+            EventInstance? instance = FetchOrCreateInstance(id);
+            if (instance is not null)
+            {
+                // This won't be released right away, so we will track its instance.
+                _instances.Add(id, instance);
+            }
+
+            bool success = instance?.Start() ?? false;
+            GameLogger.Verify(success, $"Failed to play event {id.EditorName}. Did the event id got updated?");
+
             return default;
         }
 
@@ -163,11 +165,12 @@ namespace HelloMurder.Core.Sounds
         {
             if (_instances.TryGetValue(id, out var instance))
             {
-                instance.SetParameterValue(name, value);
+                bool success = instance.SetParameterValue(name, value);
+                GameLogger.Verify(success, $"Failed to find parameter {id.EditorName}.");
             }
             else
             {
-                //GameLogger.Error($"Missing sound ID {id.Path}");
+                GameLogger.Error($"Missing sound {id.Path}");
             }
         }
 
@@ -175,54 +178,69 @@ namespace HelloMurder.Core.Sounds
         {
             if (_instances.TryGetValue(id, out var instance))
             {
-                instance.SetParameterValue(parameterId.ToFmodId(), value);
+                bool success = instance.SetParameterValue(parameterId.ToFmodId(), value);
+                GameLogger.Verify(success, $"Failed to find parameter {id.EditorName}.");
             }
             else
             {
-                //GameLogger.Error($"Missing sound ID {id.Path}");
+                GameLogger.Error($"Missing sound {id.Path}");
             }
         }
 
         public void SetGlobalParameter(ParameterId parameterId, float value)
         {
-            // This might not take effect if the parameter is global.
-            _studio?.SetParameterValue(parameterId, value);
-        }
-
-        public float? GetGlobalParameterValue(ParameterId parameterId)
-        {
-            // This might not take effect if the parameter is global.
-            return _studio?.GetParameterCurrentValue(parameterId);
-        }
-
-        public bool Stop(SoundEventId id, bool fadeOut)
-        {
-            if (_instances.TryGetValue(id, out var instance))
+            bool result = _studio?.SetParameterValue(parameterId, value) ?? false;
+            if (result)
             {
-                instance.Stop(fadeOut);
-                return true;
+                return;
             }
-            else
+
+            // Otherwise, this may be tied to a sound? Even though it's global...?
+            if (parameterId.Owner is SoundEventId soundId &&
+                _instances.TryGetValue(soundId, out var instance))
             {
-                return false;
-                // GameLogger.Warning($"Missing sound ID {id.Path}");
+                instance.SetParameterValue(parameterId.ToFmodId(), value);
             }
         }
 
-        public void Stop(bool fadeOut)
+        public float GetGlobalParameter(ParameterId parameterId)
+        {
+            return _studio?.GetParameterCurrentValue(parameterId) ?? 0;
+        }
+
+        public bool Stop(SoundEventId? id, bool fadeOut)
+        {
+            if (id is null)
+            {
+                return StopAll(fadeOut);
+            }
+
+            bool succeeded = false;
+            if (_instances.TryGetValue(id.Value, out EventInstance? instance))
+            {
+                succeeded = instance.Stop(fadeOut);
+                instance.Dispose();
+            }
+
+            _instances.Remove(id.Value);
+            return succeeded;
+        }
+
+        private bool StopAll(bool fadeOut)
         {
             EventInstance[] sounds = _instances.Values.ToArray();
             _instances.Clear();
-            
+
+            bool succeeded = false;
             foreach (EventInstance instance in sounds)
             {
-                instance.Stop(fadeOut);
+                succeeded &= instance.Stop(fadeOut);
                 instance.Dispose();
             }
-            
-            _lastPlayedStreaming = null;
+
+            return succeeded;
         }
-        
+
         public void SetVolume(SoundEventId? id, float volume)
         {
             if (id is null)
@@ -236,7 +254,7 @@ namespace HelloMurder.Core.Sounds
                 bus = _studio?.GetBus(id.Value);
                 if (bus is null)
                 {
-                    // GameLogger.Fail("Invalid bus name!");
+                    GameLogger.Fail("Invalid bus name!");
                     return;
                 }
 
@@ -245,19 +263,26 @@ namespace HelloMurder.Core.Sounds
 
             bus.Volume = volume;
         }
-        
-        public void Dispose()
+
+        private void UnloadContent()
         {
-            foreach (Bank bank in _banks.Values)
+            lock (_banksLock)
             {
-                bank.Dispose();
+                ClearCache();
+
+                foreach (Bank bank in _banks.Values)
+                {
+                    bank.Dispose();
+                }
+
+                _banks.Clear();
             }
-            
+
             foreach (EventDescription @event in _events.Values)
             {
                 @event.Dispose();
             }
-            
+
             foreach (Bus bus in _buses.Values)
             {
                 bus.Dispose();
@@ -268,40 +293,28 @@ namespace HelloMurder.Core.Sounds
                 instance.Dispose();
             }
 
+            _events.Clear();
+            _buses.Clear();
+            _instances.Clear();
+        }
+
+        private void ClearCache()
+        {
+            _cacheEventDescriptions = null;
+            _cacheEventDescriptionDictionary = null;
+
+            _cacheBuses = null;
+
+            _cacheParameters = null;
+            _cacheLocalParameters = null;
+            _cacheParameterInfo.Clear();
+        }
+
+        public void Dispose()
+        {
+            UnloadContent();
+
             _studio?.Dispose();
-        }
-
-        public Task LoadContentAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task ReloadAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public ValueTask PlayEvent(SoundEventId id, SoundProperties properties)
-        {
-            if (properties == SoundProperties.Persist)
-                return PlayStreaming(id, properties == SoundProperties.StopOtherMusic);
-            
-
-            // Otherwise, this will be played and immediately released.
-            using EventInstance? scopedInstance = FetchOrCreateInstance(id);
-            scopedInstance?.Start();
-
-            return default;
-        }
-
-        public float GetGlobalParameter(ParameterId parameter)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Stop(SoundEventId? id, bool fadeOut)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -547,7 +547,7 @@ namespace FMOD.Studio
         {
             return GetParameterByID(id, out value, out float finalValue);
         }
-        
+
         public RESULT GetParameterByID(PARAMETER_ID id, out float value, out float finalvalue)
         {
             return FMOD_Studio_System_GetParameterByID(this.Handle, id, out value, out finalvalue);
@@ -1566,7 +1566,7 @@ namespace FMOD.Studio
         public EventInstance(IntPtr ptr) { this.Handle = ptr; }
         public bool HasHandle() { return this.Handle != IntPtr.Zero; }
         public void ClearHandle() { this.Handle = IntPtr.Zero; }
-        
+
         public bool IsValid()
         {
             return HasHandle() && FMOD_Studio_EventInstance_IsValid(this.Handle);
@@ -1713,7 +1713,7 @@ namespace FMOD.Studio
         public Bus(IntPtr ptr) { this.handle = ptr; }
         public bool HasHandle() { return this.handle != IntPtr.Zero; }
         public void ClearHandle() { this.handle = IntPtr.Zero; }
-        
+
         public bool IsValid()
         {
             return HasHandle() && FMOD_Studio_Bus_IsValid(this.handle);

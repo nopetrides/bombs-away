@@ -5,6 +5,7 @@ using Murder.Core.Sounds;
 using Murder.Editor.CustomFields;
 using Murder.Editor.ImGuiExtended;
 using Murder.Editor.Reflection;
+using Murder;
 
 namespace HelloMurder.Editor.CustomFields
 {
@@ -15,13 +16,6 @@ namespace HelloMurder.Editor.CustomFields
             EditorMember member, object? fieldValue)
         {
             SoundEventId description = (SoundEventId)fieldValue!;
-            
-            if (ImGuiHelpers.DeleteButton("No event selected."))
-            {
-                return (modified: true, new SoundEventId());
-            }
-            
-            ImGui.SameLine();
 
             FmodIdKind kind = FmodIdKind.Event;
             if (AttributeExtensions.TryGetAttribute(member, out FmodIdAttribute? fmodId))
@@ -32,22 +26,38 @@ namespace HelloMurder.Editor.CustomFields
             switch (kind)
             {
                 case FmodIdKind.Event:
-                    if (SearchBoxExtensions.SearchFmodSounds(id: string.Empty, description) is SoundEventId newEvent)
+                    if (!FmodHelpers.IsValidEvent(description))
+                    {
+                        ImGui.TextColored(Game.Profile.Theme.Warning, "\uf071");
+                        ImGuiHelpers.HelpTooltip("Event not found in any of the banks");
+
+                        ImGui.SameLine();
+                    }
+
+                    if (SearchBoxExtensions.SearchFmodSounds(id: member.Name, description) is SoundEventId newEvent)
                     {
                         return (modified: true, newEvent);
                     }
-                    
+
                     break;
 
                 case FmodIdKind.Bus:
-                    if (SearchBoxExtensions.SearchFmodBuses(id: string.Empty, description) is SoundEventId newBus)
+                    if (!FmodHelpers.IsValidBus(description))
+                    {
+                        ImGui.TextColored(Game.Profile.Theme.Warning, "\uf071");
+                        ImGuiHelpers.HelpTooltip("Bus not found in any of the banks");
+
+                        ImGui.SameLine();
+                    }
+
+                    if (SearchBoxExtensions.SearchFmodBuses(id: member.Name, description) is SoundEventId newBus)
                     {
                         return (modified: true, newBus);
                     }
 
                     break;
             }
-            
+
             return (modified: false, description);
         }
     }
