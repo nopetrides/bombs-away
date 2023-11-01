@@ -1,9 +1,11 @@
 ﻿using HelloMurder.Assets;
 using HelloMurder.Core;
+using HelloMurder.Core.Sounds;
 using Microsoft.Xna.Framework.Input;
 using Murder;
 using Murder.Assets;
 using Murder.Core.Input;
+using Murder.Core.Sounds;
 using System.Collections.Immutable;
 
 namespace HelloMurder
@@ -14,6 +16,8 @@ namespace HelloMurder
         public string Name => "HelloMurder";
         public GameProfile CreateGameProfile() => new HelloMurderProfile();
         public SaveData CreateSaveData(string name) => new HelloMurderSaveData(name);
+
+        public ISoundPlayer CreateSoundPlayer() => new HelloMurderSoundPlayer();
 
         public void Initialize()
         {

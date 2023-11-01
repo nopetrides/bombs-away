@@ -22,6 +22,22 @@
     "Width": 260,
     "Height": 512
   },
+  "UiNavigate": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -510789810,
+    "Data2": 1142427010,
+    "Data3": -210206050,
+    "Data4": -1573672540,
+    "Path": "event:/MenuNavigation"
+  },
+  "UiSelect": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 1112623748,
+    "Data2": 1153296169,
+    "Data3": -1816526435,
+    "Data4": 1251898741,
+    "Path": "event:/MenuSelect"
+  },
   "Name": "DefaultLibrary",
   "Guid": "06cfea1c-576b-4bd2-85f6-7b19cd851839"
 }

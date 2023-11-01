@@ -2,6 +2,7 @@
 using Murder.Assets.Graphics;
 using Murder.Attributes;
 using Murder.Core.Geometry;
+using Murder.Core.Sounds;
 using Murder.Utilities;
 using System.Collections.Immutable;
 using System.Numerics;
@@ -48,5 +49,7 @@ namespace HelloMurder.Assets
         public IntRectangle Bounds = Rectangle.Empty;
 
 
+        public readonly SoundEventId UiNavigate;
+        public readonly SoundEventId UiSelect;
     }
 }

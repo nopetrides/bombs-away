@@ -3,7 +3,6 @@ using Murder.Diagnostics;
 using HelloMurder.Core.Sounds.Fmod;
 using System.Diagnostics;
 using Murder;
-using System.Runtime.CompilerServices;
 using Murder.Serialization;
 
 namespace HelloMurder.Core.Sounds
@@ -14,6 +13,7 @@ namespace HelloMurder.Core.Sounds
     /// </summary>
     public partial class HelloMurderSoundPlayer : ISoundPlayer, IDisposable
     {
+        public static HelloMurderSoundPlayer Instance => ((HelloMurderSoundPlayer)Game.Sound);
         private readonly static string _bankRelativeToResourcesPath = Path.Join("sounds");
 
         private Studio? _studio;

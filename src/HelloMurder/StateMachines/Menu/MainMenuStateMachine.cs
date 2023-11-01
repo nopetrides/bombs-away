@@ -1,6 +1,7 @@
 ﻿using Bang.Entities;
 using Bang.StateMachines;
 using HelloMurder.Core;
+using HelloMurder.Core.Sounds;
 using HelloMurder.Services;
 using Murder;
 using Murder.Assets;
@@ -49,8 +50,12 @@ namespace HelloMurder.StateMachines
 
             while (true)
             {
+                int previousInput = _menuInfo.Selection;
+
                 if (Game.Input.VerticalMenu(ref _menuInfo))
                 {
+                    HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().UiSelect, Murder.Core.Sounds.SoundProperties.None);
+
                     switch (_menuInfo.Selection)
                     {
                         case 0: //  Play
@@ -70,6 +75,11 @@ namespace HelloMurder.StateMachines
                     }
                 }
 
+                if (previousInput != _menuInfo.Selection)
+                {
+                    HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().UiNavigate, Murder.Core.Sounds.SoundProperties.None);
+                }
+
                 yield return Wait.NextFrame;
             }
         }
@@ -81,8 +91,11 @@ namespace HelloMurder.StateMachines
 
             while (true)
             {
+                int previousInput = _menuInfo.Selection;
+
                 if (Game.Input.VerticalMenu(ref _menuInfo))
                 {
+                    HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().UiSelect, Murder.Core.Sounds.SoundProperties.None);
                     switch (_menuInfo.Selection)
                     {
                         case 0: // Tweak sound
@@ -102,6 +115,11 @@ namespace HelloMurder.StateMachines
                         default:
                             break;
                     }
+                }
+
+                if (previousInput != _menuInfo.Selection)
+                {
+                    HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().UiNavigate, Murder.Core.Sounds.SoundProperties.None);
                 }
 
                 yield return Wait.NextFrame;
