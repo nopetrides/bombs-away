@@ -48,9 +48,20 @@ namespace HelloMurder.Assets
         [Tooltip("This is the bounds that the road which the player will be driving will be displayed.")]
         public IntRectangle Bounds = Rectangle.Empty;
 
-
+        // UI
         public readonly SoundEventId UiNavigate;
         public readonly SoundEventId UiSelect;
+        // Intro
         public readonly SoundEventId RadioBlip;
+        // Gameplay
+        public readonly SoundEventId BombDrop;
+        public readonly SoundEventId BombHit;
+        public readonly SoundEventId BombMiss;
+        public readonly SoundEventId FlakSpawn;
+        public readonly SoundEventId FlakExplode;
+        public readonly SoundEventId FlakWarning;
+        // Music
+        public readonly SoundEventId MainMenuMusic;
+        public readonly SoundEventId GameMusic;
     }
 }

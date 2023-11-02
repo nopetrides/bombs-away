@@ -4,6 +4,7 @@ using Bang.Entities;
 using Bang.Systems;
 using HelloMurder.Components;
 using HelloMurder.Core;
+using HelloMurder.Core.Sounds;
 using HelloMurder.Messages;
 using HelloMurder.Services;
 using Murder;
@@ -44,6 +45,8 @@ namespace HelloMurder.Systems.Player
             e.SetSprite(sprite);
 
             _timeSinceLastBomb = Game.Now;
+
+            HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().BombDrop, Murder.Core.Sounds.SoundProperties.None);
         }
     }
 }

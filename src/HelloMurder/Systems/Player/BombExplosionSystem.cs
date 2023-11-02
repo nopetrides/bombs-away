@@ -10,6 +10,8 @@ using Murder.Core;
 using Murder.Utilities;
 using System.Numerics;
 using Murder;
+using HelloMurder.Core.Sounds;
+using HelloMurder.Services;
 
 namespace HelloMurder.Systems.Player
 {
@@ -43,6 +45,8 @@ namespace HelloMurder.Systems.Player
                     e.SetDestroyOnAnimationComplete(false);
                     var world = (MonoWorld)context.World;
                     world.Camera.Shake(1f, .2f);
+
+                    HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().BombMiss, Murder.Core.Sounds.SoundProperties.None);
                 }
             }
         }

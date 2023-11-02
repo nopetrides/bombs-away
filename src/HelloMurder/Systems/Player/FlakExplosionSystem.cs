@@ -13,6 +13,7 @@ using Murder.Services;
 using HelloMurder.Messages;
 using Murder.Prefabs;
 using HelloMurder.Services;
+using HelloMurder.Core.Sounds;
 
 namespace HelloMurder.Systems.Player
 {
@@ -46,6 +47,8 @@ namespace HelloMurder.Systems.Player
                         var shake = float.Lerp(0f, 2f, (2f / MathF.Max(distanceFromPlayer, 1f)));
                         var world = (MonoWorld)context.World;
                         world.Camera.Shake(shake, .2f);
+
+                        HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().FlakExplode, Murder.Core.Sounds.SoundProperties.None);
                     }
 
                     if (e.GetHealth().Health > 0 && PhysicsServices.CollidesWith(e, player))

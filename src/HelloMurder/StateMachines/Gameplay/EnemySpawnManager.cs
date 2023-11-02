@@ -5,7 +5,6 @@ using Murder.Diagnostics;
 using HelloMurder.Assets;
 using Murder;
 using Murder.Utilities;
-using Murder.Core;
 using System.Numerics;
 using HelloMurder.Core.EnemySpawn;
 using Murder.Attributes;
@@ -104,11 +103,12 @@ namespace HelloMurder.StateMachines.Gameplay
 
             Vector2 position = Vector2.Zero;
             var bounds = library.Bounds;
+            var safeZoneX = 38f;
 
             position = bounds.TopLeft;
-            position.X += 32;
+            position.X += safeZoneX;
             position.Y -= entity.GetColliderBoundingBox().Height;
-            position.X += Game.Random.NextFloat(0, bounds.Width-32f);
+            position.X += Game.Random.NextFloat(0, bounds.Width-(safeZoneX*2f));
 
             entity.SetGlobalPosition(position);
 

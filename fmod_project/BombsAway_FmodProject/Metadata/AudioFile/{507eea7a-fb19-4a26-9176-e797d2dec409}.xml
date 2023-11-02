@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{507eea7a-fb19-4a26-9176-e797d2dec409}">
+		<property name="assetPath">
+			<value>BombMiss_Raw.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.36299319727891155</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9ca9199e-38e7-4397-bedc-7d7e125ef55a}</destination>
+		</relationship>
+	</object>
+</objects>

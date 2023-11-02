@@ -46,6 +46,70 @@
     "Data4": 432135316,
     "Path": "event:/RadioBlip"
   },
+  "BombDrop": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 1288044587,
+    "Data2": 1100000355,
+    "Data3": 1521859506,
+    "Data4": 1856311605,
+    "Path": "event:/BombDrop"
+  },
+  "BombHit": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -1898245794,
+    "Data2": 1253775406,
+    "Data3": 771855272,
+    "Data4": 2028575104,
+    "Path": "event:/BombHit"
+  },
+  "BombMiss": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -1952741062,
+    "Data2": 1267782828,
+    "Data3": -1594377294,
+    "Data4": -1935020538,
+    "Path": "event:/BombMiss"
+  },
+  "FlakSpawn": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 2114476367,
+    "Data2": 1240675136,
+    "Data3": 1993313942,
+    "Data4": -758253924,
+    "Path": "event:/FlakSpawn"
+  },
+  "FlakExplode": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -1109615685,
+    "Data2": 1185973267,
+    "Data3": -36784206,
+    "Data4": 892009015,
+    "Path": "event:/FlakExplode"
+  },
+  "FlakWarning": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -1211273666,
+    "Data2": 1190479497,
+    "Data3": 189738642,
+    "Data4": -1445296601,
+    "Path": "event:/FlakWarning"
+  },
+  "MainMenuMusic": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -1101518342,
+    "Data2": 1167979563,
+    "Data3": 38447011,
+    "Data4": -625520271,
+    "Path": "event:/MainMenuMusic"
+  },
+  "GameMusic": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -126417127,
+    "Data2": 1322411484,
+    "Data3": -589428040,
+    "Data4": -1580026736,
+    "Path": "event:/GameMusic"
+  },
   "Name": "DefaultLibrary",
   "Guid": "06cfea1c-576b-4bd2-85f6-7b19cd851839"
 }

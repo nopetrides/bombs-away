@@ -1,3 +1,5 @@
+sfxr.me
+
 MenuNav_Raw.wav
 {
   "oldParams": true,
@@ -94,20 +96,181 @@ RadioBlip_Raw.wav
 }
 3Cuc8xYQgkwXh3PCrimgsvCgGHV3dXNhgS8WJNdfYo2pqLgtKWAYZG7pgcwPsASpKyPdQh9U1iktr2AF9eXzS8UgsdPQ9vr2i5otWKfgcCaF5mJe7ts8GB67H
 
+BombDrop_Raw.wav
+{
+  "oldParams": true,
+  "wave_type": 2,
+  "p_env_attack": 0.328,
+  "p_env_sustain": 0.364,
+  "p_env_punch": 0,
+  "p_env_decay": 0.297,
+  "p_base_freq": 0.365,
+  "p_freq_limit": 0.022,
+  "p_freq_ramp": -0.149,
+  "p_freq_dramp": 0.024,
+  "p_vib_strength": 0,
+  "p_vib_speed": 0,
+  "p_arp_mod": 0,
+  "p_arp_speed": 0,
+  "p_duty": 0.1381788688388824,
+  "p_duty_ramp": 0,
+  "p_repeat_speed": 0,
+  "p_pha_offset": 0,
+  "p_pha_ramp": 0,
+  "p_lpf_freq": 0.861,
+  "p_lpf_ramp": 0,
+  "p_lpf_resonance": 0,
+  "p_hpf_freq": 0.181,
+  "p_hpf_ramp": 0,
+  "sound_vol": 0.078,
+  "sample_rate": 44100,
+  "sample_size": 8
+}
+6PbPdmjVM6U28twYraHmPFLr1mc2Q8H9pkW9593jd6eWBRv4Ly8K9qQ6HbekYN6XigX4FffxosFNe92zLQQ7mz721kp7v9zNxEGFnoKrJf4HfXN8oktggWT4K
 
+BombMiss_Raw.wav
+
+BombHit_Raw.wav
+{
+  "oldParams": true,
+  "wave_type": 3,
+  "p_env_attack": 0.074,
+  "p_env_sustain": 0.325,
+  "p_env_punch": 0.531,
+  "p_env_decay": 0.32502781496593636,
+  "p_base_freq": 0.378,
+  "p_freq_limit": 0,
+  "p_freq_ramp": -0.37076693296651964,
+  "p_freq_dramp": 0,
+  "p_vib_strength": 0,
+  "p_vib_speed": 0,
+  "p_arp_mod": -0.712,
+  "p_arp_speed": 0.528,
+  "p_duty": 0,
+  "p_duty_ramp": 0,
+  "p_repeat_speed": 0.644,
+  "p_pha_offset": -0.161,
+  "p_pha_ramp": -0.123,
+  "p_lpf_freq": 0.887,
+  "p_lpf_ramp": 0,
+  "p_lpf_resonance": 0,
+  "p_hpf_freq": 0.105,
+  "p_hpf_ramp": 0,
+  "sound_vol": 0.113,
+  "sample_rate": 44100,
+  "sample_size": 8
+}
+7pUDNTM9FsnDo6BPvr37k2hk7DzvvHM3dW8ssAdWiJHKaM3eGZYW94ddV8QxgytsvWWuJgtbQhAQXEBZBPYEAVL6JMV48cnLVfYaVoanETpTFAhs31pMjxDps
+
+FlakSpawn_Raw.wav
+{
+  "oldParams": true,
+  "wave_type": 1,
+  "p_env_attack": 0,
+  "p_env_sustain": 0.2893322389793622,
+  "p_env_punch": 0,
+  "p_env_decay": 0.1749101309394181,
+  "p_base_freq": 0.38074739916555067,
+  "p_freq_limit": 0.036426047566928244,
+  "p_freq_ramp": -0.5198475576741175,
+  "p_freq_dramp": 0,
+  "p_vib_strength": 0,
+  "p_vib_speed": 0,
+  "p_arp_mod": 0,
+  "p_arp_speed": 0,
+  "p_duty": 0.2752262119392609,
+  "p_duty_ramp": 0.16449758644691015,
+  "p_repeat_speed": 0,
+  "p_pha_offset": 0,
+  "p_pha_ramp": 0,
+  "p_lpf_freq": 1,
+  "p_lpf_ramp": 0,
+  "p_lpf_resonance": 0,
+  "p_hpf_freq": 0.1045153400428079,
+  "p_hpf_ramp": 0,
+  "sound_vol": 0.25,
+  "sample_rate": 44100,
+  "sample_size": 8
+}
+34T6Pkq3E6FXPTYbYkd1YJJvQmY5DWfy16XEBAWCadNuFs7fPf25LHPVg4Mi4KtjF1z9evHHALep6V4YSRBJ8C1HuJFtCV8v7Jk8hy7UnmqZkAtR3vveDioeX
+
+FlakExplode_Raw.wav
+{
+  "oldParams": true,
+  "wave_type": 3,
+  "p_env_attack": 0,
+  "p_env_sustain": 0.237,
+  "p_env_punch": 0.197,
+  "p_env_decay": 0.472,
+  "p_base_freq": 0.03202962983041826,
+  "p_freq_limit": 0,
+  "p_freq_ramp": 0.28209225212858324,
+  "p_freq_dramp": 0,
+  "p_vib_strength": 0,
+  "p_vib_speed": 0,
+  "p_arp_mod": 0,
+  "p_arp_speed": 0,
+  "p_duty": 0,
+  "p_duty_ramp": 0,
+  "p_repeat_speed": 0.6908652295699182,
+  "p_pha_offset": -0.11160317802857786,
+  "p_pha_ramp": -0.2195587799814119,
+  "p_lpf_freq": 1,
+  "p_lpf_ramp": 0,
+  "p_lpf_resonance": 0,
+  "p_hpf_freq": 0,
+  "p_hpf_ramp": 0,
+  "sound_vol": 0.164,
+  "sample_rate": 44100,
+  "sample_size": 8
+}
+7BMHBGCAVkfZXpemXoaRoqLrwFUbyo2AwC1rHmmzeWZQBQwbg6nB64NwP1xSqu9FB4q5Vmd84oM9x6KgTjTnapYQck5Lcbj3eYW6pDzp6HMipoTW5Tsc8iTAP
+
+FlakWarning_Raw.wav
+{
+  "oldParams": true,
+  "wave_type": 1,
+  "p_env_attack": 0,
+  "p_env_sustain": 0.051,
+  "p_env_punch": 0,
+  "p_env_decay": 0.4597652385297618,
+  "p_base_freq": 0.481,
+  "p_freq_limit": 0,
+  "p_freq_ramp": 0.26013759839557543,
+  "p_freq_dramp": 0,
+  "p_vib_strength": 0,
+  "p_vib_speed": 0,
+  "p_arp_mod": 0,
+  "p_arp_speed": 0,
+  "p_duty": 1,
+  "p_duty_ramp": 0,
+  "p_repeat_speed": 0.262,
+  "p_pha_offset": 0,
+  "p_pha_ramp": 0,
+  "p_lpf_freq": 0.484,
+  "p_lpf_ramp": 0,
+  "p_lpf_resonance": 0,
+  "p_hpf_freq": 0.238,
+  "p_hpf_ramp": 0,
+  "sound_vol": 0.113,
+  "sample_rate": 44100,
+  "sample_size": 8
+}
+34T6PkqXArtYTAKUHxPnavYsuYF3EuZqBLTAwUSWMfDtiRBSTFSafHvyU2BEi4iWbraBRYg1dvjrXxwcD7zczCydnkh2FYsBX1oCUzWwuDzmzdLWCs2vm7LKq
 
 SOUNDS:
 Done-ish
 - Menu item Selected / switch
 - Blips / bloops / radio scanner sounds for wind indicator
-
-TODO:
-- Turboprop constant drone
 - Bomb dropping
 - Bomb Miss
 - Bomb hit (explosion)
 - Flak spawning
 - Flak explosion
+- Flak spawn warning (on top of player)
+
+TODO:
+- Turboprop constant drone
 - Player damaged / killed
 
 Optionally: Main menu and in-game music

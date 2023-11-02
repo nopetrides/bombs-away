@@ -4,6 +4,7 @@ using Bang.Entities;
 using Bang.StateMachines;
 using Bang.Systems;
 using HelloMurder.Components;
+using HelloMurder.Core.Sounds;
 using HelloMurder.Messages;
 using HelloMurder.Services;
 using Murder.Core;
@@ -33,6 +34,8 @@ namespace HelloMurder.Systems.Interactions
 
                 var mw = (MonoWorld)world;
                 mw.Camera.Shake(2f, .2f);
+
+                HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().BombHit, Murder.Core.Sounds.SoundProperties.None);
             }
 
             // Message damaged entities, don't message already dead ones    

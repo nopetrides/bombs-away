@@ -9,13 +9,14 @@ using Bang.Entities;
 using HelloMurder.Assets;
 using Murder.Components;
 using HelloMurder.Components;
+using HelloMurder.Core.Sounds;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
     public class FlakSpawnManager : StateMachine
     {
         [JsonProperty]
-        private readonly float _timeBetweenFlakSeconds = 1.0f;
+        private readonly float _timeBetweenFlakSeconds = 2.0f;
 
         public FlakSpawnManager()
         {
@@ -32,7 +33,7 @@ namespace HelloMurder.StateMachines.Gameplay
             {
                 SpawnEntity(flakPrefab, bounds);
 
-                yield return Wait.ForSeconds(_timeBetweenFlakSeconds);
+                yield return Wait.ForSeconds(Game.Random.NextFloat(0.1f, _timeBetweenFlakSeconds));
             }
         }
 
@@ -46,6 +47,8 @@ namespace HelloMurder.StateMachines.Gameplay
             if (player != null && Game.Random.TryWithChanceOf(20))
             {
                 position = player.GetGlobalTransform().Vector2;
+
+                HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().FlakWarning, Murder.Core.Sounds.SoundProperties.None);
             }
             else
             {
@@ -53,12 +56,15 @@ namespace HelloMurder.StateMachines.Gameplay
                     new Vector2(
                     Game.Random.Next(0, bounds.Width),
                     Game.Random.Next(0, bounds.Height));
+
+                HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().FlakSpawn, Murder.Core.Sounds.SoundProperties.None);
             }
             entity.SetGlobalPosition(position);
 
             SpriteComponent sprite = entity.GetSprite();
             sprite = sprite.Play(false, "rising", "damage", "smoke_fading");
             entity.SetSprite(sprite);
+
         }
     }
 }
