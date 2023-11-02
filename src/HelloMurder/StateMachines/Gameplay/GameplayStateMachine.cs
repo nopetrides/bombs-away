@@ -16,6 +16,7 @@ using Murder.Assets;
 using Murder.Core.Graphics;
 using HelloMurder.Core;
 using Murder.Services;
+using HelloMurder.Core.Sounds;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
@@ -46,6 +47,8 @@ namespace HelloMurder.StateMachines.Gameplay
         private bool _reachedEnd;
         private float _lastStartedTime = 0;
         private bool _anyInput;
+
+        private float _playNextSound = 0;
 
         public GameplayStateMachine() {
 
@@ -281,24 +284,13 @@ namespace HelloMurder.StateMachines.Gameplay
                     maxWidth: maxWidth,
                     visibleCharacters: currentLength
                 );
-
-                /*
-                if (_playNextSound < Game.NowUnscaled && currentLength < line.Text.Length)
+                
+                if (_playNextSound < Game.NowUnscaled && currentLength < _windWarningText.Length)
                 {
-                    if (isRightSpeaker)
-                    {
-                        LDGameSoundPlayer.Instance.PlayEvent(_speaker == SpeakerKind.Granny ?
-                            LibraryServices.GetRoadLibrary().GrandmaTextBeep :
-                            LibraryServices.GetRoadLibrary().CarTextBeep, isLoop: false);
-                    }
-                    else
-                    {
-                        LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().DaggersTextBeep, isLoop: false);
-                    }
+                    HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().RadioBlip, Murder.Core.Sounds.SoundProperties.None);
 
-                    _playNextSound = Game.NowUnscaled + 0.09f;
+                    _playNextSound = Game.NowUnscaled + 0.12f;
                 }
-                */
             }
         }
     }

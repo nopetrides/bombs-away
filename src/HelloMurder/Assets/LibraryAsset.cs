@@ -51,5 +51,6 @@ namespace HelloMurder.Assets
 
         public readonly SoundEventId UiNavigate;
         public readonly SoundEventId UiSelect;
+        public readonly SoundEventId RadioBlip;
     }
 }

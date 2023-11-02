@@ -38,6 +38,14 @@
     "Data4": 1251898741,
     "Path": "event:/MenuSelect"
   },
+  "RadioBlip": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -909699516,
+    "Data2": 1189007737,
+    "Data3": 1893265844,
+    "Data4": 432135316,
+    "Path": "event:/RadioBlip"
+  },
   "Name": "DefaultLibrary",
   "Guid": "06cfea1c-576b-4bd2-85f6-7b19cd851839"
 }

@@ -17,11 +17,13 @@ End screen (screen with score)
 Add radio and text to wind preview
 Add controls to intro / wind sequence
 Score and highscore on game over screen
+Add Fmod
+Finish player death animation
 
 To Do:
 Game over screen animation
-Finish player death animation
-Add Fmod
+
+
 
 SOUNDS:
 
