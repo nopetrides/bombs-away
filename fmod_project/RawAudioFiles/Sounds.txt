@@ -365,9 +365,9 @@ Done-ish
 - Flak explosion
 - Flak spawn warning (on top of player)
 - Player damaged / killed
+- Turboprop constant drone - now responsive based on movement!
 
 TODO:
-- Turboprop constant drone (do we still want?)
 - Slide in / slide out for radio and controls
 - Main menu music
 - In-game music
