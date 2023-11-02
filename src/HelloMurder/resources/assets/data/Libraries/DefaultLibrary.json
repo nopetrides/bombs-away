@@ -94,6 +94,22 @@
     "Data4": -1445296601,
     "Path": "event:/FlakWarning"
   },
+  "PlayerDeathExplosions": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 1927395340,
+    "Data2": 1212581127,
+    "Data3": 1130005178,
+    "Data4": 1992008274,
+    "Path": "event:/PlayerDeath"
+  },
+  "PlayerFinalExplosion": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -1935125493,
+    "Data2": 1270409607,
+    "Data3": -186274394,
+    "Data4": -1990757770,
+    "Path": "event:/PlayerFinalExplosion"
+  },
   "MainMenuMusic": {
     "$type": "Murder.Core.Sounds.SoundEventId, Murder",
     "Data1": -1101518342,

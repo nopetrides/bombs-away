@@ -4,6 +4,7 @@ using Bang.Entities;
 using Bang.StateMachines;
 using Bang.Systems;
 using HelloMurder.Components;
+using HelloMurder.Core.Sounds;
 using HelloMurder.Services;
 using Murder;
 using Murder.Components;
@@ -51,12 +52,16 @@ namespace HelloMurder.Systems.Player
                 child.Unparent();
             }
 
+            HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().PlayerDeathExplosions, Murder.Core.Sounds.SoundProperties.None);
+
             yield return Wait.ForMessage<AnimationCompleteMessage>(entity);
 
             LibraryServices.Explode(1, world, deathPosition + new Vector2(0, 16));
 
             var monoWorld = (MonoWorld)world; 
             monoWorld.Camera.Shake(3f, 1f);
+
+            HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().PlayerFinalExplosion, Murder.Core.Sounds.SoundProperties.None);
 
             yield return Wait.ForSeconds(2f);
 

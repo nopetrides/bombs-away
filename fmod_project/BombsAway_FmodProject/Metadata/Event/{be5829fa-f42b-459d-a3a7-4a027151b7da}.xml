@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{be5829fa-f42b-459d-a3a7-4a027151b7da}">
+		<property name="note" />
 		<property name="name">
 			<value>MainMenuMusic</value>
 		</property>
@@ -70,6 +71,9 @@
 		<relationship name="modules">
 			<destination>{976c87ac-141f-4c57-993f-a6561bf8a6d6}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{956074bb-7376-4d80-8876-71bdf400b125}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{b9387b99-7090-4a69-a071-eeeb67e8b543}">
 		<relationship name="effectChain">
@@ -95,6 +99,9 @@
 		<property name="volume">
 			<value>-11</value>
 		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{851bae82-9690-48af-98e1-175cbe2c34b9}</destination>
 		</relationship>
@@ -111,6 +118,20 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{b9387b99-7090-4a69-a071-eeeb67e8b543}</destination>
+		</relationship>
+	</object>
+	<object class="LoopRegion" id="{956074bb-7376-4d80-8876-71bdf400b125}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>130.40326530612245</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{fa23a48f-bbe6-4015-80db-b3b41ed6c353}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{19452a19-43fd-44e0-8ae0-85e7efed44a1}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{d0d20001-94b8-4575-8fad-5f9eaaabf233}">

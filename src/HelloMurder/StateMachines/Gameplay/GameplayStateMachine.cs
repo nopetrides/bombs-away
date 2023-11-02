@@ -61,7 +61,7 @@ namespace HelloMurder.StateMachines.Gameplay
             World.DeactivateSystem<PlayerInputSystem>();
             Entity.SetGameplayStateMachine();
             Entity.SetCustomDraw(DrawMessage);
-            HelloMurderSoundPlayer.Instance.PlayPersistedEvent(LibraryServices.GetLibrary().GameMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic);
+            HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().GameMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic);
 
             _player = World.GetUniqueEntity<PlayerComponent>();
             var landIcon = _player.TryFetchChild("wind_indicator_icon");

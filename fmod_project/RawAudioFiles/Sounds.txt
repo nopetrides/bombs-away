@@ -258,6 +258,70 @@ FlakWarning_Raw.wav
 }
 34T6PkqXArtYTAKUHxPnavYsuYF3EuZqBLTAwUSWMfDtiRBSTFSafHvyU2BEi4iWbraBRYg1dvjrXxwcD7zczCydnkh2FYsBX1oCUzWwuDzmzdLWCs2vm7LKq
 
+PlayerDeath_Raw.wav
+{
+  "oldParams": true,
+  "wave_type": 3,
+  "p_env_attack": 0,
+  "p_env_sustain": 0.613,
+  "p_env_punch": 0.142,
+  "p_env_decay": 0.656,
+  "p_base_freq": 0.139,
+  "p_freq_limit": 0,
+  "p_freq_ramp": -0.242,
+  "p_freq_dramp": 0,
+  "p_vib_strength": 0,
+  "p_vib_speed": 0.428,
+  "p_arp_mod": 0,
+  "p_arp_speed": 0.025,
+  "p_duty": 0,
+  "p_duty_ramp": 0,
+  "p_repeat_speed": 0.058,
+  "p_pha_offset": 0,
+  "p_pha_ramp": 0,
+  "p_lpf_freq": 1,
+  "p_lpf_ramp": 0,
+  "p_lpf_resonance": 0,
+  "p_hpf_freq": 0,
+  "p_hpf_ramp": 0,
+  "sound_vol": 0.167,
+  "sample_rate": 44100,
+  "sample_size": 8
+}
+7BMHBGLEpGtropwkAY3p2LkomYLLs4wrtkZXs2nFs9dFMSyg2m6tNSGcNExga2ZPbWCarsdDH7RcmCag94Lpxw8NYn5JM5VHzDZXtjGXmxQHKfs42vJQbog5m
+
+PlayerFinalExplosion_Raw.wav
+{
+  "oldParams": true,
+  "wave_type": 3,
+  "p_env_attack": 0,
+  "p_env_sustain": 0.23916027438173232,
+  "p_env_punch": 0.7892150560404794,
+  "p_env_decay": 0.715,
+  "p_base_freq": 0.044,
+  "p_freq_limit": 0,
+  "p_freq_ramp": -0.07552858119843427,
+  "p_freq_dramp": 0,
+  "p_vib_strength": 0,
+  "p_vib_speed": 0,
+  "p_arp_mod": -0.16466952393433554,
+  "p_arp_speed": 0.6194831094874924,
+  "p_duty": 0,
+  "p_duty_ramp": 0,
+  "p_repeat_speed": 0,
+  "p_pha_offset": -0.205,
+  "p_pha_ramp": -0.072,
+  "p_lpf_freq": 1,
+  "p_lpf_ramp": 0,
+  "p_lpf_resonance": 0,
+  "p_hpf_freq": 0,
+  "p_hpf_ramp": 0,
+  "sound_vol": 0.141,
+  "sample_rate": 44100,
+  "sample_size": 8
+}
+7BMHBGHjxURrhdtMT8taJKeWCRZQD54jwvpbR59YrguGmw4u1Nf6rijn91WS6VX9BQdNQqUkH2MFMbH6VutAaKmX2wBggZaP1Xj8FwZ4EVdZnspVcmozq9rD5
+
 SOUNDS:
 Done-ish
 - Menu item Selected / switch
@@ -268,9 +332,11 @@ Done-ish
 - Flak spawning
 - Flak explosion
 - Flak spawn warning (on top of player)
-
-TODO:
-- Turboprop constant drone
 - Player damaged / killed
 
-Optionally: Main menu and in-game music
+TODO:
+- Turboprop constant drone (do we still want?)
+- Slide in / slide out for radio and controls
+- Main menu music
+- In-game music
+- End Screen Music

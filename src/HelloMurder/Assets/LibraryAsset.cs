@@ -60,6 +60,8 @@ namespace HelloMurder.Assets
         public readonly SoundEventId FlakSpawn;
         public readonly SoundEventId FlakExplode;
         public readonly SoundEventId FlakWarning;
+        public readonly SoundEventId PlayerDeathExplosions;
+        public readonly SoundEventId PlayerFinalExplosion;
         // Music
         public readonly SoundEventId MainMenuMusic;
         public readonly SoundEventId GameMusic;
