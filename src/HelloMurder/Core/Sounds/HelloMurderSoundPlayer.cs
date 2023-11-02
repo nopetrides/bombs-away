@@ -4,6 +4,7 @@ using HelloMurder.Core.Sounds.Fmod;
 using System.Diagnostics;
 using Murder;
 using Murder.Serialization;
+using Newtonsoft.Json.Linq;
 
 namespace HelloMurder.Core.Sounds
 {
@@ -87,9 +88,16 @@ namespace HelloMurder.Core.Sounds
 
             FmodHelpers.Check(result, "Unable to initialize fmod?");
 
+
+
             // okay, *this has to be called last*. I am not sure why, but things started exploding
             // (non-stream files would not play) if this was not the case <_<
             core.SetDSPBufferSize(bufferlength: 4, numbuffers: 32);
+
+            core.GetDriver(out int driver);
+            core.GetDriverInfo(driver, out Guid guid, out int rate, out FMOD.SPEAKERMODE mode, out int channels);
+
+            GameLogger.Log($"Fmod running on Driver: {driver}, with Guid: {guid}, system rate: {rate}, SpeakerMode: {mode}, with {channels} channels");
         }
 
         internal EventInstance? FetchOrCreateInstance(SoundEventId id)

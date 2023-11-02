@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{e80a4b0e-92f2-4078-8b24-10e9741e0a2d}">
+		<property name="name">
+			<value>Thrust</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ee0cd4b4-83e6-422c-b273-c011903a4a6d}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{03ef1c55-089a-4951-a35f-3884a70b366f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{03ef1c55-089a-4951-a35f-3884a70b366f}">
+		<property name="minimum">
+			<value>-1</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

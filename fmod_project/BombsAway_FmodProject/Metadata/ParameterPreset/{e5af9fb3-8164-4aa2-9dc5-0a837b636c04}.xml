@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{e5af9fb3-8164-4aa2-9dc5-0a837b636c04}">
+		<property name="name">
+			<value>Roll</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ee0cd4b4-83e6-422c-b273-c011903a4a6d}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{6fdab7b3-20ac-44f0-89fc-e20e1dff0dea}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{6fdab7b3-20ac-44f0-89fc-e20e1dff0dea}">
+		<property name="minimum">
+			<value>-1</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

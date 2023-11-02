@@ -110,6 +110,44 @@
     "Data4": -1990757770,
     "Path": "event:/PlayerFinalExplosion"
   },
+  "Turboprop": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": -1470386598,
+    "Data2": 1281125649,
+    "Data3": 2135795613,
+    "Data4": -1623573985,
+    "Path": "event:/Turboprop"
+  },
+  "Roll": {
+    "$type": "Murder.Core.Sounds.ParameterId, Murder",
+    "Data1": 126051689,
+    "Data2": 1873775456,
+    "Name": "Roll",
+    "Owner": {
+      "$type": "System.Nullable`1[[Murder.Core.Sounds.SoundEventId, Murder]], System.Private.CoreLib",
+      "Data1": -1470386598,
+      "Data2": 1281125649,
+      "Data3": 2135795613,
+      "Data4": -1623573985,
+      "Path": "event:/Turboprop"
+    },
+    "IsGlobal": true
+  },
+  "Thrust": {
+    "$type": "Murder.Core.Sounds.ParameterId, Murder",
+    "Data1": 3349528809,
+    "Data2": 668756723,
+    "Name": "Thrust",
+    "Owner": {
+      "$type": "System.Nullable`1[[Murder.Core.Sounds.SoundEventId, Murder]], System.Private.CoreLib",
+      "Data1": -1470386598,
+      "Data2": 1281125649,
+      "Data3": 2135795613,
+      "Data4": -1623573985,
+      "Path": "event:/Turboprop"
+    },
+    "IsGlobal": true
+  },
   "MainMenuMusic": {
     "$type": "Murder.Core.Sounds.SoundEventId, Murder",
     "Data1": -1101518342,

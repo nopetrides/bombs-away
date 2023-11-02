@@ -15,6 +15,7 @@ using HelloMurder.Services;
 using Murder.Core.Graphics;
 using Murder.Core;
 using Murder.Core.Geometry;
+using HelloMurder.Core.Sounds;
 
 namespace HelloMurder.Systems
 {
@@ -46,10 +47,16 @@ namespace HelloMurder.Systems
 
                     entity.SetAgentImpulse(_cachedInputAxis, direction);
 
+
+                    HelloMurderSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetLibrary().Roll, _cachedInputAxis.X);
+                    HelloMurderSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetLibrary().Thrust, -_cachedInputAxis.Y);
                 }
                 else
                 {
                     entity.SetFacing(Direction.Up);
+
+                    HelloMurderSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetLibrary().Roll, 0f);
+                    HelloMurderSoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetLibrary().Thrust, 0f);
                 }
                 
                 if (!_previousCachedAttack && _cachedAttack)

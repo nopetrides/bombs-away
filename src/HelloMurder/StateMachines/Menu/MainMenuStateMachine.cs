@@ -40,6 +40,8 @@ namespace HelloMurder.StateMachines
         {
             Entity.SetCustomDraw(DrawMainMenu);
 
+            HelloMurderSoundPlayer.Instance.Stop(null, false);
+
             HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic);
 
             _menuInfo.Select(MurderSaveServices.CanLoadSave() ? 0 : 1);
