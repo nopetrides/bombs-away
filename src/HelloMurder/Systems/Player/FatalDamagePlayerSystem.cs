@@ -55,6 +55,7 @@ namespace HelloMurder.Systems.Player
             HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().PlayerDeathExplosions, Murder.Core.Sounds.SoundProperties.None);
 
             HelloMurderSoundPlayer.Instance.Stop(LibraryServices.GetLibrary().Turboprop, true);
+            HelloMurderSoundPlayer.Instance.Stop(LibraryServices.GetLibrary().GameMusic, true);
 
             yield return Wait.ForMessage<AnimationCompleteMessage>(entity);
 

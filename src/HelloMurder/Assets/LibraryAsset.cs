@@ -68,5 +68,6 @@ namespace HelloMurder.Assets
         // Music
         public readonly SoundEventId MainMenuMusic;
         public readonly SoundEventId GameMusic;
+        public readonly SoundEventId EndScreen;
     }
 }

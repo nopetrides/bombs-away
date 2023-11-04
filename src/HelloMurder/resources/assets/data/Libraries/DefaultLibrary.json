@@ -164,6 +164,14 @@
     "Data4": -1580026736,
     "Path": "event:/GameMusic"
   },
+  "EndScreen": {
+    "$type": "Murder.Core.Sounds.SoundEventId, Murder",
+    "Data1": 682718595,
+    "Data2": 1313575100,
+    "Data3": -23188578,
+    "Data4": 974101220,
+    "Path": "event:/EndScreen"
+  },
   "Name": "DefaultLibrary",
   "Guid": "06cfea1c-576b-4bd2-85f6-7b19cd851839"
 }

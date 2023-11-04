@@ -13,6 +13,7 @@ using Murder.Core.Geometry;
 using HelloMurder.Services;
 using System.Numerics;
 using HelloMurder.Assets;
+using HelloMurder.Core.Sounds;
 
 namespace HelloMurder.StateMachines.Menu
 {
@@ -44,6 +45,8 @@ namespace HelloMurder.StateMachines.Menu
         {
             _menuInfo = GetGameOverOptions();
             _menuInfo.Select(_menuInfo.NextAvailableOption(-1, 1));
+
+            HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().EndScreen, Murder.Core.Sounds.SoundProperties.StopOtherMusic);
 
             while (true)
             {
