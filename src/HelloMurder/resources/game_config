@@ -3,19 +3,19 @@
   "Library": "06cfea1c-576b-4bd2-85f6-7b19cd851839",
   "MusicBus": {
     "$type": "Murder.Core.Sounds.SoundEventId, Murder",
-    "Data1": 1367429796,
-    "Data2": 1124472128,
-    "Data3": -1998750024,
-    "Data4": 2024713656,
-    "Path": "bus:/"
+    "Data1": 1886547801,
+    "Data2": 1211098557,
+    "Data3": 1372386460,
+    "Data4": 707824328,
+    "Path": "bus:/Music"
   },
   "SoundBus": {
     "$type": "Murder.Core.Sounds.SoundEventId, Murder",
-    "Data1": -583884895,
-    "Data2": 1336569226,
-    "Data3": 342014122,
-    "Data4": 62118318,
-    "Path": "bus:/Reverb"
+    "Data1": -928881160,
+    "Data2": 1273512591,
+    "Data3": -1349333881,
+    "Data4": 1166340744,
+    "Path": "bus:/Sound"
   },
   "AtlasFolderName": "atlas/",
   "ContentAsepritePath": "aseprite/",

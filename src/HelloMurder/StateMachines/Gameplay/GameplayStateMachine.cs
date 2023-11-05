@@ -37,6 +37,9 @@ namespace HelloMurder.StateMachines.Gameplay
         [JsonProperty]
         private readonly string _windWarningText = "";
 
+        [JsonProperty]
+        private readonly string _controlsText = "";
+
         private readonly LibraryAsset _libraryAsset;
 
         private Entity? _player;
@@ -44,6 +47,7 @@ namespace HelloMurder.StateMachines.Gameplay
         private Entity? _controls;
 
         private bool _showWindWarning;
+        private bool _showingControls;
         private bool _reachedEnd;
         private float _lastStartedTime = 0;
         private bool _anyInput;
@@ -92,6 +96,9 @@ namespace HelloMurder.StateMachines.Gameplay
             var bottomMinusRadioHeight = bottomCenter;
             bottomMinusRadioHeight.Y -= 20f;
 
+            _lastStartedTime = Game.NowUnscaled;
+            _showWindWarning = true;
+
             while (_player != null && Vector2.Distance(_player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center) > 5f)
             {
                 var pos = Vector2.Lerp(_player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center, Game.DeltaTime);
@@ -124,8 +131,8 @@ namespace HelloMurder.StateMachines.Gameplay
             if (_player == null)
                 yield break;
 
-            _lastStartedTime = Game.NowUnscaled;
-            _showWindWarning = true;
+            //_lastStartedTime = Game.NowUnscaled;
+            //_showWindWarning = true;
             var wind = _player.GetWind();
             var windParticle = _player.TryFetchChild("wind_indicator");
             windParticle?.Activate();
@@ -194,6 +201,10 @@ namespace HelloMurder.StateMachines.Gameplay
             var bottomMinusControlsHeight = bottomCenter;
             bottomMinusControlsHeight.Y -= 30f;
 
+            _reachedEnd = false;
+            _lastStartedTime = Game.NowUnscaled;
+            _showingControls = true;
+
             while (_controls != null && Vector2.Distance(_controls.GetGlobalTransform().Vector2, bottomMinusControlsHeight) > 5f)
             {
                 var controlsPos = Vector2.Lerp(_controls.GetGlobalTransform().Vector2, bottomMinusControlsHeight, Game.DeltaTime);
@@ -230,7 +241,7 @@ namespace HelloMurder.StateMachines.Gameplay
                 _controls.SetGlobalPosition(controlsPos);
                 yield return Wait.ForFrames(1);
             }
-
+            _showingControls = false;
             _controls?.Destroy();
             BeginEnemySpawn();
         }
@@ -273,7 +284,7 @@ namespace HelloMurder.StateMachines.Gameplay
 
                 var bottomCenter = _libraryAsset.Bounds.Center;
                 bottomCenter.X -= dialogWidth / 2f;
-                bottomCenter.Y += _libraryAsset.Bounds.Height / 2f - 64f;
+                bottomCenter.Y += _libraryAsset.Bounds.Height / 2f - 80f;
                 Vector2 textPosition = bottomCenter;
 
                 Game.Data.GetFont(100).Draw(
@@ -291,6 +302,49 @@ namespace HelloMurder.StateMachines.Gameplay
                 );
                 
                 if (_playNextSound < Game.NowUnscaled && currentLength < _windWarningText.Length)
+                {
+                    HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().RadioBlip, Murder.Core.Sounds.SoundProperties.None);
+
+                    _playNextSound = Game.NowUnscaled + 0.12f;
+                }
+            }
+
+            if (_showingControls)
+            {
+                float timeSinceAppeared = Game.NowUnscaled - _lastStartedTime;
+                int currentLength = Calculator.CeilToInt(Calculator.ClampTime(timeSinceAppeared, 2f /* dialog duration */) * _controlsText.Length);
+
+                if (_reachedEnd || currentLength == _controlsText.Length)
+                {
+                    _reachedEnd = true;
+
+                    currentLength = _controlsText.Length;
+                }
+                int maxWidth = 230;
+
+                float dialogWidth = Math.Min(
+                    Game.Data.GetFont(100).GetLineWidth(_controlsText.AsSpan().Slice(0, currentLength)), maxWidth);
+
+                var bottomCenter = _libraryAsset.Bounds.Center;
+                bottomCenter.X -= dialogWidth / 2f;
+                bottomCenter.Y += _libraryAsset.Bounds.Height / 2f - 80f;
+                Vector2 textPosition = bottomCenter;
+
+                Game.Data.GetFont(100).Draw(
+                    render.UiBatch,
+                    _controlsText,
+                    position: textPosition,
+                    alignment: new Vector2(0, 0),
+                    scale: new Vector2(1, 1),
+                    sort: .5f,
+                    color: Palette.Colors[9],
+                    strokeColor: null,
+                    shadowColor: Palette.Colors[0],
+                    maxWidth: maxWidth,
+                    visibleCharacters: currentLength
+                );
+
+                if (_playNextSound < Game.NowUnscaled && currentLength < _controlsText.Length)
                 {
                     HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().RadioBlip, Murder.Core.Sounds.SoundProperties.None);
 

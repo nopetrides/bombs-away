@@ -265,7 +265,8 @@
             "_radioPrefab": "8093e52e-b1b4-4ed7-bb54-a340a9886877",
             "_controlsPrefab": "06210cab-a50c-4f91-9e38-9e79ca255f1c",
             "_bombWindRadius": 64.0,
-            "_windWarningText": "CAUTION! WIND ADVISORY! TRAJECTORY EFFECTED!",
+            "_windWarningText": "CAUTION! WIND ADVISORY! BOMB TRAJECTORY AFFECTED!",
+            "_controlsText": "TARGETS REACHED. BOMBS ARMED. DESTROY THE ENEMY SHIPS!",
             "_cachedPersistedState": "GameStart"
           }
         }

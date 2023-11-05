@@ -27,7 +27,7 @@ namespace HelloMurder.StateMachines
 
         private MenuInfo GetOptionOptions() =>
             new MenuInfo(new MenuOption[] {
-                new(Game.Preferences.SoundVolume == 1 ? "Sounds on" : "Sounds off"),
+                new(Game.Preferences.SoundVolume == 1 ? "Sounds On" : "Sounds Off"),
                 new("Clear Data"),
                 new("Back") });
 
@@ -104,8 +104,8 @@ namespace HelloMurder.StateMachines
                     {
                         case 0: // Tweak sound
                             float volume = Game.Preferences.ToggleSoundVolumeAndSave();
-
-                            _menuInfo.Options[0] = volume == 1 ? new("Sounds on") : new("Sounds off");
+                            volume = Game.Preferences.ToggleMusicVolumeAndSave();
+                            _menuInfo.Options[0] = volume == 1 ? new("Sounds On") : new("Sounds Off");
                             break;
 
                         case 1: // Delete save data
