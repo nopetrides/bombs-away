@@ -122,6 +122,8 @@ namespace HelloMurder.StateMachines
 
             _controls = AssetServices.Create(World, _controlsPrefab);
             _controls.SetGlobalPosition(new Vector2 (75f, 425f));
+            var controlSprite = _controls.GetSprite();
+            _controls.SetSprite(controlSprite.SetBatch(Batches2D.UiBatchId));
 
             while (true)
             {
