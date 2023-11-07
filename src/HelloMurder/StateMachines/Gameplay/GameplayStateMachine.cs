@@ -105,7 +105,7 @@ namespace HelloMurder.StateMachines.Gameplay
             _lastStartedTime = Game.NowUnscaled;
             _showWindWarning = true;
 
-            while (_player != null && Vector2.Distance(_player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center) > 5f)
+            while (_player != null && (_canSkip && !_player.HasVelocity()) && Vector2.Distance(_player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center) > 5f)
             {
                 var pos = Vector2.Lerp(_player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center, Game.DeltaTime);
                 _player.SetGlobalPosition(pos);
@@ -115,6 +115,9 @@ namespace HelloMurder.StateMachines.Gameplay
                 _radio.SetGlobalPosition(radioPos);
                 yield return Wait.ForFrames(1);
             }
+
+            _player.SetPlayerSpeed(3f);
+            _radio.SetGlobalPosition(bottomMinusRadioHeight);
 
             SetWind();
         }
@@ -185,7 +188,7 @@ namespace HelloMurder.StateMachines.Gameplay
             var bottomCenter = _libraryAsset.Bounds.Center;
             bottomCenter.Y += (_libraryAsset.Bounds.Height / 2f) + 30f;
 
-            while (_radio != null && Vector2.Distance(_radio.GetGlobalTransform().Vector2, bottomCenter) > 5f)
+            while (_radio != null && !_player.HasVelocity() && Vector2.Distance(_radio.GetGlobalTransform().Vector2, bottomCenter) > 5f)
             {
                 var radioPos = Vector2.Lerp(_radio.GetGlobalTransform().Vector2, bottomCenter, Game.DeltaTime);
                 _radio.SetGlobalPosition(radioPos);
@@ -193,7 +196,6 @@ namespace HelloMurder.StateMachines.Gameplay
             }
 
             _radio?.Destroy();
-
         }
 
         private IEnumerator<Wait> ShowControls()

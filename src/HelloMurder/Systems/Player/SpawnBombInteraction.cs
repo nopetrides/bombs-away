@@ -28,6 +28,10 @@ namespace HelloMurder.Systems.Player
             // Reload time
             if (Game.Now < _timeSinceLastBomb + 1f) return;
 
+            var wind = entity.TryGetWind();
+
+            if (wind == null) return;
+
             // Spawn a bomb
             Guid prefab = LibraryServices.GetLibrary().BombPrefab;
 
@@ -35,7 +39,7 @@ namespace HelloMurder.Systems.Player
             e.SetTransform(entity.GetGlobalTransform());
 
             var playerPos = entity.GetGlobalTransform().Vector2;
-            var bombOffset = playerPos + entity.GetWind().WindVector;
+            var bombOffset = playerPos + wind.Value.WindVector;
             var mover = new MoveToComponent(bombOffset);
             e.SetMoveTo(mover);
             

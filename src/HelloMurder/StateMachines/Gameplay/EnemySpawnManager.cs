@@ -66,13 +66,19 @@ namespace HelloMurder.StateMachines.Gameplay
                 {
                     for (int i = _possibleEnemies.Length; i < spawnerData.EnemySpawns.Length; i++)
                     {
-                        if (time > spawnerData.EnemySpawns[i].SpawnTimeStart)
+                        if (time >= spawnerData.EnemySpawns[i].SpawnTimeStart)
                         {
                             _possibleEnemies = _possibleEnemies.Add(spawnerData.EnemySpawns[i]);
                             _possibleEnemiesShuffled = Shuffle(_possibleEnemies);
                             _currentPossibleEnemy = 0;
                         }
                     }
+                }
+
+                if (_possibleEnemiesShuffled.Length == 0)
+                {
+                    yield return Wait.ForFrames(1);
+                    continue;
                 }
 
                 if (_currentPossibleEnemy >= _possibleEnemiesShuffled.Length)
@@ -82,7 +88,7 @@ namespace HelloMurder.StateMachines.Gameplay
                 }
 
                 // Get the spawn data about this enemy type
-                EnemySpawnEvent currentSpawn = spawnerData.EnemySpawns[_currentPossibleEnemy];
+                EnemySpawnEvent currentSpawn = _possibleEnemiesShuffled[_currentPossibleEnemy];
                 // Do the spawn!
                 SpawnEntity(currentSpawn.PrefabToSpawn, currentSpawn.EnemyImpulse, currentSpawn.ChasePlayer, library);
 
@@ -112,7 +118,7 @@ namespace HelloMurder.StateMachines.Gameplay
 
             entity.SetGlobalPosition(position);
 
-            entity.SetAgent(enemyImpulse, enemyImpulse, 0f);
+            entity.SetVelocity(0f, enemyImpulse);
             if (chasePlayer) 
                 entity.SetMoveToPlayer();
 
