@@ -54,6 +54,8 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private float _playNextSound = 0;
 
+        private bool _canSkip;
+
         public GameplayStateMachine() {
 
             _libraryAsset = LibraryServices.GetLibrary();
@@ -62,7 +64,7 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private IEnumerator<Wait> GameStart()
         {
-            World.DeactivateSystem<PlayerInputSystem>();
+            //World.DeactivateSystem<PlayerInputSystem>();
             Entity.SetGameplayStateMachine();
             Entity.SetCustomDraw(DrawMessage);
             HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().GameMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic);
@@ -74,6 +76,10 @@ namespace HelloMurder.StateMachines.Gameplay
             _player = World.GetUniqueEntity<PlayerComponent>();
             var landIcon = _player.TryFetchChild("wind_indicator_icon");
             landIcon?.Deactivate();
+
+            HelloMurderSaveData save = SaveServices.GetOrCreateSave();
+            _canSkip = save.HighScore > 0;
+
 
             yield return Wait.ForFrames(1);
             yield return Wait.ForRoutine(FlyPlayerOnScreen());
@@ -137,12 +143,12 @@ namespace HelloMurder.StateMachines.Gameplay
             var windParticle = _player.TryFetchChild("wind_indicator");
             windParticle?.Activate();
 
-            var bombEndpoint = _player.GetGlobalTransform().Vector2 + (wind.WindVector * 0.75f);
+            var bombEndpoint = (wind.WindVector * 0.75f);
 
-            while (windParticle != null && Vector2.Distance(windParticle.GetGlobalTransform().Vector2, bombEndpoint) > 2f)
+            while (windParticle != null && Vector2.Distance(windParticle.GetPosition().ToVector2(), bombEndpoint) > 2f)
             {
-                var pos = windParticle.GetGlobalTransform().Vector2 + wind.WindVector.Normalized() * 20f * Game.DeltaTime;
-                windParticle.SetGlobalPosition(pos);
+                var pos = Vector2.Lerp(windParticle.GetPosition().ToVector2(), bombEndpoint, Game.DeltaTime);
+                windParticle.SetLocalPosition(pos);
                 yield return Wait.ForFrames(1);
             }
 
@@ -157,7 +163,7 @@ namespace HelloMurder.StateMachines.Gameplay
             yield return Wait.ForSeconds(1f);
             windParticle?.Deactivate();
             var landIcon = _player.TryFetchChild("wind_indicator_icon");
-            landIcon?.SetGlobalPosition(bombEndpoint);
+            landIcon?.SetLocalPosition(bombEndpoint);
             landIcon?.Activate();
             landIcon?.GetSprite().Play(false);
         }
@@ -192,7 +198,7 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private IEnumerator<Wait> ShowControls()
         {
-            World.ActivateSystem<PlayerInputSystem>();
+            //World.ActivateSystem<PlayerInputSystem>();
 
             _controls = AssetServices.Create(World, _controlsPrefab);
             var bottomCenter = _libraryAsset.Bounds.Center;

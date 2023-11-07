@@ -160,7 +160,7 @@
         "Y": 0.0
       }
     },
-    "FollowEntityPosition": false,
+    "FollowEntityPosition": true,
     "Colors": {
       "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Graphics.Color, Murder]], System.Collections.Immutable",
       "$values": []
