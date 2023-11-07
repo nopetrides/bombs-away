@@ -19,7 +19,7 @@
       "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.SpriteComponent, Murder",
         "TargetSpriteBatch": 3,
-        "AnimationGuid": "bfceda16-d533-9778-db45-7478e228c270",
+        "AnimationGuid": "f21eb1cf-cfa9-5ebc-5590-f9f21d6b3f53",
         "Offset": {
           "$type": "System.Numerics.Vector2, System.Private.CoreLib",
           "X": 0.5,
