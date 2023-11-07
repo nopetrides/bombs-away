@@ -107,6 +107,8 @@ namespace HelloMurder.StateMachines.Menu
             DrawScore(render, save);
             // High score
             DrawHighScore(render, save);
+            //Credits
+            DrawCredits(render);
         }
 
 
@@ -136,6 +138,27 @@ namespace HelloMurder.StateMachines.Menu
             RenderServices.DrawSimpleText(render.UiBatch,
                 100,
                 highScoreText,
+                position,
+                textDraw);
+        }
+
+        private void DrawCredits(RenderContext render)
+        {
+            var creditsText = 
+@" Bombs Away
+    Made By:
+Noah Petrides
+        &
+ Alex Belland";
+
+            var textDraw = new DrawInfo() { Sort = 0.4f, Color = Color.Black };
+            var position = new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f);
+            var lineWidth = Game.Data.GetFont(101).GetLineWidth(creditsText);
+            position.X -= lineWidth/2f;
+            position.Y -= 180;
+            RenderServices.DrawSimpleText(render.UiBatch,
+                101,
+                creditsText,
                 position,
                 textDraw);
         }

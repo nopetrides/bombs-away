@@ -32,6 +32,8 @@ namespace HelloMurder.StateMachines
 
         private MenuInfo _menuInfo = new();
 
+        private static bool _firstMenuView = true;
+
         private MenuInfo GetMainMenuOptions() =>
             new MenuInfo(new MenuOption[] {new("Play"), new("Options"), new("Exit") });
 
@@ -56,7 +58,20 @@ namespace HelloMurder.StateMachines
 
             HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic);
 
-            _menuInfo.Select(MurderSaveServices.CanLoadSave() ? 0 : 1);
+            _menuInfo.Select(0);
+            
+            // silly workaround
+            if (Game.Preferences.SoundVolume == 0 && _firstMenuView)
+            {
+                Game.Preferences.ToggleSoundVolumeAndSave();
+                Game.Preferences.ToggleSoundVolumeAndSave();
+            }
+            if (Game.Preferences.MusicVolume == 0 && _firstMenuView)
+            {
+                Game.Preferences.ToggleMusicVolumeAndSave();
+                Game.Preferences.ToggleMusicVolumeAndSave();
+            }
+            _firstMenuView = false;
         }
 
         private IEnumerator<Wait> Main()

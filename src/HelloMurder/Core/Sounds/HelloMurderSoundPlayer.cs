@@ -42,7 +42,6 @@ namespace HelloMurder.Core.Sounds
 
             LoadFmodAssemblies();
             InitializeFmod();
-
             _initialized = true;
         }
 
