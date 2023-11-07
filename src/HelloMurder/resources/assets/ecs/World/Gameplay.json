@@ -120,7 +120,7 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 64.0,
+          "_x": 60.0,
           "_y": 0.0
         },
         "HelloMurder.Components.ScrollingSprite, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
@@ -152,7 +152,7 @@
         "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
         "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "Murder.Components.PositionComponent, Murder",
-          "_x": 260.0,
+          "_x": 264.0,
           "_y": 0.0
         },
         "HelloMurder.Components.ScrollingSprite, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {

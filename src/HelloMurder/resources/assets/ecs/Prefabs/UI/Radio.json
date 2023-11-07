@@ -30,7 +30,7 @@
           "$values": []
         },
         "AnimationStartedTime": -1.0,
-        "YSortOffset": 0
+        "YSortOffset": 128
       }
     },
     "IsDeactivated": false,

@@ -88,7 +88,7 @@ namespace HelloMurder.Systems.Interactions
                 position,
                 textDraw);
 
-            position.Y -= 0.5f;
+            position.Y -= 50f * Game.DeltaTime;
             shipScore = new ShipScoreRenderComponent(DrawScore, shipScore.ScoreValue, position, shipScore.TextAlpha-Game.DeltaTime);
             ship.SetShipScoreRender(shipScore);
         }

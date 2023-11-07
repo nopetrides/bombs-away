@@ -266,7 +266,7 @@
       }
     },
     "RotateWithVelocity": false,
-    "SortOffset": 128.0
+    "SortOffset": 0.0
   },
   "Name": "wind_indicator",
   "Guid": "8d303641-5e22-4a59-aada-82a1c3fb28a4"

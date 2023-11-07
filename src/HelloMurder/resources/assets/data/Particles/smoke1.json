@@ -71,7 +71,7 @@
     "Speed": {
       "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
       "Kind": 0,
-      "_constant": 1.0,
+      "_constant": 0.0,
       "_rangeStart": 0.0,
       "_rangeEnd": 0.0,
       "_rangeStartMin": 0.0,
@@ -206,7 +206,7 @@
     "Acceleration": {
       "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
       "Kind": 0,
-      "_constant": 1.0,
+      "_constant": 0.0,
       "_rangeStart": 0.0,
       "_rangeEnd": 0.0,
       "_rangeStartMin": 0.0,
@@ -266,7 +266,7 @@
     "Rotation": {
       "$type": "Murder.Core.Particles.ParticleValueProperty, Murder",
       "Kind": 0,
-      "_constant": 1.0,
+      "_constant": 0.0,
       "_rangeStart": 0.0,
       "_rangeEnd": 0.0,
       "_rangeStartMin": 0.0,

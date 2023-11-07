@@ -4,6 +4,7 @@ using HelloMurder.Assets;
 using HelloMurder.Core;
 using HelloMurder.Core.Sounds;
 using HelloMurder.Services;
+using HelloMurder.Systems;
 using Murder;
 using Murder.Assets;
 using Murder.Attributes;
@@ -50,6 +51,7 @@ namespace HelloMurder.StateMachines
         {
             Entity.SetCustomDraw(DrawMainMenu);
 
+            World.DeactivateSystem<PlayerInputSystem>();
             HelloMurderSoundPlayer.Instance.Stop(null, false);
 
             HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic);
