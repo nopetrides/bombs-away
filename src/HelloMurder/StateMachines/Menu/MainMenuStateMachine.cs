@@ -1,5 +1,6 @@
 ﻿using Bang.Entities;
 using Bang.StateMachines;
+using HelloMurder.Assets;
 using HelloMurder.Core;
 using HelloMurder.Core.Sounds;
 using HelloMurder.Services;
@@ -10,6 +11,7 @@ using Murder.Core.Geometry;
 using Murder.Core.Graphics;
 using Murder.Core.Input;
 using Murder.Services;
+using Murder.Utilities;
 using Newtonsoft.Json;
 using System.Numerics;
 
@@ -19,6 +21,13 @@ namespace HelloMurder.StateMachines
     {
         [JsonProperty, GameAssetId(typeof(WorldAsset))]
         private readonly Guid _newGameWorld = Guid.Empty;
+
+        [JsonProperty, GameAssetId<PrefabAsset>]
+        private readonly Guid _controlsPrefab = Guid.Empty;
+
+        private Entity? _controls;
+
+        private readonly LibraryAsset _libraryAsset;
 
         private MenuInfo _menuInfo = new();
 
@@ -33,6 +42,7 @@ namespace HelloMurder.StateMachines
 
         public MainMenuStateMachine()
         {
+            _libraryAsset = LibraryServices.GetLibrary();
             State(Main);
         }
 
@@ -93,6 +103,9 @@ namespace HelloMurder.StateMachines
             _menuInfo = GetOptionOptions();
             _menuInfo.Select(_menuInfo.NextAvailableOption(-1, 1));
 
+            _controls = AssetServices.Create(World, _controlsPrefab);
+            _controls.SetGlobalPosition(new Vector2 (75f, 425f));
+
             while (true)
             {
                 int previousInput = _menuInfo.Selection;
@@ -113,6 +126,7 @@ namespace HelloMurder.StateMachines
                             break;
 
                         case 2: // Go back
+                            _controls?.Destroy();
                             yield return GoTo(Main);
                             break;
                             
