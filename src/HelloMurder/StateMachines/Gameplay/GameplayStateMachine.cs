@@ -20,6 +20,9 @@ using HelloMurder.Core.Sounds;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
+    /// <summary>
+    /// Handles the gameplay intro sequence
+    /// </summary>
     internal class GameplayStateMachine : StateMachine
     {
         [JsonProperty, GameAssetId(typeof(EnemySpawnerDataAsset))]
@@ -77,6 +80,9 @@ namespace HelloMurder.StateMachines.Gameplay
             var landIcon = _player.TryFetchChild("wind_indicator_icon");
             landIcon?.Deactivate();
 
+            var flakWarning = _player.TryFetchChild("flak_warning");
+            flakWarning?.Deactivate();
+
             HelloMurderSaveData save = SaveServices.GetOrCreateSave();
             _canSkip = save.HighScore > 0;
 
@@ -89,8 +95,6 @@ namespace HelloMurder.StateMachines.Gameplay
             yield return Wait.ForRoutine(ShowControls());
             yield return Wait.ForRoutine(WaitForInput());
             yield return Wait.ForRoutine(HideControls());
-            yield return Wait.ForRoutine(CoreLoop());
-            yield return Wait.ForRoutine(EndSequenceStart());
         }
 
         private IEnumerator<Wait> FlyPlayerOnScreen()
@@ -260,16 +264,6 @@ namespace HelloMurder.StateMachines.Gameplay
             World.AddEntity(enemySpawnManager);
             var flakSpawnManager = new StateMachineComponent<FlakSpawnManager>(new FlakSpawnManager());
             World.AddEntity(flakSpawnManager);
-        }
-
-        private IEnumerator<Wait> CoreLoop()
-        {
-            yield return Wait.ForMessage<GameStepCompleteMessage>();
-        }
-
-        private IEnumerator<Wait> EndSequenceStart()
-        {
-            yield return Wait.NextFrame;
         }
 
         private void DrawMessage(RenderContext render)

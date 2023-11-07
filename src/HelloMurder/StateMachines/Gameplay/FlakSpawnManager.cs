@@ -10,6 +10,7 @@ using HelloMurder.Assets;
 using Murder.Components;
 using HelloMurder.Components;
 using HelloMurder.Core.Sounds;
+using HelloMurder.Messages;
 
 namespace HelloMurder.StateMachines.Gameplay
 {
@@ -49,6 +50,8 @@ namespace HelloMurder.StateMachines.Gameplay
                 position = player.GetGlobalTransform().Vector2;
 
                 HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().FlakWarning, Murder.Core.Sounds.SoundProperties.None);
+
+                player.SendMessage<FlakWarningMessage>();
             }
             else
             {

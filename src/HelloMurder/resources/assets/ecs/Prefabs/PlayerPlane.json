@@ -216,6 +216,41 @@
         },
         "IsDeactivated": false,
         "ActivateWithParent": false
+      },
+      "9740ee9d-1b75-4cfb-b474-d1d2cf153d0a": {
+        "$type": "Murder.Prefabs.EntityInstance, Murder",
+        "_guid": "9740ee9d-1b75-4cfb-b474-d1d2cf153d0a",
+        "_name": "flak_warning",
+        "_components": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+          "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.PositionComponent, Murder",
+            "_x": 0.0,
+            "_y": 0.0
+          },
+          "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+            "$type": "Murder.Components.SpriteComponent, Murder",
+            "TargetSpriteBatch": 3,
+            "AnimationGuid": "85d83fc7-013b-efca-cf74-d3ee99139718",
+            "Offset": {
+              "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "RotateWithFacing": false,
+            "FlipWithFacing": false,
+            "HighlightStyle": 2,
+            "UseUnscaledTime": false,
+            "NextAnimations": {
+              "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
+              "$values": []
+            },
+            "AnimationStartedTime": -1.0,
+            "YSortOffset": 0
+          }
+        },
+        "IsDeactivated": false,
+        "ActivateWithParent": false
       }
     }
   },

@@ -2,7 +2,7 @@
 
 namespace HelloMurder.Messages
 {
-    public readonly struct GameStepCompleteMessage : IMessage
+    public readonly struct FlakWarningMessage : IMessage
     {
     }
 }
