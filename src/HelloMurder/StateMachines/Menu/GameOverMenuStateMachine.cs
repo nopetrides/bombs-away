@@ -86,7 +86,7 @@ namespace HelloMurder.StateMachines.Menu
                 });
 
             // Menu options
-            Point cameraHalfSize = render.Camera.Size / 2f - new Point(0, _menuInfo.Length * 7);
+            Point cameraHalfSize = render.Camera.Size / 2f + new Point(0, _menuInfo.Length * 10);
 
             RenderServices.DrawVerticalMenu(
                 render.UiBatch,
@@ -119,7 +119,7 @@ namespace HelloMurder.StateMachines.Menu
             var textDraw = new DrawInfo() { Sort = 0.4f, Color = Color.Black };
             var position = new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f);
             position.X -= 100;
-            position.Y -= 25;
+            position.Y += 8;
             RenderServices.DrawSimpleText(render.UiBatch,
                 100,
                 scoreText,
@@ -134,7 +134,7 @@ namespace HelloMurder.StateMachines.Menu
             var textDraw = new DrawInfo() { Sort = 0.4f, Color = Color.Black };
             var position = new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f);
             position.X += 50;
-            position.Y -= 25;
+            position.Y += 8;
             RenderServices.DrawSimpleText(render.UiBatch,
                 100,
                 highScoreText,
