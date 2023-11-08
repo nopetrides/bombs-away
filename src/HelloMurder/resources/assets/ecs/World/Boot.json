@@ -1,0 +1,80 @@
+{
+  "$type": "Murder.Assets.WorldAsset, Murder",
+  "WorldName": "World",
+  "Order": 1,
+  "_systems": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": []
+  },
+  "_features": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "9753089a-287b-4410-ad56-873b1224930c",
+        "Item2": true
+      }
+    ]
+  },
+  "_folders": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable]], System.Private.CoreLib"
+  },
+  "_entities": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
+    "88a40b96-0a97-446a-8177-0b9698c0134b": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
+      "PrefabRef": {
+        "$type": "Murder.Prefabs.PrefabReference, Murder",
+        "Guid": "fce7634c-9ba9-4279-9fa0-129fc9816287"
+      },
+      "_removeComponent": {
+        "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "_childrenModifiers": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
+      },
+      "_ignorePrefabChildren": false,
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 255.0,
+          "_y": 297.0
+        },
+        "Murder.Components.CameraFollowComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.CameraFollowComponent, Murder",
+          "Enabled": false,
+          "Style": 1
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "_guid": "88a40b96-0a97-446a-8177-0b9698c0134b",
+      "_name": "Camera man"
+    },
+    "bf59226b-2cea-4097-9680-997cd516b980": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "bf59226b-2cea-4097-9680-997cd516b980",
+      "_name": "BootStateMachine",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.BootStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.BootStateMachine, HelloMurder]], Bang",
+          "_routine": {
+            "$type": "HelloMurder.StateMachines.BootStateMachine, HelloMurder",
+            "_nextWorld": "237d1c07-32a0-4634-83b0-f72b70f2d037",
+            "_cachedPersistedState": "Main"
+          }
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
+    }
+  },
+  "_entitiesToFolder": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "Name": "Boot",
+  "Guid": "7d2e5034-e841-4485-b134-59ec02a1c000"
+}

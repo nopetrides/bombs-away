@@ -44,8 +44,14 @@ namespace HelloMurder.Assets
         [GameAssetId<SpriteAsset>]
         public Guid GameOverScreen = Guid.Empty;
 
+        [GameAssetId<SpriteAsset>]
+        public Guid MurderLogo = Guid.Empty;
 
-        [Tooltip("This is the bounds that the road which the player will be driving will be displayed.")]
+        [GameAssetId<SpriteAsset>]
+        public Guid FmodLogo = Guid.Empty;
+
+
+        [Tooltip("This is the bounds of the gameplay area.")]
         public IntRectangle Bounds = Rectangle.Empty;
 
         // UI

@@ -144,20 +144,25 @@ namespace HelloMurder.StateMachines.Menu
 
         private void DrawCredits(RenderContext render)
         {
-            var creditsText = 
-@" Bombs Away
-    Made By:
-Noah Petrides
-        &
- Alex Belland";
+            var creditsText =
+@"                                                          Bombs Away
+                                                              Made By:
+                                                         Noah Petrides
+                                                                     &
+                                                           Alex Belland
+
+               Created using Murder Engine by isadorasophia and saint11
+";
+            var fmodAttribution = "Audio Engine courtesy of FMOD Studio by Firelight Technologies Pty Ltd.";
 
             var textDraw = new DrawInfo() { Sort = 0.4f, Color = Color.Black };
             var position = new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f);
-            var lineWidth = Game.Data.GetFont(101).GetLineWidth(creditsText);
+            var lineWidth = Game.Data.GetFont(100).GetLineWidth(fmodAttribution);
+            creditsText += fmodAttribution;
             position.X -= lineWidth/2f;
             position.Y -= 180;
             RenderServices.DrawSimpleText(render.UiBatch,
-                101,
+                100,
                 creditsText,
                 position,
                 textDraw);

@@ -40,7 +40,7 @@
   "ShowUiDebug": true,
   "PushAwayInterval": 0.05,
   "DefaultGridCellSize": 24,
-  "StartingScene": "237d1c07-32a0-4634-83b0-f72b70f2d037",
+  "StartingScene": "7d2e5034-e841-4485-b134-59ec02a1c000",
   "Theme": {
     "$type": "Murder.Assets.Theme, Murder",
     "Bg": {

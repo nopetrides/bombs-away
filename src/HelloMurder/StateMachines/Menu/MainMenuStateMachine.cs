@@ -54,9 +54,8 @@ namespace HelloMurder.StateMachines
             Entity.SetCustomDraw(DrawMainMenu);
 
             World.DeactivateSystem<PlayerInputSystem>();
-            HelloMurderSoundPlayer.Instance.Stop(null, false);
 
-            HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic);
+            HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic | Murder.Core.Sounds.SoundProperties.SkipIfAlreadyPlaying);
 
             _menuInfo.Select(0);
             

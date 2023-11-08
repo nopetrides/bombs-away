@@ -15,6 +15,8 @@
   "PlayerDeath": "c5a7d3ce-a0e4-9485-480a-f2291b2fbb96",
   "SplashScreen": "c5253e83-a3a2-e33c-9de4-675e7955048e",
   "GameOverScreen": "84b75ca4-e711-6f7b-c09b-3157e5102535",
+  "MurderLogo": "bb28a45f-873b-9eef-0342-25384770d9b8",
+  "FmodLogo": "93c39adb-fb76-f3a2-653e-75374713f141",
   "Bounds": {
     "$type": "Murder.Core.Geometry.IntRectangle, Murder",
     "X": 32,
