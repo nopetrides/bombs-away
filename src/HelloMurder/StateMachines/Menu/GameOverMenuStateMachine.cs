@@ -146,6 +146,7 @@ namespace HelloMurder.StateMachines.Menu
         {
             var creditsText =
 @"                                                          Bombs Away
+
                                                               Made By:
                                                          Noah Petrides
                                                                      &
@@ -160,7 +161,7 @@ namespace HelloMurder.StateMachines.Menu
             var lineWidth = Game.Data.GetFont(100).GetLineWidth(fmodAttribution);
             creditsText += fmodAttribution;
             position.X -= lineWidth/2f;
-            position.Y -= 180;
+            position.Y -= 190;
             RenderServices.DrawSimpleText(render.UiBatch,
                 100,
                 creditsText,
