@@ -11,6 +11,8 @@ using Newtonsoft.Json;
 using Murder.Core.Geometry;
 using System.Diagnostics;
 using HelloMurder.Core;
+using HelloMurder.Core.Sounds;
+using HelloMurder.Services;
 
 namespace HelloMurder.StateMachines.Menu
 {
@@ -44,20 +46,21 @@ namespace HelloMurder.StateMachines.Menu
 
             while (true)
             {
+                int previousInput = _menuInfo.Selection;
+
                 if (Game.Input.VerticalMenu(ref _menuInfo))
                 {
-                    //LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().UiConfirm, isLoop: false);
-
                     switch (_menuInfo.Selection)
                     {
                         case 0: //  Resume
+                            HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().UiSelect, Murder.Core.Sounds.SoundProperties.None);
                             World.Resume();
                             Entity.Destroy();
 
                             break;
 
                         case 1: //  Quit
-                            //LDGameSoundPlayer.Instance.Stop(fadeOut: true);
+                            HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().UiSelect, Murder.Core.Sounds.SoundProperties.None);
 
                             Game.Instance.QueueWorldTransition(_mainMenuWorld);
                             break;
@@ -66,14 +69,18 @@ namespace HelloMurder.StateMachines.Menu
                             break;
                     }
                 }
-                else if (Game.Input.Pressed(InputButtons.Cancel))
+                else if (Game.Input.PressedAndConsume(InputButtons.Pause))
                 {
+                    HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().UiSelect, Murder.Core.Sounds.SoundProperties.None);
                     World.Resume();
                     Entity.Destroy();
 
                     break;
                 }
-
+                if (previousInput != _menuInfo.Selection)
+                {
+                    HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().UiNavigate, Murder.Core.Sounds.SoundProperties.None);
+                }
                 yield return Wait.NextFrame;
             }
         }

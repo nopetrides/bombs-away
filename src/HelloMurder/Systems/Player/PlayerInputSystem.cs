@@ -78,11 +78,13 @@ namespace HelloMurder.Systems
 
             _cachedAttack = Game.Input.Down(InputButtons.Attack);
 
-            if (Game.Input.Pressed(InputButtons.Pause) && !context.World.IsPaused) 
+            if (Game.Input.PressedAndConsume(InputButtons.Pause) 
+                && !context.World.IsPaused 
+                && context.World.GetEntitiesWith(typeof(DoNotPauseComponent)).Count() == 0) 
             {
                 LibraryServices.GetPauseMenuPrefab().Create(context.World);
 
-                //LDGameSoundPlayer.Instance.PlayEvent(LibraryServices.GetRoadLibrary().UiBack, isLoop: false);
+                HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().UiNavigate, Murder.Core.Sounds.SoundProperties.None);
             }
         }
 

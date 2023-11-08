@@ -55,7 +55,7 @@ namespace HelloMurder.StateMachines
             // wait, skippable
             duration = 2f;
             _lastTransition = Game.Now;
-            while (Game.Now - _lastTransition < duration && !Game.Input.PressedAndConsume(InputButtons.Attack))
+            while (Game.Now - _lastTransition < duration && !Game.Input.PressedAndConsume(InputButtons.Attack) && !Game.Input.PressedAndConsume(InputButtons.Cancel))
             {
                 yield return Wait.NextFrame;
             }

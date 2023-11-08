@@ -35,6 +35,9 @@
             "_gameWorld": "9775cecb-7773-4f30-822a-0e9a7d5ddd8d",
             "_cachedPersistedState": "GameOver"
           }
+        },
+        "Murder.Components.DoNotPauseComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.DoNotPauseComponent, Murder"
         }
       },
       "IsDeactivated": false,

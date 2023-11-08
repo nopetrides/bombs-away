@@ -66,6 +66,9 @@
             "_nextWorld": "237d1c07-32a0-4634-83b0-f72b70f2d037",
             "_cachedPersistedState": "Main"
           }
+        },
+        "Murder.Components.DoNotPauseComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.DoNotPauseComponent, Murder"
         }
       },
       "IsDeactivated": false,

@@ -99,6 +99,9 @@
             "_controlsPrefab": "06210cab-a50c-4f91-9e38-9e79ca255f1c",
             "_cachedPersistedState": "Main"
           }
+        },
+        "Murder.Components.DoNotPauseComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.DoNotPauseComponent, Murder"
         }
       },
       "IsDeactivated": false,
