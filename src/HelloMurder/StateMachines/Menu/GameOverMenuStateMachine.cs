@@ -106,6 +106,7 @@ namespace HelloMurder.StateMachines.Menu
                     //paper?.SetGlobalPosition(world.Camera.Position);
                     paper?.SetDestroyOnAnimationComplete(false);
                     // Tried to determine how to enable and disable this entity instead of destroying, but oh well
+                    _paperAnimationTimer += Game.DeltaTime;
                 }
                 else if (_paperAnimationTimer > _paperRestartDelay)
                 {
