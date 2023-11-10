@@ -44,6 +44,9 @@ namespace HelloMurder.Assets
         [GameAssetId<SpriteAsset>]
         public Guid GameOverScreen = Guid.Empty;
 
+        [GameAssetId<PrefabAsset>]
+        public Guid GameOverPaper = Guid.Empty;
+
         [GameAssetId<SpriteAsset>]
         public Guid MurderLogo = Guid.Empty;
 

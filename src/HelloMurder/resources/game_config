@@ -32,7 +32,7 @@
   "GameHeight": 512,
   "GameScale": 1,
   "_enforceResolution": true,
-  "_scalingFilter": false,
+  "_scalingFilter": true,
   "Fullscreen": false,
   "TargetFps": 60,
   "FixedUpdateFactor": 2.0,

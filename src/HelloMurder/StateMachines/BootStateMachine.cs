@@ -41,6 +41,18 @@ namespace HelloMurder.StateMachines
 
             HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic);
 
+            // silly workaround
+            if (Game.Preferences.SoundVolume == 0)
+            {
+                Game.Preferences.ToggleSoundVolumeAndSave();
+                Game.Preferences.ToggleSoundVolumeAndSave();
+            }
+            if (Game.Preferences.MusicVolume == 0)
+            {
+                Game.Preferences.ToggleMusicVolumeAndSave();
+                Game.Preferences.ToggleMusicVolumeAndSave();
+            }
+
             // fade in
             float duration = 0.5f;
             _lastTransition = Game.Now;

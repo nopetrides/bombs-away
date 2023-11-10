@@ -33,6 +33,7 @@
             "$type": "HelloMurder.StateMachines.Menu.GameOverMenuStateMachine, HelloMurder",
             "_mainMenuWorld": "237d1c07-32a0-4634-83b0-f72b70f2d037",
             "_gameWorld": "9775cecb-7773-4f30-822a-0e9a7d5ddd8d",
+            "_paperDrawDelay": 5.0,
             "_cachedPersistedState": "GameOver"
           }
         },

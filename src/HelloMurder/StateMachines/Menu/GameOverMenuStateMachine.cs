@@ -14,6 +14,8 @@ using HelloMurder.Services;
 using System.Numerics;
 using HelloMurder.Assets;
 using HelloMurder.Core.Sounds;
+using Murder.Utilities;
+using Murder.Core;
 
 namespace HelloMurder.StateMachines.Menu
 {
@@ -25,10 +27,18 @@ namespace HelloMurder.StateMachines.Menu
         [JsonProperty, GameAssetId(typeof(WorldAsset))]
         private readonly Guid _gameWorld = Guid.Empty;
 
+        [JsonProperty]
+        private readonly float _paperDrawDelay = 5f;
+        [JsonProperty]
+        private readonly float _paperRestartDelay = 15f;
+
         private MenuInfo GetGameOverOptions() =>
             new MenuInfo(options: new MenuOption[] { new("Restart"), new("Quit") });
 
         private MenuInfo _menuInfo = new();
+
+        private float _paperStartTimer = 0f;
+        private float _paperAnimationTimer = 0f;
 
         public GameOverMenuStateMachine()
         {
@@ -80,13 +90,39 @@ namespace HelloMurder.StateMachines.Menu
             var skin = LibraryServices.GetLibrary().GameOverScreen;
 
             RenderServices.DrawSprite(render.UiBatch, skin,
-                new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f), new DrawInfo(0.8f)
+                new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f), 
+                new DrawInfo(0.8f)
                 {
                     Origin = new Vector2(.5f, .5f)
                 });
 
+            if (_paperStartTimer > _paperDrawDelay)
+            {
+                if (_paperAnimationTimer == 0f)
+                {
+                    var paperGuid = LibraryServices.GetLibrary().GameOverPaper;
+                    var paper = AssetServices.TryCreate(World, paperGuid);
+                    var world = (MonoWorld)World;
+                    //paper?.SetGlobalPosition(world.Camera.Position);
+                    paper?.SetDestroyOnAnimationComplete(false);
+                    // Tried to determine how to enable and disable this entity instead of destroying, but oh well
+                }
+                else if (_paperAnimationTimer > _paperRestartDelay)
+                {
+                    _paperAnimationTimer = 0f;
+                }
+                else
+                {
+                    _paperAnimationTimer += Game.DeltaTime;
+                }
+            }
+            else
+            {
+                _paperStartTimer += Game.DeltaTime;
+            }
+
             // Menu options
-            Point cameraHalfSize = render.Camera.Size / 2f + new Point(0, _menuInfo.Length * 10);
+            Point cameraHalfSize = render.Camera.Size / 2f - new Point(0, _menuInfo.Length * 18);
 
             RenderServices.DrawVerticalMenu(
                 render.UiBatch,
@@ -95,7 +131,7 @@ namespace HelloMurder.StateMachines.Menu
                 {
                     Color = Palette.Colors[7],
                     Shadow = Palette.Colors[1],
-                    SelectedColor = Palette.Colors[9],
+                    SelectedColor = Palette.Colors[2],
                     Origin = new(0.5f, 0.5f),
                     ExtraVerticalSpace = 19,
                 },

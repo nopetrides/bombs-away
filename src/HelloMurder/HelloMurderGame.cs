@@ -25,8 +25,9 @@ namespace HelloMurder
 
         public void Initialize()
         {
-            var a = Game.Instance.Window;
-            var b = Game.GraphicsDevice.DisplayMode.AspectRatio;
+            // Just some values to play around with rendering and window
+            //var a = Game.Instance.Window;
+            //var b = Game.GraphicsDevice.DisplayMode.AspectRatio;
 
             Game.Data.CurrentPalette = Palette.Colors.ToImmutableArray();
 

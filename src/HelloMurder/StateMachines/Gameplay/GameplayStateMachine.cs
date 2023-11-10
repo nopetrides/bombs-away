@@ -57,7 +57,7 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private float _playNextSound = 0;
 
-        private bool _canSkip;
+        private bool _cantSkip;
 
         public GameplayStateMachine() {
 
@@ -84,7 +84,7 @@ namespace HelloMurder.StateMachines.Gameplay
             flakWarning?.Deactivate();
 
             HelloMurderSaveData save = SaveServices.GetOrCreateSave();
-            _canSkip = save.HighScore > 0;
+            _cantSkip = save.HighScore == 0;
 
 
             yield return Wait.ForFrames(1);
@@ -99,6 +99,8 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private IEnumerator<Wait> FlyPlayerOnScreen()
         {
+            if (_cantSkip) World.DeactivateSystem<PlayerInputSystem>();
+
             _radio = AssetServices.Create(World, _radioPrefab);
             var bottomCenter = _libraryAsset.Bounds.Center;
             bottomCenter.Y += _libraryAsset.Bounds.Height / 2f;
@@ -109,7 +111,7 @@ namespace HelloMurder.StateMachines.Gameplay
             _lastStartedTime = Game.Now;
             _showWindWarning = true;
 
-            while (_player != null && (_canSkip && !_player.HasVelocity()) && Vector2.Distance(_player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center) > 5f)
+            while (_player != null && (_cantSkip || !_player.HasVelocity()) && Vector2.Distance(_player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center) > 5f)
             {
                 var pos = Vector2.Lerp(_player.GetGlobalTransform().Vector2, _libraryAsset.Bounds.Center, Game.DeltaTime);
                 _player.SetGlobalPosition(pos);
@@ -192,7 +194,7 @@ namespace HelloMurder.StateMachines.Gameplay
             var bottomCenter = _libraryAsset.Bounds.Center;
             bottomCenter.Y += (_libraryAsset.Bounds.Height / 2f) + 30f;
 
-            while (_radio != null && !_player.HasVelocity() && Vector2.Distance(_radio.GetGlobalTransform().Vector2, bottomCenter) > 5f)
+            while (_radio != null && (_cantSkip || !_player.HasVelocity()) && Vector2.Distance(_radio.GetGlobalTransform().Vector2, bottomCenter) > 5f)
             {
                 var radioPos = Vector2.Lerp(_radio.GetGlobalTransform().Vector2, bottomCenter, Game.DeltaTime);
                 _radio.SetGlobalPosition(radioPos);
@@ -204,7 +206,7 @@ namespace HelloMurder.StateMachines.Gameplay
 
         private IEnumerator<Wait> ShowControls()
         {
-            //World.ActivateSystem<PlayerInputSystem>();
+            if (_cantSkip) World.ActivateSystem<PlayerInputSystem>();
 
             _controls = AssetServices.Create(World, _controlsPrefab);
             var bottomCenter = _libraryAsset.Bounds.Center;
@@ -221,7 +223,8 @@ namespace HelloMurder.StateMachines.Gameplay
             {
                 var controlsPos = Vector2.Lerp(_controls.GetGlobalTransform().Vector2, bottomMinusControlsHeight, Game.DeltaTime);
                 _controls.SetGlobalPosition(controlsPos);
-                if (_player?.TryGetVelocity() != null)
+                if (_player.HasVelocity() || 
+                    Game.Input.Pressed(InputButtons.Attack))
                 {
                     _anyInput = true;
                 }
@@ -234,7 +237,8 @@ namespace HelloMurder.StateMachines.Gameplay
         {
             while (!_anyInput) 
             {
-                if (_player?.TryGetVelocity() != null)
+                if (_player.HasVelocity() || 
+                    Game.Input.Pressed(InputButtons.Attack))
                 {
                     _anyInput = true;
                 }

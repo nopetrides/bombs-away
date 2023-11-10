@@ -58,18 +58,6 @@ namespace HelloMurder.StateMachines
             HelloMurderSoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic | Murder.Core.Sounds.SoundProperties.SkipIfAlreadyPlaying);
 
             _menuInfo.Select(0);
-            
-            // silly workaround
-            if (Game.Preferences.SoundVolume == 0 && _firstMenuView)
-            {
-                Game.Preferences.ToggleSoundVolumeAndSave();
-                Game.Preferences.ToggleSoundVolumeAndSave();
-            }
-            if (Game.Preferences.MusicVolume == 0 && _firstMenuView)
-            {
-                Game.Preferences.ToggleMusicVolumeAndSave();
-                Game.Preferences.ToggleMusicVolumeAndSave();
-            }
             _firstMenuView = false;
         }
 
