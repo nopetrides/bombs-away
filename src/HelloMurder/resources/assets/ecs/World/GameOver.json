@@ -11,7 +11,7 @@
     "$values": [
       {
         "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "4dc3c8b1-5b4a-4ca5-818c-f7763169e2e6",
+        "Item1": "9753089a-287b-4410-ad56-873b1224930c",
         "Item2": true
       }
     ]
@@ -34,6 +34,7 @@
             "_mainMenuWorld": "237d1c07-32a0-4634-83b0-f72b70f2d037",
             "_gameWorld": "9775cecb-7773-4f30-822a-0e9a7d5ddd8d",
             "_paperDrawDelay": 5.0,
+            "_paperRestartDelay": 15.0,
             "_cachedPersistedState": "GameOver"
           }
         },

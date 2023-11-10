@@ -89,9 +89,9 @@ namespace HelloMurder.StateMachines.Menu
             // BG Image
             var skin = LibraryServices.GetLibrary().GameOverScreen;
 
-            RenderServices.DrawSprite(render.UiBatch, skin,
+            RenderServices.DrawSprite(render.GameUiBatch, skin,
                 new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f), 
-                new DrawInfo(0.8f)
+                new DrawInfo(1f)
                 {
                     Origin = new Vector2(.5f, .5f)
                 });
@@ -103,7 +103,7 @@ namespace HelloMurder.StateMachines.Menu
                     var paperGuid = LibraryServices.GetLibrary().GameOverPaper;
                     var paper = AssetServices.TryCreate(World, paperGuid);
                     var world = (MonoWorld)World;
-                    //paper?.SetGlobalPosition(world.Camera.Position);
+                    paper?.SetGlobalPosition(world.Camera.Position);
                     paper?.SetDestroyOnAnimationComplete(false);
                     // Tried to determine how to enable and disable this entity instead of destroying, but oh well
                     _paperAnimationTimer += Game.DeltaTime;
