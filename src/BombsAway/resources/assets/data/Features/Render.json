@@ -1,0 +1,95 @@
+{
+  "$type": "Murder.Assets.FeatureAsset, Murder",
+  "IsDiagnostics": false,
+  "_systems": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Systems.DynamicInCameraSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": false
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Systems.Utilities.AlwaysInCameraSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Systems.Graphics.SpriteRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Systems.AgentSpriteSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Systems.Graphics.TilemapRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Systems.Graphics.CustomDrawRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Systems.Graphics.SpriteThreeSliceRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Systems.AnimationOnPauseSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Systems.PolygonSpriteRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Systems.StaticInCameraSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "BombsAway.Systems.ScrollingImageSystem, BombsAway, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "BombsAway.Systems.CameraFollowSystem, BombsAway, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "BombsAway.Systems.Player.BombExplosionSystem, BombsAway, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "BombsAway.Systems.Player.FlakExplosionSystem, BombsAway, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "BombsAway.Systems.ShipScoreDrawRenderSystem, BombsAway, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "BombsAway.Systems.SimpleFadeScreenSystem, BombsAway, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      }
+    ]
+  },
+  "_features": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": []
+  },
+  "Name": "Render",
+  "Guid": "5afe8a7a-6747-4f3a-b269-3e3042cd1426"
+}

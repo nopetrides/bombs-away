@@ -1,0 +1,253 @@
+{
+  "$type": "Murder.Assets.Graphics.SpriteAsset, Murder",
+  "Atlas": 1,
+  "Frames": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Graphics.AtlasCoordinates, Murder]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+        "AtlasIndex": 0,
+        "Name": "fx\\Flak_Hazard_0000",
+        "Size": {
+          "$type": "Murder.Core.Geometry.Point, Murder",
+          "X": 16,
+          "Y": 16
+        },
+        "SourceRectangle": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 1161,
+          "Y": 308,
+          "Width": 16,
+          "Height": 16
+        },
+        "UV": {
+          "$type": "Murder.Core.Geometry.Rectangle, Murder",
+          "X": 0.56689453,
+          "Y": 0.15039062,
+          "Width": 0.0078125,
+          "Height": 0.0078125
+        },
+        "TrimArea": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 0,
+          "Y": 0,
+          "Width": 16,
+          "Height": 16
+        },
+        "AtlasId": 1
+      },
+      {
+        "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+        "AtlasIndex": 0,
+        "Name": "fx\\Flak_Hazard_0001",
+        "Size": {
+          "$type": "Murder.Core.Geometry.Point, Murder",
+          "X": 16,
+          "Y": 16
+        },
+        "SourceRectangle": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 1129,
+          "Y": 304,
+          "Width": 16,
+          "Height": 16
+        },
+        "UV": {
+          "$type": "Murder.Core.Geometry.Rectangle, Murder",
+          "X": 0.55126953,
+          "Y": 0.1484375,
+          "Width": 0.0078125,
+          "Height": 0.0078125
+        },
+        "TrimArea": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 0,
+          "Y": 0,
+          "Width": 16,
+          "Height": 16
+        },
+        "AtlasId": 1
+      },
+      {
+        "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+        "AtlasIndex": 0,
+        "Name": "fx\\Flak_Hazard_0002",
+        "Size": {
+          "$type": "Murder.Core.Geometry.Point, Murder",
+          "X": 16,
+          "Y": 16
+        },
+        "SourceRectangle": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 1062,
+          "Y": 391,
+          "Width": 16,
+          "Height": 16
+        },
+        "UV": {
+          "$type": "Murder.Core.Geometry.Rectangle, Murder",
+          "X": 0.5185547,
+          "Y": 0.19091797,
+          "Width": 0.0078125,
+          "Height": 0.0078125
+        },
+        "TrimArea": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 0,
+          "Y": 0,
+          "Width": 16,
+          "Height": 16
+        },
+        "AtlasId": 1
+      },
+      {
+        "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+        "AtlasIndex": 0,
+        "Name": "fx\\Flak_Hazard_0003",
+        "Size": {
+          "$type": "Murder.Core.Geometry.Point, Murder",
+          "X": 16,
+          "Y": 16
+        },
+        "SourceRectangle": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 1021,
+          "Y": 419,
+          "Width": 16,
+          "Height": 16
+        },
+        "UV": {
+          "$type": "Murder.Core.Geometry.Rectangle, Murder",
+          "X": 0.49853516,
+          "Y": 0.20458984,
+          "Width": 0.0078125,
+          "Height": 0.0078125
+        },
+        "TrimArea": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 0,
+          "Y": 0,
+          "Width": 16,
+          "Height": 16
+        },
+        "AtlasId": 1
+      },
+      {
+        "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+        "AtlasIndex": 0,
+        "Name": "fx\\Flak_Hazard_0004",
+        "Size": {
+          "$type": "Murder.Core.Geometry.Point, Murder",
+          "X": 16,
+          "Y": 16
+        },
+        "SourceRectangle": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 981,
+          "Y": 439,
+          "Width": 16,
+          "Height": 16
+        },
+        "UV": {
+          "$type": "Murder.Core.Geometry.Rectangle, Murder",
+          "X": 0.4790039,
+          "Y": 0.21435547,
+          "Width": 0.0078125,
+          "Height": 0.0078125
+        },
+        "TrimArea": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 0,
+          "Y": 0,
+          "Width": 16,
+          "Height": 16
+        },
+        "AtlasId": 1
+      },
+      {
+        "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
+        "AtlasIndex": 0,
+        "Name": "fx\\Flak_Hazard_0005",
+        "Size": {
+          "$type": "Murder.Core.Geometry.Point, Murder",
+          "X": 16,
+          "Y": 16
+        },
+        "SourceRectangle": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 1194,
+          "Y": 513,
+          "Width": 16,
+          "Height": 16
+        },
+        "UV": {
+          "$type": "Murder.Core.Geometry.Rectangle, Murder",
+          "X": 0.5830078,
+          "Y": 0.25048828,
+          "Width": 0.0078125,
+          "Height": 0.0078125
+        },
+        "TrimArea": {
+          "$type": "Murder.Core.Geometry.IntRectangle, Murder",
+          "X": 0,
+          "Y": 0,
+          "Width": 16,
+          "Height": 16
+        },
+        "AtlasId": 1
+      }
+    ]
+  },
+  "Animations": {
+    "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.String, System.Private.CoreLib],[Murder.Core.Graphics.Animation, Murder]], System.Collections.Immutable",
+    "": {
+      "$type": "Murder.Core.Graphics.Animation, Murder",
+      "Frames": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "FramesDuration": {
+        "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Single, System.Private.CoreLib]], System.Collections.Immutable",
+        "$values": [
+          75.0,
+          75.0,
+          75.0,
+          75.0,
+          75.0,
+          75.0
+        ]
+      },
+      "Events": {
+        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections.Immutable"
+      },
+      "AnimationDuration": 0.45
+    }
+  },
+  "Origin": {
+    "$type": "Murder.Core.Geometry.Point, Murder",
+    "X": 0,
+    "Y": 0
+  },
+  "Size": {
+    "$type": "Murder.Core.Geometry.Point, Murder",
+    "X": 16,
+    "Y": 16
+  },
+  "NineSlice": {
+    "$type": "Murder.Core.Geometry.Rectangle, Murder",
+    "X": 0.0,
+    "Y": 0.0,
+    "Width": 0.0,
+    "Height": 0.0
+  },
+  "_editorPath": "#Generated\\images",
+  "Name": "fx\\Flak_Hazard",
+  "Guid": "85d83fc7-013b-efca-cf74-d3ee99139718"
+}

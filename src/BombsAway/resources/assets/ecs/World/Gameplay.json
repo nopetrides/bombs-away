@@ -1,0 +1,283 @@
+{
+  "$type": "Murder.Assets.WorldAsset, Murder",
+  "WorldName": "World",
+  "Order": 1,
+  "_systems": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": []
+  },
+  "_features": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "9753089a-287b-4410-ad56-873b1224930c",
+        "Item2": true
+      }
+    ]
+  },
+  "_folders": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable]], System.Private.CoreLib"
+  },
+  "_entities": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
+    "30d5ac2b-73b7-47e0-9066-e558a13e0da9": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
+      "PrefabRef": {
+        "$type": "Murder.Prefabs.PrefabReference, Murder",
+        "Guid": "def1a7be-1c47-4cd7-b4a9-b485e6cd3159"
+      },
+      "_removeComponent": {
+        "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "_childrenModifiers": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
+      },
+      "_ignorePrefabChildren": false,
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 162.0,
+          "_y": 600.0
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "_guid": "30d5ac2b-73b7-47e0-9066-e558a13e0da9",
+      "_name": "PlayerPlane"
+    },
+    "88a40b96-0a97-446a-8177-0b9698c0134b": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
+      "PrefabRef": {
+        "$type": "Murder.Prefabs.PrefabReference, Murder",
+        "Guid": "fce7634c-9ba9-4279-9fa0-129fc9816287"
+      },
+      "_removeComponent": {
+        "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "_childrenModifiers": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
+      },
+      "_ignorePrefabChildren": false,
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 255.0,
+          "_y": 297.0
+        },
+        "Murder.Components.CameraFollowComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.CameraFollowComponent, Murder",
+          "Enabled": false,
+          "Style": 1
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "_guid": "88a40b96-0a97-446a-8177-0b9698c0134b",
+      "_name": "Camera man"
+    },
+    "431ed978-31cb-4f44-9072-4b2e4949ee36": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "431ed978-31cb-4f44-9072-4b2e4949ee36",
+      "_name": "ScrollingBackground",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 0.0,
+          "_y": 0.0
+        },
+        "BombsAway.Components.ScrollingSprite, BombsAway, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "BombsAway.Components.ScrollingSprite, BombsAway",
+          "TargetSpriteBatch": 1,
+          "Size": {
+            "$type": "Murder.Core.Geometry.Point, Murder",
+            "X": 22,
+            "Y": 22
+          },
+          "Speed": {
+            "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.05
+          },
+          "Flip": false,
+          "Sort": 1.0,
+          "Sprite": "71251275-29d0-99cb-89a9-18c5eea65755"
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
+    },
+    "65577064-091d-4c46-bdfa-a636589bec9b": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "65577064-091d-4c46-bdfa-a636589bec9b",
+      "_name": "ScrollingForegroundLeft",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 60.0,
+          "_y": 0.0
+        },
+        "BombsAway.Components.ScrollingSprite, BombsAway, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "BombsAway.Components.ScrollingSprite, BombsAway",
+          "TargetSpriteBatch": 0,
+          "Size": {
+            "$type": "Murder.Core.Geometry.Point, Murder",
+            "X": 1,
+            "Y": 22
+          },
+          "Speed": {
+            "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Flip": false,
+          "Sort": 0.0,
+          "Sprite": "a43f0087-c9df-dc24-bdcc-d08091bf452a"
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
+    },
+    "5ef4abf5-8dc5-43e1-93b9-80e9115436b2": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "5ef4abf5-8dc5-43e1-93b9-80e9115436b2",
+      "_name": "ScrollingForegroundRight",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 264.0,
+          "_y": 0.0
+        },
+        "BombsAway.Components.ScrollingSprite, BombsAway, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "BombsAway.Components.ScrollingSprite, BombsAway",
+          "TargetSpriteBatch": 0,
+          "Size": {
+            "$type": "Murder.Core.Geometry.Point, Murder",
+            "X": 1,
+            "Y": 22
+          },
+          "Speed": {
+            "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+            "X": 0.0,
+            "Y": 0.5
+          },
+          "Flip": false,
+          "Sort": 0.0,
+          "Sprite": "8b7f56dc-7a64-c67b-e55c-fb0ccec4594e"
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
+    },
+    "21afbc63-1666-4fa5-879b-f028a6324999": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "21afbc63-1666-4fa5-879b-f028a6324999",
+      "_name": "GameplayUIManager",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 0.0,
+          "_y": 0.0
+        },
+        "Bang.StateMachines.StateMachineComponent`1[[BombsAway.StateMachines.Gameplay.GameplayUIManager, BombsAway, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent`1[[BombsAway.StateMachines.Gameplay.GameplayUIManager, BombsAway]], Bang",
+          "_routine": {
+            "$type": "BombsAway.StateMachines.Gameplay.GameplayUIManager, BombsAway",
+            "_scoreBG": "f197a699-8c54-f6c1-d3d2-8ed9e3c5e674",
+            "_uiRectWidth": 100.0,
+            "_uiRectHeight": 16.0,
+            "_cachedPersistedState": "Level"
+          }
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
+    },
+    "6dccd9c6-b702-46f1-ac51-cbfc5b7313b1": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "6dccd9c6-b702-46f1-ac51-cbfc5b7313b1",
+      "_name": "TileRoom",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.TileGridComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.TileGridComponent, Murder",
+          "Grid": {
+            "$type": "Murder.Core.TileGrid, Murder",
+            "_gridMap": {
+              "$type": "System.Int32[], System.Private.CoreLib",
+              "$values": [
+                0
+              ]
+            },
+            "_width": 12,
+            "_height": 32,
+            "_origin": {
+              "$type": "Murder.Core.Geometry.Point, Murder",
+              "X": 4,
+              "Y": 0
+            }
+          },
+          "Width": 1,
+          "Height": 1,
+          "Origin": {
+            "$type": "Murder.Core.Geometry.Point, Murder",
+            "X": 4,
+            "Y": 0
+          }
+        },
+        "Murder.Components.RoomComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.RoomComponent, Murder",
+          "Floor": "00000000-0000-0000-0000-000000000000"
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
+    },
+    "2326a9be-2083-4e19-ba53-09521f89bd71": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "2326a9be-2083-4e19-ba53-09521f89bd71",
+      "_name": "Map",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib"
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
+    },
+    "23d832e4-4e43-4ad3-ac5a-636a4ff88f8f": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "23d832e4-4e43-4ad3-ac5a-636a4ff88f8f",
+      "_name": "GameplayStateMachine",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Bang.StateMachines.StateMachineComponent`1[[BombsAway.StateMachines.Gameplay.GameplayStateMachine, BombsAway, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent`1[[BombsAway.StateMachines.Gameplay.GameplayStateMachine, BombsAway]], Bang",
+          "_routine": {
+            "$type": "BombsAway.StateMachines.Gameplay.GameplayStateMachine, BombsAway",
+            "_enemySpawnDataId": "9fbd934b-27b8-4bc9-bf92-bce9e8e1d6b1",
+            "_radioPrefab": "8093e52e-b1b4-4ed7-bb54-a340a9886877",
+            "_controlsPrefab": "06210cab-a50c-4f91-9e38-9e79ca255f1c",
+            "_bombWindRadius": 64.0,
+            "_windWarningText": "CAUTION! WIND ADVISORY! BOMB TRAJECTORY AFFECTED!",
+            "_controlsText": "TARGETS REACHED. BOMBS ARMED. DESTROY THE ENEMY SHIPS!",
+            "_cachedPersistedState": "GameStart"
+          }
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
+    }
+  },
+  "_entitiesToFolder": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "Name": "Gameplay",
+  "Guid": "9775cecb-7773-4f30-822a-0e9a7d5ddd8d"
+}

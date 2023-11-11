@@ -1,0 +1,32 @@
+{
+  "$type": "BombsAway.Assets.EnemySpawnerDataAsset, BombsAway",
+  "StartingSpawnDelay": 3.0,
+  "EnemySpawns": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[BombsAway.Core.EnemySpawn.EnemySpawnEvent, BombsAway]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "BombsAway.Core.EnemySpawn.EnemySpawnEvent, BombsAway",
+        "EnemyImpulse": 60.0,
+        "ChasePlayer": false,
+        "PrefabToSpawn": "99c113bc-8e3e-40b9-903c-59f6379bfbb7",
+        "SpawnTimeStart": 0.0
+      },
+      {
+        "$type": "BombsAway.Core.EnemySpawn.EnemySpawnEvent, BombsAway",
+        "EnemyImpulse": 60.0,
+        "ChasePlayer": false,
+        "PrefabToSpawn": "6d197cf4-32c5-4fd4-ad7d-c70a025ef632",
+        "SpawnTimeStart": 5.0
+      },
+      {
+        "$type": "BombsAway.Core.EnemySpawn.EnemySpawnEvent, BombsAway",
+        "EnemyImpulse": 60.0,
+        "ChasePlayer": false,
+        "PrefabToSpawn": "c6a94e00-22a5-4666-a23f-92a02edd56f0",
+        "SpawnTimeStart": 10.0
+      }
+    ]
+  },
+  "Name": "BombsAwayEnemySpawner",
+  "Guid": "9fbd934b-27b8-4bc9-bf92-bce9e8e1d6b1"
+}

@@ -348,6 +348,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-src/HelloMurder/resources/assets/data/Generated
-src/HelloMurder/packed
-src/HelloMurder/resources/assets/data/Generated
+src/BombsAway/resources/assets/data/Generated
+src/BombsAway/packed
+src/BombsAway/resources/assets/data/Generated
