@@ -55,7 +55,7 @@ namespace BombsAway.StateMachines
 
             World.DeactivateSystem<PlayerInputSystem>();
 
-            BombsAwaySoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic | Murder.Core.Sounds.SoundProperties.SkipIfAlreadyPlaying);
+            BombsAwaySoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, Murder.Core.Sounds.SoundProperties.Persist | Murder.Core.Sounds.SoundProperties.StopOtherMusic | Murder.Core.Sounds.SoundProperties.SkipIfAlreadyPlaying);
 
             _menuInfo.Select(0);
             _firstMenuView = false;

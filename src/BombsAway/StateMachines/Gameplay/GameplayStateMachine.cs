@@ -70,7 +70,7 @@ namespace BombsAway.StateMachines.Gameplay
             //World.DeactivateSystem<PlayerInputSystem>();
             Entity.SetGameplayStateMachine();
             Entity.SetCustomDraw(DrawMessage);
-            BombsAwaySoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().GameMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic);
+            BombsAwaySoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().GameMusic, Murder.Core.Sounds.SoundProperties.Persist | Murder.Core.Sounds.SoundProperties.StopOtherMusic);
 
             BombsAwaySoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().Turboprop, Murder.Core.Sounds.SoundProperties.Persist);
             BombsAwaySoundPlayer.Instance.SetGlobalParameter(LibraryServices.GetLibrary().Roll, 0f);

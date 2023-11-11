@@ -39,7 +39,7 @@ namespace BombsAway.StateMachines
 
             BombsAwaySoundPlayer.Instance.Stop(null, false);
 
-            BombsAwaySoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, Murder.Core.Sounds.SoundProperties.StopOtherMusic);
+            BombsAwaySoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, Murder.Core.Sounds.SoundProperties.Persist | Murder.Core.Sounds.SoundProperties.StopOtherMusic);
 
             // silly workaround
             if (Game.Preferences.SoundVolume == 0)

@@ -219,7 +219,7 @@ namespace BombsAway.Core.Sounds
         {
             if (id is null)
             {
-                return StopAll(fadeOut);
+                return Stop(fadeOut, out var _);
             }
 
             bool succeeded = false;
@@ -322,6 +322,22 @@ namespace BombsAway.Core.Sounds
             UnloadContent();
 
             _studio?.Dispose();
+        }
+
+        public bool Stop(bool fadeOut, out SoundEventId[] stoppedEvents)
+        {
+            stoppedEvents = _instances.Keys.ToArray();
+            EventInstance[] sounds = _instances.Values.ToArray();
+            _instances.Clear();
+
+            bool succeeded = false;
+            foreach (EventInstance instance in sounds)
+            {
+                succeeded &= instance.Stop(fadeOut);
+                instance.Dispose();
+            }
+
+            return succeeded;
         }
     }
 }

@@ -56,7 +56,7 @@ namespace BombsAway.StateMachines.Menu
             _menuInfo = GetGameOverOptions();
             _menuInfo.Select(_menuInfo.NextAvailableOption(-1, 1));
 
-            BombsAwaySoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().EndScreen, Murder.Core.Sounds.SoundProperties.StopOtherMusic);
+            BombsAwaySoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().EndScreen, Murder.Core.Sounds.SoundProperties.Persist | Murder.Core.Sounds.SoundProperties.StopOtherMusic);
 
             while (true)
             {
