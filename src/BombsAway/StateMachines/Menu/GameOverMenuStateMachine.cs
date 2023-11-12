@@ -16,6 +16,7 @@ using BombsAway.Assets;
 using BombsAway.Core.Sounds;
 using Murder.Utilities;
 using Murder.Core;
+using BombsAway.Data;
 
 namespace BombsAway.StateMachines.Menu
 {
@@ -166,7 +167,10 @@ namespace BombsAway.StateMachines.Menu
         }
         private void DrawHighScore(RenderContext render, BombsAwaySaveData save)
         {
-            var highScore = save.HighScore;
+            // Workaround, since saves are not working between sessions
+            BombsAwayPreferences pref = (BombsAwayPreferences)Game.Preferences;
+
+            var highScore = pref.HighScore;
             var highScoreText = "High Score: " + highScore;
             var textDraw = new DrawInfo() { Sort = 0.4f, Color = Color.Black };
             var position = new Vector2(render.Camera.Size.X / 2f, render.Camera.Size.Y / 2f);

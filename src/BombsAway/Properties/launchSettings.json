@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BombsAway": {
+      "commandName": "Project",
+      "hotReloadEnabled": false
+    }
+  }
+}

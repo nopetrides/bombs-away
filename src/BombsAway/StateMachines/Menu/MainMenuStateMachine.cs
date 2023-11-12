@@ -32,8 +32,6 @@ namespace BombsAway.StateMachines
 
         private MenuInfo _menuInfo = new();
 
-        private static bool _firstMenuView = true;
-
         private MenuInfo GetMainMenuOptions() =>
             new MenuInfo(new MenuOption[] {new("Play"), new("Options"), new("Exit") });
 
@@ -58,7 +56,6 @@ namespace BombsAway.StateMachines
             BombsAwaySoundPlayer.Instance.PlayEvent(LibraryServices.GetLibrary().MainMenuMusic, Murder.Core.Sounds.SoundProperties.Persist | Murder.Core.Sounds.SoundProperties.StopOtherMusic | Murder.Core.Sounds.SoundProperties.SkipIfAlreadyPlaying);
 
             _menuInfo.Select(0);
-            _firstMenuView = false;
         }
 
         private IEnumerator<Wait> Main()

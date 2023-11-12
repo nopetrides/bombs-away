@@ -17,6 +17,7 @@ using Murder.Core.Graphics;
 using BombsAway.Core;
 using Murder.Services;
 using BombsAway.Core.Sounds;
+using BombsAway.Data;
 
 namespace BombsAway.StateMachines.Gameplay
 {
@@ -84,7 +85,11 @@ namespace BombsAway.StateMachines.Gameplay
             flakWarning?.Deactivate();
 
             BombsAwaySaveData save = SaveServices.GetOrCreateSave();
-            _cantSkip = save.HighScore == 0;
+
+            // Workaround, since saves are not working between sessions
+            BombsAwayPreferences pref = (BombsAwayPreferences)Game.Preferences;
+
+            _cantSkip = pref.HighScore == 0;
 
 
             yield return Wait.ForFrames(1);

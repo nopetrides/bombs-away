@@ -7,6 +7,7 @@ using Bang.Entities;
 using Bang.Systems;
 using BombsAway.Assets;
 using BombsAway.Components;
+using BombsAway.Data;
 using BombsAway.Services;
 using Murder;
 using Murder.Components;
@@ -56,10 +57,14 @@ namespace BombsAway.Systems.Interactions
 
             BombsAwaySaveData save = SaveServices.GetOrCreateSave();
 
+            // Workaround, since saves are not working between sessions
+            BombsAwayPreferences pref = (BombsAwayPreferences)Game.Preferences;
+
             save.LastAttemptScore = newScore.CurrentScore;
-            if (newScore.CurrentScore > save.HighScore) 
+
+            if (newScore.CurrentScore > pref.HighScore) 
             {
-                save.HighScore = newScore.CurrentScore;
+                pref.SetHighScore(newScore.CurrentScore);
             }
             SaveServices.QuickSave();
 

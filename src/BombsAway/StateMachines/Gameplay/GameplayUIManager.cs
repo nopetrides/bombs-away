@@ -9,6 +9,8 @@ using Newtonsoft.Json;
 using Murder.Services;
 using BombsAway.Assets;
 using BombsAway.Services;
+using BombsAway.Data;
+using Murder;
 
 namespace BombsAway.StateMachines.Gameplay
 {
@@ -82,7 +84,10 @@ namespace BombsAway.StateMachines.Gameplay
                 highscoreBgRect,
                 new DrawInfo() { Sort = 0.5f });
             BombsAwaySaveData save = SaveServices.GetOrCreateSave();
-            var highScore = save.HighScore;
+            // Workaround, since saves are not working between sessions
+            BombsAwayPreferences pref = (BombsAwayPreferences)Game.Preferences;
+
+            var highScore = pref.HighScore;
             var highScoreText = "High Score: " + highScore;
             var textDraw = new DrawInfo() { Sort = 0.4f, Color = Color.Black };
             var position = highscoreBgRect.CenterLeft;
